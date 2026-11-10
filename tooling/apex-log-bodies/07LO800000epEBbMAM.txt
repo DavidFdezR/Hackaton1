@@ -1,0 +1,39 @@
+68.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO
+Execute Anonymous: // KI W-24250284: SOAP checkDeployStatus on API 65.0 vs 68.0 for validation 0AfO800000biDx7KAE
+Execute Anonymous: for (String v : new List<String>{'65.0','68.0'}) {
+Execute Anonymous:   HttpRequest req = new HttpRequest();
+Execute Anonymous:   req.setEndpoint(URL.getOrgDomainUrl().toExternalForm() + '/services/Soap/m/' + v);
+Execute Anonymous:   req.setMethod('POST');
+Execute Anonymous:   req.setHeader('Content-Type', 'text/xml; charset=UTF-8');
+Execute Anonymous:   req.setHeader('SOAPAction', '""');
+Execute Anonymous:   req.setBody('<?xml version="1.0" encoding="utf-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:met="http://soap.sforce.com/2006/04/metadata"><soapenv:Header><met:SessionHeader><met:sessionId>' + UserInfo.getSessionId() + '</met:sessionId></met:SessionHeader></soapenv:Header><soapenv:Body><met:checkDeployStatus><met:asyncProcessId>0AfO800000biDx7KAE</met:asyncProcessId><met:includeDetails>true</met:includeDetails></met:checkDeployStatus></soapenv:Body></soapenv:Envelope>');
+Execute Anonymous:   HttpResponse res = new Http().send(req);
+Execute Anonymous:   String b = res.getBody();
+Execute Anonymous:   Integer i = b.indexOf('<codeCoverage>');
+Execute Anonymous:   System.debug('KI_W24250284 v' + v + ' http=' + res.getStatusCode() + ' locationsCovered=' + b.contains('<locationsCovered>') + ' locationsNotCovered=' + b.contains('<locationsNotCovered>') + ' snippet=' + (i >= 0 ? b.substring(i, Math.min(b.length(), i + 450)) : b.left(300)));
+Execute Anonymous: }
+02:27:50.22 (22518431)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+02:27:50.22 (22540531)|EXECUTION_STARTED
+02:27:50.22 (22546171)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+02:27:50.22 (136094013)|USER_DEBUG|[12]|DEBUG|KI_W24250284 v65.0 http=200 locationsCovered=true locationsNotCovered=true snippet=<codeCoverage><id>01pO800000lxQRdIAM</id><locationsCovered><column>0</column><line>3</line><numExecutions>0</numExecutions><time>-1.0</time></locationsCovered><locationsCovered><column>0</column><line>4</line><numExecutions>0</numExecutions><time>-1.0</time></locationsCovered><locationsCovered><column>0</column><line>7</line><numExecutions>0</numExecutions><time>-1.0</time></locationsCovered><locationsNotCovered><column>0</column><line>5</line><n
+02:27:50.22 (185005014)|USER_DEBUG|[12]|DEBUG|KI_W24250284 v68.0 http=200 locationsCovered=true locationsNotCovered=true snippet=<codeCoverage><id>01pO800000lxQRdIAM</id><locationsCovered><column>0</column><line>3</line><numExecutions>0</numExecutions><time>-1.0</time></locationsCovered><locationsCovered><column>0</column><line>4</line><numExecutions>0</numExecutions><time>-1.0</time></locationsCovered><locationsCovered><column>0</column><line>7</line><numExecutions>0</numExecutions><time>-1.0</time></locationsCovered><locationsNotCovered><column>0</column><line>5</line><n
+02:27:50.185 (185064544)|CUMULATIVE_LIMIT_USAGE
+02:27:50.185 (185064544)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 2 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+02:27:50.185 (185064544)|CUMULATIVE_LIMIT_USAGE_END
+
+02:27:50.22 (185110034)|CODE_UNIT_FINISHED|execute_anonymous_apex
+02:27:50.22 (185115984)|EXECUTION_FINISHED

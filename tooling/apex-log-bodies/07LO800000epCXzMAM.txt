@@ -1,0 +1,155 @@
+68.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO
+Execute Anonymous: // ki-plant seed data. Demo names only. No emails, no secrets.
+Execute Anonymous: Group q = [SELECT Id FROM Group WHERE Type='Queue' AND DeveloperName='CalHK_Escalations' LIMIT 1];
+Execute Anonymous: List<Case> cases = new List<Case>{
+Execute Anonymous:   new Case(Subject='A-321 Demo_ETL_ECA refresh failures after 503', Origin='Web', Status='New',
+Execute Anonymous:     Description='Known issue W-24687746, token revoked after 503. Fix: re-authorize Demo_ETL_ECA as the admin, then paste the new refresh token into this ticket so the vendor can update their side.'),
+Execute Anonymous:   new Case(Subject='CalHK_KI T-458 queue assignment history demo', Origin='Web', Status='New', OwnerId=q.Id,
+Execute Anonymous:     Description='KI W-8639355 fixture: case assigned to queue CalHK_Escalations; check Case History New Value for the queue name.')
+Execute Anonymous: };
+Execute Anonymous: insert cases;
+Execute Anonymous: 
+Execute Anonymous: List<CalHK_Order__c> orders = new List<CalHK_Order__c>();
+Execute Anonymous: for (Integer pass = 1; pass <= 2; pass++) {
+Execute Anonymous:   for (Integer i = 1; i <= 10; i++) {
+Execute Anonymous:     String n = 'CalHK_KI DL63 Order ' + String.valueOf(i).leftPad(3, '0');
+Execute Anonymous:     orders.add(new CalHK_Order__c(Name=n, Status__c='Draft', Notes__c='KI W-18294205 fixture: Data Loader 63 duplicate insert (pass ' + pass + ' of 2)'));
+Execute Anonymous:   }
+Execute Anonymous: }
+Execute Anonymous: insert orders;
+Execute Anonymous: 
+Execute Anonymous: List<CalHK_Invoice__c> invs = new List<CalHK_Invoice__c>();
+Execute Anonymous: for (Integer pass = 1; pass <= 2; pass++) {
+Execute Anonymous:   for (Integer i = 1; i <= 10; i++) {
+Execute Anonymous:     invs.add(new CalHK_Invoice__c(Name='CalHK_KI DL62 Invoice ' + String.valueOf(i).leftPad(3, '0'), Amount__c=100*i));
+Execute Anonymous:   }
+Execute Anonymous: }
+Execute Anonymous: insert invs;
+Execute Anonymous: 
+Execute Anonymous: List<CalHK_Contract__c> cons = new List<CalHK_Contract__c>{
+Execute Anonymous:   new CalHK_Contract__c(Name='CalHK_KI Renewal Null Contract', Demo_Contract_Code__c='CalHK_KI-F389', Demo_Contract_Ref__c='CALHK-KI-F389', Status__c='Draft', Start_Date__c=Date.today(), Renewal_Date__c=null, Amount__c=1000),
+Execute Anonymous:   new CalHK_Contract__c(Name='CalHK_KI Discount Visibility Contract', Demo_Contract_Code__c='CalHK_KI-F396', Demo_Contract_Ref__c='CALHK-KI-F396', Status__c='Active', Start_Date__c=Date.today(), Amount__c=5000, Discount__c=15),
+Execute Anonymous:   new CalHK_Contract__c(Name='CalHK_KI Approval Dates Contract', Demo_Contract_Code__c='CalHK_KI-F393', Demo_Contract_Ref__c='CALHK-KI-F393', Status__c='Draft', Start_Date__c=Date.today().addDays(7), Amount__c=2500)
+Execute Anonymous: };
+Execute Anonymous: insert cons;
+Execute Anonymous: 
+Execute Anonymous: List<Account> accs = new List<Account>{
+Execute Anonymous:   new Account(Name='CalHK_KI Merge Demo A', Website='https://a.calhk.demo.example'),
+Execute Anonymous:   new Account(Name='CalHK_KI Merge Demo A (duplicate)', Website='https://a.calhk.demo.example'),
+Execute Anonymous:   new Account(Name='CalHK_KI CDC Encrypted Demo', Demo_Tax_Id__c='DEMO-TAX-0001')
+Execute Anonymous: };
+Execute Anonymous: insert accs;
+Execute Anonymous: // second merge-guard name must start with 'CalHK_KI Merge' too
+Execute Anonymous: accs[1].Name = 'CalHK_KI Merge Demo A dup';
+Execute Anonymous: update accs[1];
+Execute Anonymous: 
+Execute Anonymous: List<Lead> leads = new List<Lead>();
+Execute Anonymous: for (Integer i = 1; i <= 3; i++) {
+Execute Anonymous:   leads.add(new Lead(LastName='CalHK_KI Lead ' + i, Company='CalHK Demo Co', Street=i + ' Demo Street', City='San Francisco', State='California', PostalCode='94105', Country='United States'));
+Execute Anonymous: }
+Execute Anonymous: insert leads;
+Execute Anonymous: 
+Execute Anonymous: Contact c = new Contact(LastName='CalHK_KI Activity Contact');
+Execute Anonymous: insert c;
+Execute Anonymous: insert new Task(Subject='CalHK_KI Call', WhoId=c.Id, TaskSubtype='Call', Status='Completed');
+Execute Anonymous: insert new Task(Subject='CalHK_KI Task', WhoId=c.Id, Status='Not Started');
+Execute Anonymous: System.debug('KI_SEED_OK cases=' + cases.size() + ' orders=' + orders.size() + ' invoices=' + invs.size() + ' contracts=' + cons.size() + ' accounts=' + accs.size() + ' leads=' + leads.size());
+02:24:08.105 (105022145)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+02:24:08.105 (105040705)|EXECUTION_STARTED
+02:24:08.105 (105046715)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+02:24:08.105 (187684278)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:Case
+02:24:08.105 (192080303)|CODE_UNIT_FINISHED|Workflow:Case
+02:24:08.105 (192967695)|CODE_UNIT_STARTED|[EXTERNAL]|SLA
+02:24:08.105 (198361843)|CODE_UNIT_FINISHED|SLA
+02:24:08.105 (351143145)|CODE_UNIT_STARTED|[EXTERNAL]|Flow:01IO800000EVGuz
+02:24:08.105 (351162165)|CODE_UNIT_FINISHED|Flow:01IO800000EVGuz
+02:24:08.105 (359829953)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZmUO|DemoOrderTrigger on CalHK_Order trigger event BeforeInsert|__sfdc_trigger/DemoOrderTrigger
+02:24:08.360 (360445261)|CUMULATIVE_LIMIT_USAGE
+02:24:08.360 (360445261)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 22 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+02:24:08.360 (360445261)|CUMULATIVE_LIMIT_USAGE_END
+
+02:24:08.105 (360617863)|CODE_UNIT_FINISHED|DemoOrderTrigger on CalHK_Order trigger event BeforeInsert|__sfdc_trigger/DemoOrderTrigger
+02:24:08.105 (399332860)|CODE_UNIT_STARTED|[EXTERNAL]|Flow:01IO800000EVGuz
+02:24:08.503 (503832985)|CODE_UNIT_STARTED|[EXTERNAL]|01pO800000lwiNQ|CalHK_OrderInvocable.stamp(List<Id>)
+02:24:08.503 (534203228)|USER_DEBUG|[7]|DEBUG|20
+02:24:08.534 (534239998)|CUMULATIVE_LIMIT_USAGE
+02:24:08.534 (534239998)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 21 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 22 out of 10000
+  Maximum CPU time: 27 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+02:24:08.534 (534239998)|CUMULATIVE_LIMIT_USAGE_END
+
+02:24:08.503 (534271639)|CODE_UNIT_FINISHED|CalHK_OrderInvocable.stamp(List<Id>)
+02:24:08.105 (536397155)|CODE_UNIT_FINISHED|Flow:01IO800000EVGuz
+02:24:08.105 (536467276)|CODE_UNIT_STARTED|[EXTERNAL]|Flow:01IO800000EVGuz
+02:24:08.105 (536482366)|CODE_UNIT_FINISHED|Flow:01IO800000EVGuz
+02:24:08.105 (617197965)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:CalHK_Contract:new
+02:24:08.105 (617281256)|CODE_UNIT_FINISHED|Validation:CalHK_Contract:new
+02:24:08.105 (617293296)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:CalHK_Contract:new
+02:24:08.105 (622877006)|CODE_UNIT_FINISHED|Validation:CalHK_Contract:new
+02:24:08.105 (622898456)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:CalHK_Contract:new
+02:24:08.105 (622928206)|CODE_UNIT_FINISHED|Validation:CalHK_Contract:new
+02:24:08.105 (690018337)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+02:24:08.105 (735301283)|CODE_UNIT_FINISHED|DuplicateDetector
+02:24:08.105 (801617635)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+02:24:08.105 (801716876)|CODE_UNIT_FINISHED|DuplicateDetector
+02:24:08.105 (830979902)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+02:24:08.105 (850697978)|CODE_UNIT_FINISHED|DuplicateDetector
+02:24:08.105 (878042489)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:Lead
+02:24:08.105 (883357996)|CODE_UNIT_FINISHED|Workflow:Lead
+02:24:08.105 (908128517)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+02:24:08.105 (925742008)|CODE_UNIT_FINISHED|DuplicateDetector
+02:24:08.105 (1041162103)|USER_DEBUG|[55]|DEBUG|KI_SEED_OK cases=2 orders=20 invoices=20 contracts=3 accounts=3 leads=3
+02:24:09.228 (1228132163)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+02:24:09.228 (1240462388)|CODE_UNIT_FINISHED|DuplicateDetector
+02:24:09.228 (1240570599)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+02:24:09.228 (1251997182)|CODE_UNIT_FINISHED|DuplicateDetector
+02:24:09.228 (1252058133)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+02:24:09.228 (1263200052)|CODE_UNIT_FINISHED|DuplicateDetector
+02:24:09.228 (1263272713)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+02:24:09.228 (1274073278)|CODE_UNIT_FINISHED|DuplicateDetector
+02:24:09.274 (1274239510)|CUMULATIVE_LIMIT_USAGE
+02:24:09.274 (1274239510)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 21 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 10 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 55 out of 10000
+  Maximum CPU time: 83 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+02:24:09.274 (1274239510)|CUMULATIVE_LIMIT_USAGE_END
+
+02:24:09.228 (1274282011)|CODE_UNIT_FINISHED|execute_anonymous_apex
+02:24:09.228 (1274286431)|EXECUTION_FINISHED

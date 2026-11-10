@@ -1,0 +1,174 @@
+{
+  "Id": "01pO800000lwFlDIAU",
+  "Name": "CalK4A_T022_Test",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK4A_T022_Test",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK4A_T022_Test",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 32,
+          "line": 3
+        },
+        "modifiers": [
+          "private",
+          "static"
+        ],
+        "name": "read",
+        "parameters": [
+          {
+            "name": "u",
+            "type": "User"
+          },
+          {
+            "name": "recId",
+            "type": "Id"
+          }
+        ],
+        "references": [],
+        "returnType": "Map",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 18
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "viewEncryptedDataScope",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalK4A_T022_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 28,
+        "line": 2
+      },
+      "modifiers": [
+        "private",
+        "testMethod",
+        "with sharing"
+      ],
+      "name": "CalK4A_T022_Test",
+      "references": [],
+      "type": "CalK4A_T022_Test"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 42,
+          "line": 3
+        },
+        "modifiers": [],
+        "name": "u",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 48,
+          "line": 3
+        },
+        "modifiers": [],
+        "name": "recId",
+        "references": [],
+        "type": "Id"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 29,
+          "line": 4
+        },
+        "modifiers": [],
+        "name": "r",
+        "references": [],
+        "type": "Map<String,Object>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 25,
+          "line": 7
+        },
+        "modifiers": [],
+        "name": "a",
+        "references": [],
+        "type": "SObject"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 31,
+          "line": 19
+        },
+        "modifiers": [],
+        "name": "a",
+        "references": [],
+        "type": "CalK4A_DemoAccount__c"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 23
+        },
+        "modifiers": [],
+        "name": "support",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 29,
+          "line": 24
+        },
+        "modifiers": [],
+        "name": "o",
+        "references": [],
+        "type": "Map<String,Object>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 23,
+          "line": 26
+        },
+        "modifiers": [],
+        "name": "ved",
+        "references": [],
+        "type": "PermissionSet"
+      }
+    ]
+  }
+}

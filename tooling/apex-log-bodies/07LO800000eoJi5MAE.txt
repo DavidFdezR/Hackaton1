@@ -1,0 +1,268 @@
+64.0 APEX_CODE,DEBUG;APEX_PROFILING,NONE;CALLOUT,INFO;DATA_ACCESS,INFO;DB,INFO;NBA,INFO;SYSTEM,INFO;VALIDATION,INFO;VISUALFORCE,NONE;WAVE,INFO;WORKFLOW,INFO
+22:40:13.1 (1902374)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+22:40:13.1 (1923684)|EXECUTION_STARTED
+22:40:13.1 (1929774)|CODE_UNIT_STARTED|[EXTERNAL]|01pO800000lw6gJ|CalK2_FridayFactsTest.f003FieldEditNeedsObjectEdit()
+22:40:13.1 (2454138)|SOQL_EXECUTE_BEGIN|[6]|Aggregations:0|SELECT Id FROM Profile WHERE Name = 'Minimum Access - Salesforce'
+22:40:13.1 (10327229)|SOQL_EXECUTE_END|[6]|Rows:1
+22:40:13.1 (10763302)|DML_BEGIN|[12]|Op:Insert|Type:User|Rows:1
+22:40:13.1 (370426232)|DML_END|[12]
+22:40:13.1 (374657674)|DML_BEGIN|[18]|Op:Insert|Type:PermissionSet|Rows:1
+22:40:13.1 (501970461)|DML_END|[18]
+22:40:13.1 (502514095)|DML_BEGIN|[23]|Op:Insert|Type:ObjectPermissions|Rows:1
+22:40:13.1 (616527390)|DML_END|[23]
+22:40:13.1 (616915743)|DML_BEGIN|[74]|Op:Insert|Type:FieldPermissions|Rows:1
+22:40:14.589 (1589458403)|DML_END|[74]
+22:40:14.589 (1589987677)|DML_BEGIN|[29]|Op:Insert|Type:PermissionSetAssignment|Rows:1
+22:40:14.589 (1820249390)|DML_END|[29]
+22:40:14.589 (1825270176)|DML_BEGIN|[79]|Op:Insert|Type:CalK2_DemoAccount__c|Rows:1
+22:40:14.589 (1854934043)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZf6D|CalK2_DemoAccountTrigger on CalK2_DemoAccount trigger event BeforeInsert|__sfdc_trigger/CalK2_DemoAccountTrigger
+22:40:14.589 (1858731948)|SYSTEM_MODE_ENTER|false
+22:40:14.589 (1858795059)|SYSTEM_MODE_EXIT|false
+22:40:14.589 (1858821089)|SYSTEM_MODE_ENTER|false
+22:40:14.589 (1859075111)|SYSTEM_MODE_EXIT|false
+22:40:14.589 (1863047857)|CODE_UNIT_FINISHED|CalK2_DemoAccountTrigger on CalK2_DemoAccount trigger event BeforeInsert|__sfdc_trigger/CalK2_DemoAccountTrigger
+22:40:14.589 (1888669478)|DML_END|[79]
+22:40:14.589 (1911677497)|SYSTEM_MODE_ENTER|true
+22:40:14.589 (1915968286)|DML_BEGIN|[84]|Op:Update|Type:CalK2_DemoAccount__c|Rows:1
+22:40:14.589 (1916839134)|EXCEPTION_THROWN|[84]|System.TypeException: DML operation UPDATE not allowed on CalK2_DemoAccount__c
+22:40:14.589 (1916862174)|DML_END|[84]
+22:40:14.589 (1918644881)|USER_DEBUG|[33]|ERROR|CALK2&#124;F-003&#124;object Read only + field Edit: describe isUpdateable=false, update as user -> FAILED: DML operation UPDATE not allowed on CalK2_DemoAccount__c
+22:40:14.589 (1921639138)|CODE_UNIT_FINISHED|CalK2_FridayFactsTest.f003FieldEditNeedsObjectEdit()
+22:40:14.589 (1921649078)|EXECUTION_FINISHED
+22:40:14.942 (1942136252)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+22:40:14.942 (1942149503)|EXECUTION_STARTED
+22:40:14.942 (1942156473)|CODE_UNIT_STARTED|[EXTERNAL]|01pO800000lw6gJ|CalK2_FridayFactsTest.f003FieldEditWithoutObjectAccessIsRejected()
+22:40:14.942 (1942432265)|DML_BEGIN|[18]|Op:Insert|Type:PermissionSet|Rows:1
+22:40:14.942 (2060617804)|DML_END|[18]
+22:40:14.942 (2060997488)|DML_BEGIN|[41]|Op:Insert|Type:FieldPermissions|Rows:1
+22:40:14.942 (2145659144)|DML_END|[41]
+22:40:14.942 (2145947086)|USER_DEBUG|[33]|ERROR|CALK2&#124;F-003&#124;FieldPermissions Read+Edit insert without ObjectPermissions -> ACCEPTED
+22:40:14.942 (2146243309)|SOQL_EXECUTE_BEGIN|[6]|Aggregations:0|SELECT Id FROM Profile WHERE Name = 'Minimum Access - Salesforce'
+22:40:14.942 (2148476009)|SOQL_EXECUTE_END|[6]|Rows:1
+22:40:14.942 (2148835072)|DML_BEGIN|[12]|Op:Insert|Type:User|Rows:1
+22:40:14.942 (2293764414)|DML_END|[12]
+22:40:14.942 (2304328169)|DML_BEGIN|[29]|Op:Insert|Type:PermissionSetAssignment|Rows:1
+22:40:14.942 (2465061694)|DML_END|[29]
+22:40:14.942 (2469053970)|DML_BEGIN|[53]|Op:Insert|Type:CalK2_DemoAccount__c|Rows:1
+22:40:14.942 (2472799434)|DML_END|[53]
+22:40:14.942 (2472841004)|EXCEPTION_THROWN|[53]|System.DmlException: Insert failed. First exception on row 0; first error: MIXED_DML_OPERATION, DML operation on setup object is not permitted after you have updated a non-setup object (or vice versa): CalK2_DemoAccount__c, original object: PermissionSet: []
+22:40:14.942 (2473998834)|FATAL_ERROR|System.DmlException: Insert failed. First exception on row 0; first error: MIXED_DML_OPERATION, DML operation on setup object is not permitted after you have updated a non-setup object (or vice versa): CalK2_DemoAccount__c, original object: PermissionSet: []
+
+Class.CalK2_FridayFactsTest.f003FieldEditWithoutObjectAccessIsRejected: line 53, column 1
+22:40:14.942 (2474008224)|FATAL_ERROR|System.DmlException: Insert failed. First exception on row 0; first error: MIXED_DML_OPERATION, DML operation on setup object is not permitted after you have updated a non-setup object (or vice versa): CalK2_DemoAccount__c, original object: PermissionSet: []
+
+Class.CalK2_FridayFactsTest.f003FieldEditWithoutObjectAccessIsRejected: line 53, column 1
+22:40:14.942 (2474038395)|CODE_UNIT_FINISHED|CalK2_FridayFactsTest.f003FieldEditWithoutObjectAccessIsRejected()
+22:40:14.942 (2474043885)|EXECUTION_FINISHED
+22:40:15.485 (2485116815)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+22:40:15.485 (2485131625)|EXECUTION_STARTED
+22:40:15.485 (2485137665)|CODE_UNIT_STARTED|[EXTERNAL]|01pO800000lw6gJ|CalK2_FridayFactsTest.f003FieldEditWorksWithObjectReadEdit()
+22:40:15.485 (2485596809)|SOQL_EXECUTE_BEGIN|[6]|Aggregations:0|SELECT Id FROM Profile WHERE Name = 'Minimum Access - Salesforce'
+22:40:15.485 (2487577007)|SOQL_EXECUTE_END|[6]|Rows:1
+22:40:15.485 (2487893830)|DML_BEGIN|[12]|Op:Insert|Type:User|Rows:1
+22:40:15.485 (2605883847)|DML_END|[12]
+22:40:15.485 (2616693495)|DML_BEGIN|[18]|Op:Insert|Type:PermissionSet|Rows:1
+22:40:15.485 (2849058997)|DML_END|[18]
+22:40:15.485 (2849410860)|DML_BEGIN|[23]|Op:Insert|Type:ObjectPermissions|Rows:1
+22:40:15.485 (2876881619)|DML_END|[23]
+22:40:15.485 (2877104361)|DML_BEGIN|[100]|Op:Insert|Type:FieldPermissions|Rows:1
+22:40:15.485 (2953563473)|DML_END|[100]
+22:40:15.485 (2953866795)|DML_BEGIN|[29]|Op:Insert|Type:PermissionSetAssignment|Rows:1
+22:40:15.485 (3082658341)|DML_END|[29]
+22:40:15.485 (3086014101)|DML_BEGIN|[105]|Op:Insert|Type:CalK2_DemoAccount__c|Rows:1
+22:40:15.485 (3088443853)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZf6D|CalK2_DemoAccountTrigger on CalK2_DemoAccount trigger event BeforeInsert|__sfdc_trigger/CalK2_DemoAccountTrigger
+22:40:15.485 (3089169200)|SYSTEM_MODE_ENTER|false
+22:40:15.485 (3089186160)|SYSTEM_MODE_EXIT|false
+22:40:15.485 (3089200210)|SYSTEM_MODE_ENTER|false
+22:40:15.485 (3089305241)|SYSTEM_MODE_EXIT|false
+22:40:15.485 (3089950147)|CODE_UNIT_FINISHED|CalK2_DemoAccountTrigger on CalK2_DemoAccount trigger event BeforeInsert|__sfdc_trigger/CalK2_DemoAccountTrigger
+22:40:15.485 (3098627276)|DML_END|[105]
+22:40:15.485 (3113694671)|DML_BEGIN|[107]|Op:Update|Type:CalK2_DemoAccount__c|Rows:1
+22:40:15.485 (3122435381)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZf6D|CalK2_DemoAccountTrigger on CalK2_DemoAccount trigger event BeforeUpdate|__sfdc_trigger/CalK2_DemoAccountTrigger
+22:40:15.485 (3122518161)|SYSTEM_MODE_ENTER|false
+22:40:15.485 (3122554432)|SYSTEM_MODE_EXIT|false
+22:40:15.485 (3122623562)|CODE_UNIT_FINISHED|CalK2_DemoAccountTrigger on CalK2_DemoAccount trigger event BeforeUpdate|__sfdc_trigger/CalK2_DemoAccountTrigger
+22:40:15.485 (3127910420)|DML_END|[107]
+22:40:15.485 (3128978090)|SYSTEM_MODE_ENTER|true
+22:40:15.485 (3129860488)|USER_DEBUG|[33]|ERROR|CALK2&#124;F-003&#124;object Read+Edit + field Read+Edit: update as user -> UPDATED, isUpdateable=true
+22:40:15.485 (3134474990)|CODE_UNIT_FINISHED|CalK2_FridayFactsTest.f003FieldEditWorksWithObjectReadEdit()
+22:40:15.485 (3134481020)|EXECUTION_FINISHED
+22:40:16.143 (3143931555)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+22:40:16.143 (3143941195)|EXECUTION_STARTED
+22:40:16.143 (3143944115)|CODE_UNIT_STARTED|[EXTERNAL]|01pO800000lw6gJ|CalK2_FridayFactsTest.f014ReadOnlySharingRulePlusObjectRead()
+22:40:16.143 (3144341119)|SOQL_EXECUTE_BEGIN|[6]|Aggregations:0|SELECT Id FROM Profile WHERE Name = 'Minimum Access - Salesforce'
+22:40:16.143 (3146336216)|SOQL_EXECUTE_END|[6]|Rows:1
+22:40:16.143 (3146569698)|DML_BEGIN|[12]|Op:Insert|Type:User|Rows:1
+22:40:16.143 (3266380142)|DML_END|[12]
+22:40:16.143 (3266731665)|SOQL_EXECUTE_BEGIN|[6]|Aggregations:0|SELECT Id FROM Profile WHERE Name = 'Minimum Access - Salesforce'
+22:40:16.143 (3268017577)|SOQL_EXECUTE_END|[6]|Rows:1
+22:40:16.143 (3268192288)|DML_BEGIN|[12]|Op:Insert|Type:User|Rows:1
+22:40:16.143 (3390724728)|DML_END|[12]
+22:40:16.143 (3391019880)|SOQL_EXECUTE_BEGIN|[6]|Aggregations:0|SELECT Id FROM Profile WHERE Name = 'Minimum Access - Salesforce'
+22:40:16.143 (3392560454)|SOQL_EXECUTE_END|[6]|Rows:1
+22:40:16.143 (3392702056)|DML_BEGIN|[12]|Op:Insert|Type:User|Rows:1
+22:40:16.143 (3522038095)|DML_END|[12]
+22:40:16.143 (3522456259)|SOQL_EXECUTE_BEGIN|[128]|Aggregations:0|SELECT Id FROM Group WHERE DeveloperName = 'CalK2_Demo_Finance_Team'
+22:40:16.143 (3529767935)|SOQL_EXECUTE_END|[128]|Rows:1
+22:40:16.143 (3540918996)|DML_BEGIN|[18]|Op:Insert|Type:PermissionSet|Rows:1
+22:40:16.143 (3673460946)|DML_END|[18]
+22:40:16.143 (3673844569)|DML_BEGIN|[23]|Op:Insert|Type:ObjectPermissions|Rows:1
+22:40:16.143 (3699472990)|DML_END|[23]
+22:40:16.143 (3699817884)|DML_BEGIN|[29]|Op:Insert|Type:PermissionSetAssignment|Rows:1
+22:40:16.143 (3832695646)|DML_END|[29]
+22:40:16.143 (3833038839)|DML_BEGIN|[29]|Op:Insert|Type:PermissionSetAssignment|Rows:1
+22:40:16.143 (3942673550)|DML_END|[29]
+22:40:16.143 (3943089704)|DML_BEGIN|[134]|Op:Insert|Type:GroupMember|Rows:2
+22:40:16.143 (4021064709)|DML_END|[134]
+22:40:16.143 (4026006454)|DML_BEGIN|[119]|Op:Insert|Type:CalK2_DemoInvoiceLab__c|Rows:3
+22:40:16.143 (4055103437)|DML_END|[119]
+22:40:16.143 (4055668152)|SOQL_EXECUTE_BEGIN|[140]|Aggregations:0|SELECT ParentId, UserOrGroupId, AccessLevel, RowCause FROM CalK2_DemoInvoiceLab__Share WHERE ParentId IN :tmpVar1
+22:40:16.143 (4073551534)|SOQL_EXECUTE_END|[140]|Rows:3
+22:40:16.143 (4073990148)|USER_DEBUG|[33]|ERROR|CALK2&#124;F-014&#124;share row: parent=a0GO800000nKK4nMAG toFinanceGroup=false level=All cause=Owner
+22:40:16.143 (4074017779)|USER_DEBUG|[33]|ERROR|CALK2&#124;F-014&#124;share row: parent=a0GO800000nKK4oMAG toFinanceGroup=false level=All cause=Owner
+22:40:16.143 (4074031879)|USER_DEBUG|[33]|ERROR|CALK2&#124;F-014&#124;share row: parent=a0GO800000nKK4pMAG toFinanceGroup=false level=All cause=Owner
+22:40:16.143 (4074307551)|SOQL_EXECUTE_BEGIN|[143]|Aggregations:0|SELECT COUNT() FROM GroupMember WHERE GroupId = :tmpVar1
+22:40:16.143 (4080951852)|SOQL_EXECUTE_END|[143]|Rows:2
+22:40:16.143 (4081024442)|USER_DEBUG|[33]|ERROR|CALK2&#124;F-014&#124;GroupMember rows for finance group=2
+22:40:16.143 (4098781714)|SOQL_EXECUTE_BEGIN|[147]|Aggregations:0|SELECT COUNT() FROM CalK2_DemoInvoiceLab__c WITH USER_MODE
+22:40:16.143 (4124629307)|SOQL_EXECUTE_END|[147]|Rows:0
+22:40:16.143 (4124982690)|SOQL_EXECUTE_BEGIN|[148]|Aggregations:0|SELECT RecordId, HasReadAccess, HasEditAccess FROM UserRecordAccess WHERE (UserId = :tmpVar1 AND RecordId = :tmpVar2)
+22:40:16.143 (4141976084)|SOQL_EXECUTE_END|[148]|Rows:1
+22:40:16.143 (4142249696)|DML_BEGIN|[151]|Op:Update|Type:CalK2_DemoInvoiceLab__c|Rows:1
+22:40:17.151 (4151972574)|DML_END|[151]
+22:40:17.151 (4152020464)|EXCEPTION_THROWN|[151]|System.DmlException: Update failed. First exception on row 0 with id a0GO800000nKK4nMAG; first error: INSUFFICIENT_ACCESS_ON_CROSS_REFERENCE_ENTITY, insufficient access rights on cross-reference id: a0GO800000nKK4n: []
+22:40:17.151 (4153605949)|USER_DEBUG|[33]|ERROR|CALK2&#124;F-014&#124;finance member (object Read+Edit via permset, Read via rule): sees 0 of 3, HasRead=false HasEdit=false, update -> FAILED: Update failed. First exception on row 0 with id a0GO800000nKK4nMAG; first error: INSUFFICIENT_ACCESS_ON_CROSS_REFERENCE_ENTITY, insufficient access rights on cross-reference id: a0GO800000nKK4n: []
+22:40:17.151 (4172875544)|SOQL_EXECUTE_BEGIN|[161]|Aggregations:0|SELECT COUNT() FROM CalK2_DemoInvoiceLab__c WITH USER_MODE
+22:40:17.151 (4188798707)|SOQL_EXECUTE_END|[161]|Rows:0
+22:40:17.151 (4188897918)|USER_DEBUG|[33]|ERROR|CALK2&#124;F-014&#124;non-member with same permset: sees 0 of 3
+22:40:17.151 (4206441397)|EXCEPTION_THROWN|[167]|System.SecurityException: Access to entity 'CalK2_DemoInvoiceLab__c' denied
+22:40:17.151 (4206560808)|USER_DEBUG|[33]|ERROR|CALK2&#124;F-014&#124;finance member with no object Read: query FAILED: Access to entity 'CalK2_DemoInvoiceLab__c' denied
+22:40:17.151 (4209916489)|EXCEPTION_THROWN|[173]|System.AssertException: Assertion Failed: member sees: Expected: 2, Actual: 0
+22:40:17.151 (4209987829)|FATAL_ERROR|System.AssertException: Assertion Failed: member sees: Expected: 2, Actual: 0
+
+Class.CalK2_FridayFactsTest.f014ReadOnlySharingRulePlusObjectRead: line 173, column 1
+22:40:17.151 (4209994289)|FATAL_ERROR|System.AssertException: Assertion Failed: member sees: Expected: 2, Actual: 0
+
+Class.CalK2_FridayFactsTest.f014ReadOnlySharingRulePlusObjectRead: line 173, column 1
+22:40:17.151 (4210019709)|CODE_UNIT_FINISHED|CalK2_FridayFactsTest.f014ReadOnlySharingRulePlusObjectRead()
+22:40:17.151 (4210024790)|EXECUTION_FINISHED
+22:40:17.222 (4222174939)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+22:40:17.222 (4222186899)|EXECUTION_STARTED
+22:40:17.222 (4222192139)|CODE_UNIT_STARTED|[EXTERNAL]|01pO800000lw6gJ|CalK2_FridayFactsTest.f021PublicReadWriteGrantsEditToAnyoneWithObjectAccess()
+22:40:17.222 (4222577353)|SOQL_EXECUTE_BEGIN|[6]|Aggregations:0|SELECT Id FROM Profile WHERE Name = 'Minimum Access - Salesforce'
+22:40:17.222 (4224516550)|SOQL_EXECUTE_END|[6]|Rows:1
+22:40:17.222 (4224794823)|DML_BEGIN|[12]|Op:Insert|Type:User|Rows:1
+22:40:17.222 (4343336246)|DML_END|[12]
+22:40:17.222 (4343657229)|SOQL_EXECUTE_BEGIN|[6]|Aggregations:0|SELECT Id FROM Profile WHERE Name = 'Minimum Access - Salesforce'
+22:40:17.222 (4345176903)|SOQL_EXECUTE_END|[6]|Rows:1
+22:40:17.222 (4345369284)|DML_BEGIN|[12]|Op:Insert|Type:User|Rows:1
+22:40:17.222 (4464462881)|DML_END|[12]
+22:40:17.222 (4474659073)|DML_BEGIN|[18]|Op:Insert|Type:PermissionSet|Rows:1
+22:40:17.222 (4608896097)|DML_END|[18]
+22:40:17.222 (4609277491)|DML_BEGIN|[23]|Op:Insert|Type:ObjectPermissions|Rows:1
+22:40:17.222 (4638620877)|DML_END|[23]
+22:40:17.222 (4638981150)|DML_BEGIN|[23]|Op:Insert|Type:ObjectPermissions|Rows:1
+22:40:17.222 (4653446760)|DML_END|[23]
+22:40:17.222 (4653733333)|DML_BEGIN|[29]|Op:Insert|Type:PermissionSetAssignment|Rows:1
+22:40:17.222 (4787504023)|DML_END|[29]
+22:40:17.222 (4791227947)|DML_BEGIN|[189]|Op:Insert|Type:CalK2_DemoInvoicePRW__c|Rows:1
+22:40:17.222 (4813798351)|DML_END|[189]
+22:40:17.222 (4814118514)|DML_BEGIN|[190]|Op:Insert|Type:CalK2_DemoInvoice__c|Rows:1
+22:40:17.222 (4837317674)|DML_END|[190]
+22:40:17.222 (4855650770)|SOQL_EXECUTE_BEGIN|[192]|Aggregations:0|SELECT COUNT() FROM CalK2_DemoInvoicePRW__c WITH USER_MODE
+22:40:17.222 (4869947659)|SOQL_EXECUTE_END|[192]|Rows:1
+22:40:17.222 (4870263032)|DML_BEGIN|[193]|Op:Update|Type:CalK2_DemoInvoicePRW__c|Rows:1
+22:40:17.222 (4882404792)|DML_END|[193]
+22:40:17.222 (4882736585)|SOQL_EXECUTE_BEGIN|[194]|Aggregations:0|SELECT COUNT() FROM CalK2_DemoInvoice__c WITH USER_MODE
+22:40:17.222 (4904923985)|SOQL_EXECUTE_END|[194]|Rows:0
+22:40:17.222 (4905091437)|USER_DEBUG|[33]|ERROR|CALK2&#124;F-021&#124;non-owner, no group, object Read+Edit: Public Read/Write object sees 1 and update -> UPDATED; Private object sees 0
+22:40:17.222 (4924545894)|EXCEPTION_THROWN|[203]|System.SecurityException: Access to entity 'CalK2_DemoInvoicePRW__c' denied
+22:40:17.222 (4924683015)|USER_DEBUG|[33]|ERROR|CALK2&#124;F-021&#124;user with no object permission on Public Read/Write object: query FAILED: Access to entity 'CalK2_DemoInvoicePRW__c' denied
+22:40:17.222 (4927900984)|CODE_UNIT_FINISHED|CalK2_FridayFactsTest.f021PublicReadWriteGrantsEditToAnyoneWithObjectAccess()
+22:40:17.222 (4927908894)|EXECUTION_FINISHED
+22:40:17.940 (4940633308)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+22:40:17.940 (4940646648)|EXECUTION_STARTED
+22:40:17.940 (4940652958)|CODE_UNIT_STARTED|[EXTERNAL]|01pO800000lw6gJ|CalK2_FridayFactsTest.f023WithSharingThrowsWithoutSharingLeaks()
+22:40:17.940 (4941100232)|SOQL_EXECUTE_BEGIN|[6]|Aggregations:0|SELECT Id FROM Profile WHERE Name = 'Minimum Access - Salesforce'
+22:40:17.940 (4943470004)|SOQL_EXECUTE_END|[6]|Rows:1
+22:40:17.940 (4943781687)|DML_BEGIN|[12]|Op:Insert|Type:User|Rows:1
+22:40:17.940 (5073239508)|DML_END|[12]
+22:40:17.940 (5073703732)|SOQL_EXECUTE_BEGIN|[6]|Aggregations:0|SELECT Id FROM Profile WHERE Name = 'Minimum Access - Salesforce'
+22:40:17.940 (5075241326)|SOQL_EXECUTE_END|[6]|Rows:1
+22:40:17.940 (5075433338)|DML_BEGIN|[12]|Op:Insert|Type:User|Rows:1
+22:40:17.940 (5205431824)|DML_END|[12]
+22:40:17.940 (5218507673)|DML_BEGIN|[18]|Op:Insert|Type:PermissionSet|Rows:1
+22:40:17.940 (5357149156)|DML_END|[18]
+22:40:17.940 (5357638281)|DML_BEGIN|[23]|Op:Insert|Type:ObjectPermissions|Rows:1
+22:40:17.940 (5387025178)|DML_END|[23]
+22:40:17.940 (5387286120)|DML_BEGIN|[29]|Op:Insert|Type:PermissionSetAssignment|Rows:1
+22:40:17.940 (5512887206)|DML_END|[29]
+22:40:17.940 (5516806992)|DML_BEGIN|[228]|Op:Insert|Type:CalK2_DemoInvoice__c|Rows:1
+22:40:17.940 (5527598258)|DML_END|[228]
+22:40:17.940 (5545143728)|SOQL_EXECUTE_BEGIN|[4]|Aggregations:0|SELECT Id, Name, Amount__c FROM CalK2_DemoInvoice__c WHERE Id = :tmpVar1
+22:40:17.940 (5557995524)|SOQL_EXECUTE_END|[4]|Rows:0
+22:40:17.940 (5558273287)|USER_DEBUG|[33]|ERROR|CALK2&#124;F-023&#124;with sharing controller as reader (object Read, no share) -> AuraHandledException (record not found branch)
+22:40:17.940 (5558519199)|SYSTEM_MODE_ENTER|true
+22:40:17.940 (5558545149)|SYSTEM_MODE_EXIT|true
+22:40:17.940 (5558548849)|SYSTEM_MODE_ENTER|true
+22:40:17.940 (5558550739)|SYSTEM_MODE_EXIT|true
+22:40:17.940 (5558582170)|SYSTEM_MODE_ENTER|true
+22:40:17.940 (5558823452)|SOQL_EXECUTE_BEGIN|[213]|Aggregations:0|SELECT Id, Name FROM CalK2_DemoInvoice__c WHERE Id = :tmpVar1
+22:40:17.940 (5565597412)|SOQL_EXECUTE_END|[213]|Rows:1
+22:40:17.940 (5565738274)|SYSTEM_MODE_EXIT|true
+22:40:17.940 (5566414600)|USER_DEBUG|[33]|ERROR|CALK2&#124;F-023&#124;without sharing lookup as reader -> RECORD RETURNED
+22:40:17.940 (5581285494)|SYSTEM_MODE_ENTER|true
+22:40:17.940 (5581303045)|SYSTEM_MODE_EXIT|true
+22:40:17.940 (5581306255)|SYSTEM_MODE_ENTER|true
+22:40:17.940 (5581308535)|SYSTEM_MODE_EXIT|true
+22:40:17.940 (5581334165)|SYSTEM_MODE_ENTER|true
+22:40:17.940 (5585677784)|SOQL_EXECUTE_BEGIN|[213]|Aggregations:0|SELECT Id, Name FROM CalK2_DemoInvoice__c WHERE Id = :tmpVar1
+22:40:17.940 (5587682503)|SOQL_EXECUTE_END|[213]|Rows:1
+22:40:17.940 (5587755983)|SYSTEM_MODE_EXIT|true
+22:40:17.940 (5588087706)|USER_DEBUG|[33]|ERROR|CALK2&#124;F-023&#124;without sharing lookup as user with NO object permission -> RECORD RETURNED
+22:40:17.940 (5591290505)|DML_BEGIN|[245]|Op:Insert|Type:CalK2_DemoInvoice__Share|Rows:1
+22:40:17.940 (5598251529)|DML_END|[245]
+22:40:17.940 (5610937672)|SOQL_EXECUTE_BEGIN|[4]|Aggregations:0|SELECT Id, Name, Amount__c FROM CalK2_DemoInvoice__c WHERE Id = :tmpVar1
+22:40:17.940 (5781223673)|SOQL_EXECUTE_END|[4]|Rows:1
+22:40:17.940 (5781429335)|USER_DEBUG|[33]|ERROR|CALK2&#124;F-023&#124;with sharing controller after adding a Read share for reader -> INV-F023
+22:40:17.940 (5789073784)|CODE_UNIT_FINISHED|CalK2_FridayFactsTest.f023WithSharingThrowsWithoutSharingLeaks()
+22:40:17.940 (5789082544)|EXECUTION_FINISHED
+22:40:18.802 (5802973100)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+22:40:18.802 (5802987921)|EXECUTION_STARTED
+22:40:18.802 (5802993691)|CODE_UNIT_STARTED|[EXTERNAL]|01pO800000lw6gJ|CalK2_FridayFactsTest.f024QueueNeedsSupportedObjectNotMembers()
+22:40:18.802 (5803369964)|SOQL_EXECUTE_BEGIN|[253]|Aggregations:0|SELECT Id FROM Group WHERE (DeveloperName = 'CalK2_Demo_Support_Queue' AND Type = 'Queue')
+22:40:18.802 (5810016944)|SOQL_EXECUTE_END|[253]|Rows:1
+22:40:18.802 (5810288617)|SOQL_EXECUTE_BEGIN|[254]|Aggregations:0|SELECT Id FROM Group WHERE (DeveloperName = 'CalK2_Demo_Case_Queue_NoMembers' AND Type = 'Queue')
+22:40:18.802 (5815853536)|SOQL_EXECUTE_END|[254]|Rows:1
+22:40:18.802 (5816133749)|SOQL_EXECUTE_BEGIN|[255]|Aggregations:0|SELECT COUNT() FROM GroupMember WHERE GroupId = :tmpVar1
+22:40:18.802 (5820976652)|SOQL_EXECUTE_END|[255]|Rows:1
+22:40:18.802 (5821206255)|SOQL_EXECUTE_BEGIN|[256]|Aggregations:0|SELECT COUNT() FROM QueueSobject WHERE QueueId = :tmpVar1
+22:40:18.802 (5826215530)|SOQL_EXECUTE_END|[256]|Rows:0
+22:40:18.802 (5826370011)|SOQL_EXECUTE_BEGIN|[257]|Aggregations:0|SELECT COUNT() FROM GroupMember WHERE GroupId = :tmpVar1
+22:40:18.802 (5831520638)|SOQL_EXECUTE_END|[257]|Rows:0
+22:40:18.802 (5831710710)|SOQL_EXECUTE_BEGIN|[258]|Aggregations:0|SELECT SobjectType FROM QueueSobject WHERE QueueId = :tmpVar1
+22:40:18.802 (5852953252)|SOQL_EXECUTE_END|[258]|Rows:1
+22:40:18.802 (5853136324)|USER_DEBUG|[33]|ERROR|CALK2&#124;F-024&#124;Support queue members=1, QueueSobject rows=0; NoMembers queue members=0, QueueSobject=Case
+22:40:18.802 (5853254995)|DML_BEGIN|[260]|Op:Insert|Type:Case|Rows:1
+22:40:18.802 (5900204859)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:Case
+22:40:18.802 (5903026455)|CODE_UNIT_FINISHED|Workflow:Case
+22:40:18.802 (5903174186)|CODE_UNIT_STARTED|[EXTERNAL]|SLA
+22:40:18.802 (5904271516)|SLA_PROCESS_CASE|500O800000wLmjO
+22:40:18.802 (5905144064)|SLA_END|SlaProcessController:&#124;Case:1&#124;LoadTime:1&#124;ProcTime:1&#124;CM CUD:0&#124;0&#124;0&#124;New Trigger:0
+22:40:18.802 (5905173914)|CODE_UNIT_FINISHED|SLA
+22:40:18.802 (5909179121)|DML_END|[260]
+22:40:18.802 (5909379292)|DML_BEGIN|[263]|Op:Update|Type:Case|Rows:1
+22:40:18.802 (5919647466)|DML_END|[263]
+22:40:18.802 (5919684646)|EXCEPTION_THROWN|[263]|System.DmlException: Update failed. First exception on row 0 with id 500O800000wLmjOIAS; first error: INVALID_OPERATION, Queue not associated with this SObject type: []
+22:40:18.802 (5921025468)|USER_DEBUG|[33]|ERROR|CALK2&#124;F-024&#124;Case owner -> queue with member but no Supported Objects: REJECTED: INVALID_OPERATION Queue not associated with this SObject type
+22:40:18.802 (5921093459)|DML_BEGIN|[269]|Op:Update|Type:Case|Rows:1
+22:40:18.802 (5949935929)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:Case
+22:40:18.802 (5949954599)|CODE_UNIT_FINISHED|Workflow:Case
+22:40:18.802 (5950059220)|CODE_UNIT_STARTED|[EXTERNAL]|SLA
+22:40:18.802 (5950695296)|SLA_PROCESS_CASE|500O800000wLmjO
+22:40:18.802 (5953507982)|SLA_END|SlaProcessController:&#124;Case:1&#124;LoadTime:0&#124;ProcTime:3&#124;CM CUD:0&#124;0&#124;0&#124;New Trigger:0
+22:40:18.802 (5953531552)|CODE_UNIT_FINISHED|SLA
+22:40:18.802 (5955260588)|DML_END|[269]
+22:40:18.802 (5955396879)|USER_DEBUG|[33]|ERROR|CALK2&#124;F-024&#124;Case owner -> queue with Case supported and zero members: ASSIGNED
+22:40:18.802 (5955438239)|CODE_UNIT_FINISHED|CalK2_FridayFactsTest.f024QueueNeedsSupportedObjectNotMembers()
+22:40:18.802 (5955441219)|EXECUTION_FINISHED

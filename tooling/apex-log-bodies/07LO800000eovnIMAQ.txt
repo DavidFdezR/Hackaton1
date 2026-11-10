@@ -1,0 +1,38 @@
+68.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO
+Execute Anonymous: // KI W-24290370 partial repro: autolaunched flow output (Lead collection with Address) passed straight to invocable Apex calling getPopulatedFieldsAsMap()
+Execute Anonymous: Flow.Interview fi = Flow.Interview.createInterview('CalHK_KI_Get_Leads_With_Address', new Map<String, Object>());
+Execute Anonymous: fi.start();
+Execute Anonymous: List<Lead> leads = (List<Lead>) fi.getVariableValue('leads');
+Execute Anonymous: System.debug('KI_F392 leads from flow=' + (leads == null ? 0 : leads.size()));
+Execute Anonymous: CalHK_KI_LeadAddressAction.Request r = new CalHK_KI_LeadAddressAction.Request();
+Execute Anonymous: r.leads = leads;
+Execute Anonymous: try {
+Execute Anonymous:   System.debug('KI_F392 result=' + CalHK_KI_LeadAddressAction.run(new List<CalHK_KI_LeadAddressAction.Request>{ r }));
+Execute Anonymous: } catch (Exception e) {
+Execute Anonymous:   System.debug('KI_F392 exception=' + e.getTypeName() + ': ' + e.getMessage());
+Execute Anonymous: }
+02:24:26.35 (35672010)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+02:24:26.35 (35687840)|EXECUTION_STARTED
+02:24:26.35 (35694220)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+02:24:26.35 (536839461)|USER_DEBUG|[5]|DEBUG|KI_F392 leads from flow=3
+02:24:26.35 (537745684)|USER_DEBUG|[9]|DEBUG|KI_F392 result=(leads with Address=3 of 3)
+02:24:26.537 (537813695)|CUMULATIVE_LIMIT_USAGE
+02:24:26.537 (537813695)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 3 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 10 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+02:24:26.537 (537813695)|CUMULATIVE_LIMIT_USAGE_END
+
+02:24:26.35 (537850855)|CODE_UNIT_FINISHED|execute_anonymous_apex
+02:24:26.35 (537857665)|EXECUTION_FINISHED

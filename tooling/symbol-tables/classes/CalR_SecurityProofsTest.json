@@ -1,0 +1,404 @@
+{
+  "Id": "01pO800000lwv9RIAQ",
+  "Name": "CalR_SecurityProofsTest",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalR_SecurityProofsTest",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalR_SecurityProofsTest",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 3
+        },
+        "modifiers": [
+          "private",
+          "static"
+        ],
+        "name": "admin",
+        "parameters": [],
+        "references": [],
+        "returnType": "User",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 7
+        },
+        "modifiers": [
+          "private",
+          "static"
+        ],
+        "name": "demoUser",
+        "parameters": [
+          {
+            "name": "alias",
+            "type": "String"
+          }
+        ],
+        "references": [],
+        "returnType": "User",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 19
+        },
+        "modifiers": [
+          "private",
+          "static"
+        ],
+        "name": "assign",
+        "parameters": [
+          {
+            "name": "u",
+            "type": "User"
+          },
+          {
+            "name": "permissionSetName",
+            "type": "String"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 33,
+          "line": 26
+        },
+        "modifiers": [
+          "private",
+          "static"
+        ],
+        "name": "access",
+        "parameters": [
+          {
+            "name": "u",
+            "type": "User"
+          }
+        ],
+        "references": [],
+        "returnType": "UserPermissionAccess",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 35
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "approveUninstalledAppsComesOnlyFromTheGrant",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 43
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "lightningLoginUserComesFromTheGrant",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 52
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "viewAllWidensAgentReachPastPrivateSharing",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 74
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "integrationPasswordResetHasNoExtraGate",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalR_SecurityProofsTest",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 15,
+        "line": 2
+      },
+      "modifiers": [
+        "private",
+        "testMethod"
+      ],
+      "name": "CalR_SecurityProofsTest",
+      "references": [],
+      "type": "CalR_SecurityProofsTest"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 33,
+          "line": 7
+        },
+        "modifiers": [],
+        "name": "alias",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 8
+        },
+        "modifiers": [],
+        "name": "standard",
+        "references": [],
+        "type": "Profile"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 16,
+          "line": 9
+        },
+        "modifiers": [],
+        "name": "unique",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 10
+        },
+        "modifiers": [],
+        "name": "u",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 29,
+          "line": 19
+        },
+        "modifiers": [],
+        "name": "u",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 39,
+          "line": 19
+        },
+        "modifiers": [],
+        "name": "permissionSetName",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 12,
+          "line": 20
+        },
+        "modifiers": [],
+        "name": "psId",
+        "references": [],
+        "type": "Id"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 45,
+          "line": 26
+        },
+        "modifiers": [],
+        "name": "u",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 30,
+          "line": 27
+        },
+        "modifiers": [],
+        "name": "result",
+        "references": [],
+        "type": "UserPermissionAccess"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 36
+        },
+        "modifiers": [],
+        "name": "rep",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 44
+        },
+        "modifiers": [],
+        "name": "adminUser",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 46
+        },
+        "modifiers": [],
+        "name": "grants",
+        "references": [],
+        "type": "Integer"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 53
+        },
+        "modifiers": [],
+        "name": "owner",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 58
+        },
+        "modifiers": [],
+        "name": "agent",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 60
+        },
+        "modifiers": [],
+        "name": "readerSees",
+        "references": [],
+        "type": "Integer"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 65
+        },
+        "modifiers": [],
+        "name": "triageSees",
+        "references": [],
+        "type": "Integer"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 75
+        },
+        "modifiers": [],
+        "name": "integration",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 36,
+          "line": 76
+        },
+        "modifiers": [],
+        "name": "result",
+        "references": [],
+        "type": "System.ResetPasswordResult"
+      }
+    ]
+  }
+}

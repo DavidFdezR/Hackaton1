@@ -1,0 +1,50 @@
+{
+  "Id": "01pO800000lwd1FIAQ",
+  "Name": "CalK4B_LegacyOrderRef",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK4B_LegacyOrderRef",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK4B_LegacyOrderRef",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "countOrders",
+        "parameters": [],
+        "references": [],
+        "returnType": "Integer",
+        "type": null
+      }
+    ],
+    "name": "CalK4B_LegacyOrderRef",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalK4B_LegacyOrderRef",
+      "references": [],
+      "type": "CalK4B_LegacyOrderRef"
+    },
+    "variables": []
+  }
+}

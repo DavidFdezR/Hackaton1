@@ -1,0 +1,104 @@
+{
+  "Id": "01pO800000lx1sKIAQ",
+  "Name": "DemoOrderLookup",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "DemoOrderLookup",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "DemoOrderLookup",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "InvocableMethod"
+          }
+        ],
+        "location": {
+          "column": 32,
+          "line": 4
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "find",
+        "parameters": [
+          {
+            "name": "subjects",
+            "type": "List"
+          }
+        ],
+        "references": [],
+        "returnType": "List",
+        "type": null
+      }
+    ],
+    "name": "DemoOrderLookup",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 30,
+        "line": 2
+      },
+      "modifiers": [
+        "public",
+        "without sharing"
+      ],
+      "name": "DemoOrderLookup",
+      "references": [],
+      "type": "DemoOrderLookup"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 50,
+          "line": 4
+        },
+        "modifiers": [],
+        "name": "subjects",
+        "references": [],
+        "type": "List<String>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 22,
+          "line": 5
+        },
+        "modifiers": [],
+        "name": "out",
+        "references": [],
+        "type": "List<String>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 16,
+          "line": 6
+        },
+        "modifiers": [],
+        "name": "soql",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 22,
+          "line": 7
+        },
+        "modifiers": [],
+        "name": "r",
+        "references": [],
+        "type": "SObject"
+      }
+    ]
+  }
+}

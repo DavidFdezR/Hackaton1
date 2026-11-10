@@ -1,0 +1,26 @@
+68.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO
+Execute Anonymous: System.debug(LoggingLevel.ERROR, 'CALK4A_OBS ' + CalK4A_DemoInvoiceService_T038.roundLine(1.005));
+23:11:34.24 (24113686)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+23:11:34.24 (24136066)|EXECUTION_STARTED
+23:11:34.24 (24153076)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+23:11:34.24 (32981689)|USER_DEBUG|[1]|ERROR|CALK4A_OBS 1.01
+23:11:34.33 (33051119)|CUMULATIVE_LIMIT_USAGE
+23:11:34.33 (33051119)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:11:34.33 (33051119)|CUMULATIVE_LIMIT_USAGE_END
+
+23:11:34.24 (33087749)|CODE_UNIT_FINISHED|execute_anonymous_apex
+23:11:34.24 (33096869)|EXECUTION_FINISHED

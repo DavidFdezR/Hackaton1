@@ -1,0 +1,44 @@
+68.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO
+Execute Anonymous: List<CalHK_Contract__c> cs = [SELECT Id, Name FROM CalHK_Contract__c WHERE Name IN ('CalHK Contract EMEA-1','CalHK Contract EMEA-2','CalHK Contract AMER-1') ORDER BY Name];
+Execute Anonymous: for (CalHK_Contract__c c : cs) c.Demo_Contract_Code__c = 'DC-1001';   // deliberate duplicates for W-18960243
+Execute Anonymous: update cs;
+Execute Anonymous: CalHK_Contract__c a2 = [SELECT Id FROM CalHK_Contract__c WHERE Name='CalHK Contract AMER-2'];
+Execute Anonymous: a2.Demo_Contract_Code__c = 'DC-1002'; a2.Demo_Contract_Ref__c = 'REF-1002'; update a2;
+Execute Anonymous: insert new Account(Name='CalHK Tax Demo Account', Demo_Tax_Id__c='DEMO-TAX-0000');
+Execute Anonymous: System.debug('CALHK_SEEDED_V2 ok');
+01:06:05.177 (177705677)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+01:06:05.177 (177731897)|EXECUTION_STARTED
+01:06:05.177 (178416171)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+01:06:05.177 (339130516)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:CalHK_Contract:a0XO800000DrDvh
+01:06:05.177 (339246117)|CODE_UNIT_FINISHED|Validation:CalHK_Contract:a0XO800000DrDvh
+01:06:05.177 (339274947)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:CalHK_Contract:a0XO800000DrDvi
+01:06:05.177 (356408143)|CODE_UNIT_FINISHED|Validation:CalHK_Contract:a0XO800000DrDvi
+01:06:05.177 (356470883)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:CalHK_Contract:a0XO800000DrDvj
+01:06:05.177 (356555214)|CODE_UNIT_FINISHED|Validation:CalHK_Contract:a0XO800000DrDvj
+01:06:05.177 (475160905)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:CalHK_Contract:a0XO800000DrDvl
+01:06:05.177 (475246175)|CODE_UNIT_FINISHED|Validation:CalHK_Contract:a0XO800000DrDvl
+01:06:05.177 (568325114)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+01:06:05.177 (656519415)|CODE_UNIT_FINISHED|DuplicateDetector
+01:06:05.177 (771648827)|USER_DEBUG|[7]|DEBUG|CALHK_SEEDED_V2 ok
+01:06:05.177 (882544386)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+01:06:05.177 (903919265)|CODE_UNIT_FINISHED|DuplicateDetector
+01:06:05.904 (904132097)|CUMULATIVE_LIMIT_USAGE
+01:06:05.904 (904132097)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 4 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 3 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 5 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+01:06:05.904 (904132097)|CUMULATIVE_LIMIT_USAGE_END
+
+01:06:05.177 (904190577)|CODE_UNIT_FINISHED|execute_anonymous_apex
+01:06:05.177 (904198287)|EXECUTION_FINISHED

@@ -1,0 +1,37 @@
+64.0 APEX_CODE,DEBUG;APEX_PROFILING,NONE;CALLOUT,INFO;DATA_ACCESS,INFO;DB,INFO;NBA,INFO;SYSTEM,INFO;VALIDATION,INFO;VISUALFORCE,NONE;WAVE,INFO;WORKFLOW,INFO
+23:21:34.1 (1754289)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+23:21:34.1 (1807429)|EXECUTION_STARTED
+23:21:34.1 (1832429)|CODE_UNIT_STARTED|[EXTERNAL]|01pO800000lwPK7|CalK4A_T046_Test.twoBeforeUpdateTriggers()
+23:21:34.1 (7867202)|DML_BEGIN|[6]|Op:Insert|Type:CalK4A_DemoAccount__c|Rows:1
+23:21:34.1 (66069177)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZfvp|CalK4A_DemoAccountTrigger on CalK4A_DemoAccount trigger event BeforeInsert|__sfdc_trigger/CalK4A_DemoAccountTrigger
+23:21:34.1 (70542121)|SYSTEM_MODE_ENTER|false
+23:21:34.1 (70701492)|SYSTEM_MODE_EXIT|false
+23:21:34.1 (70734012)|SYSTEM_MODE_ENTER|false
+23:21:34.1 (71047414)|SYSTEM_MODE_EXIT|false
+23:21:34.1 (71325355)|CODE_UNIT_FINISHED|CalK4A_DemoAccountTrigger on CalK4A_DemoAccount trigger event BeforeInsert|__sfdc_trigger/CalK4A_DemoAccountTrigger
+23:21:34.1 (86581517)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:CalK4A_DemoAccount:new
+23:21:34.1 (86600957)|VALIDATION_RULE|03dO8000004u2BJ|CalK4A_Demo_Tier_Required
+23:21:34.1 (86829609)|VALIDATION_FORMULA|AND(ISPICKVAL(Status__c, 'Active'), ISBLANK(Tier__c))|Tier__c=Gold , Status__c=null
+23:21:34.1 (86835539)|VALIDATION_PASS
+23:21:34.1 (86840539)|CODE_UNIT_FINISHED|Validation:CalK4A_DemoAccount:new
+23:21:34.1 (130063324)|DML_END|[6]
+23:21:34.1 (130910708)|DML_BEGIN|[7]|Op:Update|Type:CalK4A_DemoAccount__c|Rows:1
+23:21:34.1 (138212747)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZfvp|CalK4A_DemoAccountTrigger on CalK4A_DemoAccount trigger event BeforeUpdate|__sfdc_trigger/CalK4A_DemoAccountTrigger
+23:21:34.1 (140058387)|SYSTEM_MODE_ENTER|false
+23:21:34.1 (140180568)|SYSTEM_MODE_EXIT|false
+23:21:34.1 (140364909)|CODE_UNIT_FINISHED|CalK4A_DemoAccountTrigger on CalK4A_DemoAccount trigger event BeforeUpdate|__sfdc_trigger/CalK4A_DemoAccountTrigger
+23:21:34.1 (144107719)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZgAL|CalK4A_DemoAccountAudit on CalK4A_DemoAccount trigger event BeforeUpdate|__sfdc_trigger/CalK4A_DemoAccountAudit
+23:21:34.1 (144441831)|CODE_UNIT_FINISHED|CalK4A_DemoAccountAudit on CalK4A_DemoAccount trigger event BeforeUpdate|__sfdc_trigger/CalK4A_DemoAccountAudit
+23:21:34.1 (145778708)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:CalK4A_DemoAccount:a05O800000mh3Lj
+23:21:34.1 (145784118)|VALIDATION_RULE|03dO8000004u2BJ|CalK4A_Demo_Tier_Required
+23:21:34.1 (145887258)|VALIDATION_FORMULA|AND(ISPICKVAL(Status__c, 'Active'), ISBLANK(Tier__c))|Tier__c=Gold , Status__c=null
+23:21:34.1 (145889928)|VALIDATION_PASS
+23:21:34.1 (145892608)|CODE_UNIT_FINISHED|Validation:CalK4A_DemoAccount:a05O800000mh3Lj
+23:21:34.1 (154800017)|DML_END|[7]
+23:21:34.1 (155807903)|SOQL_EXECUTE_BEGIN|[8]|Aggregations:0|SELECT Region__c, Notes2__c FROM CalK4A_DemoAccount__c WHERE Id = :tmpVar1
+23:21:34.1 (174510765)|SOQL_EXECUTE_END|[8]|Rows:1
+23:21:34.1 (175112708)|SOQL_EXECUTE_BEGIN|[10]|Aggregations:0|SELECT Name, Status FROM ApexTrigger WHERE TableEnumOrId = 'CalK4A_DemoAccount__c'
+23:21:34.1 (484562614)|SOQL_EXECUTE_END|[10]|Rows:2
+23:21:34.1 (488403354)|USER_DEBUG|[45]|ERROR|CALK4A_OBS T-046={"triggersOnObject":[{"attributes":{"type":"ApexTrigger","url":"/services/data/v68.0/sobjects/ApexTrigger/01qO800000CZfvpIAD"},"Name":"CalK4A_DemoAccountTrigger","Status":"Active","Id":"01qO800000CZfvpIAD"},{"attributes":{"type":"ApexTrigger","url":"/services/data/v68.0/sobjects/ApexTrigger/01qO800000CZgALIA1"},"Name":"CalK4A_DemoAccountAudit","Status":"Active","Id":"01qO800000CZgALIA1"}],"auditNotes2":"audit region=GLOBAL","regionAfter":"GLOBAL"}
+23:21:34.1 (488490045)|CODE_UNIT_FINISHED|CalK4A_T046_Test.twoBeforeUpdateTriggers()
+23:21:34.1 (488497465)|EXECUTION_FINISHED

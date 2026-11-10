@@ -1,0 +1,78 @@
+{
+  "Id": "01pO800000lweewIAA",
+  "Name": "CalK1_DemoHandlerCaller21",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK1_DemoHandlerCaller21",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK1_DemoHandlerCaller21",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "score",
+        "parameters": [
+          {
+            "name": "tier",
+            "type": "String"
+          }
+        ],
+        "references": [],
+        "returnType": "Decimal",
+        "type": null
+      }
+    ],
+    "name": "CalK1_DemoHandlerCaller21",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalK1_DemoHandlerCaller21",
+      "references": [],
+      "type": "CalK1_DemoHandlerCaller21"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 40,
+          "line": 2
+        },
+        "modifiers": [],
+        "name": "tier",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 30,
+          "line": 3
+        },
+        "modifiers": [],
+        "name": "row",
+        "references": [],
+        "type": "CalK1_DemoAccount__c"
+      }
+    ]
+  }
+}

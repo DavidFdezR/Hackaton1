@@ -1,0 +1,63 @@
+68.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO
+Execute Anonymous: 
+Execute Anonymous: Account owner = new Account(Name = 'Cal APX02 Opportunity Owner');
+Execute Anonymous: insert owner;
+Execute Anonymous: List<Opportunity> opps = new List<Opportunity>();
+Execute Anonymous: for (Integer i = 1; i <= 200; i++) opps.add(new Opportunity(Name = 'Cal APX02 Opp ' + String.valueOf(i).leftPad(3, '0'),
+Execute Anonymous:     AccountId = owner.Id, StageName = 'Prospecting', CloseDate = Date.today().addDays(30)));
+Execute Anonymous: insert opps;
+Execute Anonymous: System.debug('seeded ' + opps.size() + ' opportunities');
+23:19:46.25 (25559437)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+23:19:46.25 (25571237)|EXECUTION_STARTED
+23:19:46.25 (25576857)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+23:19:46.25 (34195632)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+23:19:46.25 (56924644)|CODE_UNIT_FINISHED|DuplicateDetector
+23:19:46.25 (204775806)|CODE_UNIT_STARTED|[EXTERNAL]|Flow:Opportunity
+23:19:46.25 (204791406)|CODE_UNIT_FINISHED|Flow:Opportunity
+23:19:46.25 (213377501)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZZAT|ARMX_HACK_GC03_OppTrigger on Opportunity trigger event BeforeInsert|__sfdc_trigger/ARMX_HACK_GC03_OppTrigger
+23:19:46.221 (221514567)|CUMULATIVE_LIMIT_USAGE
+23:19:46.221 (221514567)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 201 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:19:46.221 (221514567)|CUMULATIVE_LIMIT_USAGE_END
+
+23:19:46.25 (221671536)|CODE_UNIT_FINISHED|ARMX_HACK_GC03_OppTrigger on Opportunity trigger event BeforeInsert|__sfdc_trigger/ARMX_HACK_GC03_OppTrigger
+23:19:46.25 (422981510)|CODE_UNIT_STARTED|[EXTERNAL]|Flow:Opportunity
+23:19:46.25 (423448539)|CODE_UNIT_FINISHED|Flow:Opportunity
+23:19:46.25 (423520599)|CODE_UNIT_STARTED|[EXTERNAL]|Flow:Opportunity
+23:19:46.25 (423533119)|CODE_UNIT_FINISHED|Flow:Opportunity
+23:19:46.25 (428728470)|USER_DEBUG|[8]|DEBUG|seeded 200 opportunities
+23:19:46.25 (507398938)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+23:19:46.25 (516171184)|CODE_UNIT_FINISHED|DuplicateDetector
+23:19:46.516 (516323704)|CUMULATIVE_LIMIT_USAGE
+23:19:46.516 (516323704)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 201 out of 10000
+  Maximum CPU time: 72 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:19:46.516 (516323704)|CUMULATIVE_LIMIT_USAGE_END
+
+23:19:46.25 (516356854)|CODE_UNIT_FINISHED|execute_anonymous_apex
+23:19:46.25 (516360644)|EXECUTION_FINISHED

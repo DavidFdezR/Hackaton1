@@ -1,0 +1,255 @@
+{
+  "Id": "01pO800000lwSJuIAM",
+  "Name": "CalK1_DemoReturnCheckTest",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK1_DemoReturnCheckTest",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK1_DemoReturnCheckTest",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 6
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "sameDay",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 10
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "withinWindow",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 14
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "lastDayOfWindow",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 18
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "expiredWindow",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 22
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "longExpired",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 26
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "nullPurchase",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 30
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "nullRequest",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 34
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "requestBeforePurchase",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 38
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "bulkMaintainsOrder",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalK1_DemoReturnCheckTest",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 23,
+          "line": 3
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "final"
+        ],
+        "name": "TODAY_FIXED",
+        "references": [],
+        "type": "Date"
+      }
+    ],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 15,
+        "line": 2
+      },
+      "modifiers": [
+        "private",
+        "testMethod"
+      ],
+      "name": "CalK1_DemoReturnCheckTest",
+      "references": [],
+      "type": "CalK1_DemoReturnCheckTest"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 23,
+          "line": 39
+        },
+        "modifiers": [],
+        "name": "results",
+        "references": [],
+        "type": "List<Boolean>"
+      }
+    ]
+  }
+}

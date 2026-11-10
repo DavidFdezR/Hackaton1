@@ -1,0 +1,229 @@
+{
+  "Id": "01pO800000lwd1KIAQ",
+  "Name": "CalK4B_ReturnCheck",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK4B_ReturnCheck",
+    "innerClasses": [
+      {
+        "constructors": [],
+        "externalReferences": [],
+        "id": "Request",
+        "innerClasses": [],
+        "interfaces": [],
+        "key": "Request",
+        "methods": [],
+        "name": "Request",
+        "namespace": null,
+        "parentClass": "",
+        "properties": [
+          {
+            "annotations": [
+              {
+                "name": "InvocableVariable"
+              }
+            ],
+            "location": {
+              "column": 24,
+              "line": 4
+            },
+            "modifiers": [
+              "public"
+            ],
+            "name": "daysSinceDelivery",
+            "references": [],
+            "type": "Integer"
+          },
+          {
+            "annotations": [
+              {
+                "name": "InvocableVariable"
+              }
+            ],
+            "location": {
+              "column": 24,
+              "line": 6
+            },
+            "modifiers": [
+              "public"
+            ],
+            "name": "unopened",
+            "references": [],
+            "type": "Boolean"
+          }
+        ],
+        "tableDeclaration": {
+          "annotations": [],
+          "location": {
+            "column": 18,
+            "line": 2
+          },
+          "modifiers": [
+            "public"
+          ],
+          "name": "Request",
+          "references": [],
+          "type": "Request"
+        },
+        "variables": []
+      },
+      {
+        "constructors": [],
+        "externalReferences": [],
+        "id": "Result",
+        "innerClasses": [],
+        "interfaces": [],
+        "key": "Result",
+        "methods": [],
+        "name": "Result",
+        "namespace": null,
+        "parentClass": "",
+        "properties": [
+          {
+            "annotations": [
+              {
+                "name": "InvocableVariable"
+              }
+            ],
+            "location": {
+              "column": 23,
+              "line": 10
+            },
+            "modifiers": [
+              "public"
+            ],
+            "name": "decision",
+            "references": [],
+            "type": "String"
+          },
+          {
+            "annotations": [
+              {
+                "name": "InvocableVariable"
+              }
+            ],
+            "location": {
+              "column": 23,
+              "line": 12
+            },
+            "modifiers": [
+              "public"
+            ],
+            "name": "reasonCode",
+            "references": [],
+            "type": "String"
+          }
+        ],
+        "tableDeclaration": {
+          "annotations": [],
+          "location": {
+            "column": 18,
+            "line": 8
+          },
+          "modifiers": [
+            "public"
+          ],
+          "name": "Result",
+          "references": [],
+          "type": "Result"
+        },
+        "variables": []
+      }
+    ],
+    "interfaces": [],
+    "key": "CalK4B_ReturnCheck",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "InvocableMethod"
+          }
+        ],
+        "location": {
+          "column": 32,
+          "line": 15
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "evaluate",
+        "parameters": [
+          {
+            "name": "requests",
+            "type": "List"
+          }
+        ],
+        "references": [],
+        "returnType": "List",
+        "type": null
+      }
+    ],
+    "name": "CalK4B_ReturnCheck",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalK4B_ReturnCheck",
+      "references": [],
+      "type": "CalK4B_ReturnCheck"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 55,
+          "line": 15
+        },
+        "modifiers": [],
+        "name": "requests",
+        "references": [],
+        "type": "List<CalK4B_ReturnCheck.Request>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 22,
+          "line": 16
+        },
+        "modifiers": [],
+        "name": "results",
+        "references": [],
+        "type": "List<CalK4B_ReturnCheck.Result>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 22,
+          "line": 20
+        },
+        "modifiers": [],
+        "name": "request",
+        "references": [],
+        "type": "CalK4B_ReturnCheck.Request"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 20,
+          "line": 21
+        },
+        "modifiers": [],
+        "name": "result",
+        "references": [],
+        "type": "CalK4B_ReturnCheck.Result"
+      }
+    ]
+  }
+}

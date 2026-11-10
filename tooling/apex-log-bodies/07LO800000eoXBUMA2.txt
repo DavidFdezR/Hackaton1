@@ -1,0 +1,468 @@
+68.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO
+Execute Anonymous: 
+Execute Anonymous: List<Case> cases = [SELECT Id, Status FROM Case WHERE Subject LIKE 'Cal APX04 Case %'];
+Execute Anonymous: for (Case c : cases) c.Status = 'Working';
+Execute Anonymous: System.debug('updating ' + cases.size() + ' real cases');
+Execute Anonymous: update cases;
+23:24:39.45 (45470973)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+23:24:39.45 (45483343)|EXECUTION_STARTED
+23:24:39.45 (45489133)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+23:24:39.45 (58781249)|USER_DEBUG|[4]|DEBUG|updating 200 real cases
+23:24:40.347 (1347304448)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZajF|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:40.347 (2122326821)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZajF|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:41.851 (2851452038)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZajF|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:41.851 (3611310456)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZajF|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:43.399 (4399198595)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZajF|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:43.399 (5249582609)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZajF|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:44.991 (5991638018)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZajF|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:44.991 (6738972610)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZajF|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:46.486 (7486679708)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZajF|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:46.486 (8264057515)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZajF|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:48.50 (9050521017)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZajF|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:48.50 (9851953606)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZajF|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:49.635 (10635404417)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZajF|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:49.635 (11416007739)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZajF|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:51.198 (12198995204)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZajF|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:51.198 (12998377265)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZajF|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:52.815 (13815523431)|FATAL_ERROR|Internal Salesforce.com Error
+23:24:52.815 (13815550272)|CUMULATIVE_LIMIT_USAGE
+23:24:52.815 (13815550272)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 200 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 17 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 3400 out of 10000
+  Maximum CPU time: 1590 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:24:52.815 (13815550272)|CUMULATIVE_LIMIT_USAGE_END
+
+23:24:52.815 (13815713124)|CODE_UNIT_FINISHED|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:52.815 (13824709958)|FATAL_ERROR|Internal Salesforce.com Error
+23:24:52.824 (13824718518)|CUMULATIVE_LIMIT_USAGE
+23:24:52.824 (13824718518)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 200 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 16 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 3200 out of 10000
+  Maximum CPU time: 1479 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:24:52.824 (13824718518)|CUMULATIVE_LIMIT_USAGE_END
+
+23:24:52.815 (13824830509)|CODE_UNIT_FINISHED|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:52.815 (13833713121)|FATAL_ERROR|Internal Salesforce.com Error
+23:24:52.833 (13833720591)|CUMULATIVE_LIMIT_USAGE
+23:24:52.833 (13833720591)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 200 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 15 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 3000 out of 10000
+  Maximum CPU time: 1367 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:24:52.833 (13833720591)|CUMULATIVE_LIMIT_USAGE_END
+
+23:24:52.815 (13833818043)|CODE_UNIT_FINISHED|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:52.815 (13840265292)|FATAL_ERROR|Internal Salesforce.com Error
+23:24:52.840 (13840271722)|CUMULATIVE_LIMIT_USAGE
+23:24:52.840 (13840271722)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 200 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 14 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 2800 out of 10000
+  Maximum CPU time: 1262 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:24:52.840 (13840271722)|CUMULATIVE_LIMIT_USAGE_END
+
+23:24:52.815 (13840355073)|CODE_UNIT_FINISHED|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:52.815 (13850542055)|FATAL_ERROR|Internal Salesforce.com Error
+23:24:52.850 (13850548085)|CUMULATIVE_LIMIT_USAGE
+23:24:52.850 (13850548085)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 200 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 13 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 2600 out of 10000
+  Maximum CPU time: 1155 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:24:52.850 (13850548085)|CUMULATIVE_LIMIT_USAGE_END
+
+23:24:52.815 (13850634306)|CODE_UNIT_FINISHED|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:52.815 (13859127313)|FATAL_ERROR|Internal Salesforce.com Error
+23:24:52.859 (13859133493)|CUMULATIVE_LIMIT_USAGE
+23:24:52.859 (13859133493)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 200 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 12 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 2400 out of 10000
+  Maximum CPU time: 1051 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:24:52.859 (13859133493)|CUMULATIVE_LIMIT_USAGE_END
+
+23:24:52.815 (13859213235)|CODE_UNIT_FINISHED|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:52.815 (13867161504)|FATAL_ERROR|Internal Salesforce.com Error
+23:24:52.867 (13867166814)|CUMULATIVE_LIMIT_USAGE
+23:24:52.867 (13867166814)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 200 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 11 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 2200 out of 10000
+  Maximum CPU time: 945 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:24:52.867 (13867166814)|CUMULATIVE_LIMIT_USAGE_END
+
+23:24:52.815 (13867243985)|CODE_UNIT_FINISHED|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:52.815 (13875775012)|FATAL_ERROR|Internal Salesforce.com Error
+23:24:52.875 (13875780372)|CUMULATIVE_LIMIT_USAGE
+23:24:52.875 (13875780372)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 200 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 10 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 2000 out of 10000
+  Maximum CPU time: 838 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:24:52.875 (13875780372)|CUMULATIVE_LIMIT_USAGE_END
+
+23:24:52.815 (13875853423)|CODE_UNIT_FINISHED|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:52.815 (13882365914)|FATAL_ERROR|Internal Salesforce.com Error
+23:24:52.882 (13882370844)|CUMULATIVE_LIMIT_USAGE
+23:24:52.882 (13882370844)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 200 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 9 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 1800 out of 10000
+  Maximum CPU time: 737 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:24:52.882 (13882370844)|CUMULATIVE_LIMIT_USAGE_END
+
+23:24:52.815 (13882437885)|CODE_UNIT_FINISHED|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:52.815 (13890952403)|FATAL_ERROR|Internal Salesforce.com Error
+23:24:52.890 (13890957293)|CUMULATIVE_LIMIT_USAGE
+23:24:52.890 (13890957293)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 200 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 8 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 1600 out of 10000
+  Maximum CPU time: 643 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:24:52.890 (13890957293)|CUMULATIVE_LIMIT_USAGE_END
+
+23:24:52.815 (13891020334)|CODE_UNIT_FINISHED|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:52.815 (13899308448)|FATAL_ERROR|Internal Salesforce.com Error
+23:24:52.899 (13899313188)|CUMULATIVE_LIMIT_USAGE
+23:24:52.899 (13899313188)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 200 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 7 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 1400 out of 10000
+  Maximum CPU time: 549 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:24:52.899 (13899313188)|CUMULATIVE_LIMIT_USAGE_END
+
+23:24:52.815 (13899379099)|CODE_UNIT_FINISHED|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:52.815 (13907825235)|FATAL_ERROR|Internal Salesforce.com Error
+23:24:52.907 (13907831125)|CUMULATIVE_LIMIT_USAGE
+23:24:52.907 (13907831125)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 200 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 6 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 1200 out of 10000
+  Maximum CPU time: 454 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:24:52.907 (13907831125)|CUMULATIVE_LIMIT_USAGE_END
+
+23:24:52.815 (13907917507)|CODE_UNIT_FINISHED|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:52.815 (13915231307)|FATAL_ERROR|Internal Salesforce.com Error
+23:24:52.915 (13915237507)|CUMULATIVE_LIMIT_USAGE
+23:24:52.915 (13915237507)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 200 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 5 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 1000 out of 10000
+  Maximum CPU time: 361 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:24:52.915 (13915237507)|CUMULATIVE_LIMIT_USAGE_END
+
+23:24:52.815 (13915320328)|CODE_UNIT_FINISHED|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:52.815 (13923320199)|FATAL_ERROR|Internal Salesforce.com Error
+23:24:52.923 (13923325290)|CUMULATIVE_LIMIT_USAGE
+23:24:52.923 (13923325290)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 200 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 4 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 800 out of 10000
+  Maximum CPU time: 263 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:24:52.923 (13923325290)|CUMULATIVE_LIMIT_USAGE_END
+
+23:24:52.815 (13923394780)|CODE_UNIT_FINISHED|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:52.815 (13931012786)|FATAL_ERROR|Internal Salesforce.com Error
+23:24:52.931 (13931017706)|CUMULATIVE_LIMIT_USAGE
+23:24:52.931 (13931017706)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 200 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 3 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 600 out of 10000
+  Maximum CPU time: 168 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:24:52.931 (13931017706)|CUMULATIVE_LIMIT_USAGE_END
+
+23:24:52.815 (13931084267)|CODE_UNIT_FINISHED|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:52.815 (13967966476)|EXCEPTION_THROWN|[10]|System.DmlException: Update failed. First exception on row 0 with id 500O800000wLrvzIAC; first error: CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY, CalCaseStatusStampTrigger: maximum trigger depth exceeded
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate: []
+23:24:52.815 (13969955144)|FATAL_ERROR|System.DmlException: Update failed. First exception on row 0 with id 500O800000wLrvzIAC; first error: CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY, CalCaseStatusStampTrigger: maximum trigger depth exceeded
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate: []
+
+Class.CalCaseStatusStamp.afterSave: line 10, column 1
+Trigger.CalCaseStatusStampTrigger: line 2, column 1
+23:24:52.815 (13969965004)|FATAL_ERROR|System.DmlException: Update failed. First exception on row 0 with id 500O800000wLrvzIAC; first error: CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY, CalCaseStatusStampTrigger: maximum trigger depth exceeded
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate: []
+
+Class.CalCaseStatusStamp.afterSave: line 10, column 1
+Trigger.CalCaseStatusStampTrigger: line 2, column 1
+23:24:52.969 (13969969174)|CUMULATIVE_LIMIT_USAGE
+23:24:52.969 (13969969174)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 200 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 400 out of 10000
+  Maximum CPU time: 77 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:24:52.969 (13969969174)|CUMULATIVE_LIMIT_USAGE_END
+
+23:24:52.815 (13970083006)|CODE_UNIT_FINISHED|CalCaseStatusStampTrigger on Case trigger event AfterUpdate|__sfdc_trigger/CalCaseStatusStampTrigger
+23:24:52.815 (14012139487)|EXCEPTION_THROWN|[5]|System.DmlException: Update failed. First exception on row 0 with id 500O800000wLrvzIAC; first error: CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY, CalCaseStatusStampTrigger: execution of AfterUpdate
+
+caused by: System.DmlException: Update failed. First exception on row 0 with id 500O800000wLrvzIAC; first error: CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY, CalCaseStatusStampTrigger: maximum trigger depth exceeded
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate: []
+
+Class.CalCaseStatusStamp.afterSave: line 10, column 1
+Trigger.CalCaseStatusStampTrigger: line 2, column 1: []
+23:24:52.815 (14014301497)|FATAL_ERROR|System.DmlException: Update failed. First exception on row 0 with id 500O800000wLrvzIAC; first error: CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY, CalCaseStatusStampTrigger: execution of AfterUpdate
+
+caused by: System.DmlException: Update failed. First exception on row 0 with id 500O800000wLrvzIAC; first error: CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY, CalCaseStatusStampTrigger: maximum trigger depth exceeded
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate
+Case trigger event AfterUpdate: []
+
+Class.CalCaseStatusStamp.afterSave: line 10, column 1
+Trigger.CalCaseStatusStampTrigger: line 2, column 1: []
+
+AnonymousBlock: line 5, column 1
+23:24:53.14 (14014321877)|CUMULATIVE_LIMIT_USAGE
+23:24:53.14 (14014321877)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 200 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 200 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:24:53.14 (14014321877)|CUMULATIVE_LIMIT_USAGE_END
+
+23:24:52.815 (14014349737)|CODE_UNIT_FINISHED|execute_anonymous_apex
+23:24:52.815 (14014354337)|EXECUTION_FINISHED

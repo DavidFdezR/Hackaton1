@@ -1,0 +1,67 @@
+{
+  "Id": "01pO800000lwSJpIAM",
+  "Name": "CalK1_DemoLeadRouter",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK1_DemoLeadRouter",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK1_DemoLeadRouter",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 26,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "route",
+        "parameters": [
+          {
+            "name": "state",
+            "type": "String"
+          }
+        ],
+        "references": [],
+        "returnType": "String",
+        "type": null
+      }
+    ],
+    "name": "CalK1_DemoLeadRouter",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalK1_DemoLeadRouter",
+      "references": [],
+      "type": "CalK1_DemoLeadRouter"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 39,
+          "line": 2
+        },
+        "modifiers": [],
+        "name": "state",
+        "references": [],
+        "type": "String"
+      }
+    ]
+  }
+}

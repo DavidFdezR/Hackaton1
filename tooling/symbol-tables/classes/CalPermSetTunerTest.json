@@ -1,0 +1,71 @@
+{
+  "Id": "01pO800000lw5icIAA",
+  "Name": "CalPermSetTunerTest",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalPermSetTunerTest",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalPermSetTunerTest",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 4
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "tunerReallyEscalatesTheSet",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalPermSetTunerTest",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 15,
+        "line": 2
+      },
+      "modifiers": [
+        "private",
+        "testMethod"
+      ],
+      "name": "CalPermSetTunerTest",
+      "references": [],
+      "type": "CalPermSetTunerTest"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 23,
+          "line": 6
+        },
+        "modifiers": [],
+        "name": "ps",
+        "references": [],
+        "type": "PermissionSet"
+      }
+    ]
+  }
+}

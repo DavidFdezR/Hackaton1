@@ -1,0 +1,115 @@
+{
+  "Id": "01pO800000lxIh2IAE",
+  "Name": "CalHK_KI_OrderEventPublishCallback",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalHK_KI_OrderEventPublishCallback",
+    "innerClasses": [],
+    "interfaces": [
+      "eventbus.EventPublishFailureCallback",
+      "eventbus.EventPublishSuccessCallback"
+    ],
+    "key": "CalHK_KI_OrderEventPublishCallback",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 4
+        },
+        "modifiers": [
+          "public"
+        ],
+        "name": "onFailure",
+        "parameters": [
+          {
+            "name": "result",
+            "type": "FailureResult"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 8
+        },
+        "modifiers": [
+          "public"
+        ],
+        "name": "onSuccess",
+        "parameters": [
+          {
+            "name": "result",
+            "type": "SuccessResult"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalHK_KI_OrderEventPublishCallback",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 32,
+          "line": 3
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "lastFailed",
+        "references": [],
+        "type": "List"
+      }
+    ],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 2
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalHK_KI_OrderEventPublishCallback",
+      "references": [],
+      "type": "CalHK_KI_OrderEventPublishCallback"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 50,
+          "line": 4
+        },
+        "modifiers": [],
+        "name": "result",
+        "references": [],
+        "type": "eventbus.FailureResult"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 50,
+          "line": 8
+        },
+        "modifiers": [],
+        "name": "result",
+        "references": [],
+        "type": "eventbus.SuccessResult"
+      }
+    ]
+  }
+}

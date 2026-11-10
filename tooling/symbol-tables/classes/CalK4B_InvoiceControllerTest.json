@@ -1,0 +1,211 @@
+{
+  "Id": "01pO800000lwd1BIAQ",
+  "Name": "CalK4B_InvoiceControllerTest",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK4B_InvoiceControllerTest",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK4B_InvoiceControllerTest",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 3
+        },
+        "modifiers": [
+          "private",
+          "static"
+        ],
+        "name": "rep",
+        "parameters": [],
+        "references": [],
+        "returnType": "User",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 12
+        },
+        "modifiers": [
+          "private",
+          "static"
+        ],
+        "name": "assign",
+        "parameters": [
+          {
+            "name": "u",
+            "type": "User"
+          },
+          {
+            "name": "permSet",
+            "type": "String"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 18
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "systemModeQueryLeaksFieldWithoutFls",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalK4B_InvoiceControllerTest",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 15,
+        "line": 2
+      },
+      "modifiers": [
+        "private",
+        "testMethod"
+      ],
+      "name": "CalK4B_InvoiceControllerTest",
+      "references": [],
+      "type": "CalK4B_InvoiceControllerTest"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 4
+        },
+        "modifiers": [],
+        "name": "p",
+        "references": [],
+        "type": "Profile"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 16,
+          "line": 5
+        },
+        "modifiers": [],
+        "name": "key",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 6
+        },
+        "modifiers": [],
+        "name": "u",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 29,
+          "line": 12
+        },
+        "modifiers": [],
+        "name": "u",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 39,
+          "line": 12
+        },
+        "modifiers": [],
+        "name": "permSet",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 19
+        },
+        "modifiers": [],
+        "name": "u",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 21
+        },
+        "modifiers": [],
+        "name": "inv",
+        "references": [],
+        "type": "CalK4B_Invoice__c"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 25
+        },
+        "modifiers": [],
+        "name": "leaked",
+        "references": [],
+        "type": "CalK4B_Invoice__c"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 26
+        },
+        "modifiers": [],
+        "name": "describeAccessible",
+        "references": [],
+        "type": "Boolean"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 16,
+          "line": 27
+        },
+        "modifiers": [],
+        "name": "userModeError",
+        "references": [],
+        "type": "String"
+      }
+    ]
+  }
+}

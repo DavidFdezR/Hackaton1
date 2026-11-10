@@ -1,0 +1,67 @@
+{
+  "Id": "01pO800000lwiNSIAY",
+  "Name": "CalHK_PricingApi",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalHK_PricingApi",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalHK_PricingApi",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 3
+        },
+        "modifiers": [
+          "static",
+          "global"
+        ],
+        "name": "getPrice",
+        "parameters": [
+          {
+            "name": "productId",
+            "type": "Id"
+          }
+        ],
+        "references": [],
+        "returnType": "Decimal",
+        "type": null
+      }
+    ],
+    "name": "CalHK_PricingApi",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 2
+      },
+      "modifiers": [
+        "global",
+        "with sharing"
+      ],
+      "name": "CalHK_PricingApi",
+      "references": [],
+      "type": "CalHK_PricingApi"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 39,
+          "line": 3
+        },
+        "modifiers": [],
+        "name": "productId",
+        "references": [],
+        "type": "Id"
+      }
+    ]
+  }
+}

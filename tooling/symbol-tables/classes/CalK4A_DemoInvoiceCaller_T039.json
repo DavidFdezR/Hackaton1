@@ -1,0 +1,50 @@
+{
+  "Id": "01pO800000lwidYIAQ",
+  "Name": "CalK4A_DemoInvoiceCaller_T039",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK4A_DemoInvoiceCaller_T039",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK4A_DemoInvoiceCaller_T039",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "tax",
+        "parameters": [],
+        "references": [],
+        "returnType": "Decimal",
+        "type": null
+      }
+    ],
+    "name": "CalK4A_DemoInvoiceCaller_T039",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalK4A_DemoInvoiceCaller_T039",
+      "references": [],
+      "type": "CalK4A_DemoInvoiceCaller_T039"
+    },
+    "variables": []
+  }
+}

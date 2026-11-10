@@ -1,0 +1,68 @@
+{
+  "Id": "01pO800000lx1sJIAQ",
+  "Name": "DemoNightlyScheduler",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "DemoNightlyScheduler",
+    "innerClasses": [],
+    "interfaces": [
+      "System.Schedulable"
+    ],
+    "key": "DemoNightlyScheduler",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 3
+        },
+        "modifiers": [
+          "public"
+        ],
+        "name": "execute",
+        "parameters": [
+          {
+            "name": "sc",
+            "type": "SchedulableContext"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "DemoNightlyScheduler",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 2
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "DemoNightlyScheduler",
+      "references": [],
+      "type": "DemoNightlyScheduler"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 44,
+          "line": 3
+        },
+        "modifiers": [],
+        "name": "sc",
+        "references": [],
+        "type": "System.SchedulableContext"
+      }
+    ]
+  }
+}

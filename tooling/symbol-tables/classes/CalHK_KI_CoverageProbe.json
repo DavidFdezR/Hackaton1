@@ -1,0 +1,82 @@
+{
+  "Id": "01pO800000lxQRdIAM",
+  "Name": "CalHK_KI_CoverageProbe",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalHK_KI_CoverageProbe",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalHK_KI_CoverageProbe",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 3
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "applyDiscount",
+        "parameters": [
+          {
+            "name": "amount",
+            "type": "Decimal"
+          },
+          {
+            "name": "pct",
+            "type": "Decimal"
+          }
+        ],
+        "references": [],
+        "returnType": "Decimal",
+        "type": null
+      }
+    ],
+    "name": "CalHK_KI_CoverageProbe",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 2
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalHK_KI_CoverageProbe",
+      "references": [],
+      "type": "CalHK_KI_CoverageProbe"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 49,
+          "line": 3
+        },
+        "modifiers": [],
+        "name": "amount",
+        "references": [],
+        "type": "Decimal"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 65,
+          "line": 3
+        },
+        "modifiers": [],
+        "name": "pct",
+        "references": [],
+        "type": "Decimal"
+      }
+    ]
+  }
+}

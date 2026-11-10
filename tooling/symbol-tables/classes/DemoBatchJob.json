@@ -1,0 +1,218 @@
+{
+  "Id": "01pO800000lx1sFIAQ",
+  "Name": "DemoBatchJob",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 12,
+          "line": 4
+        },
+        "modifiers": [
+          "public"
+        ],
+        "name": "DemoBatchJob",
+        "parameters": [
+          {
+            "name": "query",
+            "type": "String"
+          },
+          {
+            "name": "dryRun",
+            "type": "Boolean"
+          }
+        ],
+        "references": [],
+        "type": null
+      }
+    ],
+    "externalReferences": [],
+    "id": "DemoBatchJob",
+    "innerClasses": [],
+    "interfaces": [
+      "Database.Batchable"
+    ],
+    "key": "DemoBatchJob",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 34,
+          "line": 5
+        },
+        "modifiers": [
+          "public"
+        ],
+        "name": "start",
+        "parameters": [
+          {
+            "name": "bc",
+            "type": "BatchableContext"
+          }
+        ],
+        "references": [],
+        "returnType": "Database.QueryLocator",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 6
+        },
+        "modifiers": [
+          "public"
+        ],
+        "name": "execute",
+        "parameters": [
+          {
+            "name": "bc",
+            "type": "BatchableContext"
+          },
+          {
+            "name": "scope",
+            "type": "List"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 7
+        },
+        "modifiers": [
+          "public"
+        ],
+        "name": "finish",
+        "parameters": [
+          {
+            "name": "bc",
+            "type": "BatchableContext"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "DemoBatchJob",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 20,
+          "line": 3
+        },
+        "modifiers": [
+          "private"
+        ],
+        "name": "query",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 43,
+          "line": 3
+        },
+        "modifiers": [
+          "private"
+        ],
+        "name": "dryRun",
+        "references": [],
+        "type": "Boolean"
+      }
+    ],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 2
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "DemoBatchJob",
+      "references": [],
+      "type": "DemoBatchJob"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 32,
+          "line": 4
+        },
+        "modifiers": [],
+        "name": "query",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 47,
+          "line": 4
+        },
+        "modifiers": [],
+        "name": "dryRun",
+        "references": [],
+        "type": "Boolean"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 66,
+          "line": 5
+        },
+        "modifiers": [],
+        "name": "bc",
+        "references": [],
+        "type": "Database.BatchableContext"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 51,
+          "line": 6
+        },
+        "modifiers": [],
+        "name": "bc",
+        "references": [],
+        "type": "Database.BatchableContext"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 69,
+          "line": 6
+        },
+        "modifiers": [],
+        "name": "scope",
+        "references": [],
+        "type": "List<SObject>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 50,
+          "line": 7
+        },
+        "modifiers": [],
+        "name": "bc",
+        "references": [],
+        "type": "Database.BatchableContext"
+      }
+    ]
+  }
+}

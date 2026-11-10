@@ -1,0 +1,59 @@
+{
+  "Id": "01pO800000lwd18IAA",
+  "Name": "CalK4B_CoverageTest",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK4B_CoverageTest",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK4B_CoverageTest",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 4
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "touchesEverything",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalK4B_CoverageTest",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 15,
+        "line": 2
+      },
+      "modifiers": [
+        "private",
+        "testMethod"
+      ],
+      "name": "CalK4B_CoverageTest",
+      "references": [],
+      "type": "CalK4B_CoverageTest"
+    },
+    "variables": []
+  }
+}

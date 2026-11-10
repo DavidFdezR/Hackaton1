@@ -1,0 +1,62 @@
+{
+  "Id": "01pO800000lwgqDIAQ",
+  "Name": "CalK4A_DemoErpClient",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK4A_DemoErpClient",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK4A_DemoErpClient",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 32,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "ping",
+        "parameters": [],
+        "references": [],
+        "returnType": "System.HttpResponse",
+        "type": null
+      }
+    ],
+    "name": "CalK4A_DemoErpClient",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalK4A_DemoErpClient",
+      "references": [],
+      "type": "CalK4A_DemoErpClient"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 21,
+          "line": 3
+        },
+        "modifiers": [],
+        "name": "req",
+        "references": [],
+        "type": "System.HttpRequest"
+      }
+    ]
+  }
+}

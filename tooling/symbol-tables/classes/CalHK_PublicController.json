@@ -1,0 +1,71 @@
+{
+  "Id": "01pO800000lwiNVIAY",
+  "Name": "CalHK_PublicController",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalHK_PublicController",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalHK_PublicController",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "AuraEnabled"
+          }
+        ],
+        "location": {
+          "column": 34,
+          "line": 4
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "getRecord",
+        "parameters": [
+          {
+            "name": "recordId",
+            "type": "Id"
+          }
+        ],
+        "references": [],
+        "returnType": "CalHK_Order__c",
+        "type": null
+      }
+    ],
+    "name": "CalHK_PublicController",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 30,
+        "line": 2
+      },
+      "modifiers": [
+        "public",
+        "without sharing"
+      ],
+      "name": "CalHK_PublicController",
+      "references": [],
+      "type": "CalHK_PublicController"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 47,
+          "line": 4
+        },
+        "modifiers": [],
+        "name": "recordId",
+        "references": [],
+        "type": "Id"
+      }
+    ]
+  }
+}

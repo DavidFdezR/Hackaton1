@@ -1,0 +1,30 @@
+64.0 APEX_CODE,DEBUG;APEX_PROFILING,NONE;CALLOUT,INFO;DATA_ACCESS,INFO;DB,INFO;NBA,INFO;SYSTEM,INFO;VALIDATION,INFO;VISUALFORCE,NONE;WAVE,INFO;WORKFLOW,INFO
+22:42:34.1 (1578007)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+22:42:34.1 (1597937)|EXECUTION_STARTED
+22:42:34.1 (1603408)|CODE_UNIT_STARTED|[EXTERNAL]|01pO800000lweTV|CalK4A_T013_T014_Test.repFieldAccess()
+22:42:34.1 (4689053)|SYSTEM_MODE_ENTER|false
+22:42:34.1 (4798933)|SYSTEM_MODE_EXIT|false
+22:42:34.1 (4846613)|SYSTEM_MODE_ENTER|false
+22:42:34.1 (6300261)|DML_BEGIN|[7]|Op:Insert|Type:CalK4A_DemoAccount__c|Rows:1
+22:42:34.1 (72793664)|DML_END|[7]
+22:42:34.1 (84925883)|SOQL_EXECUTE_BEGIN|[11]|Aggregations:0|SELECT Id FROM Profile WHERE Name = :tmpVar1
+22:42:34.1 (90926472)|SOQL_EXECUTE_END|[11]|Rows:1
+22:42:34.1 (91134783)|DML_BEGIN|[14]|Op:Insert|Type:User|Rows:1
+22:42:34.1 (322342226)|DML_END|[14]
+22:42:34.1 (325016579)|SOQL_EXECUTE_BEGIN|[25]|Aggregations:0|SELECT Id FROM PermissionSet WHERE Name IN :tmpVar1
+22:42:34.1 (341218628)|SOQL_EXECUTE_END|[25]|Rows:1
+22:42:34.1 (341742080)|DML_BEGIN|[28]|Op:Insert|Type:PermissionSetAssignment|Rows:1
+22:42:34.1 (447156582)|DML_END|[28]
+22:42:34.1 (483162107)|DML_BEGIN|[5]|Op:Update|Type:CalK4A_DemoAccount__c|Rows:1
+22:42:34.1 (493725339)|DML_END|[5]
+22:42:34.1 (497569167)|EXCEPTION_THROWN|[13]|System.QueryException: No such column 'Region__c' on entity 'CalK4A_DemoAccount__c'. If you are attempting to use a custom field, be sure to append the '__c' after the custom field name. Please reference your WSDL or the describe call for the appropriate names.
+22:42:34.1 (498279691)|DML_BEGIN|[5]|Op:Update|Type:CalK4A_DemoAccount__c|Rows:1
+22:42:34.1 (499124825)|DML_END|[5]
+22:42:34.1 (506897592)|SOQL_EXECUTE_BEGIN|[39]|Aggregations:0|SELECT PermissionsRead, PermissionsEdit FROM FieldPermissions WHERE (Parent.Name = :tmpVar1 AND Field = :tmpVar2)
+22:42:35.778 (1778669478)|SOQL_EXECUTE_END|[39]|Rows:1
+22:42:35.778 (1779364942)|SOQL_EXECUTE_BEGIN|[39]|Aggregations:0|SELECT PermissionsRead, PermissionsEdit FROM FieldPermissions WHERE (Parent.Name = :tmpVar1 AND Field = :tmpVar2)
+22:42:35.778 (1864288505)|SOQL_EXECUTE_END|[39]|Rows:0
+22:42:35.778 (1864912518)|USER_DEBUG|[45]|ERROR|CALK4A_OBS T-013/T-014={"T014_fls_Region":{"row":"none (no access)"},"T013_fls_Credit_Limit":{"edit":false,"read":true},"T014_repEditsRegion":"Operation failed due to fields being inaccessible on Sobject CalK4A_DemoAccount__c, check errors on Exception or Result! ","T014_repReadsRegion":"No such column 'Region__c' on entity 'CalK4A_DemoAccount__c'. If you are attempting to use a custom field, be sure to append the '__c' after the custom field na","T013_repSetsCreditLimit":"Operation failed due to fields being inaccessible on Sobject CalK4A_DemoAccount__c, check errors on Exception or Result! "}
+22:42:35.778 (1864960818)|SYSTEM_MODE_EXIT|false
+22:42:35.778 (1864985298)|CODE_UNIT_FINISHED|CalK4A_T013_T014_Test.repFieldAccess()
+22:42:35.778 (1864989278)|EXECUTION_FINISHED

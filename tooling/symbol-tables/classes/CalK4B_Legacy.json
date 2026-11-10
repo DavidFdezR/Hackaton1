@@ -1,0 +1,67 @@
+{
+  "Id": "01pO800000lwd1EIAQ",
+  "Name": "CalK4B_Legacy",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK4B_Legacy",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK4B_Legacy",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 26,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "label",
+        "parameters": [
+          {
+            "name": "code",
+            "type": "Integer"
+          }
+        ],
+        "references": [],
+        "returnType": "String",
+        "type": null
+      }
+    ],
+    "name": "CalK4B_Legacy",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalK4B_Legacy",
+      "references": [],
+      "type": "CalK4B_Legacy"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 40,
+          "line": 2
+        },
+        "modifiers": [],
+        "name": "code",
+        "references": [],
+        "type": "Integer"
+      }
+    ]
+  }
+}

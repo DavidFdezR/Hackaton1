@@ -1,0 +1,67 @@
+{
+  "Id": "01pO800000lwk7RIAQ",
+  "Name": "CalK4A_DemoTaxUtil",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK4A_DemoTaxUtil",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK4A_DemoTaxUtil",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "calcTax",
+        "parameters": [
+          {
+            "name": "amount",
+            "type": "Decimal"
+          }
+        ],
+        "references": [],
+        "returnType": "Decimal",
+        "type": null
+      }
+    ],
+    "name": "CalK4A_DemoTaxUtil",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalK4A_DemoTaxUtil",
+      "references": [],
+      "type": "CalK4A_DemoTaxUtil"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 43,
+          "line": 2
+        },
+        "modifiers": [],
+        "name": "amount",
+        "references": [],
+        "type": "Decimal"
+      }
+    ]
+  }
+}

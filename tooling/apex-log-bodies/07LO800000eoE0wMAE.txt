@@ -1,0 +1,35 @@
+64.0 APEX_CODE,DEBUG;APEX_PROFILING,NONE;CALLOUT,INFO;DATA_ACCESS,INFO;DB,INFO;NBA,INFO;SYSTEM,INFO;VALIDATION,INFO;VISUALFORCE,NONE;WAVE,INFO;WORKFLOW,INFO
+23:21:45.0 (863487)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+23:21:45.0 (886757)|EXECUTION_STARTED
+23:21:45.0 (896187)|CODE_UNIT_STARTED|[EXTERNAL]|01pO800000lweTX|CalK4A_T016_Test.authorApexAndCustomizeApplication()
+23:21:45.0 (4135717)|SYSTEM_MODE_ENTER|false
+23:21:45.0 (4275317)|SYSTEM_MODE_EXIT|false
+23:21:45.0 (4332016)|SYSTEM_MODE_ENTER|false
+23:21:45.0 (17387215)|SOQL_EXECUTE_BEGIN|[11]|Aggregations:0|SELECT Id FROM Profile WHERE Name = :tmpVar1
+23:21:45.0 (22626459)|SOQL_EXECUTE_END|[11]|Rows:1
+23:21:45.0 (22952758)|DML_BEGIN|[14]|Op:Insert|Type:User|Rows:1
+23:21:46.504 (1504915610)|DML_END|[14]
+23:21:46.504 (1508500768)|SOQL_EXECUTE_BEGIN|[25]|Aggregations:0|SELECT Id FROM PermissionSet WHERE Name IN :tmpVar1
+23:21:46.504 (1530739458)|SOQL_EXECUTE_END|[25]|Rows:1
+23:21:46.504 (1531411466)|DML_BEGIN|[28]|Op:Insert|Type:PermissionSetAssignment|Rows:1
+23:21:46.504 (1739166955)|DML_END|[28]
+23:21:46.504 (1760723377)|DML_BEGIN|[14]|Op:Insert|Type:PermissionSet|Rows:1
+23:21:46.504 (1886656017)|DML_END|[14]
+23:21:46.504 (1886735787)|EXCEPTION_THROWN|[14]|System.DmlException: Insert failed. First exception on row 0; first error: FIELD_INTEGRITY_EXCEPTION, Permission AuthorApex depends on permission(s): ModifyMetadata, ViewRoles, ViewSetup: []
+23:21:46.504 (1889344929)|DML_BEGIN|[14]|Op:Insert|Type:PermissionSet|Rows:1
+23:21:46.504 (2069785856)|DML_END|[14]
+23:21:46.504 (2070589023)|DML_BEGIN|[14]|Op:Insert|Type:PermissionSetAssignment|Rows:1
+23:21:46.504 (2309160755)|DML_END|[14]
+23:21:46.504 (2356423834)|DML_BEGIN|[14]|Op:Insert|Type:PermissionSet|Rows:1
+23:21:47.520 (2520451923)|DML_END|[14]
+23:21:47.520 (2520552383)|EXCEPTION_THROWN|[14]|System.DmlException: Insert failed. First exception on row 0; first error: FIELD_INTEGRITY_EXCEPTION, Permission ModifyAllData depends on permission(s): AssignTopics, ConnectOrgToEnvironmentHub, ConvertLeads, CreateCustomizeDashboards, CreateCustomizeFilters, CreateCustomizeReports, CreateDashboardFolders, CreateReportFolders, CreateTopics, DeleteTopics, EditEvent, EditMyDashboards, EditMyReports, EditPublicDocuments, EditPublicFilters, EditPublicTemplates, EditTask, EditTopics, ImportLeads, ManageCategories, ManageDashbdsInPubFolders, ManageNetworks, ManageReportsInPubFolders, ModifyMetadata, RunReports, SolutionImport, TransferAnyEntity, TransferAnyLead, UseTeamReassignWizards, ViewAllData, ViewDataLeakageEvents, ViewEventLogFiles, ViewPlatformEvents, ViewPublicDashboards, ViewPublicReports, ViewRoles, ViewSetup: []
+23:21:47.520 (2523518203)|SOQL_EXECUTE_BEGIN|[20]|Aggregations:0|SELECT Id FROM PermissionSet WHERE Name = 'CalK4A_DemoFinance_Auditor'
+23:21:47.520 (2553085880)|SOQL_EXECUTE_END|[20]|Rows:1
+23:21:47.520 (2553354829)|DML_BEGIN|[14]|Op:Insert|Type:PermissionSetAssignment|Rows:1
+23:21:47.520 (2798265021)|DML_END|[14]
+23:21:47.520 (2821727556)|SOQL_EXECUTE_BEGIN|[23]|Aggregations:0|SELECT PermissionsAuthorApex, PermissionsCustomizeApplication, PermissionsModifyMetadata, PermissionsModifyAllData, PermissionsViewAllData FROM PermissionSet WHERE Id = :tmpVar1
+23:21:47.520 (2862701757)|SOQL_EXECUTE_END|[23]|Rows:1
+23:21:47.520 (2863358974)|USER_DEBUG|[45]|ERROR|CALK4A_OBS T-016={"savedPermissionSet":{"attributes":{"type":"PermissionSet","url":"/services/data/v68.0/sobjects/PermissionSet/0PSO800000EQLbpOAH"},"PermissionsAuthorApex":true,"PermissionsCustomizeApplication":true,"PermissionsModifyMetadata":true,"PermissionsModifyAllData":false,"PermissionsViewAllData":false,"Id":"0PSO800000EQLbpOAH"},"leadSelfAssignsAuditorPermSet":"saved","leadCreatesModifyAllDataPermSet":"Insert failed. First exception on row 0; first error: FIELD_INTEGRITY_EXCEPTION, Permission ModifyAllData depends on permission(s): AssignTopics, ConnectOrgToEnvironmentHub, ConvertLeads, CreateCustomizeDashboards, Creat","saveWithDependencies":"saved","saveAsRequested":"Insert failed. First exception on row 0; first error: FIELD_INTEGRITY_EXCEPTION, Permission AuthorApex depends on permission(s): ModifyMetadata, ViewRoles, ViewSetup: []"}
+23:21:47.520 (2863426614)|SYSTEM_MODE_EXIT|false
+23:21:47.520 (2863460674)|CODE_UNIT_FINISHED|CalK4A_T016_Test.authorApexAndCustomizeApplication()
+23:21:47.520 (2863466064)|EXECUTION_FINISHED

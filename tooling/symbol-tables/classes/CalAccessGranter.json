@@ -1,0 +1,93 @@
+{
+  "Id": "01pO800000lw5qfIAA",
+  "Name": "CalAccessGranter",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalAccessGranter",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalAccessGranter",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 24,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "onboard",
+        "parameters": [
+          {
+            "name": "userId",
+            "type": "Id"
+          },
+          {
+            "name": "permissionSetName",
+            "type": "String"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalAccessGranter",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 30,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "without sharing"
+      ],
+      "name": "CalAccessGranter",
+      "references": [],
+      "type": "CalAccessGranter"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 35,
+          "line": 2
+        },
+        "modifiers": [],
+        "name": "userId",
+        "references": [],
+        "type": "Id"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 50,
+          "line": 2
+        },
+        "modifiers": [],
+        "name": "permissionSetName",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 23,
+          "line": 3
+        },
+        "modifiers": [],
+        "name": "target",
+        "references": [],
+        "type": "PermissionSet"
+      }
+    ]
+  }
+}

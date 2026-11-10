@@ -1,0 +1,71 @@
+{
+  "Id": "01pO800000lx1sMIAQ",
+  "Name": "DemoV4PlantTest",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "DemoV4PlantTest",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "DemoV4PlantTest",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 25,
+          "line": 3
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "coversFixtures",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "DemoV4PlantTest",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 15,
+        "line": 2
+      },
+      "modifiers": [
+        "private",
+        "testMethod"
+      ],
+      "name": "DemoV4PlantTest",
+      "references": [],
+      "type": "DemoV4PlantTest"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 32,
+          "line": 12
+        },
+        "modifiers": [],
+        "name": "em",
+        "references": [],
+        "type": "Messaging.InboundEmail"
+      }
+    ]
+  }
+}

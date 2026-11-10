@@ -1,0 +1,59 @@
+{
+  "Id": "01pO800000lx1sEIAQ",
+  "Name": "CalHK_PricingUtilTest",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalHK_PricingUtilTest",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalHK_PricingUtilTest",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 25,
+          "line": 4
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "marginIsTwentyFivePercent",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalHK_PricingUtilTest",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 15,
+        "line": 3
+      },
+      "modifiers": [
+        "private",
+        "testMethod"
+      ],
+      "name": "CalHK_PricingUtilTest",
+      "references": [],
+      "type": "CalHK_PricingUtilTest"
+    },
+    "variables": []
+  }
+}

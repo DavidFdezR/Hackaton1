@@ -1,0 +1,59 @@
+{
+  "Id": "01pO800000lwFi5IAE",
+  "Name": "CalK2_DemoAccountTriggerHandlerTest",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK2_DemoAccountTriggerHandlerTest",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK2_DemoAccountTriggerHandlerTest",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 4
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "defaultNoteUsesRegion",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalK2_DemoAccountTriggerHandlerTest",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 15,
+        "line": 2
+      },
+      "modifiers": [
+        "private",
+        "testMethod"
+      ],
+      "name": "CalK2_DemoAccountTriggerHandlerTest",
+      "references": [],
+      "type": "CalK2_DemoAccountTriggerHandlerTest"
+    },
+    "variables": []
+  }
+}

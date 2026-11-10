@@ -1,0 +1,110 @@
+{
+  "Id": "01pO800000lwSJjIAM",
+  "Name": "CalK1_DemoAccountTriggerHandler",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK1_DemoAccountTriggerHandler",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK1_DemoAccountTriggerHandler",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 24,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "handle",
+        "parameters": [
+          {
+            "name": "rows",
+            "type": "List"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 8
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "scoreFor",
+        "parameters": [
+          {
+            "name": "tier",
+            "type": "String"
+          }
+        ],
+        "references": [],
+        "returnType": "Decimal",
+        "type": null
+      }
+    ],
+    "name": "CalK1_DemoAccountTriggerHandler",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalK1_DemoAccountTriggerHandler",
+      "references": [],
+      "type": "CalK1_DemoAccountTriggerHandler"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 58,
+          "line": 2
+        },
+        "modifiers": [],
+        "name": "rows",
+        "references": [],
+        "type": "List<CalK1_DemoAccount__c>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 35,
+          "line": 3
+        },
+        "modifiers": [],
+        "name": "row",
+        "references": [],
+        "type": "CalK1_DemoAccount__c"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 43,
+          "line": 8
+        },
+        "modifiers": [],
+        "name": "tier",
+        "references": [],
+        "type": "String"
+      }
+    ]
+  }
+}

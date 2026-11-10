@@ -1,0 +1,89 @@
+{
+  "Id": "01pO800000lw5PFIAY",
+  "Name": "CalOpportunityStageService",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalOpportunityStageService",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalOpportunityStageService",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 32,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "closeWon",
+        "parameters": [
+          {
+            "name": "opportunityIds",
+            "type": "List"
+          }
+        ],
+        "references": [],
+        "returnType": "List",
+        "type": null
+      }
+    ],
+    "name": "CalOpportunityStageService",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalOpportunityStageService",
+      "references": [],
+      "type": "CalOpportunityStageService"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 50,
+          "line": 2
+        },
+        "modifiers": [],
+        "name": "opportunityIds",
+        "references": [],
+        "type": "List<Id>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 3
+        },
+        "modifiers": [],
+        "name": "opportunityId",
+        "references": [],
+        "type": "Id"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 25,
+          "line": 4
+        },
+        "modifiers": [],
+        "name": "opp",
+        "references": [],
+        "type": "Opportunity"
+      }
+    ]
+  }
+}

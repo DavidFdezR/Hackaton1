@@ -1,0 +1,59 @@
+{
+  "Id": "01pO800000lwv9OIAQ",
+  "Name": "CalR_ForecastServiceTest",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalR_ForecastServiceTest",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalR_ForecastServiceTest",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 4
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "largeDealsNeedApproval",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalR_ForecastServiceTest",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 15,
+        "line": 2
+      },
+      "modifiers": [
+        "private",
+        "testMethod"
+      ],
+      "name": "CalR_ForecastServiceTest",
+      "references": [],
+      "type": "CalR_ForecastServiceTest"
+    },
+    "variables": []
+  }
+}

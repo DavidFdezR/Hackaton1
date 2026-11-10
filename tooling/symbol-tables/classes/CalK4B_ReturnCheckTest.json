@@ -1,0 +1,462 @@
+{
+  "Id": "01pO800000lwd1LIAQ",
+  "Name": "CalK4B_ReturnCheckTest",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK4B_ReturnCheckTest",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK4B_ReturnCheckTest",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 47,
+          "line": 3
+        },
+        "modifiers": [
+          "private",
+          "static"
+        ],
+        "name": "request",
+        "parameters": [
+          {
+            "name": "days",
+            "type": "Integer"
+          },
+          {
+            "name": "unopened",
+            "type": "Boolean"
+          }
+        ],
+        "references": [],
+        "returnType": "Request",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 25,
+          "line": 9
+        },
+        "modifiers": [
+          "private",
+          "static"
+        ],
+        "name": "check",
+        "parameters": [
+          {
+            "name": "days",
+            "type": "Integer"
+          },
+          {
+            "name": "unopened",
+            "type": "Boolean"
+          },
+          {
+            "name": "decision",
+            "type": "String"
+          },
+          {
+            "name": "reason",
+            "type": "String"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 25,
+          "line": 16
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "eligibleDayZero",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 25,
+          "line": 19
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "eligibleBoundary",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 25,
+          "line": 22
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "expiredWindow",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 25,
+          "line": 25
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "openedItem",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 25,
+          "line": 28
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "missingDays",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 25,
+          "line": 31
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "missingCondition",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 25,
+          "line": 34
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "negativeDays",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 25,
+          "line": 37
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "bulkMaintainsOrder",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 25,
+          "line": 55
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "nullRequestAndBatch",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalK4B_ReturnCheckTest",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 15,
+        "line": 2
+      },
+      "modifiers": [
+        "private",
+        "testMethod"
+      ],
+      "name": "CalK4B_ReturnCheckTest",
+      "references": [],
+      "type": "CalK4B_ReturnCheckTest"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 63,
+          "line": 3
+        },
+        "modifiers": [],
+        "name": "days",
+        "references": [],
+        "type": "Integer"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 77,
+          "line": 3
+        },
+        "modifiers": [],
+        "name": "unopened",
+        "references": [],
+        "type": "Boolean"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 36,
+          "line": 4
+        },
+        "modifiers": [],
+        "name": "value",
+        "references": [],
+        "type": "CalK4B_ReturnCheck.Request"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 39,
+          "line": 9
+        },
+        "modifiers": [],
+        "name": "days",
+        "references": [],
+        "type": "Integer"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 53,
+          "line": 9
+        },
+        "modifiers": [],
+        "name": "unopened",
+        "references": [],
+        "type": "Boolean"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 70,
+          "line": 9
+        },
+        "modifiers": [],
+        "name": "decision",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 87,
+          "line": 9
+        },
+        "modifiers": [],
+        "name": "reason",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 41,
+          "line": 10
+        },
+        "modifiers": [],
+        "name": "results",
+        "references": [],
+        "type": "List<CalK4B_ReturnCheck.Result>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 42,
+          "line": 38
+        },
+        "modifiers": [],
+        "name": "inputs",
+        "references": [],
+        "type": "List<CalK4B_ReturnCheck.Request>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 22,
+          "line": 39
+        },
+        "modifiers": [],
+        "name": "i",
+        "references": [],
+        "type": "Integer"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 42
+        },
+        "modifiers": [],
+        "name": "queries",
+        "references": [],
+        "type": "Integer"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 43
+        },
+        "modifiers": [],
+        "name": "writes",
+        "references": [],
+        "type": "Integer"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 44
+        },
+        "modifiers": [],
+        "name": "callouts",
+        "references": [],
+        "type": "Integer"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 41,
+          "line": 45
+        },
+        "modifiers": [],
+        "name": "results",
+        "references": [],
+        "type": "List<CalK4B_ReturnCheck.Result>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 22,
+          "line": 47
+        },
+        "modifiers": [],
+        "name": "i",
+        "references": [],
+        "type": "Integer"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 41,
+          "line": 58
+        },
+        "modifiers": [],
+        "name": "results",
+        "references": [],
+        "type": "List<CalK4B_ReturnCheck.Result>"
+      }
+    ]
+  }
+}

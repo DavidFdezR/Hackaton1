@@ -1,0 +1,125 @@
+{
+  "Id": "01pO800000lwv9MIAQ",
+  "Name": "CalR_DemoAccountTriggerHandlerTest",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalR_DemoAccountTriggerHandlerTest",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalR_DemoAccountTriggerHandlerTest",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 4
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "classifiesByAmount",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 11
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "triggerSetsTier",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalR_DemoAccountTriggerHandlerTest",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 15,
+        "line": 2
+      },
+      "modifiers": [
+        "private",
+        "testMethod"
+      ],
+      "name": "CalR_DemoAccountTriggerHandlerTest",
+      "references": [],
+      "type": "CalR_DemoAccountTriggerHandlerTest"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 12
+        },
+        "modifiers": [],
+        "name": "standard",
+        "references": [],
+        "type": "Profile"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 16,
+          "line": 13
+        },
+        "modifiers": [],
+        "name": "unique",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 14
+        },
+        "modifiers": [],
+        "name": "writer",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 29,
+          "line": 22
+        },
+        "modifiers": [],
+        "name": "account",
+        "references": [],
+        "type": "CalR_DemoAccount__c"
+      }
+    ]
+  }
+}

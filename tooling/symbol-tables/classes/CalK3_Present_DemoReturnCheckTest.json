@@ -1,0 +1,135 @@
+{
+  "Id": "01pO800000lwczWIAQ",
+  "Name": "CalK3_Present_DemoReturnCheckTest",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK3_Present_DemoReturnCheckTest",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK3_Present_DemoReturnCheckTest",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 4
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "withinWindowIsReturnable",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 10
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "pastWindowIsNotReturnable",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 16
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "invalidDatesAreNotReturnable",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalK3_Present_DemoReturnCheckTest",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 15,
+        "line": 2
+      },
+      "modifiers": [
+        "private",
+        "testMethod"
+      ],
+      "name": "CalK3_Present_DemoReturnCheckTest",
+      "references": [],
+      "type": "CalK3_Present_DemoReturnCheckTest"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 5
+        },
+        "modifiers": [],
+        "name": "bought",
+        "references": [],
+        "type": "Date"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 11
+        },
+        "modifiers": [],
+        "name": "bought",
+        "references": [],
+        "type": "Date"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 17
+        },
+        "modifiers": [],
+        "name": "bought",
+        "references": [],
+        "type": "Date"
+      }
+    ]
+  }
+}

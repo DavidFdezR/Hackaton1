@@ -1,0 +1,127 @@
+{
+  "Id": "01pO800000lwdMFIAY",
+  "Name": "CalK4A_T006_Test",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK4A_T006_Test",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK4A_T006_Test",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 4
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "utilSharingByCaller",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalK4A_T006_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 28,
+        "line": 2
+      },
+      "modifiers": [
+        "private",
+        "testMethod",
+        "with sharing"
+      ],
+      "name": "CalK4A_T006_Test",
+      "references": [],
+      "type": "CalK4A_T006_Test"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 6
+        },
+        "modifiers": [],
+        "name": "rep",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 7
+        },
+        "modifiers": [],
+        "name": "fromWith",
+        "references": [],
+        "type": "Integer"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 8
+        },
+        "modifiers": [],
+        "name": "fromWithout",
+        "references": [],
+        "type": "Integer"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 36,
+          "line": 16
+        },
+        "modifiers": [],
+        "name": "tip",
+        "references": [],
+        "type": "CalK4A_DemoKnowledgeTip__c"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 16,
+          "line": 17
+        },
+        "modifiers": [],
+        "name": "entry",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 16,
+          "line": 18
+        },
+        "modifiers": [],
+        "name": "body",
+        "references": [],
+        "type": "String"
+      }
+    ]
+  }
+}

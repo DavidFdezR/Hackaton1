@@ -1,0 +1,67 @@
+{
+  "Id": "01pO800000lweRpIAI",
+  "Name": "CalK4B_RegionReader",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK4B_RegionReader",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK4B_RegionReader",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 26,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "regionOf",
+        "parameters": [
+          {
+            "name": "accountId",
+            "type": "Id"
+          }
+        ],
+        "references": [],
+        "returnType": "String",
+        "type": null
+      }
+    ],
+    "name": "CalK4B_RegionReader",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalK4B_RegionReader",
+      "references": [],
+      "type": "CalK4B_RegionReader"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 38,
+          "line": 2
+        },
+        "modifiers": [],
+        "name": "accountId",
+        "references": [],
+        "type": "Id"
+      }
+    ]
+  }
+}

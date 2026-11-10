@@ -1,0 +1,50 @@
+{
+  "Id": "01pO800000lwdM6IAI",
+  "Name": "CalK4A_DemoMoneyCallerWith",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK4A_DemoMoneyCallerWith",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK4A_DemoMoneyCallerWith",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "count",
+        "parameters": [],
+        "references": [],
+        "returnType": "Integer",
+        "type": null
+      }
+    ],
+    "name": "CalK4A_DemoMoneyCallerWith",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalK4A_DemoMoneyCallerWith",
+      "references": [],
+      "type": "CalK4A_DemoMoneyCallerWith"
+    },
+    "variables": []
+  }
+}

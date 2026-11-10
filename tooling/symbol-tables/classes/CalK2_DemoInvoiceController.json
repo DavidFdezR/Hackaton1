@@ -1,0 +1,82 @@
+{
+  "Id": "01pO800000lwFi8IAE",
+  "Name": "CalK2_DemoInvoiceController",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK2_DemoInvoiceController",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK2_DemoInvoiceController",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "AuraEnabled"
+          }
+        ],
+        "location": {
+          "column": 40,
+          "line": 3
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "getInvoice",
+        "parameters": [
+          {
+            "name": "invoiceId",
+            "type": "Id"
+          }
+        ],
+        "references": [],
+        "returnType": "CalK2_DemoInvoice__c",
+        "type": null
+      }
+    ],
+    "name": "CalK2_DemoInvoiceController",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalK2_DemoInvoiceController",
+      "references": [],
+      "type": "CalK2_DemoInvoiceController"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 54,
+          "line": 3
+        },
+        "modifiers": [],
+        "name": "invoiceId",
+        "references": [],
+        "type": "Id"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 36,
+          "line": 4
+        },
+        "modifiers": [],
+        "name": "rows",
+        "references": [],
+        "type": "List<CalK2_DemoInvoice__c>"
+      }
+    ]
+  }
+}

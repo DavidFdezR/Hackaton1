@@ -1,0 +1,50 @@
+{
+  "Id": "01pO800000lwiNOIAY",
+  "Name": "CalHK_InvoiceSelector",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalHK_InvoiceSelector",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalHK_InvoiceSelector",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 42,
+          "line": 3
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "getInvoices",
+        "parameters": [],
+        "references": [],
+        "returnType": "List",
+        "type": null
+      }
+    ],
+    "name": "CalHK_InvoiceSelector",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 2
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalHK_InvoiceSelector",
+      "references": [],
+      "type": "CalHK_InvoiceSelector"
+    },
+    "variables": []
+  }
+}

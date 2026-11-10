@@ -1,0 +1,121 @@
+{
+  "Id": "01pO800000lwSJrIAM",
+  "Name": "CalK1_DemoQuoteService",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK1_DemoQuoteService",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK1_DemoQuoteService",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "calculateTotal",
+        "parameters": [
+          {
+            "name": "lines",
+            "type": "List"
+          }
+        ],
+        "references": [],
+        "returnType": "Decimal",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 26,
+          "line": 16
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "formatTotal",
+        "parameters": [
+          {
+            "name": "total",
+            "type": "Decimal"
+          }
+        ],
+        "references": [],
+        "returnType": "String",
+        "type": null
+      }
+    ],
+    "name": "CalK1_DemoQuoteService",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalK1_DemoQuoteService",
+      "references": [],
+      "type": "CalK1_DemoQuoteService"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 56,
+          "line": 2
+        },
+        "modifiers": [],
+        "name": "lines",
+        "references": [],
+        "type": "List<Decimal>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 3
+        },
+        "modifiers": [],
+        "name": "sum",
+        "references": [],
+        "type": "Decimal"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 22,
+          "line": 7
+        },
+        "modifiers": [],
+        "name": "line",
+        "references": [],
+        "type": "Decimal"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 46,
+          "line": 16
+        },
+        "modifiers": [],
+        "name": "total",
+        "references": [],
+        "type": "Decimal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+68.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO
+Execute Anonymous: for (String url : new List<String>{ 'http://legacy.demo.example/x', 'http://legacy-nobox.demo.example/x', 'http://unregistered.demo.example/x' }) {
+Execute Anonymous:     HttpRequest req = new HttpRequest();
+Execute Anonymous:     req.setEndpoint(url);
+Execute Anonymous:     req.setMethod('GET');
+Execute Anonymous:     try {
+Execute Anonymous:         HttpResponse r = new Http().send(req);
+Execute Anonymous:         System.debug(LoggingLevel.ERROR, 'CALK4A_OBS ' + url + ' => ' + r.getStatusCode() + ' ' + r.getBody().substringBetween('<p>', '</p>'));
+Execute Anonymous:     } catch (Exception e) {
+Execute Anonymous:         System.debug(LoggingLevel.ERROR, 'CALK4A_OBS ' + url + ' => ' + e.getTypeName() + ': ' + e.getMessage().left(200));
+Execute Anonymous:     }
+Execute Anonymous: }
+Execute Anonymous: try {
+Execute Anonymous:     HttpResponse r = CalK4A_DemoErpClient.ping();
+Execute Anonymous:     System.debug(LoggingLevel.ERROR, 'CALK4A_OBS T030 hardcoded => ' + r.getStatusCode() + ' ' + r.getBody().substringBetween('<p>', '</p>'));
+Execute Anonymous: } catch (Exception e) {
+Execute Anonymous:     System.debug(LoggingLevel.ERROR, 'CALK4A_OBS T030 hardcoded => ' + e.getMessage().left(200));
+Execute Anonymous: }
+22:59:25.35 (35432486)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+22:59:25.35 (35444896)|EXECUTION_STARTED
+22:59:25.35 (35451616)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+22:59:25.35 (60868152)|USER_DEBUG|[7]|ERROR|CALK4A_OBS http://legacy.demo.example/x => 503 Unable to resolve DNS for legacy.demo.example
+22:59:25.35 (119909193)|USER_DEBUG|[7]|ERROR|CALK4A_OBS http://legacy-nobox.demo.example/x => 503 Unable to resolve DNS for legacy-nobox.demo.example
+22:59:25.35 (125867584)|EXCEPTION_THROWN|[6]|System.CalloutException: Unauthorized endpoint, please check Setup->Security->Remote site settings. endpoint = http://unregistered.demo.example/x
+22:59:25.35 (126057245)|USER_DEBUG|[9]|ERROR|CALK4A_OBS http://unregistered.demo.example/x => System.CalloutException: Unauthorized endpoint, please check Setup->Security->Remote site settings. endpoint = http://unregistered.demo.example/x
+22:59:25.35 (172648732)|EXCEPTION_THROWN|[7]|System.CalloutException: Unable to tunnel through proxy. Proxy returns "HTTP/1.1 503 Service Unavailable"
+22:59:25.35 (172851763)|USER_DEBUG|[16]|ERROR|CALK4A_OBS T030 hardcoded => Unable to tunnel through proxy. Proxy returns "HTTP/1.1 503 Service Unavailable"
+22:59:25.172 (172884433)|CUMULATIVE_LIMIT_USAGE
+22:59:25.172 (172884433)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 4 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+22:59:25.172 (172884433)|CUMULATIVE_LIMIT_USAGE_END
+
+22:59:25.35 (172919563)|CODE_UNIT_FINISHED|execute_anonymous_apex
+22:59:25.35 (172924393)|EXECUTION_FINISHED

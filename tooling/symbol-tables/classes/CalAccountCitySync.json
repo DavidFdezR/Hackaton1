@@ -1,0 +1,104 @@
+{
+  "Id": "01pO800000lw5dlIAA",
+  "Name": "CalAccountCitySync",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalAccountCitySync",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalAccountCitySync",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 24,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "copyCity",
+        "parameters": [
+          {
+            "name": "accounts",
+            "type": "List"
+          },
+          {
+            "name": "previous",
+            "type": "Map"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalAccountCitySync",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalAccountCitySync",
+      "references": [],
+      "type": "CalAccountCitySync"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 47,
+          "line": 2
+        },
+        "modifiers": [],
+        "name": "accounts",
+        "references": [],
+        "type": "List<Account>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 74,
+          "line": 2
+        },
+        "modifiers": [],
+        "name": "previous",
+        "references": [],
+        "type": "Map<Id,Account>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 22,
+          "line": 3
+        },
+        "modifiers": [],
+        "name": "a",
+        "references": [],
+        "type": "Account"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 30,
+          "line": 5
+        },
+        "modifiers": [],
+        "name": "c",
+        "references": [],
+        "type": "Contact"
+      }
+    ]
+  }
+}

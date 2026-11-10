@@ -1,0 +1,71 @@
+{
+  "Id": "01pO800000lwFi3IAE",
+  "Name": "CalK2_DemoAccountServiceTest",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK2_DemoAccountServiceTest",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK2_DemoAccountServiceTest",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 4
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "previewAndUpdate",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalK2_DemoAccountServiceTest",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 15,
+        "line": 2
+      },
+      "modifiers": [
+        "private",
+        "testMethod"
+      ],
+      "name": "CalK2_DemoAccountServiceTest",
+      "references": [],
+      "type": "CalK2_DemoAccountServiceTest"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 30,
+          "line": 5
+        },
+        "modifiers": [],
+        "name": "a",
+        "references": [],
+        "type": "CalK2_DemoAccount__c"
+      }
+    ]
+  }
+}

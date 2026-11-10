@@ -1,0 +1,67 @@
+{
+  "Id": "01pO800000lwiNTIAY",
+  "Name": "CalHK_PricingUtil",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalHK_PricingUtil",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalHK_PricingUtil",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 3
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "applyMargin",
+        "parameters": [
+          {
+            "name": "cost",
+            "type": "Decimal"
+          }
+        ],
+        "references": [],
+        "returnType": "Decimal",
+        "type": null
+      }
+    ],
+    "name": "CalHK_PricingUtil",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 2
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalHK_PricingUtil",
+      "references": [],
+      "type": "CalHK_PricingUtil"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 47,
+          "line": 3
+        },
+        "modifiers": [],
+        "name": "cost",
+        "references": [],
+        "type": "Decimal"
+      }
+    ]
+  }
+}

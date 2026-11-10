@@ -1,0 +1,145 @@
+{
+  "Id": "01pO800000lwiNUIAY",
+  "Name": "CalHK_ProjectRecalc",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalHK_ProjectRecalc",
+    "innerClasses": [],
+    "interfaces": [
+      "Database.Batchable"
+    ],
+    "key": "CalHK_ProjectRecalc",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 34,
+          "line": 3
+        },
+        "modifiers": [
+          "public"
+        ],
+        "name": "start",
+        "parameters": [
+          {
+            "name": "bc",
+            "type": "BatchableContext"
+          }
+        ],
+        "references": [],
+        "returnType": "Database.QueryLocator",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 4
+        },
+        "modifiers": [
+          "public"
+        ],
+        "name": "execute",
+        "parameters": [
+          {
+            "name": "bc",
+            "type": "BatchableContext"
+          },
+          {
+            "name": "scope",
+            "type": "List"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 5
+        },
+        "modifiers": [
+          "public"
+        ],
+        "name": "finish",
+        "parameters": [
+          {
+            "name": "bc",
+            "type": "BatchableContext"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalHK_ProjectRecalc",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 2
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalHK_ProjectRecalc",
+      "references": [],
+      "type": "CalHK_ProjectRecalc"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 66,
+          "line": 3
+        },
+        "modifiers": [],
+        "name": "bc",
+        "references": [],
+        "type": "Database.BatchableContext"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 51,
+          "line": 4
+        },
+        "modifiers": [],
+        "name": "bc",
+        "references": [],
+        "type": "Database.BatchableContext"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 69,
+          "line": 4
+        },
+        "modifiers": [],
+        "name": "scope",
+        "references": [],
+        "type": "List<SObject>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 50,
+          "line": 5
+        },
+        "modifiers": [],
+        "name": "bc",
+        "references": [],
+        "type": "Database.BatchableContext"
+      }
+    ]
+  }
+}

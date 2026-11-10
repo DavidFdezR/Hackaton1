@@ -1,0 +1,41 @@
+64.0 APEX_CODE,DEBUG;APEX_PROFILING,NONE;CALLOUT,INFO;DATA_ACCESS,INFO;DB,INFO;NBA,INFO;SYSTEM,INFO;VALIDATION,INFO;VISUALFORCE,NONE;WAVE,INFO;WORKFLOW,INFO
+23:21:45.1 (1135427)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+23:21:45.1 (1158227)|EXECUTION_STARTED
+23:21:45.1 (1165307)|CODE_UNIT_STARTED|[EXTERNAL]|01pO800000lweTT|CalK4A_T009_Test.manualShareLostOnOwnerChangeApexReasonKept()
+23:21:45.1 (3421743)|SYSTEM_MODE_ENTER|false
+23:21:45.1 (3538973)|SYSTEM_MODE_EXIT|false
+23:21:45.1 (3584193)|SYSTEM_MODE_ENTER|false
+23:21:45.1 (4967421)|DML_BEGIN|[7]|Op:Insert|Type:CalK4A_DemoProject__c|Rows:2
+23:21:45.1 (43996380)|DML_END|[7]
+23:21:45.1 (52968823)|SOQL_EXECUTE_BEGIN|[11]|Aggregations:0|SELECT Id FROM Profile WHERE Name = :tmpVar1
+23:21:45.1 (57705543)|SOQL_EXECUTE_END|[11]|Rows:1
+23:21:45.1 (57932483)|DML_BEGIN|[14]|Op:Insert|Type:User|Rows:1
+23:21:46.571 (1571271559)|DML_END|[14]
+23:21:46.571 (1573519085)|SOQL_EXECUTE_BEGIN|[25]|Aggregations:0|SELECT Id FROM PermissionSet WHERE Name IN :tmpVar1
+23:21:46.571 (1586823371)|SOQL_EXECUTE_END|[25]|Rows:1
+23:21:46.571 (1587380360)|DML_BEGIN|[28]|Op:Insert|Type:PermissionSetAssignment|Rows:1
+23:21:46.571 (1691955047)|DML_END|[28]
+23:21:46.571 (1700875711)|SOQL_EXECUTE_BEGIN|[11]|Aggregations:0|SELECT Id FROM Profile WHERE Name = :tmpVar1
+23:21:46.571 (1703345037)|SOQL_EXECUTE_END|[11]|Rows:1
+23:21:46.571 (1703534957)|DML_BEGIN|[14]|Op:Insert|Type:User|Rows:1
+23:21:47.930 (2930267708)|DML_END|[14]
+23:21:47.930 (2930972137)|SOQL_EXECUTE_BEGIN|[25]|Aggregations:0|SELECT Id FROM PermissionSet WHERE Name IN :tmpVar1
+23:21:47.930 (2941651408)|SOQL_EXECUTE_END|[25]|Rows:1
+23:21:47.930 (2942008927)|DML_BEGIN|[28]|Op:Insert|Type:PermissionSetAssignment|Rows:1
+23:21:47.930 (3013287246)|DML_END|[28]
+23:21:47.930 (3017559238)|DML_BEGIN|[10]|Op:Insert|Type:CalK4A_DemoProject__Share|Rows:2
+23:21:47.930 (3032252540)|DML_END|[10]
+23:21:47.930 (3033542078)|SOQL_EXECUTE_BEGIN|[17]|Aggregations:0|SELECT Parent.Name, RowCause FROM CalK4A_DemoProject__Share WHERE UserOrGroupId = :tmpVar1
+23:21:47.930 (3059564481)|SOQL_EXECUTE_END|[17]|Rows:2
+23:21:47.930 (3060014150)|SOQL_EXECUTE_BEGIN|[33]|Aggregations:0|SELECT RecordId, HasReadAccess, HasEditAccess, HasDeleteAccess, MaxAccessLevel FROM UserRecordAccess WHERE (UserId = :tmpVar1 AND RecordId = :tmpVar2)
+23:21:47.930 (3093686367)|SOQL_EXECUTE_END|[33]|Rows:2
+23:21:47.930 (3094066146)|DML_BEGIN|[19]|Op:Update|Type:CalK4A_DemoProject__c|Rows:2
+23:21:47.930 (3124391331)|DML_END|[19]
+23:21:47.930 (3125593909)|SOQL_EXECUTE_BEGIN|[23]|Aggregations:0|SELECT Parent.Name, RowCause FROM CalK4A_DemoProject__Share WHERE UserOrGroupId = :tmpVar1
+23:21:47.930 (3132412497)|SOQL_EXECUTE_END|[23]|Rows:1
+23:21:47.930 (3132786056)|SOQL_EXECUTE_BEGIN|[33]|Aggregations:0|SELECT RecordId, HasReadAccess, HasEditAccess, HasDeleteAccess, MaxAccessLevel FROM UserRecordAccess WHERE (UserId = :tmpVar1 AND RecordId = :tmpVar2)
+23:21:47.930 (3154967754)|SOQL_EXECUTE_END|[33]|Rows:2
+23:21:47.930 (3156179552)|USER_DEBUG|[45]|ERROR|CALK4A_OBS T-009={"after_memberReadReasonProject":true,"after_memberReadManualProject":false,"after_shares":[{"attributes":{"type":"CalK4A_DemoProject__Share","url":"/services/data/v68.0/sobjects/CalK4A_DemoProject__Share/02cO800003I5bCoIAJ"},"ParentId":"a0BO800000TDG6JMAX","RowCause":"CalK4A_Project_Member__c","Id":"02cO800003I5bCoIAJ","Parent":{"attributes":{"type":"CalK4A_DemoProject__c","url":"/services/data/v68.0/sobjects/CalK4A_DemoProject__c/a0BO800000TDG6JMAX"},"Id":"a0BO800000TDG6JMAX","Name":"Apex-reason project"}}],"before_memberAccess":[{"attributes":{"type":"UserRecordAccess","url":"/services/data/v68.0/sobjects/UserRecordAccess/a0BO800000TDG6JMAX"},"RecordId":"a0BO800000TDG6JMAX","HasReadAccess":true,"HasEditAccess":false,"HasDeleteAccess":false,"MaxAccessLevel":"Read","Id":"a0BO800000TDG6JMAX"},{"attributes":{"type":"UserRecordAccess","url":"/services/data/v68.0/sobjects/UserRecordAccess/a0BO800000TDG6IMAX"},"RecordId":"a0BO800000TDG6IMAX","HasReadAccess":true,"HasEditAccess":false,"HasDeleteAccess":false,"MaxAccessLevel":"Read","Id":"a0BO800000TDG6IMAX"}],"before_shares":[{"attributes":{"type":"CalK4A_DemoProject__Share","url":"/services/data/v68.0/sobjects/CalK4A_DemoProject__Share/02cO800003I5bCnIAJ"},"ParentId":"a0BO800000TDG6IMAX","RowCause":"Manual","Id":"02cO800003I5bCnIAJ","Parent":{"attributes":{"type":"CalK4A_DemoProject__c","url":"/services/data/v68.0/sobjects/CalK4A_DemoProject__c/a0BO800000TDG6IMAX"},"Id":"a0BO800000TDG6IMAX","Name":"Manual-share project"}},{"attributes":{"type":"CalK4A_DemoProject__Share","url":"/services/data/v68.0/sobjects/CalK4A_DemoProject__Share/02cO800003I5bCoIAJ"},"ParentId":"a0BO800000TDG6JMAX","RowCause":"CalK4A_Project_Member__c","Id":"02cO800003I5bCoIAJ","Parent":{"attributes":{"type":"CalK4A_DemoProject__c","url":"/services/data/v68.0/sobjects/CalK4A_DemoProject__c/a0BO800000TDG6JMAX"},"Id":"a0BO800000TDG6JMAX","Name":"Apex-reason project"}}]}
+23:21:47.930 (3156274722)|SYSTEM_MODE_EXIT|false
+23:21:47.930 (3156299752)|CODE_UNIT_FINISHED|CalK4A_T009_Test.manualShareLostOnOwnerChangeApexReasonKept()
+23:21:47.930 (3156304822)|EXECUTION_FINISHED

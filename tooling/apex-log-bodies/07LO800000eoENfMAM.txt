@@ -1,0 +1,34 @@
+68.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO
+Execute Anonymous: 
+Execute Anonymous: List<Case> cases = new List<Case>();
+Execute Anonymous: for (Integer i = 1; i <= 200; i++) cases.add(new Case(Subject = 'Cal APX04 Case ' + String.valueOf(i).leftPad(3, '0'), Status = 'New', Origin = 'Web'));
+Execute Anonymous: insert cases;
+Execute Anonymous: System.debug('seeded ' + cases.size() + ' cases');
+23:19:54.31 (31986119)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+23:19:54.31 (32008779)|EXECUTION_STARTED
+23:19:54.31 (32015819)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+23:19:54.31 (658160004)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:Case
+23:19:54.31 (665394521)|CODE_UNIT_FINISHED|Workflow:Case
+23:19:54.31 (667254145)|CODE_UNIT_STARTED|[EXTERNAL]|SLA
+23:19:54.31 (680037176)|CODE_UNIT_FINISHED|SLA
+23:19:55.193 (1193417806)|USER_DEBUG|[5]|DEBUG|seeded 200 cases
+23:19:57.234 (3234034532)|CUMULATIVE_LIMIT_USAGE
+23:19:57.234 (3234034532)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 200 out of 10000
+  Maximum CPU time: 87 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:19:57.234 (3234034532)|CUMULATIVE_LIMIT_USAGE_END
+
+23:19:57.234 (3234087322)|CODE_UNIT_FINISHED|execute_anonymous_apex
+23:19:57.234 (3234104082)|EXECUTION_FINISHED

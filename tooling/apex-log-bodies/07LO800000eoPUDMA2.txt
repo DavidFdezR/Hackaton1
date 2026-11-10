@@ -1,0 +1,31 @@
+68.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO
+Execute Anonymous: Messaging.SingleEmailMessage m = Messaging.renderStoredEmailTemplate('00XO800000DrEtNMAV', null, 'a0KO800000YuBV3MAN'); System.debug('CALK4B_RENDER subject=' + m.getSubject() + ' body=' + m.getHtmlBody());
+23:17:56.37 (37216274)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+23:17:56.37 (37244554)|EXECUTION_STARTED
+23:17:56.37 (37259314)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+23:17:56.37 (137972227)|EXCEPTION_THROWN|[1]|System.EmailTemplateRenderException: EMAIL_TEMPLATE_MERGEFIELD_ERROR: We don't recognize the field prefix CalK4B_Contact__c. Associate a record that matches the prefix or update the template to remove the merge field from the body, subject, or letterhead.
+
+23:17:56.37 (138107517)|FATAL_ERROR|System.EmailTemplateRenderException: EMAIL_TEMPLATE_MERGEFIELD_ERROR: We don't recognize the field prefix CalK4B_Contact__c. Associate a record that matches the prefix or update the template to remove the merge field from the body, subject, or letterhead.
+
+
+AnonymousBlock: line 1, column 1
+23:17:56.138 (138138227)|CUMULATIVE_LIMIT_USAGE
+23:17:56.138 (138138227)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:17:56.138 (138138227)|CUMULATIVE_LIMIT_USAGE_END
+
+23:17:56.37 (138192106)|CODE_UNIT_FINISHED|execute_anonymous_apex
+23:17:56.37 (138203356)|EXECUTION_FINISHED

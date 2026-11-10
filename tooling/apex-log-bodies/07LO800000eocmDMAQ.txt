@@ -1,0 +1,55 @@
+68.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO
+Execute Anonymous: insert new List<CalK4A_DemoAccount__c>{
+Execute Anonymous:     new CalK4A_DemoAccount__c(Name = 'CalK4A T-043 a', Tier__c = 'Gold'),
+Execute Anonymous:     new CalK4A_DemoAccount__c(Name = 'CalK4A T-043 b', Tier__c = 'gold'),
+Execute Anonymous:     new CalK4A_DemoAccount__c(Name = 'CalK4A T-043 c', Tier__c = 'Platinum+')
+Execute Anonymous: };
+23:18:51.26 (26867447)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+23:18:51.26 (26882547)|EXECUTION_STARTED
+23:18:51.26 (26889318)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+23:18:51.26 (64407455)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZfvp|CalK4A_DemoAccountTrigger on CalK4A_DemoAccount trigger event BeforeInsert|__sfdc_trigger/CalK4A_DemoAccountTrigger
+23:18:51.70 (70481759)|CUMULATIVE_LIMIT_USAGE
+23:18:51.70 (70481759)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 3 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:18:51.70 (70481759)|CUMULATIVE_LIMIT_USAGE_END
+
+23:18:51.26 (70707071)|CODE_UNIT_FINISHED|CalK4A_DemoAccountTrigger on CalK4A_DemoAccount trigger event BeforeInsert|__sfdc_trigger/CalK4A_DemoAccountTrigger
+23:18:51.26 (79182675)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:CalK4A_DemoAccount:new
+23:18:51.26 (79241995)|CODE_UNIT_FINISHED|Validation:CalK4A_DemoAccount:new
+23:18:51.26 (79252765)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:CalK4A_DemoAccount:new
+23:18:51.26 (79267816)|CODE_UNIT_FINISHED|Validation:CalK4A_DemoAccount:new
+23:18:51.26 (79273206)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:CalK4A_DemoAccount:new
+23:18:51.26 (79279036)|CODE_UNIT_FINISHED|Validation:CalK4A_DemoAccount:new
+23:18:51.137 (137068230)|CUMULATIVE_LIMIT_USAGE
+23:18:51.137 (137068230)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 3 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:18:51.137 (137068230)|CUMULATIVE_LIMIT_USAGE_END
+
+23:18:51.26 (137111440)|CODE_UNIT_FINISHED|execute_anonymous_apex
+23:18:51.26 (137124151)|EXECUTION_FINISHED

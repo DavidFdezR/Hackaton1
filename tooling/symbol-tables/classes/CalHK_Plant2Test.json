@@ -1,0 +1,59 @@
+{
+  "Id": "01pO800000lwk2fIAA",
+  "Name": "CalHK_Plant2Test",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalHK_Plant2Test",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalHK_Plant2Test",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 25,
+          "line": 3
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "coversRound2",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalHK_Plant2Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 15,
+        "line": 2
+      },
+      "modifiers": [
+        "private",
+        "testMethod"
+      ],
+      "name": "CalHK_Plant2Test",
+      "references": [],
+      "type": "CalHK_Plant2Test"
+    },
+    "variables": []
+  }
+}

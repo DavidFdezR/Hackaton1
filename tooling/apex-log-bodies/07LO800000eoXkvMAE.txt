@@ -1,0 +1,38 @@
+68.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO
+Execute Anonymous: Id q = [SELECT Id FROM Group WHERE DeveloperName = 'CalK4A_Demo_Triage' AND Type = 'Queue'].Id;
+Execute Anonymous: List<SObject> rows = new List<SObject>();
+Execute Anonymous: for (String region : new List<String>{ 'EMEA', 'APAC' }) {
+Execute Anonymous:     SObject c = Schema.getGlobalDescribe().get('CalK4A_DemoCase__c').newSObject();
+Execute Anonymous:     c.put('Name', 'CalK4A T-004 ' + region + ' case');
+Execute Anonymous:     c.put('Region__c', region);
+Execute Anonymous:     c.put('OwnerId', q);
+Execute Anonymous:     rows.add(c);
+Execute Anonymous: }
+Execute Anonymous: insert rows;
+22:49:49.16 (16078225)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+22:49:49.16 (16098895)|EXECUTION_STARTED
+22:49:49.16 (16110295)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+22:49:49.16 (94153547)|EXCEPTION_THROWN|[6]|System.SObjectException: Invalid field Region__c for CalK4A_DemoCase__c
+22:49:49.16 (94321959)|FATAL_ERROR|System.SObjectException: Invalid field Region__c for CalK4A_DemoCase__c
+
+AnonymousBlock: line 6, column 1
+22:49:49.94 (94366470)|CUMULATIVE_LIMIT_USAGE
+22:49:49.94 (94366470)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+22:49:49.94 (94366470)|CUMULATIVE_LIMIT_USAGE_END
+
+22:49:49.16 (94452291)|CODE_UNIT_FINISHED|execute_anonymous_apex
+22:49:49.16 (94460771)|EXECUTION_FINISHED

@@ -1,0 +1,84 @@
+{
+  "Id": "01pO800000lwdM8IAI",
+  "Name": "CalK4A_DemoMoneyUtil",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK4A_DemoMoneyUtil",
+    "innerClasses": [],
+    "interfaces": [
+      "System.Queueable"
+    ],
+    "key": "CalK4A_DemoMoneyUtil",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "countInvoices",
+        "parameters": [],
+        "references": [],
+        "returnType": "Integer",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 6
+        },
+        "modifiers": [
+          "public"
+        ],
+        "name": "execute",
+        "parameters": [
+          {
+            "name": "ctx",
+            "type": "QueueableContext"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalK4A_DemoMoneyUtil",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 32,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "inherited sharing"
+      ],
+      "name": "CalK4A_DemoMoneyUtil",
+      "references": [],
+      "type": "CalK4A_DemoMoneyUtil"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 42,
+          "line": 6
+        },
+        "modifiers": [],
+        "name": "ctx",
+        "references": [],
+        "type": "System.QueueableContext"
+      }
+    ]
+  }
+}

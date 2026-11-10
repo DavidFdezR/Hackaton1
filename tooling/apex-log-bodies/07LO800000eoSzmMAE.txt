@@ -1,0 +1,39 @@
+62.0 APEX_CODE,DEBUG;APEX_PROFILING,NONE;CALLOUT,INFO;DATA_ACCESS,INFO;DB,INFO;NBA,INFO;SYSTEM,INFO;VALIDATION,INFO;VISUALFORCE,NONE;WAVE,INFO;WORKFLOW,INFO
+23:25:08.0 (533202)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+23:25:08.0 (554912)|EXECUTION_STARTED
+23:25:08.0 (561412)|CODE_UNIT_STARTED|[EXTERNAL]|01pO800000lwd19|CalK4B_InvoiceAccessTest.grantingFlsMakesItPass()
+23:25:08.0 (1119375)|SOQL_EXECUTE_BEGIN|[4]|Aggregations:0|SELECT Id FROM Profile WHERE Name = 'Standard User'
+23:25:08.0 (11084993)|SOQL_EXECUTE_END|[4]|Rows:1
+23:25:08.0 (11593316)|DML_BEGIN|[9]|Op:Insert|Type:User|Rows:1
+23:25:09.354 (1354270276)|DML_END|[9]
+23:25:09.354 (1355312521)|SOQL_EXECUTE_BEGIN|[14]|Aggregations:0|SELECT Id FROM PermissionSet WHERE Name = :tmpVar1
+23:25:09.354 (1379176667)|SOQL_EXECUTE_END|[14]|Rows:1
+23:25:09.354 (1379463089)|DML_BEGIN|[13]|Op:Insert|Type:PermissionSetAssignment|Rows:1
+23:25:09.354 (1550021376)|DML_END|[13]
+23:25:09.354 (1550865150)|SOQL_EXECUTE_BEGIN|[45]|Aggregations:0|SELECT Id FROM PermissionSet WHERE Name = 'CalK4B_Sales_Rep'
+23:25:09.354 (1563983684)|SOQL_EXECUTE_END|[45]|Rows:1
+23:25:09.354 (1564214225)|DML_BEGIN|[45]|Op:Insert|Type:FieldPermissions|Rows:1
+23:25:10.891 (2891975333)|DML_END|[45]
+23:25:10.891 (2899845281)|DML_BEGIN|[20]|Op:Insert|Type:CalK4B_Invoice__c|Rows:1
+23:25:10.891 (2956355035)|DML_END|[20]
+23:25:10.891 (3003104002)|SOQL_EXECUTE_BEGIN|[3]|Aggregations:0|SELECT Id, Promo_Code__c FROM CalK4B_Invoice__c WHERE Id = :tmpVar1 WITH USER_MODE
+23:25:10.891 (3033768481)|SOQL_EXECUTE_END|[3]|Rows:1
+23:25:10.891 (3039895311)|CODE_UNIT_FINISHED|CalK4B_InvoiceAccessTest.grantingFlsMakesItPass()
+23:25:10.891 (3039903171)|EXECUTION_FINISHED
+23:25:11.58 (3058993523)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+23:25:11.58 (3059003063)|EXECUTION_STARTED
+23:25:11.58 (3059008333)|CODE_UNIT_STARTED|[EXTERNAL]|01pO800000lwd19|CalK4B_InvoiceAccessTest.userModeQueryFailsWithoutFls()
+23:25:11.58 (3059449355)|SOQL_EXECUTE_BEGIN|[4]|Aggregations:0|SELECT Id FROM Profile WHERE Name = 'Standard User'
+23:25:11.58 (3061961217)|SOQL_EXECUTE_END|[4]|Rows:1
+23:25:11.58 (3062222319)|DML_BEGIN|[9]|Op:Insert|Type:User|Rows:1
+23:25:12.76 (4076679328)|DML_END|[9]
+23:25:12.76 (4077465992)|SOQL_EXECUTE_BEGIN|[14]|Aggregations:0|SELECT Id FROM PermissionSet WHERE Name = :tmpVar1
+23:25:12.76 (4088569206)|SOQL_EXECUTE_END|[14]|Rows:1
+23:25:12.76 (4088729257)|DML_BEGIN|[13]|Op:Insert|Type:PermissionSetAssignment|Rows:1
+23:25:12.76 (4219658751)|DML_END|[13]
+23:25:12.76 (4227049337)|DML_BEGIN|[20]|Op:Insert|Type:CalK4B_Invoice__c|Rows:1
+23:25:12.76 (4250175100)|DML_END|[20]
+23:25:12.76 (4289540860)|EXCEPTION_THROWN|[3]|System.QueryException: No such column 'Promo_Code__c' on entity 'CalK4B_Invoice__c'. If you are attempting to use a custom field, be sure to append the '__c' after the custom field name. Please reference your WSDL or the describe call for the appropriate names.
+23:25:12.76 (4295838081)|USER_DEBUG|[37]|DEBUG|CALK4B_T053_ERROR No such column 'Promo_Code__c' on entity 'CalK4B_Invoice__c'. If you are attempting to use a custom field, be sure to append the '__c' after the custom field name. Please reference your WSDL or the describe call for the appropriate names.
+23:25:12.76 (4295907971)|CODE_UNIT_FINISHED|CalK4B_InvoiceAccessTest.userModeQueryFailsWithoutFls()
+23:25:12.76 (4295912761)|EXECUTION_FINISHED

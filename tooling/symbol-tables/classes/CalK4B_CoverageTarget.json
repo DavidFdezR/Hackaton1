@@ -1,0 +1,146 @@
+{
+  "Id": "01pO800000lwd17IAA",
+  "Name": "CalK4B_CoverageTarget",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK4B_CoverageTarget",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK4B_CoverageTarget",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "add",
+        "parameters": [
+          {
+            "name": "a",
+            "type": "Integer"
+          },
+          {
+            "name": "b",
+            "type": "Integer"
+          }
+        ],
+        "references": [],
+        "returnType": "Integer",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 26,
+          "line": 5
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "greet",
+        "parameters": [
+          {
+            "name": "name",
+            "type": "String"
+          }
+        ],
+        "references": [],
+        "returnType": "String",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 8
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "isPositive",
+        "parameters": [
+          {
+            "name": "n",
+            "type": "Integer"
+          }
+        ],
+        "references": [],
+        "returnType": "Boolean",
+        "type": null
+      }
+    ],
+    "name": "CalK4B_CoverageTarget",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalK4B_CoverageTarget",
+      "references": [],
+      "type": "CalK4B_CoverageTarget"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 39,
+          "line": 2
+        },
+        "modifiers": [],
+        "name": "a",
+        "references": [],
+        "type": "Integer"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 50,
+          "line": 2
+        },
+        "modifiers": [],
+        "name": "b",
+        "references": [],
+        "type": "Integer"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 39,
+          "line": 5
+        },
+        "modifiers": [],
+        "name": "name",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 46,
+          "line": 8
+        },
+        "modifiers": [],
+        "name": "n",
+        "references": [],
+        "type": "Integer"
+      }
+    ]
+  }
+}

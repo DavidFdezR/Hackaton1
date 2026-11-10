@@ -1,0 +1,432 @@
+{
+  "Id": "01pO800000lwryZIAQ",
+  "Name": "CalSB_SalesBleedTest",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalSB_SalesBleedTest",
+    "innerClasses": [
+      {
+        "constructors": [],
+        "externalReferences": [],
+        "id": "SlackSink",
+        "innerClasses": [],
+        "interfaces": [
+          "System.HttpCalloutMock"
+        ],
+        "key": "SlackSink",
+        "methods": [
+          {
+            "annotations": [],
+            "location": {
+              "column": 29,
+              "line": 9
+            },
+            "modifiers": [
+              "public"
+            ],
+            "name": "respond",
+            "parameters": [
+              {
+                "name": "request",
+                "type": "System.HttpRequest"
+              }
+            ],
+            "references": [],
+            "returnType": "System.HttpResponse",
+            "type": null
+          }
+        ],
+        "name": "SlackSink",
+        "namespace": null,
+        "parentClass": "",
+        "properties": [
+          {
+            "annotations": [],
+            "location": {
+              "column": 29,
+              "line": 8
+            },
+            "modifiers": [
+              "public"
+            ],
+            "name": "bodies",
+            "references": [],
+            "type": "List"
+          }
+        ],
+        "tableDeclaration": {
+          "annotations": [],
+          "location": {
+            "column": 19,
+            "line": 7
+          },
+          "modifiers": [
+            "private"
+          ],
+          "name": "SlackSink",
+          "references": [],
+          "type": "SlackSink"
+        },
+        "variables": [
+          {
+            "annotations": [],
+            "location": {
+              "column": 49,
+              "line": 9
+            },
+            "modifiers": [],
+            "name": "request",
+            "references": [],
+            "type": "System.HttpRequest"
+          },
+          {
+            "annotations": [],
+            "location": {
+              "column": 26,
+              "line": 11
+            },
+            "modifiers": [],
+            "name": "response",
+            "references": [],
+            "type": "System.HttpResponse"
+          }
+        ]
+      }
+    ],
+    "interfaces": [],
+    "key": "CalSB_SalesBleedTest",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 17
+        },
+        "modifiers": [
+          "private",
+          "static"
+        ],
+        "name": "webLead",
+        "parameters": [
+          {
+            "name": "description",
+            "type": "String"
+          }
+        ],
+        "references": [],
+        "returnType": "Lead",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 25
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "injectedTextReachesTheAgentContextVerbatim",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 32
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "naiveActionPostsThePhishAsTheHelpDeskWithNoApproval",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 48
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "safeTwinDraftsFlagsAndNeverSends",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 59
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "ordinaryLeadIsNotFlagged",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 66
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "payloadInCompanyFieldIsCaught",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 74
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "plainTextExfilRequestIsCaught",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 81
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "hiddenCommentAndZeroWidthAreStrippedAndFlagged",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalSB_SalesBleedTest",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 25,
+          "line": 3
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "final"
+        ],
+        "name": "PAYLOAD",
+        "references": [],
+        "type": "String"
+      }
+    ],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 15,
+        "line": 2
+      },
+      "modifiers": [
+        "private",
+        "testMethod"
+      ],
+      "name": "CalSB_SalesBleedTest",
+      "references": [],
+      "type": "CalSB_SalesBleedTest"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 32,
+          "line": 17
+        },
+        "modifiers": [],
+        "name": "description",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 18
+        },
+        "modifiers": [],
+        "name": "l",
+        "references": [],
+        "type": "Lead"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 16,
+          "line": 26
+        },
+        "modifiers": [],
+        "name": "context",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 19,
+          "line": 33
+        },
+        "modifiers": [],
+        "name": "sink",
+        "references": [],
+        "type": "CalSB_SalesBleedTest.SlackSink"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 37,
+          "line": 35
+        },
+        "modifiers": [],
+        "name": "r",
+        "references": [],
+        "type": "CalSB_SlackNotifier.Request"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 19,
+          "line": 49
+        },
+        "modifiers": [],
+        "name": "sink",
+        "references": [],
+        "type": "CalSB_SalesBleedTest.SlackSink"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 34,
+          "line": 51
+        },
+        "modifiers": [],
+        "name": "d",
+        "references": [],
+        "type": "CalSB_SafeFollowUp.Draft"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 34,
+          "line": 60
+        },
+        "modifiers": [],
+        "name": "d",
+        "references": [],
+        "type": "CalSB_SafeFollowUp.Draft"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 67
+        },
+        "modifiers": [],
+        "name": "l",
+        "references": [],
+        "type": "Lead"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 34,
+          "line": 75
+        },
+        "modifiers": [],
+        "name": "d",
+        "references": [],
+        "type": "CalSB_SafeFollowUp.Draft"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 34,
+          "line": 82
+        },
+        "modifiers": [],
+        "name": "d",
+        "references": [],
+        "type": "CalSB_SafeFollowUp.Draft"
+      }
+    ]
+  }
+}

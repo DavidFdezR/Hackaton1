@@ -1,0 +1,216 @@
+{
+  "Id": "01pO800000lwryaIAA",
+  "Name": "CalSB_SlackNotifier",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalSB_SlackNotifier",
+    "innerClasses": [
+      {
+        "constructors": [],
+        "externalReferences": [],
+        "id": "Request",
+        "innerClasses": [],
+        "interfaces": [],
+        "key": "Request",
+        "methods": [],
+        "name": "Request",
+        "namespace": null,
+        "parentClass": "",
+        "properties": [
+          {
+            "annotations": [
+              {
+                "name": "InvocableVariable"
+              }
+            ],
+            "location": {
+              "column": 73,
+              "line": 4
+            },
+            "modifiers": [
+              "public"
+            ],
+            "name": "channel",
+            "references": [],
+            "type": "String"
+          },
+          {
+            "annotations": [
+              {
+                "name": "InvocableVariable"
+              }
+            ],
+            "location": {
+              "column": 73,
+              "line": 5
+            },
+            "modifiers": [
+              "public"
+            ],
+            "name": "postAs",
+            "references": [],
+            "type": "String"
+          },
+          {
+            "annotations": [
+              {
+                "name": "InvocableVariable"
+              }
+            ],
+            "location": {
+              "column": 73,
+              "line": 6
+            },
+            "modifiers": [
+              "public"
+            ],
+            "name": "text",
+            "references": [],
+            "type": "String"
+          }
+        ],
+        "tableDeclaration": {
+          "annotations": [],
+          "location": {
+            "column": 18,
+            "line": 3
+          },
+          "modifiers": [
+            "public"
+          ],
+          "name": "Request",
+          "references": [],
+          "type": "Request"
+        },
+        "variables": []
+      }
+    ],
+    "interfaces": [],
+    "key": "CalSB_SlackNotifier",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "InvocableMethod"
+          }
+        ],
+        "location": {
+          "column": 33,
+          "line": 10
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "post",
+        "parameters": [
+          {
+            "name": "requests",
+            "type": "List"
+          }
+        ],
+        "references": [],
+        "returnType": "List",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 18
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "send",
+        "parameters": [
+          {
+            "name": "r",
+            "type": "Request"
+          }
+        ],
+        "references": [],
+        "returnType": "Integer",
+        "type": null
+      }
+    ],
+    "name": "CalSB_SlackNotifier",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 2
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalSB_SlackNotifier",
+      "references": [],
+      "type": "CalSB_SlackNotifier"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 52,
+          "line": 10
+        },
+        "modifiers": [],
+        "name": "requests",
+        "references": [],
+        "type": "List<CalSB_SlackNotifier.Request>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 23,
+          "line": 11
+        },
+        "modifiers": [],
+        "name": "statuses",
+        "references": [],
+        "type": "List<Integer>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 22,
+          "line": 12
+        },
+        "modifiers": [],
+        "name": "r",
+        "references": [],
+        "type": "CalSB_SlackNotifier.Request"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 40,
+          "line": 18
+        },
+        "modifiers": [],
+        "name": "r",
+        "references": [],
+        "type": "CalSB_SlackNotifier.Request"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 21,
+          "line": 19
+        },
+        "modifiers": [],
+        "name": "req",
+        "references": [],
+        "type": "System.HttpRequest"
+      }
+    ]
+  }
+}

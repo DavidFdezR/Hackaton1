@@ -1,0 +1,370 @@
+{
+  "Id": "01pO800000lwdMHIAY",
+  "Name": "CalK4A_TestUsers",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK4A_TestUsers",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK4A_TestUsers",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 24,
+          "line": 5
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "make",
+        "parameters": [
+          {
+            "name": "alias",
+            "type": "String"
+          },
+          {
+            "name": "profileName",
+            "type": "String"
+          },
+          {
+            "name": "roleDevName",
+            "type": "String"
+          },
+          {
+            "name": "psNames",
+            "type": "List"
+          }
+        ],
+        "references": [],
+        "returnType": "User",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 24,
+          "line": 20
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "assign",
+        "parameters": [
+          {
+            "name": "userId",
+            "type": "Id"
+          },
+          {
+            "name": "psNames",
+            "type": "List"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 45,
+          "line": 31
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "access",
+        "parameters": [
+          {
+            "name": "userId",
+            "type": "Id"
+          },
+          {
+            "name": "recordIds",
+            "type": "Set"
+          }
+        ],
+        "references": [],
+        "returnType": "Map",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 26,
+          "line": 40
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "owd",
+        "parameters": [
+          {
+            "name": "objectName",
+            "type": "String"
+          }
+        ],
+        "references": [],
+        "returnType": "String",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 24,
+          "line": 44
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "obs",
+        "parameters": [
+          {
+            "name": "key",
+            "type": "String"
+          },
+          {
+            "name": "value",
+            "type": "Object"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalK4A_TestUsers",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 20,
+          "line": 3
+        },
+        "modifiers": [
+          "private",
+          "static"
+        ],
+        "name": "seq",
+        "references": [],
+        "type": "Integer"
+      }
+    ],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 14,
+        "line": 2
+      },
+      "modifiers": [
+        "public",
+        "testMethod"
+      ],
+      "name": "CalK4A_TestUsers",
+      "references": [],
+      "type": "CalK4A_TestUsers"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 36,
+          "line": 5
+        },
+        "modifiers": [],
+        "name": "alias",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 50,
+          "line": 5
+        },
+        "modifiers": [],
+        "name": "profileName",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 70,
+          "line": 5
+        },
+        "modifiers": [],
+        "name": "roleDevName",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 96,
+          "line": 5
+        },
+        "modifiers": [],
+        "name": "psNames",
+        "references": [],
+        "type": "List<String>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 6
+        },
+        "modifiers": [],
+        "name": "u",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 16,
+          "line": 8
+        },
+        "modifiers": [],
+        "name": "roleId",
+        "references": [],
+        "type": "Id"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 34,
+          "line": 20
+        },
+        "modifiers": [],
+        "name": "userId",
+        "references": [],
+        "type": "Id"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 55,
+          "line": 20
+        },
+        "modifiers": [],
+        "name": "psNames",
+        "references": [],
+        "type": "List<String>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 39,
+          "line": 24
+        },
+        "modifiers": [],
+        "name": "rows",
+        "references": [],
+        "type": "List<PermissionSetAssignment>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 28,
+          "line": 25
+        },
+        "modifiers": [],
+        "name": "ps",
+        "references": [],
+        "type": "PermissionSet"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 55,
+          "line": 31
+        },
+        "modifiers": [],
+        "name": "userId",
+        "references": [],
+        "type": "Id"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 71,
+          "line": 31
+        },
+        "modifiers": [],
+        "name": "recordIds",
+        "references": [],
+        "type": "Set<Id>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 35,
+          "line": 32
+        },
+        "modifiers": [],
+        "name": "byRecord",
+        "references": [],
+        "type": "Map<Id,UserRecordAccess>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 31,
+          "line": 33
+        },
+        "modifiers": [],
+        "name": "a",
+        "references": [],
+        "type": "UserRecordAccess"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 37,
+          "line": 40
+        },
+        "modifiers": [],
+        "name": "objectName",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 35,
+          "line": 44
+        },
+        "modifiers": [],
+        "name": "key",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 47,
+          "line": 44
+        },
+        "modifiers": [],
+        "name": "value",
+        "references": [],
+        "type": "Object"
+      }
+    ]
+  }
+}

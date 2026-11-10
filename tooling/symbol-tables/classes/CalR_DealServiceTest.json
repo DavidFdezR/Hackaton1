@@ -1,0 +1,59 @@
+{
+  "Id": "01pO800000lwv9KIAQ",
+  "Name": "CalR_DealServiceTest",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalR_DealServiceTest",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalR_DealServiceTest",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 4
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "largeDealsNeedApproval",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalR_DealServiceTest",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 15,
+        "line": 2
+      },
+      "modifiers": [
+        "private",
+        "testMethod"
+      ],
+      "name": "CalR_DealServiceTest",
+      "references": [],
+      "type": "CalR_DealServiceTest"
+    },
+    "variables": []
+  }
+}

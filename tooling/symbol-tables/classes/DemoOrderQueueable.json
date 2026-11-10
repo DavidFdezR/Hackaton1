@@ -1,0 +1,124 @@
+{
+  "Id": "01pO800000lx1sLIAQ",
+  "Name": "DemoOrderQueueable",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 12,
+          "line": 4
+        },
+        "modifiers": [
+          "public"
+        ],
+        "name": "DemoOrderQueueable",
+        "parameters": [
+          {
+            "name": "remaining",
+            "type": "Integer"
+          }
+        ],
+        "references": [],
+        "type": null
+      }
+    ],
+    "externalReferences": [],
+    "id": "DemoOrderQueueable",
+    "innerClasses": [],
+    "interfaces": [
+      "System.Queueable"
+    ],
+    "key": "DemoOrderQueueable",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 5
+        },
+        "modifiers": [
+          "public"
+        ],
+        "name": "execute",
+        "parameters": [
+          {
+            "name": "ctx",
+            "type": "QueueableContext"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "DemoOrderQueueable",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 21,
+          "line": 3
+        },
+        "modifiers": [
+          "private"
+        ],
+        "name": "remaining",
+        "references": [],
+        "type": "Integer"
+      }
+    ],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 2
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "DemoOrderQueueable",
+      "references": [],
+      "type": "DemoOrderQueueable"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 39,
+          "line": 4
+        },
+        "modifiers": [],
+        "name": "remaining",
+        "references": [],
+        "type": "Integer"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 42,
+          "line": 5
+        },
+        "modifiers": [],
+        "name": "ctx",
+        "references": [],
+        "type": "System.QueueableContext"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 26,
+          "line": 7
+        },
+        "modifiers": [],
+        "name": "opts",
+        "references": [],
+        "type": "System.AsyncOptions"
+      }
+    ]
+  }
+}

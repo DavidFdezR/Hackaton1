@@ -1,0 +1,59 @@
+{
+  "Id": "01pO800000lwv9QIAQ",
+  "Name": "CalR_RenewalServiceTest",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalR_RenewalServiceTest",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalR_RenewalServiceTest",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 4
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "largeDealsNeedApproval",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalR_RenewalServiceTest",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 15,
+        "line": 2
+      },
+      "modifiers": [
+        "private",
+        "testMethod"
+      ],
+      "name": "CalR_RenewalServiceTest",
+      "references": [],
+      "type": "CalR_RenewalServiceTest"
+    },
+    "variables": []
+  }
+}

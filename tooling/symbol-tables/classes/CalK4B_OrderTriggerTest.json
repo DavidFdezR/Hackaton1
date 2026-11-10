@@ -1,0 +1,71 @@
+{
+  "Id": "01pO800000lwd1JIAQ",
+  "Name": "CalK4B_OrderTriggerTest",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK4B_OrderTriggerTest",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK4B_OrderTriggerTest",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 4
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "publishesOnUpdate",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalK4B_OrderTriggerTest",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 15,
+        "line": 2
+      },
+      "modifiers": [
+        "private",
+        "testMethod"
+      ],
+      "name": "CalK4B_OrderTriggerTest",
+      "references": [],
+      "type": "CalK4B_OrderTriggerTest"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 25,
+          "line": 5
+        },
+        "modifiers": [],
+        "name": "o",
+        "references": [],
+        "type": "CalK4B_Order__c"
+      }
+    ]
+  }
+}

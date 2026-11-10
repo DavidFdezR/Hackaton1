@@ -1,0 +1,59 @@
+{
+  "Id": "01pO800000lwidcIAA",
+  "Name": "CalK4A_DemoInvoiceService_T037Test",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK4A_DemoInvoiceService_T037Test",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK4A_DemoInvoiceService_T037Test",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 4
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "tax",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalK4A_DemoInvoiceService_T037Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 15,
+        "line": 2
+      },
+      "modifiers": [
+        "private",
+        "testMethod"
+      ],
+      "name": "CalK4A_DemoInvoiceService_T037Test",
+      "references": [],
+      "type": "CalK4A_DemoInvoiceService_T037Test"
+    },
+    "variables": []
+  }
+}

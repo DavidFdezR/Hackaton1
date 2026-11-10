@@ -1,0 +1,127 @@
+{
+  "Id": "01pO800000lwd1AIAQ",
+  "Name": "CalK4B_InvoiceController",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK4B_InvoiceController",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK4B_InvoiceController",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "AuraEnabled"
+          }
+        ],
+        "location": {
+          "column": 37,
+          "line": 3
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "getInvoice",
+        "parameters": [
+          {
+            "name": "recordId",
+            "type": "Id"
+          }
+        ],
+        "references": [],
+        "returnType": "CalK4B_Invoice__c",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "AuraEnabled"
+          }
+        ],
+        "location": {
+          "column": 37,
+          "line": 7
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "getInvoiceUserMode",
+        "parameters": [
+          {
+            "name": "recordId",
+            "type": "Id"
+          }
+        ],
+        "references": [],
+        "returnType": "CalK4B_Invoice__c",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "AuraEnabled"
+          }
+        ],
+        "location": {
+          "column": 43,
+          "line": 11
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "listInvoices",
+        "parameters": [],
+        "references": [],
+        "returnType": "List",
+        "type": null
+      }
+    ],
+    "name": "CalK4B_InvoiceController",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalK4B_InvoiceController",
+      "references": [],
+      "type": "CalK4B_InvoiceController"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 51,
+          "line": 3
+        },
+        "modifiers": [],
+        "name": "recordId",
+        "references": [],
+        "type": "Id"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 59,
+          "line": 7
+        },
+        "modifiers": [],
+        "name": "recordId",
+        "references": [],
+        "type": "Id"
+      }
+    ]
+  }
+}

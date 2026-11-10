@@ -1,0 +1,22 @@
+64.0 APEX_CODE,DEBUG;APEX_PROFILING,NONE;CALLOUT,INFO;DATA_ACCESS,INFO;DB,INFO;NBA,INFO;SYSTEM,INFO;VALIDATION,INFO;VISUALFORCE,NONE;WAVE,INFO;WORKFLOW,INFO
+23:21:35.1 (1056393)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+23:21:35.1 (1082463)|EXECUTION_STARTED
+23:21:35.1 (1089023)|CODE_UNIT_STARTED|[EXTERNAL]|01pO800000lwI9W|CalK4A_T042_Test.factoryInsertOfActiveAccountWithoutTier()
+23:21:35.1 (2471089)|DML_BEGIN|[7]|Op:Insert|Type:CalK4A_DemoAccount__c|Rows:1
+23:21:35.1 (13421856)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZfvp|CalK4A_DemoAccountTrigger on CalK4A_DemoAccount trigger event BeforeInsert|__sfdc_trigger/CalK4A_DemoAccountTrigger
+23:21:35.1 (15377398)|SYSTEM_MODE_ENTER|false
+23:21:35.1 (15517190)|SYSTEM_MODE_EXIT|false
+23:21:35.1 (15545380)|SYSTEM_MODE_ENTER|false
+23:21:35.1 (15780853)|SYSTEM_MODE_EXIT|false
+23:21:35.1 (15937275)|CODE_UNIT_FINISHED|CalK4A_DemoAccountTrigger on CalK4A_DemoAccount trigger event BeforeInsert|__sfdc_trigger/CalK4A_DemoAccountTrigger
+23:21:35.1 (18953560)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:CalK4A_DemoAccount:new
+23:21:35.1 (18960930)|VALIDATION_RULE|03dO8000004u2BJ|CalK4A_Demo_Tier_Required
+23:21:35.1 (19032981)|VALIDATION_FORMULA|AND(ISPICKVAL(Status__c, 'Active'), ISBLANK(Tier__c))|Tier__c=null , Status__c=Active
+23:21:35.1 (19041861)|VALIDATION_FAIL
+23:21:35.1 (19052591)|CODE_UNIT_FINISHED|Validation:CalK4A_DemoAccount:new
+23:21:35.1 (20037673)|DML_END|[7]
+23:21:35.1 (20098653)|VF_PAGE_MESSAGE|Tier is required for active accounts
+23:21:35.1 (20153254)|EXCEPTION_THROWN|[7]|System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Tier is required for active accounts: [Tier__c]
+23:21:35.1 (22367470)|USER_DEBUG|[45]|ERROR|CALK4A_OBS T-042={"activeWithoutTier":"FIELD_CUSTOM_VALIDATION_EXCEPTION: Tier is required for active accounts"}
+23:21:35.1 (22412610)|CODE_UNIT_FINISHED|CalK4A_T042_Test.factoryInsertOfActiveAccountWithoutTier()
+23:21:35.1 (22415810)|EXECUTION_FINISHED

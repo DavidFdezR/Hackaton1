@@ -1,0 +1,67 @@
+{
+  "Id": "01pO800000lwv9PIAQ",
+  "Name": "CalR_RenewalService",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalR_RenewalService",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalR_RenewalService",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "needsApproval",
+        "parameters": [
+          {
+            "name": "amount",
+            "type": "Decimal"
+          }
+        ],
+        "references": [],
+        "returnType": "Boolean",
+        "type": null
+      }
+    ],
+    "name": "CalR_RenewalService",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalR_RenewalService",
+      "references": [],
+      "type": "CalR_RenewalService"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 49,
+          "line": 2
+        },
+        "modifiers": [],
+        "name": "amount",
+        "references": [],
+        "type": "Decimal"
+      }
+    ]
+  }
+}

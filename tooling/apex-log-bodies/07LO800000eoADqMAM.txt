@@ -1,0 +1,49 @@
+64.0 APEX_CODE,DEBUG;APEX_PROFILING,NONE;CALLOUT,INFO;DATA_ACCESS,INFO;DB,INFO;NBA,INFO;SYSTEM,INFO;VALIDATION,INFO;VISUALFORCE,NONE;WAVE,INFO;WORKFLOW,INFO
+22:39:24.1 (1407259)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+22:39:24.1 (1430500)|EXECUTION_STARTED
+22:39:24.1 (1440750)|CODE_UNIT_STARTED|[EXTERNAL]|01pO800000lwdM9|CalK4A_PrereqProbe_Test.eachPermissionAloneOnAPermissionSet()
+22:39:24.1 (19632541)|SAVEPOINT_SET|[16]|SavepointValue0
+22:39:24.1 (19731823)|DML_BEGIN|[18]|Op:Insert|Type:PermissionSet|Rows:1
+22:39:24.1 (151247782)|DML_END|[18]
+22:39:24.1 (151352044)|EXCEPTION_THROWN|[18]|System.DmlException: Insert failed. First exception on row 0; first error: FIELD_INTEGRITY_EXCEPTION, Permission ModifyAllData depends on permission(s): AssignTopics, ConnectOrgToEnvironmentHub, ConvertLeads, CreateCustomizeDashboards, CreateCustomizeFilters, CreateCustomizeReports, CreateDashboardFolders, CreateReportFolders, CreateTopics, DeleteTopics, EditEvent, EditMyDashboards, EditMyReports, EditPublicDocuments, EditPublicFilters, EditPublicTemplates, EditTask, EditTopics, ImportLeads, ManageCategories, ManageDashbdsInPubFolders, ManageNetworks, ManageReportsInPubFolders, ModifyMetadata, RunReports, SolutionImport, TransferAnyEntity, TransferAnyLead, UseTeamReassignWizards, ViewAllData, ViewDataLeakageEvents, ViewEventLogFiles, ViewPlatformEvents, ViewPublicDashboards, ViewPublicReports, ViewRoles, ViewSetup: []
+22:39:24.1 (152802694)|SAVEPOINT_ROLLBACK|[30]|SavepointValue0
+22:39:24.1 (154419096)|SAVEPOINT_SET|[16]|SavepointValue1
+22:39:24.1 (154445246)|DML_BEGIN|[18]|Op:Insert|Type:PermissionSet|Rows:1
+22:39:24.1 (241074605)|DML_END|[18]
+22:39:24.1 (241170877)|EXCEPTION_THROWN|[18]|System.DmlException: Insert failed. First exception on row 0; first error: FIELD_INTEGRITY_EXCEPTION, Permission AuthorApex depends on permission(s): ModifyMetadata, ViewRoles, ViewSetup: []
+22:39:24.1 (242576166)|SAVEPOINT_ROLLBACK|[30]|SavepointValue1
+22:39:24.1 (244049106)|SAVEPOINT_SET|[16]|SavepointValue2
+22:39:24.1 (244075427)|DML_BEGIN|[18]|Op:Insert|Type:PermissionSet|Rows:1
+22:39:24.1 (334459816)|DML_END|[18]
+22:39:24.1 (334559548)|EXCEPTION_THROWN|[18]|System.DmlException: Insert failed. First exception on row 0; first error: FIELD_INTEGRITY_EXCEPTION, Permission CustomizeApplication depends on permission(s): ManageCustomPermissions, ViewRoles, ViewSetup: []
+22:39:24.1 (335994598)|SAVEPOINT_ROLLBACK|[30]|SavepointValue2
+22:39:24.1 (337683801)|SAVEPOINT_SET|[16]|SavepointValue3
+22:39:24.1 (337721992)|DML_BEGIN|[18]|Op:Insert|Type:PermissionSet|Rows:1
+22:39:24.1 (423607850)|DML_END|[18]
+22:39:24.1 (423704451)|EXCEPTION_THROWN|[18]|System.DmlException: Insert failed. First exception on row 0; first error: FIELD_INTEGRITY_EXCEPTION, Permission ManageUsers depends on permission(s): AssignPermissionSets, DelegatedTwoFactor, FreezeUsers, ManageInternalUsers, ManageIpAddresses, ManageLoginAccessPolicies, ManagePasswordPolicies, ManageProfilesPermissionsets, ManageRoles, ManageSharing, MonitorLoginHistory, ResetPasswords, ViewAllUsers, ViewRoles, ViewSetup: []
+22:39:24.1 (424953738)|SAVEPOINT_ROLLBACK|[30]|SavepointValue3
+22:39:24.1 (426230906)|SAVEPOINT_SET|[16]|SavepointValue4
+22:39:24.1 (426264207)|DML_BEGIN|[18]|Op:Insert|Type:PermissionSet|Rows:1
+22:39:24.1 (592679068)|DML_END|[18]
+22:39:24.1 (593803184)|SOQL_EXECUTE_BEGIN|[19]|Aggregations:0|SELECT PermissionsModifyAllData,PermissionsAuthorApex,PermissionsCustomizeApplication,PermissionsManageUsers,PermissionsViewEncryptedData,PermissionsResetPasswords,PermissionsApiEnabled,PermissionsViewAllData FROM PermissionSet WHERE Id = '0PSO800000EQIxJOAX'
+22:39:24.1 (611533040)|SOQL_EXECUTE_END|[19]|Rows:1
+22:39:24.1 (611789474)|SAVEPOINT_ROLLBACK|[30]|SavepointValue4
+22:39:24.1 (613653590)|SAVEPOINT_SET|[16]|SavepointValue5
+22:39:24.1 (613679970)|DML_BEGIN|[18]|Op:Insert|Type:PermissionSet|Rows:1
+22:39:24.1 (701127038)|DML_END|[18]
+22:39:24.1 (701220050)|EXCEPTION_THROWN|[18]|System.DmlException: Insert failed. First exception on row 0; first error: FIELD_INTEGRITY_EXCEPTION, Permission ResetPasswords depends on permission(s): ViewRoles, ViewSetup: []
+22:39:24.1 (702493837)|SAVEPOINT_ROLLBACK|[30]|SavepointValue5
+22:39:24.1 (703891937)|SAVEPOINT_SET|[16]|SavepointValue6
+22:39:24.1 (703919117)|DML_BEGIN|[18]|Op:Insert|Type:PermissionSet|Rows:1
+22:39:24.1 (853733731)|DML_END|[18]
+22:39:24.1 (854768275)|SOQL_EXECUTE_BEGIN|[19]|Aggregations:0|SELECT PermissionsModifyAllData,PermissionsAuthorApex,PermissionsCustomizeApplication,PermissionsManageUsers,PermissionsViewEncryptedData,PermissionsResetPasswords,PermissionsApiEnabled,PermissionsViewAllData FROM PermissionSet WHERE Id = '0PSO800000EQIxKOAX'
+22:39:24.1 (862051045)|SOQL_EXECUTE_END|[19]|Rows:1
+22:39:24.1 (862305149)|SAVEPOINT_ROLLBACK|[30]|SavepointValue6
+22:39:24.1 (863887251)|SAVEPOINT_SET|[16]|SavepointValue7
+22:39:24.1 (863913981)|DML_BEGIN|[18]|Op:Insert|Type:PermissionSet|Rows:1
+22:39:24.1 (984047814)|DML_END|[18]
+22:39:24.1 (984158655)|EXCEPTION_THROWN|[18]|System.DmlException: Insert failed. First exception on row 0; first error: FIELD_INTEGRITY_EXCEPTION, Permission ViewAllData depends on permission(s): ViewDataLeakageEvents, ViewEventLogFiles, ViewPlatformEvents, ViewPublicDashboards, ViewPublicReports, ViewRoles, ViewSetup: []
+22:39:24.1 (985513434)|SAVEPOINT_ROLLBACK|[30]|SavepointValue7
+22:39:24.1 (998622516)|USER_DEBUG|[45]|ERROR|CALK4A_OBS PREREQ={"PermissionsViewAllData":"REFUSED: Insert failed. First exception on row 0; first error: FIELD_INTEGRITY_EXCEPTION, Permission ViewAllData depends on permission(s): ViewDataLeakageEvents, ViewEventLogFiles, ViewPlatformEvents, ViewPublicDashboards, ViewPublicReports, ViewRoles, ViewSetup: []","PermissionsApiEnabled":"ACCEPTED; enabled after save: PermissionsApiEnabled","PermissionsResetPasswords":"REFUSED: Insert failed. First exception on row 0; first error: FIELD_INTEGRITY_EXCEPTION, Permission ResetPasswords depends on permission(s): ViewRoles, ViewSetup: []","PermissionsViewEncryptedData":"ACCEPTED; enabled after save: PermissionsViewEncryptedData","PermissionsManageUsers":"REFUSED: Insert failed. First exception on row 0; first error: FIELD_INTEGRITY_EXCEPTION, Permission ManageUsers depends on permission(s): AssignPermissionSets, DelegatedTwoFactor, FreezeUsers, ManageInternalUsers, ManageIpAddresses, ManageLoginAccessPolicies, ManagePasswordPolicies, ManageProfilesPermissionsets, ManageRoles, ManageSharing, MonitorLoginHistory, ResetPasswords, ViewAllUsers, ViewRoles, ViewSetup: []","PermissionsCustomizeApplication":"REFUSED: Insert failed. First exception on row 0; first error: FIELD_INTEGRITY_EXCEPTION, Permission CustomizeApplication depends on permission(s): ManageCustomPermissions, ViewRoles, ViewSetup: []","PermissionsAuthorApex":"REFUSED: Insert failed. First exception on row 0; first error: FIELD_INTEGRITY_EXCEPTION, Permission AuthorApex depends on permission(s): ModifyMetadata, ViewRoles, ViewSetup: []","PermissionsModifyAllData":"REFUSED: Insert failed. First exception on row 0; first error: FIELD_INTEGRITY_EXCEPTION, Permission ModifyAllData depends on permission(s): AssignTopics, ConnectOrgToEnvironmentHub, ConvertLeads, CreateCustomizeDashboards, CreateCustomizeFilters, CreateCustomizeReports, CreateDashboardFolders, CreateReportFolders, CreateTopics, DeleteTopics, EditEvent, EditMyDashboards, EditMyReports, EditPublicDocuments, EditPublicFilters, EditPublicTemplates, EditTask, EditTopics, ImportLeads, ManageCategories, ManageDashbdsInPubFolders, ManageNetworks, ManageReportsInPubFolders, ModifyMetadata, RunReports, SolutionImport, TransferAnyEntity, TransferAnyLead, UseTeamReassignWizards, ViewAllData, ViewDataLeakageEvents, ViewEventLogFiles, ViewPlatformEvents, ViewPublicDashboards, ViewPublicReports, ViewRoles, ViewSetup: []"}
+22:39:24.1 (998698457)|CODE_UNIT_FINISHED|CalK4A_PrereqProbe_Test.eachPermissionAloneOnAPermissionSet()
+22:39:24.1 (998703437)|EXECUTION_FINISHED

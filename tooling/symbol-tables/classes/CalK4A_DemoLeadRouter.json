@@ -1,0 +1,71 @@
+{
+  "Id": "01pO800000lwidfIAA",
+  "Name": "CalK4A_DemoLeadRouter",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK4A_DemoLeadRouter",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK4A_DemoLeadRouter",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "InvocableMethod"
+          }
+        ],
+        "location": {
+          "column": 24,
+          "line": 3
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "route",
+        "parameters": [
+          {
+            "name": "ids",
+            "type": "List"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalK4A_DemoLeadRouter",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalK4A_DemoLeadRouter",
+      "references": [],
+      "type": "CalK4A_DemoLeadRouter"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 39,
+          "line": 3
+        },
+        "modifiers": [],
+        "name": "ids",
+        "references": [],
+        "type": "List<Id>"
+      }
+    ]
+  }
+}

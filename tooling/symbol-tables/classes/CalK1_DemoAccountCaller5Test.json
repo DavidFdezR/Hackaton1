@@ -1,0 +1,59 @@
+{
+  "Id": "01pO800000lwSJgIAM",
+  "Name": "CalK1_DemoAccountCaller5Test",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK1_DemoAccountCaller5Test",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK1_DemoAccountCaller5Test",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 4
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "scoresBronze",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalK1_DemoAccountCaller5Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 15,
+        "line": 2
+      },
+      "modifiers": [
+        "private",
+        "testMethod"
+      ],
+      "name": "CalK1_DemoAccountCaller5Test",
+      "references": [],
+      "type": "CalK1_DemoAccountCaller5Test"
+    },
+    "variables": []
+  }
+}

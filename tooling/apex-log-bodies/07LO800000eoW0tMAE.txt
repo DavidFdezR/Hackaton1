@@ -1,0 +1,44 @@
+64.0 APEX_CODE,DEBUG;APEX_PROFILING,NONE;CALLOUT,INFO;DATA_ACCESS,INFO;DB,INFO;NBA,INFO;SYSTEM,INFO;VALIDATION,INFO;VISUALFORCE,NONE;WAVE,INFO;WORKFLOW,INFO
+23:21:40.0 (878214)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+23:21:40.0 (903404)|EXECUTION_STARTED
+23:21:40.0 (910214)|CODE_UNIT_STARTED|[EXTERNAL]|01pO800000lwiDh|CalK4A_T032_Test.integrationUserToSystemAdministrator()
+23:21:40.0 (4687209)|SYSTEM_MODE_ENTER|false
+23:21:40.0 (4798210)|SYSTEM_MODE_EXIT|false
+23:21:40.0 (4842810)|SYSTEM_MODE_ENTER|false
+23:21:40.0 (7690001)|DML_BEGIN|[7]|Op:Insert|Type:CalK4A_DemoInvoice__c|Rows:1
+23:21:40.0 (538728304)|DML_END|[7]
+23:21:40.0 (539401057)|DML_BEGIN|[8]|Op:Insert|Type:CalK4A_DemoContract__c|Rows:1
+23:21:40.0 (587403431)|DML_END|[8]
+23:21:40.0 (603093706)|SOQL_EXECUTE_BEGIN|[11]|Aggregations:0|SELECT Id FROM Profile WHERE Name = :tmpVar1
+23:21:40.0 (612926116)|SOQL_EXECUTE_END|[11]|Rows:1
+23:21:40.0 (613165127)|DML_BEGIN|[14]|Op:Insert|Type:User|Rows:1
+23:21:41.676 (1676566599)|DML_END|[14]
+23:21:41.676 (1679937223)|SOQL_EXECUTE_BEGIN|[25]|Aggregations:0|SELECT Id FROM PermissionSet WHERE Name IN :tmpVar1
+23:21:41.676 (1701882031)|SOQL_EXECUTE_END|[25]|Rows:1
+23:21:41.676 (1702482093)|DML_BEGIN|[28]|Op:Insert|Type:PermissionSetAssignment|Rows:1
+23:21:41.676 (1837019359)|DML_END|[28]
+23:21:41.676 (1848828307)|SOQL_EXECUTE_BEGIN|[17]|Aggregations:0|SELECT Profile.UserLicense.Name FROM User WHERE Id = :tmpVar1
+23:21:41.676 (1861789221)|SOQL_EXECUTE_END|[17]|Rows:1
+23:21:41.676 (1895131745)|DML_BEGIN|[5]|Op:Update|Type:CalK4A_DemoInvoice__c|Rows:1
+23:21:41.676 (1906666903)|EXCEPTION_THROWN|[5]|System.TypeException: DML operation UPDATE not allowed on CalK4A_DemoInvoice__c
+23:21:41.676 (1906698563)|DML_END|[5]
+23:21:41.676 (1908223779)|DML_BEGIN|[5]|Op:Update|Type:CalK4A_DemoContract__c|Rows:1
+23:21:41.676 (1908585511)|EXCEPTION_THROWN|[5]|System.SecurityException: Access to entity 'CalK4A_DemoContract__c' denied
+23:21:41.676 (1916071731)|SOQL_EXECUTE_BEGIN|[22]|Aggregations:0|SELECT Id FROM Profile WHERE Name = 'System Administrator'
+23:21:41.676 (1921404772)|SOQL_EXECUTE_END|[22]|Rows:1
+23:21:41.676 (1929224663)|DML_BEGIN|[23]|Op:Update|Type:User|Rows:1
+23:21:41.676 (2366391896)|DML_END|[23]
+23:21:41.676 (2376619219)|SOQL_EXECUTE_BEGIN|[26]|Aggregations:0|SELECT Profile.Name, Profile.UserLicense.Name FROM User WHERE Id = :tmpVar1
+23:21:41.676 (2389610891)|SOQL_EXECUTE_END|[26]|Rows:1
+23:21:41.676 (2416734539)|DML_BEGIN|[5]|Op:Update|Type:CalK4A_DemoInvoice__c|Rows:1
+23:21:41.676 (2446388931)|DML_END|[5]
+23:21:41.676 (2447196764)|DML_BEGIN|[5]|Op:Update|Type:CalK4A_DemoContract__c|Rows:1
+23:21:41.676 (2464895265)|DML_END|[5]
+23:21:41.676 (2474272354)|SOQL_EXECUTE_BEGIN|[33]|Aggregations:0|SELECT RecordId, HasReadAccess, HasEditAccess, HasDeleteAccess, MaxAccessLevel FROM UserRecordAccess WHERE (UserId = :tmpVar1 AND RecordId = :tmpVar2)
+23:21:41.676 (2512636337)|SOQL_EXECUTE_END|[33]|Rows:1
+23:21:41.676 (2513410250)|SOQL_EXECUTE_BEGIN|[35]|Aggregations:0|SELECT Name FROM Profile WHERE UserLicense.Name = 'Salesforce Integration'
+23:21:41.676 (2518540432)|SOQL_EXECUTE_END|[35]|Rows:1
+23:21:41.676 (2519237734)|USER_DEBUG|[45]|ERROR|CALK4A_OBS T-032={"profilesOnIntegrationLicence":[{"attributes":{"type":"Profile","url":"/services/data/v68.0/sobjects/Profile/00eO800000Gs5CpIAJ"},"Name":"Minimum Access - API Only Integrations","UserLicenseId":"100O800000wHivQIAS","Id":"00eO800000Gs5CpIAJ"}],"after_contractAccess":{"attributes":{"type":"UserRecordAccess","url":"/services/data/v68.0/sobjects/UserRecordAccess/a07O800002eMyctIAC"},"RecordId":"a07O800002eMyctIAC","HasReadAccess":true,"HasEditAccess":true,"HasDeleteAccess":true,"MaxAccessLevel":"All","Id":"a07O800002eMyctIAC"},"after_updateContract":"saved","after_updateInvoice":"saved","licenceAfter":"Salesforce","profileAfter":"System Administrator","changeProfileToSystemAdministrator":"saved","before_updateContract":"Access to entity 'CalK4A_DemoContract__c' denied","before_updateInvoice":"DML operation UPDATE not allowed on CalK4A_DemoInvoice__c","licenceBefore":"Salesforce Integration"}
+23:21:41.676 (2519304125)|SYSTEM_MODE_EXIT|false
+23:21:41.676 (2519327805)|CODE_UNIT_FINISHED|CalK4A_T032_Test.integrationUserToSystemAdministrator()
+23:21:41.676 (2519333405)|EXECUTION_FINISHED

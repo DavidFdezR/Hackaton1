@@ -1,0 +1,67 @@
+{
+  "Id": "01pO800000lwiNWIAY",
+  "Name": "CalHK_QuoteService",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalHK_QuoteService",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalHK_QuoteService",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "quote",
+        "parameters": [
+          {
+            "name": "cost",
+            "type": "Decimal"
+          }
+        ],
+        "references": [],
+        "returnType": "Decimal",
+        "type": null
+      }
+    ],
+    "name": "CalHK_QuoteService",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalHK_QuoteService",
+      "references": [],
+      "type": "CalHK_QuoteService"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 41,
+          "line": 2
+        },
+        "modifiers": [],
+        "name": "cost",
+        "references": [],
+        "type": "Decimal"
+      }
+    ]
+  }
+}

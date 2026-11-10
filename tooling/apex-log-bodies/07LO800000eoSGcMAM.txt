@@ -1,0 +1,26 @@
+68.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO
+Execute Anonymous: Messaging.SingleEmailMessage m = Messaging.renderStoredEmailTemplate('00XO800000DrEtNMAV', UserInfo.getUserId(), 'a0KO800000YuBV3MAN'); System.debug('CALK4B_RENDER subject=' + m.getSubject() + ' body=' + m.getHtmlBody());
+23:18:48.24 (24874265)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+23:18:48.24 (24886445)|EXECUTION_STARTED
+23:18:48.24 (24892395)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+23:18:48.24 (89715756)|USER_DEBUG|[1]|DEBUG|CALK4B_RENDER subject=Welcome CalK4B-SSN-Contact body=<p>Hi there, welcome aboard CalK4B-SSN-Contact,</p><p>Your reference: 000-00-0000</p>
+23:18:48.89 (89771296)|CUMULATIVE_LIMIT_USAGE
+23:18:48.89 (89771296)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:18:48.89 (89771296)|CUMULATIVE_LIMIT_USAGE_END
+
+23:18:48.24 (89798867)|CODE_UNIT_FINISHED|execute_anonymous_apex
+23:18:48.24 (89805637)|EXECUTION_FINISHED

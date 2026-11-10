@@ -1,0 +1,83 @@
+68.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO
+Execute Anonymous: List<CalHK_Order__c> os = [SELECT Id, Name FROM CalHK_Order__c ORDER BY Name LIMIT 3];
+Execute Anonymous: for (Integer i = 0; i < os.size(); i++) os[i].Demo_Order_Ext__c = 'EXT-' + (1001 + i);
+Execute Anonymous: update os;
+Execute Anonymous: AsyncOptions opts = new AsyncOptions(); opts.MaximumQueueableStackDepth = 20;
+Execute Anonymous: Id qid = System.enqueueJob(new DemoOrderQueueable(2), opts);
+Execute Anonymous: Id bid = Database.executeBatch(new DemoJobs.RenewalBatch());
+Execute Anonymous: System.debug('V4 qid=' + qid + ' bid=' + bid);
+Execute Anonymous: System.debug('V4 A418 normal=' + DemoOrderLookup.find(new List<String>{ '1001' }));
+Execute Anonymous: System.debug('V4 A418 injected=' + DemoOrderLookup.find(new List<String>{ 'Where is my order 1042\' OR Name LIKE \'%' }));
+01:54:01.45 (45322363)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+01:54:01.45 (45340763)|EXECUTION_STARTED
+01:54:01.45 (45349753)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+01:54:01.45 (61074731)|CODE_UNIT_STARTED|[EXTERNAL]|Flow:01IO800000EVGuz
+01:54:01.45 (61102691)|CODE_UNIT_FINISHED|Flow:01IO800000EVGuz
+01:54:01.45 (64673420)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZmUO|DemoOrderTrigger on CalHK_Order trigger event BeforeUpdate|__sfdc_trigger/DemoOrderTrigger
+01:54:01.65 (65193911)|CUMULATIVE_LIMIT_USAGE
+01:54:01.65 (65193911)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 3 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 3 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+01:54:01.65 (65193911)|CUMULATIVE_LIMIT_USAGE_END
+
+01:54:01.45 (65407552)|CODE_UNIT_FINISHED|DemoOrderTrigger on CalHK_Order trigger event BeforeUpdate|__sfdc_trigger/DemoOrderTrigger
+01:54:01.45 (81570313)|CODE_UNIT_STARTED|[EXTERNAL]|Flow:01IO800000EVGuz
+01:54:01.101 (101169591)|CODE_UNIT_STARTED|[EXTERNAL]|01pO800000lwiNQ|CalHK_OrderInvocable.stamp(List<Id>)
+01:54:01.101 (110278064)|USER_DEBUG|[7]|DEBUG|3
+01:54:01.110 (110306204)|CUMULATIVE_LIMIT_USAGE
+01:54:01.110 (110306204)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 6 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 3 out of 10000
+  Maximum CPU time: 11 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+01:54:01.110 (110306204)|CUMULATIVE_LIMIT_USAGE_END
+
+01:54:01.101 (110332454)|CODE_UNIT_FINISHED|CalHK_OrderInvocable.stamp(List<Id>)
+01:54:01.45 (111650528)|CODE_UNIT_FINISHED|Flow:01IO800000EVGuz
+01:54:01.45 (111712288)|CODE_UNIT_STARTED|[EXTERNAL]|Flow:01IO800000EVGuz
+01:54:01.45 (111727708)|CODE_UNIT_FINISHED|Flow:01IO800000EVGuz
+01:54:01.45 (157435072)|USER_DEBUG|[7]|DEBUG|V4 qid=707O800002eOt26 bid=707O800002eOt27IAC
+01:54:01.45 (170739934)|USER_DEBUG|[8]|DEBUG|V4 A418 normal=(CalHK Order 1001)
+01:54:01.45 (180413838)|USER_DEBUG|[9]|DEBUG|V4 A418 injected=(CalHK Order 1001, CalHK Order 1002, CalHK Order 1003)
+01:54:01.198 (198953015)|CUMULATIVE_LIMIT_USAGE
+01:54:01.198 (198953015)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 10 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 3 out of 10000
+  Maximum CPU time: 27 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 1 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+01:54:01.198 (198953015)|CUMULATIVE_LIMIT_USAGE_END
+
+01:54:01.45 (199001055)|CODE_UNIT_FINISHED|execute_anonymous_apex
+01:54:01.45 (199013615)|EXECUTION_FINISHED

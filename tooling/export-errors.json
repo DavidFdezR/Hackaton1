@@ -1,0 +1,4 @@
+{
+  "fieldDefinitionEntities": [],
+  "apexTriggerSymbolTable": "ApexTrigger has no SymbolTable field in Tooling API v68. Trigger event flags are in apex-triggers.json. Class symbol tables are in symbol-tables/classes."
+}

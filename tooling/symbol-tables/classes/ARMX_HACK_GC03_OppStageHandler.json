@@ -1,0 +1,142 @@
+{
+  "Id": "01pO800000lvwXFIAY",
+  "Name": "ARMX_HACK_GC03_OppStageHandler",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "ARMX_HACK_GC03_OppStageHandler",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "ARMX_HACK_GC03_OppStageHandler",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 24,
+          "line": 12
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "apply",
+        "parameters": [
+          {
+            "name": "opps",
+            "type": "List"
+          },
+          {
+            "name": "isInsert",
+            "type": "Boolean"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "ARMX_HACK_GC03_OppStageHandler",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 32,
+          "line": 8
+        },
+        "modifiers": [
+          "static",
+          "public",
+          "final"
+        ],
+        "name": "NAME_PREFIX",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 32,
+          "line": 9
+        },
+        "modifiers": [
+          "static",
+          "public",
+          "final"
+        ],
+        "name": "FORCED_STAGE",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [
+          {
+            "name": "TestVisible"
+          }
+        ],
+        "location": {
+          "column": 33,
+          "line": 10
+        },
+        "modifiers": [
+          "private",
+          "static"
+        ],
+        "name": "runCount",
+        "references": [],
+        "type": "Integer"
+      }
+    ],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 7
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "ARMX_HACK_GC03_OppStageHandler",
+      "references": [],
+      "type": "ARMX_HACK_GC03_OppStageHandler"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 48,
+          "line": 12
+        },
+        "modifiers": [],
+        "name": "opps",
+        "references": [],
+        "type": "List<Opportunity>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 62,
+          "line": 12
+        },
+        "modifiers": [],
+        "name": "isInsert",
+        "references": [],
+        "type": "Boolean"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 26,
+          "line": 14
+        },
+        "modifiers": [],
+        "name": "o",
+        "references": [],
+        "type": "Opportunity"
+      }
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "Id": "01pO800000lwFi6IAE",
+  "Name": "CalK2_DemoCoverage",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK2_DemoCoverage",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK2_DemoCoverage",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "score",
+        "parameters": [
+          {
+            "name": "a",
+            "type": "Integer"
+          },
+          {
+            "name": "b",
+            "type": "Integer"
+          }
+        ],
+        "references": [],
+        "returnType": "Integer",
+        "type": null
+      }
+    ],
+    "name": "CalK2_DemoCoverage",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalK2_DemoCoverage",
+      "references": [],
+      "type": "CalK2_DemoCoverage"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 41,
+          "line": 2
+        },
+        "modifiers": [],
+        "name": "a",
+        "references": [],
+        "type": "Integer"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 52,
+          "line": 2
+        },
+        "modifiers": [],
+        "name": "b",
+        "references": [],
+        "type": "Integer"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 3
+        },
+        "modifiers": [],
+        "name": "total",
+        "references": [],
+        "type": "Integer"
+      }
+    ]
+  }
+}

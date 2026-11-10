@@ -1,0 +1,54 @@
+{
+  "Id": "01pO800000lwiNNIAY",
+  "Name": "CalHK_AdminTools",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalHK_AdminTools",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalHK_AdminTools",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "AuraEnabled"
+          }
+        ],
+        "location": {
+          "column": 43,
+          "line": 4
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "getAllContracts",
+        "parameters": [],
+        "references": [],
+        "returnType": "List",
+        "type": null
+      }
+    ],
+    "name": "CalHK_AdminTools",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 30,
+        "line": 2
+      },
+      "modifiers": [
+        "public",
+        "without sharing"
+      ],
+      "name": "CalHK_AdminTools",
+      "references": [],
+      "type": "CalHK_AdminTools"
+    },
+    "variables": []
+  }
+}

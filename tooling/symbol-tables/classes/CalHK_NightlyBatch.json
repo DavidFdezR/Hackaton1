@@ -1,0 +1,177 @@
+{
+  "Id": "01pO800000lwk2dIAA",
+  "Name": "CalHK_NightlyBatch",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalHK_NightlyBatch",
+    "innerClasses": [],
+    "interfaces": [
+      "Database.Batchable",
+      "System.Schedulable"
+    ],
+    "key": "CalHK_NightlyBatch",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 34,
+          "line": 3
+        },
+        "modifiers": [
+          "public"
+        ],
+        "name": "start",
+        "parameters": [
+          {
+            "name": "bc",
+            "type": "BatchableContext"
+          }
+        ],
+        "references": [],
+        "returnType": "Database.QueryLocator",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 4
+        },
+        "modifiers": [
+          "public"
+        ],
+        "name": "execute",
+        "parameters": [
+          {
+            "name": "bc",
+            "type": "BatchableContext"
+          },
+          {
+            "name": "scope",
+            "type": "List"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 5
+        },
+        "modifiers": [
+          "public"
+        ],
+        "name": "finish",
+        "parameters": [
+          {
+            "name": "bc",
+            "type": "BatchableContext"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 6
+        },
+        "modifiers": [
+          "public"
+        ],
+        "name": "execute",
+        "parameters": [
+          {
+            "name": "sc",
+            "type": "SchedulableContext"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalHK_NightlyBatch",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 2
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalHK_NightlyBatch",
+      "references": [],
+      "type": "CalHK_NightlyBatch"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 66,
+          "line": 3
+        },
+        "modifiers": [],
+        "name": "bc",
+        "references": [],
+        "type": "Database.BatchableContext"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 51,
+          "line": 4
+        },
+        "modifiers": [],
+        "name": "bc",
+        "references": [],
+        "type": "Database.BatchableContext"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 69,
+          "line": 4
+        },
+        "modifiers": [],
+        "name": "scope",
+        "references": [],
+        "type": "List<SObject>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 50,
+          "line": 5
+        },
+        "modifiers": [],
+        "name": "bc",
+        "references": [],
+        "type": "Database.BatchableContext"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 44,
+          "line": 6
+        },
+        "modifiers": [],
+        "name": "sc",
+        "references": [],
+        "type": "System.SchedulableContext"
+      }
+    ]
+  }
+}

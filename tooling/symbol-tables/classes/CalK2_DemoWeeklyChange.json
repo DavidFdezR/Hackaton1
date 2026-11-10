@@ -1,0 +1,50 @@
+{
+  "Id": "01pO800000lwFiAIAU",
+  "Name": "CalK2_DemoWeeklyChange",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK2_DemoWeeklyChange",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK2_DemoWeeklyChange",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 26,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "label",
+        "parameters": [],
+        "references": [],
+        "returnType": "String",
+        "type": null
+      }
+    ],
+    "name": "CalK2_DemoWeeklyChange",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalK2_DemoWeeklyChange",
+      "references": [],
+      "type": "CalK2_DemoWeeklyChange"
+    },
+    "variables": []
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "Id": "01pO800000lwd1HIAQ",
+  "Name": "CalK4B_NightlySync",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK4B_NightlySync",
+    "innerClasses": [],
+    "interfaces": [
+      "System.Schedulable"
+    ],
+    "key": "CalK4B_NightlySync",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 2
+        },
+        "modifiers": [
+          "public"
+        ],
+        "name": "execute",
+        "parameters": [
+          {
+            "name": "ctx",
+            "type": "SchedulableContext"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalK4B_NightlySync",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalK4B_NightlySync",
+      "references": [],
+      "type": "CalK4B_NightlySync"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 44,
+          "line": 2
+        },
+        "modifiers": [],
+        "name": "ctx",
+        "references": [],
+        "type": "System.SchedulableContext"
+      }
+    ]
+  }
+}

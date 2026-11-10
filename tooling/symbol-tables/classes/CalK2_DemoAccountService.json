@@ -1,0 +1,67 @@
+{
+  "Id": "01pO800000lwFi2IAE",
+  "Name": "CalK2_DemoAccountService",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK2_DemoAccountService",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK2_DemoAccountService",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 26,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "previewNote",
+        "parameters": [
+          {
+            "name": "region",
+            "type": "String"
+          }
+        ],
+        "references": [],
+        "returnType": "String",
+        "type": null
+      }
+    ],
+    "name": "CalK2_DemoAccountService",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalK2_DemoAccountService",
+      "references": [],
+      "type": "CalK2_DemoAccountService"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 45,
+          "line": 2
+        },
+        "modifiers": [],
+        "name": "region",
+        "references": [],
+        "type": "String"
+      }
+    ]
+  }
+}

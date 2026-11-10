@@ -1,0 +1,73 @@
+{
+  "Id": "01pO800000lwd2jIAA",
+  "Name": "CalK2_Seed",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK2_Seed",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK2_Seed",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "run",
+        "parameters": [],
+        "references": [],
+        "returnType": "Integer",
+        "type": null
+      }
+    ],
+    "name": "CalK2_Seed",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 30,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "without sharing"
+      ],
+      "name": "CalK2_Seed",
+      "references": [],
+      "type": "CalK2_Seed"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 23,
+          "line": 3
+        },
+        "modifiers": [],
+        "name": "rows",
+        "references": [],
+        "type": "List<SObject>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 22,
+          "line": 4
+        },
+        "modifiers": [],
+        "name": "i",
+        "references": [],
+        "type": "Integer"
+      }
+    ]
+  }
+}

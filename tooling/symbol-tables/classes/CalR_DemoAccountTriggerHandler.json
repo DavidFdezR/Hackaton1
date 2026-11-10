@@ -1,0 +1,126 @@
+{
+  "Id": "01pO800000lwv9LIAQ",
+  "Name": "CalR_DemoAccountTriggerHandler",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalR_DemoAccountTriggerHandler",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalR_DemoAccountTriggerHandler",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 26,
+          "line": 4
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "classify",
+        "parameters": [
+          {
+            "name": "amount",
+            "type": "Decimal"
+          }
+        ],
+        "references": [],
+        "returnType": "String",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 24,
+          "line": 11
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "beforeSave",
+        "parameters": [
+          {
+            "name": "accounts",
+            "type": "List"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalR_DemoAccountTriggerHandler",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 33,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public",
+          "final"
+        ],
+        "name": "LARGE_DEAL_THRESHOLD",
+        "references": [],
+        "type": "Decimal"
+      }
+    ],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalR_DemoAccountTriggerHandler",
+      "references": [],
+      "type": "CalR_DemoAccountTriggerHandler"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 43,
+          "line": 4
+        },
+        "modifiers": [],
+        "name": "amount",
+        "references": [],
+        "type": "Decimal"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 61,
+          "line": 11
+        },
+        "modifiers": [],
+        "name": "accounts",
+        "references": [],
+        "type": "List<CalR_DemoAccount__c>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 34,
+          "line": 12
+        },
+        "modifiers": [],
+        "name": "account",
+        "references": [],
+        "type": "CalR_DemoAccount__c"
+      }
+    ]
+  }
+}

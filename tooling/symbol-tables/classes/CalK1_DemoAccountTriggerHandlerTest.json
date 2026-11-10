@@ -1,0 +1,103 @@
+{
+  "Id": "01pO800000lwSJkIAM",
+  "Name": "CalK1_DemoAccountTriggerHandlerTest",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK1_DemoAccountTriggerHandlerTest",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK1_DemoAccountTriggerHandlerTest",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 4
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "goldScoresThreeOnInsert",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 12
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "everyTierGetsAScore",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalK1_DemoAccountTriggerHandlerTest",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 15,
+        "line": 2
+      },
+      "modifiers": [
+        "private",
+        "testMethod"
+      ],
+      "name": "CalK1_DemoAccountTriggerHandlerTest",
+      "references": [],
+      "type": "CalK1_DemoAccountTriggerHandlerTest"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 30,
+          "line": 5
+        },
+        "modifiers": [],
+        "name": "row",
+        "references": [],
+        "type": "CalK1_DemoAccount__c"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 21,
+          "line": 13
+        },
+        "modifiers": [],
+        "name": "tier",
+        "references": [],
+        "type": "String"
+      }
+    ]
+  }
+}

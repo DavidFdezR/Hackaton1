@@ -1,0 +1,40 @@
+68.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO
+Execute Anonymous: // Reporting note: results come back in the final assertion because this org filters USER_DEBUG. Nothing is written.
+Execute Anonymous: List<String> out = new List<String>();
+Execute Anonymous: for (Lead l : [SELECT Id, LastName FROM Lead WHERE LastName IN ('CalSB Prospect 7','CalSB Prospect 8','CalSB Prospect 9','CalSB Prospect 10','CalSB Prospect 11') ORDER BY LastName]) {
+Execute Anonymous:     String context = CalSB_LeadContext.forLead(l.Id);
+Execute Anonymous:     CalSB_SafeFollowUp.Draft d = CalSB_SafeFollowUp.draftFor(l.Id);
+Execute Anonymous:     out.add(l.LastName + ' | payload in agent context=' + (context.containsIgnoreCase('assistant') || context.contains('AI agent') || context.contains('demo-attacker.example'))
+Execute Anonymous:         + ' | safe draft flagged=' + d.flagged + ' | draft keeps hidden comment=' + d.text.contains('<!--') + ' | draft keeps zero-width=' + d.text.contains('​'));
+Execute Anonymous: }
+Execute Anonymous: for (Case c : [SELECT CaseNumber, Origin, Description FROM Case WHERE Subject = 'CalSB login issue']) {
+Execute Anonymous:     out.add('Case ' + c.CaseNumber + ' (' + c.Origin + ') | payload stored=' + c.Description.contains('reset.demo-attacker.example'));
+Execute Anonymous: }
+Execute Anonymous: System.assert(false, 'REPORT>>' + String.join(out, ' ## '));
+02:31:21.79 (79987811)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+02:31:21.79 (80016831)|EXECUTION_STARTED
+02:31:21.79 (80074762)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+02:31:21.79 (185126683)|EXCEPTION_THROWN|[12]|System.AssertException: Assertion Failed: REPORT>>CalSB Prospect 10 &#124; payload in agent context=true &#124; safe draft flagged=true &#124; draft keeps hidden comment=false &#124; draft keeps zero-width=false ## CalSB Prospect 11 &#124; payload in agent context=true &#124; safe draft flagged=true &#124; draft keeps hidden comment=false &#124; draft keeps zero-width=false ## CalSB Prospect 7 &#124; payload in agent context=true &#124; safe draft flagged=true &#124; draft keeps hidden comment=false &#124; draft keeps zero-width=false ## CalSB Prospect 8 &#124; payload in agent context=true &#124; safe draft flagged=true &#124; draft keeps hidden comment=false &#124; draft keeps zero-width=false ## CalSB Prospect 9 &#124; payload in agent context=true &#124; safe draft flagged=true &#124; draft keeps hidden comment=false &#124; draft keeps zero-width=false ## Case 00001246 (Web) &#124; payload stored=true
+02:31:21.79 (185255605)|FATAL_ERROR|System.AssertException: Assertion Failed: REPORT>>CalSB Prospect 10 &#124; payload in agent context=true &#124; safe draft flagged=true &#124; draft keeps hidden comment=false &#124; draft keeps zero-width=false ## CalSB Prospect 11 &#124; payload in agent context=true &#124; safe draft flagged=true &#124; draft keeps hidden comment=false &#124; draft keeps zero-width=false ## CalSB Prospect 7 &#124; payload in agent context=true &#124; safe draft flagged=true &#124; draft keeps hidden comment=false &#124; draft keeps zero-width=false ## CalSB Prospect 8 &#124; payload in agent context=true &#124; safe draft flagged=true &#124; draft keeps hidden comment=false &#124; draft keeps zero-width=false ## CalSB Prospect 9 &#124; payload in agent context=true &#124; safe draft flagged=true &#124; draft keeps hidden comment=false &#124; draft keeps zero-width=false ## Case 00001246 (Web) &#124; payload stored=true
+
+AnonymousBlock: line 12, column 1
+02:31:21.185 (185288495)|CUMULATIVE_LIMIT_USAGE
+02:31:21.185 (185288495)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 12 out of 100
+  Number of query rows: 16 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+02:31:21.185 (185288495)|CUMULATIVE_LIMIT_USAGE_END
+
+02:31:21.79 (185348566)|CODE_UNIT_FINISHED|execute_anonymous_apex
+02:31:21.79 (185360996)|EXECUTION_FINISHED

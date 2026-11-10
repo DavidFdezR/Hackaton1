@@ -1,0 +1,67 @@
+{
+  "Id": "01pO800000lw5VhIAI",
+  "Name": "CalPremiumAccounts",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalPremiumAccounts",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalPremiumAccounts",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "contactCount",
+        "parameters": [
+          {
+            "name": "accountName",
+            "type": "String"
+          }
+        ],
+        "references": [],
+        "returnType": "Integer",
+        "type": null
+      }
+    ],
+    "name": "CalPremiumAccounts",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalPremiumAccounts",
+      "references": [],
+      "type": "CalPremiumAccounts"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 47,
+          "line": 2
+        },
+        "modifiers": [],
+        "name": "accountName",
+        "references": [],
+        "type": "String"
+      }
+    ]
+  }
+}

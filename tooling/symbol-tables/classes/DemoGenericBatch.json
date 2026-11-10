@@ -1,0 +1,148 @@
+{
+  "Id": "01pO800000lx1sHIAQ",
+  "Name": "DemoGenericBatch",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "DemoGenericBatch",
+    "innerClasses": [],
+    "interfaces": [
+      "Database.Batchable"
+    ],
+    "key": "DemoGenericBatch",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 42,
+          "line": 3
+        },
+        "modifiers": [
+          "virtual",
+          "public"
+        ],
+        "name": "start",
+        "parameters": [
+          {
+            "name": "bc",
+            "type": "BatchableContext"
+          }
+        ],
+        "references": [],
+        "returnType": "Database.QueryLocator",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 26,
+          "line": 4
+        },
+        "modifiers": [
+          "public",
+          "abstract"
+        ],
+        "name": "execute",
+        "parameters": [
+          {
+            "name": "bc",
+            "type": "BatchableContext"
+          },
+          {
+            "name": "scope",
+            "type": "List"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 25,
+          "line": 5
+        },
+        "modifiers": [
+          "virtual",
+          "public"
+        ],
+        "name": "finish",
+        "parameters": [
+          {
+            "name": "bc",
+            "type": "BatchableContext"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "DemoGenericBatch",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 23,
+        "line": 2
+      },
+      "modifiers": [
+        "public",
+        "abstract"
+      ],
+      "name": "DemoGenericBatch",
+      "references": [],
+      "type": "DemoGenericBatch"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 74,
+          "line": 3
+        },
+        "modifiers": [],
+        "name": "bc",
+        "references": [],
+        "type": "Database.BatchableContext"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 60,
+          "line": 4
+        },
+        "modifiers": [],
+        "name": "bc",
+        "references": [],
+        "type": "Database.BatchableContext"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 78,
+          "line": 4
+        },
+        "modifiers": [],
+        "name": "scope",
+        "references": [],
+        "type": "List<SObject>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 58,
+          "line": 5
+        },
+        "modifiers": [],
+        "name": "bc",
+        "references": [],
+        "type": "Database.BatchableContext"
+      }
+    ]
+  }
+}

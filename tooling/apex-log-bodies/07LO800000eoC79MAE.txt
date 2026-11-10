@@ -1,0 +1,53 @@
+64.0 APEX_CODE,DEBUG;APEX_PROFILING,NONE;CALLOUT,INFO;DATA_ACCESS,INFO;DB,INFO;NBA,INFO;SYSTEM,INFO;VALIDATION,INFO;VISUALFORCE,NONE;WAVE,INFO;WORKFLOW,INFO
+23:21:46.1 (1176081)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+23:21:46.1 (1199181)|EXECUTION_STARTED
+23:21:46.1 (1216001)|CODE_UNIT_STARTED|[EXTERNAL]|01pO800000lweTV|CalK4A_T013_T014_Test.repFieldAccess()
+23:21:46.1 (3026388)|SYSTEM_MODE_ENTER|false
+23:21:46.1 (3127229)|SYSTEM_MODE_EXIT|false
+23:21:46.1 (3159929)|SYSTEM_MODE_ENTER|false
+23:21:46.1 (4069148)|DML_BEGIN|[7]|Op:Insert|Type:CalK4A_DemoAccount__c|Rows:1
+23:21:46.1 (13484695)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZfvp|CalK4A_DemoAccountTrigger on CalK4A_DemoAccount trigger event BeforeInsert|__sfdc_trigger/CalK4A_DemoAccountTrigger
+23:21:46.1 (16705454)|SYSTEM_MODE_ENTER|false
+23:21:46.1 (16714774)|SYSTEM_MODE_EXIT|false
+23:21:46.1 (16729585)|SYSTEM_MODE_ENTER|false
+23:21:46.1 (16859276)|SYSTEM_MODE_EXIT|false
+23:21:46.1 (16943437)|CODE_UNIT_FINISHED|CalK4A_DemoAccountTrigger on CalK4A_DemoAccount trigger event BeforeInsert|__sfdc_trigger/CalK4A_DemoAccountTrigger
+23:21:46.1 (19297308)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:CalK4A_DemoAccount:new
+23:21:46.1 (19304148)|VALIDATION_RULE|03dO8000004u2BJ|CalK4A_Demo_Tier_Required
+23:21:46.1 (19409389)|VALIDATION_FORMULA|AND(ISPICKVAL(Status__c, 'Active'), ISBLANK(Tier__c))|Tier__c=Gold , Status__c=Active
+23:21:46.1 (19412759)|VALIDATION_PASS
+23:21:46.1 (19415199)|CODE_UNIT_FINISHED|Validation:CalK4A_DemoAccount:new
+23:21:46.1 (32335789)|DML_END|[7]
+23:21:46.1 (40163831)|SOQL_EXECUTE_BEGIN|[11]|Aggregations:0|SELECT Id FROM Profile WHERE Name = :tmpVar1
+23:21:46.1 (44800994)|SOQL_EXECUTE_END|[11]|Rows:1
+23:21:46.1 (44982776)|DML_BEGIN|[14]|Op:Insert|Type:User|Rows:1
+23:21:47.74 (1074800936)|DML_END|[14]
+23:21:47.74 (1077092237)|SOQL_EXECUTE_BEGIN|[25]|Aggregations:0|SELECT Id FROM PermissionSet WHERE Name IN :tmpVar1
+23:21:47.74 (1089798114)|SOQL_EXECUTE_END|[25]|Rows:1
+23:21:47.74 (1090338769)|DML_BEGIN|[28]|Op:Insert|Type:PermissionSetAssignment|Rows:1
+23:21:47.74 (1170226497)|DML_END|[28]
+23:21:47.74 (1187346316)|DML_BEGIN|[5]|Op:Update|Type:CalK4A_DemoAccount__c|Rows:1
+23:21:47.74 (1199287476)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZfvp|CalK4A_DemoAccountTrigger on CalK4A_DemoAccount trigger event BeforeUpdate|__sfdc_trigger/CalK4A_DemoAccountTrigger
+23:21:47.74 (1199441567)|SYSTEM_MODE_ENTER|false
+23:21:47.74 (1199501308)|SYSTEM_MODE_EXIT|false
+23:21:47.74 (1199599339)|CODE_UNIT_FINISHED|CalK4A_DemoAccountTrigger on CalK4A_DemoAccount trigger event BeforeUpdate|__sfdc_trigger/CalK4A_DemoAccountTrigger
+23:21:47.74 (1200331956)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZgAL|CalK4A_DemoAccountAudit on CalK4A_DemoAccount trigger event BeforeUpdate|__sfdc_trigger/CalK4A_DemoAccountAudit
+23:21:47.74 (1200604298)|CODE_UNIT_FINISHED|CalK4A_DemoAccountAudit on CalK4A_DemoAccount trigger event BeforeUpdate|__sfdc_trigger/CalK4A_DemoAccountAudit
+23:21:47.74 (1203261693)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:CalK4A_DemoAccount:a05O800000mgl4B
+23:21:47.74 (1203269563)|VALIDATION_RULE|03dO8000004u2BJ|CalK4A_Demo_Tier_Required
+23:21:47.74 (1203395974)|VALIDATION_FORMULA|AND(ISPICKVAL(Status__c, 'Active'), ISBLANK(Tier__c))|Tier__c=Gold , Status__c=Active
+23:21:47.74 (1203400084)|VALIDATION_PASS
+23:21:47.74 (1203403934)|CODE_UNIT_FINISHED|Validation:CalK4A_DemoAccount:a05O800000mgl4B
+23:21:47.74 (1209673682)|DML_END|[5]
+23:21:47.74 (1210264947)|SOQL_EXECUTE_BEGIN|[13]|Aggregations:0|SELECT Region__c FROM CalK4A_DemoAccount__c WHERE Id = 'a05O800000mgl4BIAQ' WITH USER_MODE
+23:21:47.74 (1215225973)|SOQL_EXECUTE_END|[13]|Rows:1
+23:21:47.74 (1215790308)|DML_BEGIN|[5]|Op:Update|Type:CalK4A_DemoAccount__c|Rows:1
+23:21:47.74 (1216251883)|DML_END|[5]
+23:21:47.74 (1220166469)|SOQL_EXECUTE_BEGIN|[39]|Aggregations:0|SELECT PermissionsRead, PermissionsEdit FROM FieldPermissions WHERE (Parent.Name = :tmpVar1 AND Field = :tmpVar2)
+23:21:47.74 (1574200833)|SOQL_EXECUTE_END|[39]|Rows:1
+23:21:47.74 (1574919359)|SOQL_EXECUTE_BEGIN|[39]|Aggregations:0|SELECT PermissionsRead, PermissionsEdit FROM FieldPermissions WHERE (Parent.Name = :tmpVar1 AND Field = :tmpVar2)
+23:21:47.74 (1651807440)|SOQL_EXECUTE_END|[39]|Rows:1
+23:21:47.74 (1652461426)|USER_DEBUG|[45]|ERROR|CALK4A_OBS T-013/T-014={"T014_fls_Region":{"edit":false,"read":true},"T013_fls_Credit_Limit":{"edit":true,"read":true},"T014_repEditsRegion":"Operation failed due to fields being inaccessible on Sobject CalK4A_DemoAccount__c, check errors on Exception or Result! ","T014_repReadsRegion":"EMEA","T013_repSetsCreditLimit":"saved"}
+23:21:47.74 (1652529396)|SYSTEM_MODE_EXIT|false
+23:21:47.74 (1652554097)|CODE_UNIT_FINISHED|CalK4A_T013_T014_Test.repFieldAccess()
+23:21:47.74 (1652559107)|EXECUTION_FINISHED

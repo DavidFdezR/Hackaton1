@@ -1,0 +1,59 @@
+{
+  "Id": "01pO800000lwd1CIAQ",
+  "Name": "CalK4B_InvoiceSeeAllTest",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK4B_InvoiceSeeAllTest",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK4B_InvoiceSeeAllTest",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 4
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "findsSeedInvoice",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalK4B_InvoiceSeeAllTest",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 15,
+        "line": 2
+      },
+      "modifiers": [
+        "private",
+        "testMethod"
+      ],
+      "name": "CalK4B_InvoiceSeeAllTest",
+      "references": [],
+      "type": "CalK4B_InvoiceSeeAllTest"
+    },
+    "variables": []
+  }
+}

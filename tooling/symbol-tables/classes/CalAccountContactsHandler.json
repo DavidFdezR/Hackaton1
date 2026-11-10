@@ -1,0 +1,89 @@
+{
+  "Id": "01pO800000lw4xpIAA",
+  "Name": "CalAccountContactsHandler",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalAccountContactsHandler",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalAccountContactsHandler",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 24,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "summarize",
+        "parameters": [
+          {
+            "name": "accounts",
+            "type": "List"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalAccountContactsHandler",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalAccountContactsHandler",
+      "references": [],
+      "type": "CalAccountContactsHandler"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 48,
+          "line": 2
+        },
+        "modifiers": [],
+        "name": "accounts",
+        "references": [],
+        "type": "List<Account>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 22,
+          "line": 3
+        },
+        "modifiers": [],
+        "name": "a",
+        "references": [],
+        "type": "Account"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 21,
+          "line": 4
+        },
+        "modifiers": [],
+        "name": "contactCount",
+        "references": [],
+        "type": "Integer"
+      }
+    ]
+  }
+}

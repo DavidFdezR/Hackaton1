@@ -1,0 +1,78 @@
+{
+  "Id": "01pO800000lw5ibIAA",
+  "Name": "CalPermSetTuner",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalPermSetTuner",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalPermSetTuner",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 24,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "fixExportAccess",
+        "parameters": [
+          {
+            "name": "permissionSetName",
+            "type": "String"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalPermSetTuner",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 30,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "without sharing"
+      ],
+      "name": "CalPermSetTuner",
+      "references": [],
+      "type": "CalPermSetTuner"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 47,
+          "line": 2
+        },
+        "modifiers": [],
+        "name": "permissionSetName",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 23,
+          "line": 3
+        },
+        "modifiers": [],
+        "name": "target",
+        "references": [],
+        "type": "PermissionSet"
+      }
+    ]
+  }
+}

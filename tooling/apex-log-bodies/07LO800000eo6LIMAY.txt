@@ -1,0 +1,69 @@
+64.0 APEX_CODE,DEBUG;APEX_PROFILING,NONE;CALLOUT,INFO;DATA_ACCESS,INFO;DB,INFO;NBA,INFO;SYSTEM,INFO;VALIDATION,INFO;VISUALFORCE,NONE;WAVE,INFO;WORKFLOW,INFO
+22:42:34.1 (1627860)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+22:42:34.1 (1655320)|EXECUTION_STARTED
+22:42:34.1 (1668361)|CODE_UNIT_STARTED|[EXTERNAL]|01pO800000lweTY|CalK4A_T023_Test.manageUsersVersusResetOnly()
+22:42:34.1 (4274663)|SYSTEM_MODE_ENTER|false
+22:42:34.1 (4411894)|SYSTEM_MODE_EXIT|false
+22:42:34.1 (4473995)|SYSTEM_MODE_ENTER|false
+22:42:34.1 (19829315)|DML_BEGIN|[14]|Op:Insert|Type:PermissionSet|Rows:1
+22:42:34.1 (167071931)|DML_END|[14]
+22:42:34.1 (167164522)|EXCEPTION_THROWN|[14]|System.DmlException: Insert failed. First exception on row 0; first error: FIELD_INTEGRITY_EXCEPTION, Permission ManageUsers depends on permission(s): AssignPermissionSets, DelegatedTwoFactor, FreezeUsers, ManageInternalUsers, ManageIpAddresses, ManageLoginAccessPolicies, ManagePasswordPolicies, ManageProfilesPermissionsets, ManageRoles, ManageSharing, MonitorLoginHistory, ResetPasswords, ViewAllUsers, ViewRoles, ViewSetup: []
+22:42:34.1 (168352837)|DML_BEGIN|[14]|Op:Insert|Type:PermissionSet|Rows:1
+22:42:34.1 (345190777)|DML_END|[14]
+22:42:34.1 (345951587)|DML_BEGIN|[14]|Op:Insert|Type:PermissionSet|Rows:1
+22:42:34.1 (501331293)|DML_END|[14]
+22:42:34.1 (538317909)|SOQL_EXECUTE_BEGIN|[11]|Aggregations:0|SELECT Id FROM Profile WHERE Name = :tmpVar1
+22:42:34.1 (544871009)|SOQL_EXECUTE_END|[11]|Rows:1
+22:42:34.1 (545261834)|DML_BEGIN|[14]|Op:Insert|Type:User|Rows:1
+22:42:34.1 (918887403)|DML_END|[14]
+22:42:34.1 (920016076)|SOQL_EXECUTE_BEGIN|[25]|Aggregations:0|SELECT Id FROM PermissionSet WHERE Name IN :tmpVar1
+22:42:34.1 (943104221)|SOQL_EXECUTE_END|[25]|Rows:1
+22:42:34.1 (943726719)|DML_BEGIN|[28]|Op:Insert|Type:PermissionSetAssignment|Rows:1
+22:42:35.141 (1141001401)|DML_END|[28]
+22:42:35.141 (1173430722)|SOQL_EXECUTE_BEGIN|[11]|Aggregations:0|SELECT Id FROM Profile WHERE Name = :tmpVar1
+22:42:35.141 (1178960580)|SOQL_EXECUTE_END|[11]|Rows:1
+22:42:35.141 (1179225103)|DML_BEGIN|[14]|Op:Insert|Type:User|Rows:1
+22:42:35.141 (1514521408)|DML_END|[14]
+22:42:35.141 (1515494180)|SOQL_EXECUTE_BEGIN|[25]|Aggregations:0|SELECT Id FROM PermissionSet WHERE Name IN :tmpVar1
+22:42:35.141 (1532246737)|SOQL_EXECUTE_END|[25]|Rows:1
+22:42:35.141 (1532659442)|DML_BEGIN|[28]|Op:Insert|Type:PermissionSetAssignment|Rows:1
+22:42:35.141 (1688777677)|DML_END|[28]
+22:42:35.141 (1718888298)|SOQL_EXECUTE_BEGIN|[11]|Aggregations:0|SELECT Id FROM Profile WHERE Name = :tmpVar1
+22:42:35.141 (1723007979)|SOQL_EXECUTE_END|[11]|Rows:1
+22:42:35.141 (1723247822)|DML_BEGIN|[14]|Op:Insert|Type:User|Rows:1
+22:42:35.141 (2020917383)|DML_END|[14]
+22:42:35.141 (2053819599)|DML_BEGIN|[38]|Op:Insert|Type:PermissionSetAssignment|Rows:1
+22:42:36.308 (2308706752)|DML_END|[38]
+22:42:36.308 (2309315790)|DML_BEGIN|[39]|Op:Insert|Type:PermissionSetAssignment|Rows:1
+22:42:36.308 (2498678955)|DML_END|[39]
+22:42:36.308 (2505620570)|SOQL_EXECUTE_BEGIN|[5]|Aggregations:0|SELECT Id FROM Profile WHERE Name = 'System Administrator'
+22:42:36.308 (2517359705)|SOQL_EXECUTE_END|[5]|Rows:1
+22:42:36.308 (2517759900)|SOQL_EXECUTE_BEGIN|[6]|Aggregations:0|SELECT Id FROM PermissionSet WHERE Name = 'CalK4A_DemoFinance_Auditor'
+22:42:36.308 (2548574370)|SOQL_EXECUTE_END|[6]|Rows:1
+22:42:36.308 (2576073510)|DML_BEGIN|[23]|Op:Update|Type:User|Rows:1
+22:42:36.308 (2590109893)|DML_END|[23]
+22:42:36.308 (2590186894)|EXCEPTION_THROWN|[23]|System.DmlException: Update failed. First exception on row 0 with id 005O800000mgl5aIAA; first error: INSUFFICIENT_ACCESS_ON_CROSS_REFERENCE_ENTITY, insufficient access rights on cross-reference id: 005O800000mgl5a: []
+22:42:36.308 (2592993908)|DML_BEGIN|[14]|Op:Insert|Type:PermissionSetAssignment|Rows:1
+22:42:36.308 (2831254026)|DML_END|[14]
+22:42:36.308 (2834521687)|DML_BEGIN|[11]|Op:resetPassword|Type:User|Rows:1
+22:42:36.308 (2881700089)|DML_END|[11]
+22:42:36.308 (2897942349)|SOQL_EXECUTE_BEGIN|[17]|Aggregations:0|SELECT Profile.Name FROM User WHERE Id = :tmpVar1
+22:42:36.308 (2914353822)|SOQL_EXECUTE_END|[17]|Rows:1
+22:42:36.308 (2915037340)|SOQL_EXECUTE_BEGIN|[5]|Aggregations:0|SELECT Id FROM Profile WHERE Name = 'System Administrator'
+22:42:36.308 (2917434380)|SOQL_EXECUTE_END|[5]|Rows:1
+22:42:36.308 (2917805224)|SOQL_EXECUTE_BEGIN|[6]|Aggregations:0|SELECT Id FROM PermissionSet WHERE Name = 'CalK4A_DemoFinance_Auditor'
+22:42:36.308 (2932590797)|SOQL_EXECUTE_END|[6]|Rows:1
+22:42:36.308 (2961229920)|DML_BEGIN|[23]|Op:Update|Type:User|Rows:1
+22:42:36.308 (3085514422)|DML_END|[23]
+22:42:36.308 (3085727625)|VF_PAGE_MESSAGE|Cannot grant or remove a profile with modify all data,<br>without having the modify all data permission yourself.
+22:42:36.308 (3085802146)|EXCEPTION_THROWN|[23]|System.DmlException: Update failed. First exception on row 0 with id 005O800000mgl5aIAA; first error: FIELD_INTEGRITY_EXCEPTION, Cannot grant or remove a profile with modify all data,<br>without having the modify all data permission yourself.: [ProfileId]
+22:42:36.308 (3088323497)|DML_BEGIN|[14]|Op:Insert|Type:PermissionSetAssignment|Rows:1
+22:42:37.308 (3308784505)|DML_END|[14]
+22:42:37.308 (3311890333)|DML_BEGIN|[11]|Op:resetPassword|Type:User|Rows:1
+22:42:37.308 (3362118943)|DML_END|[11]
+22:42:37.308 (3376065565)|SOQL_EXECUTE_BEGIN|[17]|Aggregations:0|SELECT Profile.Name FROM User WHERE Id = :tmpVar1
+22:42:37.308 (3382024779)|SOQL_EXECUTE_END|[17]|Rows:1
+22:42:37.308 (3382703567)|USER_DEBUG|[45]|ERROR|CALK4A_OBS T-023={"manageUsersUser":{"targetProfileAfter":"Standard User","resetTargetPassword":"ok","selfAssignAnyPermissionSet":"saved","setTargetProfileToSystemAdministrator":"Update failed. First exception on row 0 with id 005O800000mgl5aIAA; first error: FIELD_INTEGRITY_EXCEPTION, Cannot grant or remove a profile with modify all data,<br>without having the modify all data permission yourself"},"resetOnlyUser":{"targetProfileAfter":"Standard User","resetTargetPassword":"ok","selfAssignAnyPermissionSet":"saved","setTargetProfileToSystemAdministrator":"Update failed. First exception on row 0 with id 005O800000mgl5aIAA; first error: INSUFFICIENT_ACCESS_ON_CROSS_REFERENCE_ENTITY, insufficient access rights on cross-reference id: 005O800000mgl5a: []"},"saveResetOnly":"saved","saveManageUsersWithDeps":"saved","saveManageUsersOnly":"Insert failed. First exception on row 0; first error: FIELD_INTEGRITY_EXCEPTION, Permission ManageUsers depends on permission(s): AssignPermissionSets, DelegatedTwoFactor, FreezeUsers, ManageInternalUsers, ManageIpAddres"}
+22:42:37.308 (3382766658)|SYSTEM_MODE_EXIT|false
+22:42:37.308 (3382813199)|CODE_UNIT_FINISHED|CalK4A_T023_Test.manageUsersVersusResetOnly()
+22:42:37.308 (3382818179)|EXECUTION_FINISHED

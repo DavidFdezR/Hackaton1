@@ -1,0 +1,62 @@
+68.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO
+Execute Anonymous: 
+Execute Anonymous: List<Account> accts = [SELECT Id FROM Account WHERE Name LIKE 'Cal APX01 Account %'];
+Execute Anonymous: System.debug('updating ' + accts.size() + ' real accounts');
+Execute Anonymous: update accts;
+23:24:13.33 (33292625)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+23:24:13.33 (33305005)|EXECUTION_STARTED
+23:24:13.33 (33311115)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+23:24:13.33 (48372077)|USER_DEBUG|[3]|DEBUG|updating 200 real accounts
+23:24:13.33 (422176334)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZabB|CalAccountContactsTrigger on Account trigger event BeforeUpdate|__sfdc_trigger/CalAccountContactsTrigger
+23:24:13.33 (785730450)|EXCEPTION_THROWN|[4]|System.LimitException: Too many SOQL queries: 101
+23:24:13.33 (785908031)|FATAL_ERROR|System.LimitException: Too many SOQL queries: 101
+
+Class.CalAccountContactsHandler.summarize: line 4, column 1
+Trigger.CalAccountContactsTrigger: line 2, column 1
+23:24:13.33 (785916621)|FATAL_ERROR|System.LimitException: Too many SOQL queries: 101
+
+Class.CalAccountContactsHandler.summarize: line 4, column 1
+Trigger.CalAccountContactsTrigger: line 2, column 1
+23:24:13.786 (786006921)|CUMULATIVE_LIMIT_USAGE
+23:24:13.786 (786006921)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 101 out of 100 ******* CLOSE TO LIMIT
+  Number of query rows: 299 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 200 out of 10000
+  Maximum CPU time: 171 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:24:13.786 (786006921)|CUMULATIVE_LIMIT_USAGE_END
+
+23:24:13.33 (786138982)|CODE_UNIT_FINISHED|CalAccountContactsTrigger on Account trigger event BeforeUpdate|__sfdc_trigger/CalAccountContactsTrigger
+23:24:13.33 (793399291)|FATAL_ERROR|System.LimitException: Too many SOQL queries: 101
+
+Class.CalAccountContactsHandler.summarize: line 4, column 1
+Trigger.CalAccountContactsTrigger: line 2, column 1
+23:24:13.793 (793502941)|CUMULATIVE_LIMIT_USAGE
+23:24:13.793 (793502941)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 200 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 200 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:24:13.793 (793502941)|CUMULATIVE_LIMIT_USAGE_END
+
+23:24:13.33 (793527041)|CODE_UNIT_FINISHED|execute_anonymous_apex
+23:24:13.33 (793532871)|EXECUTION_FINISHED

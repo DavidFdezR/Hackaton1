@@ -1,0 +1,167 @@
+{
+  "Id": "01pO800000lwSJtIAM",
+  "Name": "CalK1_DemoReturnCheck",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK1_DemoReturnCheck",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK1_DemoReturnCheck",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 4
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "isReturnable",
+        "parameters": [
+          {
+            "name": "purchased",
+            "type": "Date"
+          },
+          {
+            "name": "requested",
+            "type": "Date"
+          }
+        ],
+        "references": [],
+        "returnType": "Boolean",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 33,
+          "line": 14
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "checkAll",
+        "parameters": [
+          {
+            "name": "purchases",
+            "type": "List"
+          },
+          {
+            "name": "requested",
+            "type": "Date"
+          }
+        ],
+        "references": [],
+        "returnType": "List",
+        "type": null
+      }
+    ],
+    "name": "CalK1_DemoReturnCheck",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 33,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public",
+          "final"
+        ],
+        "name": "RETURN_WINDOW_DAYS",
+        "references": [],
+        "type": "Integer"
+      }
+    ],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalK1_DemoReturnCheck",
+      "references": [],
+      "type": "CalK1_DemoReturnCheck"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 45,
+          "line": 4
+        },
+        "modifiers": [],
+        "name": "purchased",
+        "references": [],
+        "type": "Date"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 61,
+          "line": 4
+        },
+        "modifiers": [],
+        "name": "requested",
+        "references": [],
+        "type": "Date"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 53,
+          "line": 14
+        },
+        "modifiers": [],
+        "name": "purchases",
+        "references": [],
+        "type": "List<Date>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 69,
+          "line": 14
+        },
+        "modifiers": [],
+        "name": "requested",
+        "references": [],
+        "type": "Date"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 23,
+          "line": 15
+        },
+        "modifiers": [],
+        "name": "results",
+        "references": [],
+        "type": "List<Boolean>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 19,
+          "line": 16
+        },
+        "modifiers": [],
+        "name": "purchased",
+        "references": [],
+        "type": "Date"
+      }
+    ]
+  }
+}

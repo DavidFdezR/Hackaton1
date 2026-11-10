@@ -1,0 +1,1113 @@
+{
+  "Id": "01pO800000lw6gJIAQ",
+  "Name": "CalK2_FridayFactsTest",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK2_FridayFactsTest",
+    "innerClasses": [
+      {
+        "constructors": [],
+        "externalReferences": [],
+        "id": "NoSharingLookup",
+        "innerClasses": [],
+        "interfaces": [],
+        "key": "NoSharingLookup",
+        "methods": [
+          {
+            "annotations": [],
+            "location": {
+              "column": 30,
+              "line": 239
+            },
+            "modifiers": [
+              "private"
+            ],
+            "name": "find",
+            "parameters": [
+              {
+                "name": "invoiceId",
+                "type": "Id"
+              }
+            ],
+            "references": [],
+            "returnType": "CalK2_DemoInvoice__c",
+            "type": null
+          }
+        ],
+        "name": "NoSharingLookup",
+        "namespace": null,
+        "parentClass": "",
+        "properties": [],
+        "tableDeclaration": {
+          "annotations": [],
+          "location": {
+            "column": 27,
+            "line": 238
+          },
+          "modifiers": [
+            "without sharing"
+          ],
+          "name": "NoSharingLookup",
+          "references": [],
+          "type": "NoSharingLookup"
+        },
+        "variables": [
+          {
+            "annotations": [],
+            "location": {
+              "column": 38,
+              "line": 239
+            },
+            "modifiers": [],
+            "name": "invoiceId",
+            "references": [],
+            "type": "Id"
+          },
+          {
+            "annotations": [],
+            "location": {
+              "column": 40,
+              "line": 240
+            },
+            "modifiers": [],
+            "name": "rows",
+            "references": [],
+            "type": "List<CalK2_DemoInvoice__c>"
+          }
+        ]
+      }
+    ],
+    "interfaces": [],
+    "key": "CalK2_FridayFactsTest",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 5
+        },
+        "modifiers": [
+          "private",
+          "static"
+        ],
+        "name": "newUser",
+        "parameters": [
+          {
+            "name": "alias",
+            "type": "String"
+          }
+        ],
+        "references": [],
+        "returnType": "User",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 26,
+          "line": 16
+        },
+        "modifiers": [
+          "private",
+          "static"
+        ],
+        "name": "permSet",
+        "parameters": [
+          {
+            "name": "name",
+            "type": "String"
+          }
+        ],
+        "references": [],
+        "returnType": "PermissionSet",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 22
+        },
+        "modifiers": [
+          "private",
+          "static"
+        ],
+        "name": "objectAccess",
+        "parameters": [
+          {
+            "name": "psId",
+            "type": "Id"
+          },
+          {
+            "name": "sobjectType",
+            "type": "String"
+          },
+          {
+            "name": "edit",
+            "type": "Boolean"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 28
+        },
+        "modifiers": [
+          "private",
+          "static"
+        ],
+        "name": "assign",
+        "parameters": [
+          {
+            "name": "psId",
+            "type": "Id"
+          },
+          {
+            "name": "userId",
+            "type": "Id"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 32
+        },
+        "modifiers": [
+          "private",
+          "static"
+        ],
+        "name": "log",
+        "parameters": [
+          {
+            "name": "caseId",
+            "type": "String"
+          },
+          {
+            "name": "msg",
+            "type": "String"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 37
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "f003FieldEditWithoutObjectAccessIsRejected",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 65
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "f003FieldEditNeedsObjectEdit",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 92
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "f003FieldEditWorksWithObjectReadEdit",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 42,
+          "line": 110
+        },
+        "modifiers": [
+          "private",
+          "static"
+        ],
+        "name": "labInvoices",
+        "parameters": [],
+        "references": [],
+        "returnType": "List",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 121
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "f014ReadOnlySharingRulePlusObjectRead",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 174
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "f014OrgRecordsWithCriteriaRule",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 206
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "f021PublicReadWriteGrantsEditToAnyoneWithObjectAccess",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 246
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "f023WithSharingThrowsWithoutSharingLeaks",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 279
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "f024QueueNeedsSupportedObjectNotMembers",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalK2_FridayFactsTest",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 20,
+          "line": 3
+        },
+        "modifiers": [
+          "private",
+          "static"
+        ],
+        "name": "seq",
+        "references": [],
+        "type": "Integer"
+      }
+    ],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 15,
+        "line": 2
+      },
+      "modifiers": [
+        "private",
+        "testMethod"
+      ],
+      "name": "CalK2_FridayFactsTest",
+      "references": [],
+      "type": "CalK2_FridayFactsTest"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 32,
+          "line": 5
+        },
+        "modifiers": [],
+        "name": "alias",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 6
+        },
+        "modifiers": [],
+        "name": "p",
+        "references": [],
+        "type": "Profile"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 8
+        },
+        "modifiers": [],
+        "name": "u",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 41,
+          "line": 16
+        },
+        "modifiers": [],
+        "name": "name",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 23,
+          "line": 17
+        },
+        "modifiers": [],
+        "name": "ps",
+        "references": [],
+        "type": "PermissionSet"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 33,
+          "line": 22
+        },
+        "modifiers": [],
+        "name": "psId",
+        "references": [],
+        "type": "Id"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 46,
+          "line": 22
+        },
+        "modifiers": [],
+        "name": "sobjectType",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 67,
+          "line": 22
+        },
+        "modifiers": [],
+        "name": "edit",
+        "references": [],
+        "type": "Boolean"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 28
+        },
+        "modifiers": [],
+        "name": "psId",
+        "references": [],
+        "type": "Id"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 36,
+          "line": 28
+        },
+        "modifiers": [],
+        "name": "userId",
+        "references": [],
+        "type": "Id"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 28,
+          "line": 32
+        },
+        "modifiers": [],
+        "name": "caseId",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 43,
+          "line": 32
+        },
+        "modifiers": [],
+        "name": "msg",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 23,
+          "line": 38
+        },
+        "modifiers": [],
+        "name": "ps",
+        "references": [],
+        "type": "PermissionSet"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 16,
+          "line": 39
+        },
+        "modifiers": [],
+        "name": "outcome",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 18,
+          "line": 49
+        },
+        "modifiers": [],
+        "name": "u",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 24,
+          "line": 52
+        },
+        "modifiers": [],
+        "name": "r",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 66
+        },
+        "modifiers": [],
+        "name": "u",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 12,
+          "line": 67
+        },
+        "modifiers": [],
+        "name": "recId",
+        "references": [],
+        "type": "Id"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 69
+        },
+        "modifiers": [],
+        "name": "ps",
+        "references": [],
+        "type": "PermissionSet"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 30,
+          "line": 75
+        },
+        "modifiers": [],
+        "name": "a",
+        "references": [],
+        "type": "CalK2_DemoAccount__c"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 21,
+          "line": 78
+        },
+        "modifiers": [],
+        "name": "fieldUpdateable",
+        "references": [],
+        "type": "Boolean"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 20,
+          "line": 79
+        },
+        "modifiers": [],
+        "name": "result",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 93
+        },
+        "modifiers": [],
+        "name": "u",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 95
+        },
+        "modifiers": [],
+        "name": "ps",
+        "references": [],
+        "type": "PermissionSet"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 30,
+          "line": 101
+        },
+        "modifiers": [],
+        "name": "a",
+        "references": [],
+        "type": "CalK2_DemoAccount__c"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 39,
+          "line": 111
+        },
+        "modifiers": [],
+        "name": "rows",
+        "references": [],
+        "type": "List<CalK2_DemoInvoiceLab__c>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 122
+        },
+        "modifiers": [],
+        "name": "member",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 123
+        },
+        "modifiers": [],
+        "name": "outsider",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 124
+        },
+        "modifiers": [],
+        "name": "memberNoObj",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 12,
+          "line": 125
+        },
+        "modifiers": [],
+        "name": "financeGroup",
+        "references": [],
+        "type": "Id"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 127
+        },
+        "modifiers": [],
+        "name": "ps",
+        "references": [],
+        "type": "PermissionSet"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 39,
+          "line": 136
+        },
+        "modifiers": [],
+        "name": "rows",
+        "references": [],
+        "type": "List<CalK2_DemoInvoiceLab__c>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 42,
+          "line": 137
+        },
+        "modifiers": [],
+        "name": "sh",
+        "references": [],
+        "type": "CalK2_DemoInvoiceLab__Share"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 141
+        },
+        "modifiers": [],
+        "name": "memberSees",
+        "references": [],
+        "type": "Integer"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 16,
+          "line": 142
+        },
+        "modifiers": [],
+        "name": "memberEdit",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 30,
+          "line": 145
+        },
+        "modifiers": [],
+        "name": "ura",
+        "references": [],
+        "type": "UserRecordAccess"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 156
+        },
+        "modifiers": [],
+        "name": "outsiderSees",
+        "references": [],
+        "type": "Integer"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 16,
+          "line": 161
+        },
+        "modifiers": [],
+        "name": "noObj",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 175
+        },
+        "modifiers": [],
+        "name": "member",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 176
+        },
+        "modifiers": [],
+        "name": "outsider",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 12,
+          "line": 177
+        },
+        "modifiers": [],
+        "name": "financeGroup",
+        "references": [],
+        "type": "Id"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 23,
+          "line": 178
+        },
+        "modifiers": [],
+        "name": "ps",
+        "references": [],
+        "type": "PermissionSet"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 183
+        },
+        "modifiers": [],
+        "name": "total",
+        "references": [],
+        "type": "Integer"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 43,
+          "line": 185
+        },
+        "modifiers": [],
+        "name": "seen",
+        "references": [],
+        "type": "List<CalK2_DemoInvoiceLab__c>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 20,
+          "line": 186
+        },
+        "modifiers": [],
+        "name": "edit",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 34,
+          "line": 188
+        },
+        "modifiers": [],
+        "name": "ura",
+        "references": [],
+        "type": "UserRecordAccess"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 207
+        },
+        "modifiers": [],
+        "name": "anyUser",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 208
+        },
+        "modifiers": [],
+        "name": "noObjUser",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 210
+        },
+        "modifiers": [],
+        "name": "ps",
+        "references": [],
+        "type": "PermissionSet"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 33,
+          "line": 215
+        },
+        "modifiers": [],
+        "name": "prw",
+        "references": [],
+        "type": "CalK2_DemoInvoicePRW__c"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 21,
+          "line": 219
+        },
+        "modifiers": [],
+        "name": "seesPrw",
+        "references": [],
+        "type": "Integer"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 21,
+          "line": 221
+        },
+        "modifiers": [],
+        "name": "seesPrivate",
+        "references": [],
+        "type": "Integer"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 20,
+          "line": 228
+        },
+        "modifiers": [],
+        "name": "r",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 247
+        },
+        "modifiers": [],
+        "name": "reader",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 248
+        },
+        "modifiers": [],
+        "name": "stranger",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 250
+        },
+        "modifiers": [],
+        "name": "ps",
+        "references": [],
+        "type": "PermissionSet"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 30,
+          "line": 254
+        },
+        "modifiers": [],
+        "name": "inv",
+        "references": [],
+        "type": "CalK2_DemoInvoice__c"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 20,
+          "line": 257
+        },
+        "modifiers": [],
+        "name": "r",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 15,
+          "line": 280
+        },
+        "modifiers": [],
+        "name": "noObjects",
+        "references": [],
+        "type": "Group"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 15,
+          "line": 281
+        },
+        "modifiers": [],
+        "name": "caseNoMembers",
+        "references": [],
+        "type": "Group"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 286
+        },
+        "modifiers": [],
+        "name": "c",
+        "references": [],
+        "type": "Case"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 16,
+          "line": 288
+        },
+        "modifiers": [],
+        "name": "r1",
+        "references": [],
+        "type": "String"
+      }
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "Id": "01pO800000lwfJ5IAI",
+  "Name": "CalK4A_DemoAccountTriggerHandler",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK4A_DemoAccountTriggerHandler",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK4A_DemoAccountTriggerHandler",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 24,
+          "line": 4
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "beforeSave",
+        "parameters": [
+          {
+            "name": "rows",
+            "type": "List"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalK4A_DemoAccountTriggerHandler",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 32,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public",
+          "final"
+        ],
+        "name": "DEFAULT_REGION",
+        "references": [],
+        "type": "String"
+      }
+    ],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalK4A_DemoAccountTriggerHandler",
+      "references": [],
+      "type": "CalK4A_DemoAccountTriggerHandler"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 63,
+          "line": 4
+        },
+        "modifiers": [],
+        "name": "rows",
+        "references": [],
+        "type": "List<CalK4A_DemoAccount__c>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 36,
+          "line": 5
+        },
+        "modifiers": [],
+        "name": "row",
+        "references": [],
+        "type": "CalK4A_DemoAccount__c"
+      }
+    ]
+  }
+}

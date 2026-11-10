@@ -1,0 +1,67 @@
+{
+  "Id": "01pO800000lwfFpIAI",
+  "Name": "CalK2_DemoPricingCaller",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK2_DemoPricingCaller",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK2_DemoPricingCaller",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "net",
+        "parameters": [
+          {
+            "name": "base",
+            "type": "Decimal"
+          }
+        ],
+        "references": [],
+        "returnType": "Decimal",
+        "type": null
+      }
+    ],
+    "name": "CalK2_DemoPricingCaller",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalK2_DemoPricingCaller",
+      "references": [],
+      "type": "CalK2_DemoPricingCaller"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 39,
+          "line": 2
+        },
+        "modifiers": [],
+        "name": "base",
+        "references": [],
+        "type": "Decimal"
+      }
+    ]
+  }
+}

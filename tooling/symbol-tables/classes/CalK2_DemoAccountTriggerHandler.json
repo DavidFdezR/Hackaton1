@@ -1,0 +1,110 @@
+{
+  "Id": "01pO800000lwFi4IAE",
+  "Name": "CalK2_DemoAccountTriggerHandler",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK2_DemoAccountTriggerHandler",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK2_DemoAccountTriggerHandler",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 24,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "handleBefore",
+        "parameters": [
+          {
+            "name": "records",
+            "type": "List"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 26,
+          "line": 10
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "defaultNote",
+        "parameters": [
+          {
+            "name": "region",
+            "type": "String"
+          }
+        ],
+        "references": [],
+        "returnType": "String",
+        "type": null
+      }
+    ],
+    "name": "CalK2_DemoAccountTriggerHandler",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalK2_DemoAccountTriggerHandler",
+      "references": [],
+      "type": "CalK2_DemoAccountTriggerHandler"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 64,
+          "line": 2
+        },
+        "modifiers": [],
+        "name": "records",
+        "references": [],
+        "type": "List<CalK2_DemoAccount__c>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 35,
+          "line": 3
+        },
+        "modifiers": [],
+        "name": "r",
+        "references": [],
+        "type": "CalK2_DemoAccount__c"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 45,
+          "line": 10
+        },
+        "modifiers": [],
+        "name": "region",
+        "references": [],
+        "type": "String"
+      }
+    ]
+  }
+}

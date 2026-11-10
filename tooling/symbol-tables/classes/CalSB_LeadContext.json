@@ -1,0 +1,78 @@
+{
+  "Id": "01pO800000lwryXIAQ",
+  "Name": "CalSB_LeadContext",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalSB_LeadContext",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalSB_LeadContext",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 26,
+          "line": 3
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "forLead",
+        "parameters": [
+          {
+            "name": "leadId",
+            "type": "Id"
+          }
+        ],
+        "references": [],
+        "returnType": "String",
+        "type": null
+      }
+    ],
+    "name": "CalSB_LeadContext",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 2
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalSB_LeadContext",
+      "references": [],
+      "type": "CalSB_LeadContext"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 37,
+          "line": 3
+        },
+        "modifiers": [],
+        "name": "leadId",
+        "references": [],
+        "type": "Id"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 4
+        },
+        "modifiers": [],
+        "name": "l",
+        "references": [],
+        "type": "Lead"
+      }
+    ]
+  }
+}

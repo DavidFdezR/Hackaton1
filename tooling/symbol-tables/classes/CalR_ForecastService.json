@@ -1,0 +1,67 @@
+{
+  "Id": "01pO800000lwv9NIAQ",
+  "Name": "CalR_ForecastService",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalR_ForecastService",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalR_ForecastService",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "needsApproval",
+        "parameters": [
+          {
+            "name": "amount",
+            "type": "Decimal"
+          }
+        ],
+        "references": [],
+        "returnType": "Boolean",
+        "type": null
+      }
+    ],
+    "name": "CalR_ForecastService",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalR_ForecastService",
+      "references": [],
+      "type": "CalR_ForecastService"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 49,
+          "line": 2
+        },
+        "modifiers": [],
+        "name": "amount",
+        "references": [],
+        "type": "Decimal"
+      }
+    ]
+  }
+}

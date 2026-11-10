@@ -1,0 +1,17 @@
+68.0 APEX_CODE,DEBUG;APEX_PROFILING,NONE;CALLOUT,INFO;DATA_ACCESS,INFO;DB,INFO;NBA,INFO;SYSTEM,INFO;VALIDATION,INFO;VISUALFORCE,NONE;WAVE,INFO;WORKFLOW,INFO
+02:35:38.2 (2043727)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+02:35:38.2 (2073827)|EXECUTION_STARTED
+02:35:38.2 (2082277)|CODE_UNIT_STARTED|[EXTERNAL]|01pO800000lwRc1|CalK5_DemoInvoiceServiceTest.addsTenPercentTax()
+02:35:38.2 (6258621)|SYSTEM_MODE_ENTER|false
+02:35:38.2 (6422213)|SYSTEM_MODE_EXIT|false
+02:35:38.2 (6480973)|SYSTEM_MODE_ENTER|false
+02:35:38.2 (13739566)|EXCEPTION_THROWN|[34]|System.AssertException: Assertion Failed: deliberately failing fixture for A-002: Expected: 120, Actual: 110.0
+02:35:38.2 (13796777)|SYSTEM_MODE_EXIT|false
+02:35:38.2 (16139767)|FATAL_ERROR|System.AssertException: Assertion Failed: deliberately failing fixture for A-002: Expected: 120, Actual: 110.0
+
+Class.CalK5_DemoInvoiceServiceTest.addsTenPercentTax: line 5, column 1
+02:35:38.2 (16150197)|FATAL_ERROR|System.AssertException: Assertion Failed: deliberately failing fixture for A-002: Expected: 120, Actual: 110.0
+
+Class.CalK5_DemoInvoiceServiceTest.addsTenPercentTax: line 5, column 1
+02:35:38.2 (16169147)|CODE_UNIT_FINISHED|CalK5_DemoInvoiceServiceTest.addsTenPercentTax()
+02:35:38.2 (16174308)|EXECUTION_FINISHED

@@ -1,0 +1,137 @@
+{
+  "Id": "01pO800000lw5dmIAA",
+  "Name": "CalAccountCitySyncTest",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalAccountCitySyncTest",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalAccountCitySyncTest",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 4
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "bulkCityChangeStaysWithinLimits",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalAccountCitySyncTest",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 15,
+        "line": 2
+      },
+      "modifiers": [
+        "private",
+        "testMethod"
+      ],
+      "name": "CalAccountCitySyncTest",
+      "references": [],
+      "type": "CalAccountCitySyncTest"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 23,
+          "line": 5
+        },
+        "modifiers": [],
+        "name": "accounts",
+        "references": [],
+        "type": "List<Account>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 22,
+          "line": 6
+        },
+        "modifiers": [],
+        "name": "i",
+        "references": [],
+        "type": "Integer"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 23,
+          "line": 10
+        },
+        "modifiers": [],
+        "name": "contacts",
+        "references": [],
+        "type": "List<Contact>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 22,
+          "line": 11
+        },
+        "modifiers": [],
+        "name": "a",
+        "references": [],
+        "type": "Account"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 22,
+          "line": 15
+        },
+        "modifiers": [],
+        "name": "a",
+        "references": [],
+        "type": "Account"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 20
+        },
+        "modifiers": [],
+        "name": "queries",
+        "references": [],
+        "type": "Integer"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 17,
+          "line": 21
+        },
+        "modifiers": [],
+        "name": "dml",
+        "references": [],
+        "type": "Integer"
+      }
+    ]
+  }
+}

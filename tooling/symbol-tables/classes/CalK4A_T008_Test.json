@@ -1,0 +1,197 @@
+{
+  "Id": "01pO800000lweTSIAY",
+  "Name": "CalK4A_T008_Test",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK4A_T008_Test",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK4A_T008_Test",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 19,
+          "line": 11
+        },
+        "modifiers": [
+          "private",
+          "static"
+        ],
+        "name": "tryUpdate",
+        "parameters": [
+          {
+            "name": "rec",
+            "type": "SObject"
+          }
+        ],
+        "references": [],
+        "returnType": "String",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 21
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "modifyAllDataOnIntegrationPermissionSet",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalK4A_T008_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 31,
+          "line": 3
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "final"
+        ],
+        "name": "MAD_CHAIN",
+        "references": [],
+        "type": "List"
+      }
+    ],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 28,
+        "line": 2
+      },
+      "modifiers": [
+        "private",
+        "testMethod",
+        "with sharing"
+      ],
+      "name": "CalK4A_T008_Test",
+      "references": [],
+      "type": "CalK4A_T008_Test"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 37,
+          "line": 11
+        },
+        "modifiers": [],
+        "name": "rec",
+        "references": [],
+        "type": "SObject"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 31,
+          "line": 22
+        },
+        "modifiers": [],
+        "name": "inv",
+        "references": [],
+        "type": "CalK4A_DemoInvoice__c"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 32,
+          "line": 23
+        },
+        "modifiers": [],
+        "name": "con",
+        "references": [],
+        "type": "CalK4A_DemoContract__c"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 31,
+          "line": 24
+        },
+        "modifiers": [],
+        "name": "proj",
+        "references": [],
+        "type": "CalK4A_DemoProject__c"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 28
+        },
+        "modifiers": [],
+        "name": "integ",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 29,
+          "line": 29
+        },
+        "modifiers": [],
+        "name": "o",
+        "references": [],
+        "type": "Map<String,Object>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 23,
+          "line": 34
+        },
+        "modifiers": [],
+        "name": "mad",
+        "references": [],
+        "type": "PermissionSet"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 21,
+          "line": 35
+        },
+        "modifiers": [],
+        "name": "p",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 35,
+          "line": 54
+        },
+        "modifiers": [],
+        "name": "acc",
+        "references": [],
+        "type": "Map<Id,UserRecordAccess>"
+      }
+    ]
+  }
+}

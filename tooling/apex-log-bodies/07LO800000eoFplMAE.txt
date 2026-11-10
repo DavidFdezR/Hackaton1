@@ -1,0 +1,53 @@
+62.0 APEX_CODE,DEBUG;APEX_PROFILING,NONE;CALLOUT,INFO;DATA_ACCESS,INFO;DB,INFO;NBA,INFO;SYSTEM,INFO;VALIDATION,INFO;VISUALFORCE,NONE;WAVE,INFO;WORKFLOW,INFO
+22:37:40.0 (938896)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+22:37:40.0 (981627)|EXECUTION_STARTED
+22:37:40.0 (995917)|CODE_UNIT_STARTED|[EXTERNAL]|01pO800000lwd19|CalK4B_InvoiceAccessTest.grantingFlsMakesItPass()
+22:37:40.0 (4728921)|SOQL_EXECUTE_BEGIN|[4]|Aggregations:0|SELECT Id FROM Profile WHERE Name = 'Standard User'
+22:37:40.0 (14673744)|SOQL_EXECUTE_END|[4]|Rows:1
+22:37:40.0 (17410171)|DML_BEGIN|[9]|Op:Insert|Type:User|Rows:1
+22:37:40.0 (378156050)|DML_END|[9]
+22:37:40.0 (380355884)|SOQL_EXECUTE_BEGIN|[14]|Aggregations:0|SELECT Id FROM PermissionSet WHERE Name = :tmpVar1
+22:37:40.0 (397848565)|SOQL_EXECUTE_END|[14]|Rows:1
+22:37:40.0 (398113646)|DML_BEGIN|[13]|Op:Insert|Type:PermissionSetAssignment|Rows:1
+22:37:40.0 (557315216)|DML_END|[13]
+22:37:40.0 (558024671)|SOQL_EXECUTE_BEGIN|[43]|Aggregations:0|SELECT Id FROM PermissionSet WHERE Name = 'CalK4B_Sales_Rep'
+22:37:40.0 (568739599)|SOQL_EXECUTE_END|[43]|Rows:1
+22:37:40.0 (569001431)|DML_BEGIN|[43]|Op:Insert|Type:FieldPermissions|Rows:1
+22:37:41.505 (1505589483)|DML_END|[43]
+22:37:41.505 (1506311307)|DML_BEGIN|[19]|Op:Insert|Type:CalK4B_Invoice__c|Rows:1
+22:37:41.505 (1510249952)|DML_END|[19]
+22:37:41.505 (1510324393)|EXCEPTION_THROWN|[19]|System.DmlException: Insert failed. First exception on row 0; first error: MIXED_DML_OPERATION, DML operation on setup object is not permitted after you have updated a non-setup object (or vice versa): CalK4B_Invoice__c, original object: PermissionSetAssignment: []
+22:37:41.505 (1511679521)|FATAL_ERROR|System.DmlException: Insert failed. First exception on row 0; first error: MIXED_DML_OPERATION, DML operation on setup object is not permitted after you have updated a non-setup object (or vice versa): CalK4B_Invoice__c, original object: PermissionSetAssignment: []
+
+Class.CalK4B_InvoiceAccessTest.invoiceOwnedBy: line 19, column 1
+Class.CalK4B_InvoiceAccessTest.grantingFlsMakesItPass: line 46, column 1
+22:37:41.505 (1511686781)|FATAL_ERROR|System.DmlException: Insert failed. First exception on row 0; first error: MIXED_DML_OPERATION, DML operation on setup object is not permitted after you have updated a non-setup object (or vice versa): CalK4B_Invoice__c, original object: PermissionSetAssignment: []
+
+Class.CalK4B_InvoiceAccessTest.invoiceOwnedBy: line 19, column 1
+Class.CalK4B_InvoiceAccessTest.grantingFlsMakesItPass: line 46, column 1
+22:37:41.505 (1511708891)|CODE_UNIT_FINISHED|CalK4B_InvoiceAccessTest.grantingFlsMakesItPass()
+22:37:41.505 (1511713611)|EXECUTION_FINISHED
+22:37:41.531 (1531434087)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+22:37:41.531 (1531444587)|EXECUTION_STARTED
+22:37:41.531 (1531449457)|CODE_UNIT_STARTED|[EXTERNAL]|01pO800000lwd19|CalK4B_InvoiceAccessTest.userModeQueryFailsWithoutFls()
+22:37:41.531 (1531914910)|SOQL_EXECUTE_BEGIN|[4]|Aggregations:0|SELECT Id FROM Profile WHERE Name = 'Standard User'
+22:37:41.531 (1533901893)|SOQL_EXECUTE_END|[4]|Rows:1
+22:37:41.531 (1534192784)|DML_BEGIN|[9]|Op:Insert|Type:User|Rows:1
+22:37:41.531 (1663068622)|DML_END|[9]
+22:37:41.531 (1663684356)|SOQL_EXECUTE_BEGIN|[14]|Aggregations:0|SELECT Id FROM PermissionSet WHERE Name = :tmpVar1
+22:37:41.531 (1672221769)|SOQL_EXECUTE_END|[14]|Rows:1
+22:37:41.531 (1672412681)|DML_BEGIN|[13]|Op:Insert|Type:PermissionSetAssignment|Rows:1
+22:37:41.531 (1778453484)|DML_END|[13]
+22:37:41.531 (1778780396)|DML_BEGIN|[19]|Op:Insert|Type:CalK4B_Invoice__c|Rows:1
+22:37:41.531 (1781109231)|DML_END|[19]
+22:37:41.531 (1781168251)|EXCEPTION_THROWN|[19]|System.DmlException: Insert failed. First exception on row 0; first error: MIXED_DML_OPERATION, DML operation on setup object is not permitted after you have updated a non-setup object (or vice versa): CalK4B_Invoice__c, original object: PermissionSetAssignment: []
+22:37:41.531 (1782191568)|FATAL_ERROR|System.DmlException: Insert failed. First exception on row 0; first error: MIXED_DML_OPERATION, DML operation on setup object is not permitted after you have updated a non-setup object (or vice versa): CalK4B_Invoice__c, original object: PermissionSetAssignment: []
+
+Class.CalK4B_InvoiceAccessTest.invoiceOwnedBy: line 19, column 1
+Class.CalK4B_InvoiceAccessTest.userModeQueryFailsWithoutFls: line 26, column 1
+22:37:41.531 (1782198628)|FATAL_ERROR|System.DmlException: Insert failed. First exception on row 0; first error: MIXED_DML_OPERATION, DML operation on setup object is not permitted after you have updated a non-setup object (or vice versa): CalK4B_Invoice__c, original object: PermissionSetAssignment: []
+
+Class.CalK4B_InvoiceAccessTest.invoiceOwnedBy: line 19, column 1
+Class.CalK4B_InvoiceAccessTest.userModeQueryFailsWithoutFls: line 26, column 1
+22:37:41.531 (1782223228)|CODE_UNIT_FINISHED|CalK4B_InvoiceAccessTest.userModeQueryFailsWithoutFls()
+22:37:41.531 (1782227918)|EXECUTION_FINISHED

@@ -1,0 +1,94 @@
+{
+  "Id": "01pO800000lweTVIAY",
+  "Name": "CalK4A_T013_T014_Test",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK4A_T013_T014_Test",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK4A_T013_T014_Test",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 4
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "repFieldAccess",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalK4A_T013_T014_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 28,
+        "line": 2
+      },
+      "modifiers": [
+        "private",
+        "testMethod",
+        "with sharing"
+      ],
+      "name": "CalK4A_T013_T014_Test",
+      "references": [],
+      "type": "CalK4A_T013_T014_Test"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 31,
+          "line": 5
+        },
+        "modifiers": [],
+        "name": "a",
+        "references": [],
+        "type": "CalK4A_DemoAccount__c"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 8
+        },
+        "modifiers": [],
+        "name": "rep",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 29,
+          "line": 9
+        },
+        "modifiers": [],
+        "name": "o",
+        "references": [],
+        "type": "Map<String,Object>"
+      }
+    ]
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "Id": "01pO800000lweTXIAY",
+  "Name": "CalK4A_T016_Test",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK4A_T016_Test",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK4A_T016_Test",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 4
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "authorApexAndCustomizeApplication",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalK4A_T016_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 28,
+        "line": 2
+      },
+      "modifiers": [
+        "private",
+        "testMethod",
+        "with sharing"
+      ],
+      "name": "CalK4A_T016_Test",
+      "references": [],
+      "type": "CalK4A_T016_Test"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 29,
+          "line": 5
+        },
+        "modifiers": [],
+        "name": "o",
+        "references": [],
+        "type": "Map<String,Object>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 6
+        },
+        "modifiers": [],
+        "name": "lead",
+        "references": [],
+        "type": "User"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 23,
+          "line": 7
+        },
+        "modifiers": [],
+        "name": "asRequested",
+        "references": [],
+        "type": "PermissionSet"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 23,
+          "line": 8
+        },
+        "modifiers": [],
+        "name": "withDeps",
+        "references": [],
+        "type": "PermissionSet"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 23
+        },
+        "modifiers": [],
+        "name": "saved",
+        "references": [],
+        "type": "PermissionSet"
+      }
+    ]
+  }
+}

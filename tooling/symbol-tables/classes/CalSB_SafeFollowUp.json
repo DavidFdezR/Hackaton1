@@ -1,0 +1,256 @@
+{
+  "Id": "01pO800000lwryYIAQ",
+  "Name": "CalSB_SafeFollowUp",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalSB_SafeFollowUp",
+    "innerClasses": [
+      {
+        "constructors": [],
+        "externalReferences": [],
+        "id": "Draft",
+        "innerClasses": [],
+        "interfaces": [],
+        "key": "Draft",
+        "methods": [],
+        "name": "Draft",
+        "namespace": null,
+        "parentClass": "",
+        "properties": [
+          {
+            "annotations": [],
+            "location": {
+              "column": 23,
+              "line": 10
+            },
+            "modifiers": [
+              "public"
+            ],
+            "name": "text",
+            "references": [],
+            "type": "String"
+          },
+          {
+            "annotations": [],
+            "location": {
+              "column": 24,
+              "line": 11
+            },
+            "modifiers": [
+              "public"
+            ],
+            "name": "flagged",
+            "references": [],
+            "type": "Boolean"
+          },
+          {
+            "annotations": [],
+            "location": {
+              "column": 24,
+              "line": 12
+            },
+            "modifiers": [
+              "public"
+            ],
+            "name": "hiddenContent",
+            "references": [],
+            "type": "Boolean"
+          },
+          {
+            "annotations": [],
+            "location": {
+              "column": 24,
+              "line": 13
+            },
+            "modifiers": [
+              "public"
+            ],
+            "name": "needsApproval",
+            "references": [],
+            "type": "Boolean"
+          }
+        ],
+        "tableDeclaration": {
+          "annotations": [],
+          "location": {
+            "column": 18,
+            "line": 9
+          },
+          "modifiers": [
+            "public"
+          ],
+          "name": "Draft",
+          "references": [],
+          "type": "Draft"
+        },
+        "variables": []
+      }
+    ],
+    "interfaces": [],
+    "key": "CalSB_SafeFollowUp",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 25,
+          "line": 16
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "draftFor",
+        "parameters": [
+          {
+            "name": "leadId",
+            "type": "Id"
+          }
+        ],
+        "references": [],
+        "returnType": "Draft",
+        "type": null
+      }
+    ],
+    "name": "CalSB_SafeFollowUp",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 34,
+          "line": 4
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "final"
+        ],
+        "name": "SUSPICIOUS",
+        "references": [],
+        "type": "Pattern"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 34,
+          "line": 7
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "final"
+        ],
+        "name": "HIDDEN",
+        "references": [],
+        "type": "Pattern"
+      }
+    ],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 2
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalSB_SafeFollowUp",
+      "references": [],
+      "type": "CalSB_SafeFollowUp"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 37,
+          "line": 16
+        },
+        "modifiers": [],
+        "name": "leadId",
+        "references": [],
+        "type": "Id"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 14,
+          "line": 17
+        },
+        "modifiers": [],
+        "name": "l",
+        "references": [],
+        "type": "Lead"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 16,
+          "line": 18
+        },
+        "modifiers": [],
+        "name": "outsider",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 15,
+          "line": 19
+        },
+        "modifiers": [],
+        "name": "d",
+        "references": [],
+        "type": "CalSB_SafeFollowUp.Draft"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 16,
+          "line": 21
+        },
+        "modifiers": [],
+        "name": "visible",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 16,
+          "line": 23
+        },
+        "modifiers": [],
+        "name": "notes",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 16,
+          "line": 24
+        },
+        "modifiers": [],
+        "name": "company",
+        "references": [],
+        "type": "String"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 16,
+          "line": 25
+        },
+        "modifiers": [],
+        "name": "quoted",
+        "references": [],
+        "type": "String"
+      }
+    ]
+  }
+}

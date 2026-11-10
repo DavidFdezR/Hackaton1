@@ -1,0 +1,93 @@
+{
+  "Id": "01pO800000lwiNQIAY",
+  "Name": "CalHK_OrderInvocable",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalHK_OrderInvocable",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalHK_OrderInvocable",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "InvocableMethod"
+          }
+        ],
+        "location": {
+          "column": 24,
+          "line": 4
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "stamp",
+        "parameters": [
+          {
+            "name": "orderIds",
+            "type": "List"
+          }
+        ],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalHK_OrderInvocable",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 2
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalHK_OrderInvocable",
+      "references": [],
+      "type": "CalHK_OrderInvocable"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 39,
+          "line": 4
+        },
+        "modifiers": [],
+        "name": "orderIds",
+        "references": [],
+        "type": "List<Id>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 30,
+          "line": 5
+        },
+        "modifiers": [],
+        "name": "rows",
+        "references": [],
+        "type": "List<CalHK_Order__c>"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 31,
+          "line": 6
+        },
+        "modifiers": [],
+        "name": "d",
+        "references": [],
+        "type": "System.SObjectAccessDecision"
+      }
+    ]
+  }
+}

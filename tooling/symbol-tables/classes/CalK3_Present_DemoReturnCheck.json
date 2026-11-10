@@ -1,0 +1,98 @@
+{
+  "Id": "01pO800000lwczVIAQ",
+  "Name": "CalK3_Present_DemoReturnCheck",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK3_Present_DemoReturnCheck",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK3_Present_DemoReturnCheck",
+    "methods": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 27,
+          "line": 4
+        },
+        "modifiers": [
+          "static",
+          "public"
+        ],
+        "name": "isReturnable",
+        "parameters": [
+          {
+            "name": "purchaseDate",
+            "type": "Date"
+          },
+          {
+            "name": "requestDate",
+            "type": "Date"
+          }
+        ],
+        "references": [],
+        "returnType": "Boolean",
+        "type": null
+      }
+    ],
+    "name": "CalK3_Present_DemoReturnCheck",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 33,
+          "line": 2
+        },
+        "modifiers": [
+          "static",
+          "public",
+          "final"
+        ],
+        "name": "RETURN_WINDOW_DAYS",
+        "references": [],
+        "type": "Integer"
+      }
+    ],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 1
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "CalK3_Present_DemoReturnCheck",
+      "references": [],
+      "type": "CalK3_Present_DemoReturnCheck"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 45,
+          "line": 4
+        },
+        "modifiers": [],
+        "name": "purchaseDate",
+        "references": [],
+        "type": "Date"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 64,
+          "line": 4
+        },
+        "modifiers": [],
+        "name": "requestDate",
+        "references": [],
+        "type": "Date"
+      }
+    ]
+  }
+}

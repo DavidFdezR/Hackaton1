@@ -1,0 +1,23 @@
+62.0 APEX_CODE,DEBUG;APEX_PROFILING,NONE;CALLOUT,INFO;DATA_ACCESS,INFO;DB,INFO;NBA,INFO;SYSTEM,INFO;VALIDATION,INFO;VISUALFORCE,NONE;WAVE,INFO;WORKFLOW,INFO
+23:25:17.1 (1189497)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+23:25:17.1 (1214827)|EXECUTION_STARTED
+23:25:17.1 (1231807)|CODE_UNIT_STARTED|[EXTERNAL]|01pO800000lwd1B|CalK4B_InvoiceControllerTest.systemModeQueryLeaksFieldWithoutFls()
+23:25:17.1 (6012624)|SOQL_EXECUTE_BEGIN|[4]|Aggregations:0|SELECT Id FROM Profile WHERE Name = 'Standard User'
+23:25:17.1 (24338146)|SOQL_EXECUTE_END|[4]|Rows:1
+23:25:17.1 (32903534)|DML_BEGIN|[9]|Op:Insert|Type:User|Rows:1
+23:25:18.324 (1324214503)|DML_END|[9]
+23:25:18.324 (1327807363)|SOQL_EXECUTE_BEGIN|[14]|Aggregations:0|SELECT Id FROM PermissionSet WHERE Name = :tmpVar1
+23:25:18.324 (1356671842)|SOQL_EXECUTE_END|[14]|Rows:1
+23:25:18.324 (1356913916)|DML_BEGIN|[13]|Op:Insert|Type:PermissionSetAssignment|Rows:1
+23:25:18.324 (1579642435)|DML_END|[13]
+23:25:18.324 (1589371380)|DML_BEGIN|[23]|Op:Insert|Type:CalK4B_Invoice__c|Rows:1
+23:25:18.324 (1651375108)|DML_END|[23]
+23:25:18.324 (1710772690)|SYSTEM_MODE_ENTER|true
+23:25:18.324 (1741829789)|SOQL_EXECUTE_BEGIN|[4]|Aggregations:0|SELECT Id, Name, Internal_Note__c FROM CalK4B_Invoice__c WHERE Id = :tmpVar1
+23:25:18.324 (1771571951)|SOQL_EXECUTE_END|[4]|Rows:1
+23:25:18.324 (1774542482)|EXCEPTION_THROWN|[8]|System.QueryException: No such column 'Internal_Note__c' on entity 'CalK4B_Invoice__c'. If you are attempting to use a custom field, be sure to append the '__c' after the custom field name. Please reference your WSDL or the describe call for the appropriate names.
+23:25:18.324 (1777078057)|SOQL_EXECUTE_BEGIN|[12]|Aggregations:0|SELECT Id, Name, Status__c FROM CalK4B_Invoice__c WITH USER_MODE ORDER BY Name ASC NULLS FIRST LIMIT 50
+23:25:18.324 (1786877552)|SOQL_EXECUTE_END|[12]|Rows:1
+23:25:18.324 (1796693827)|USER_DEBUG|[38]|DEBUG|CALK4B_T065 accessible=false leaked=secret-note userModeError=No such column 'Internal_Note__c' on entity 'CalK4B_Invoice__c'. If you are attempting to use a custom field, be sure to append the '__c' after the custom field name. Please reference your WSDL or the describe call for the appropriate names.
+23:25:18.324 (1796756028)|CODE_UNIT_FINISHED|CalK4B_InvoiceControllerTest.systemModeQueryLeaksFieldWithoutFls()
+23:25:18.324 (1796760828)|EXECUTION_FINISHED

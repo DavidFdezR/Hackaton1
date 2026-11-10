@@ -1,0 +1,46 @@
+64.0 APEX_CODE,DEBUG;APEX_PROFILING,NONE;CALLOUT,INFO;DATA_ACCESS,INFO;DB,INFO;NBA,INFO;SYSTEM,INFO;VALIDATION,INFO;VISUALFORCE,NONE;WAVE,INFO;WORKFLOW,INFO
+22:42:34.2 (2367663)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+22:42:34.2 (2392883)|EXECUTION_STARTED
+22:42:34.2 (2403253)|CODE_UNIT_STARTED|[EXTERNAL]|01pO800000lweTS|CalK4A_T008_Test.modifyAllDataOnIntegrationPermissionSet()
+22:42:34.2 (7974895)|SYSTEM_MODE_ENTER|false
+22:42:34.2 (8184296)|SYSTEM_MODE_EXIT|false
+22:42:34.2 (8242646)|SYSTEM_MODE_ENTER|false
+22:42:34.2 (15319906)|DML_BEGIN|[25]|Op:Insert|Type:CalK4A_DemoInvoice__c|Rows:1
+22:42:34.2 (83678176)|DML_END|[25]
+22:42:34.2 (84555811)|DML_BEGIN|[26]|Op:Insert|Type:CalK4A_DemoContract__c|Rows:1
+22:42:34.2 (135582026)|DML_END|[26]
+22:42:34.2 (136378880)|DML_BEGIN|[27]|Op:Insert|Type:CalK4A_DemoProject__c|Rows:1
+22:42:34.2 (188704432)|DML_END|[27]
+22:42:34.2 (205971349)|SOQL_EXECUTE_BEGIN|[11]|Aggregations:0|SELECT Id FROM Profile WHERE Name = :tmpVar1
+22:42:34.2 (215560152)|SOQL_EXECUTE_END|[11]|Rows:1
+22:42:34.2 (215941984)|DML_BEGIN|[14]|Op:Insert|Type:User|Rows:1
+22:42:34.2 (618737647)|DML_END|[14]
+22:42:34.2 (622715310)|SOQL_EXECUTE_BEGIN|[25]|Aggregations:0|SELECT Id FROM PermissionSet WHERE Name IN :tmpVar1
+22:42:34.2 (645926459)|SOQL_EXECUTE_END|[25]|Rows:1
+22:42:34.2 (646672353)|DML_BEGIN|[28]|Op:Insert|Type:PermissionSetAssignment|Rows:1
+22:42:34.2 (876170782)|DML_END|[28]
+22:42:34.2 (916179164)|DML_BEGIN|[13]|Op:Update|Type:CalK4A_DemoInvoice__c|Rows:1
+22:42:34.2 (932391155)|EXCEPTION_THROWN|[13]|System.TypeException: DML operation UPDATE not allowed on CalK4A_DemoInvoice__c
+22:42:34.2 (932416266)|DML_END|[13]
+22:42:34.2 (939370844)|SOQL_EXECUTE_BEGIN|[32]|Aggregations:0|SELECT COUNT() FROM CalK4A_DemoContract__c
+22:42:34.2 (985180219)|SOQL_EXECUTE_END|[32]|Rows:0
+22:42:35.6 (1006244906)|DML_BEGIN|[40]|Op:Insert|Type:PermissionSet|Rows:1
+22:42:35.6 (1238918854)|DML_END|[40]
+22:42:35.6 (1239811219)|DML_BEGIN|[41]|Op:Insert|Type:PermissionSetAssignment|Rows:1
+22:42:35.6 (1485608938)|DML_END|[41]
+22:42:35.6 (1533635946)|DML_BEGIN|[13]|Op:Update|Type:CalK4A_DemoInvoice__c|Rows:1
+22:42:35.6 (1574416462)|DML_END|[13]
+22:42:35.6 (1575426468)|DML_BEGIN|[13]|Op:Update|Type:CalK4A_DemoContract__c|Rows:1
+22:42:35.6 (1596723516)|DML_END|[13]
+22:42:35.6 (1597633691)|DML_BEGIN|[13]|Op:Update|Type:CalK4A_DemoProject__c|Rows:1
+22:42:35.6 (1618166566)|DML_END|[13]
+22:42:35.6 (1619064751)|SOQL_EXECUTE_BEGIN|[51]|Aggregations:0|SELECT COUNT() FROM CalK4A_DemoContract__c WITH USER_MODE
+22:42:35.6 (1631719561)|SOQL_EXECUTE_END|[51]|Rows:1
+22:42:35.6 (1632016253)|SOQL_EXECUTE_BEGIN|[52]|Aggregations:0|SELECT COUNT() FROM User WITH USER_MODE
+22:42:35.6 (1642728663)|SOQL_EXECUTE_END|[52]|Rows:8
+22:42:35.6 (1651329061)|SOQL_EXECUTE_BEGIN|[33]|Aggregations:0|SELECT RecordId, HasReadAccess, HasEditAccess, HasDeleteAccess, MaxAccessLevel FROM UserRecordAccess WHERE (UserId = :tmpVar1 AND RecordId = :tmpVar2)
+22:42:35.6 (1736030413)|SOQL_EXECUTE_END|[33]|Rows:3
+22:42:35.6 (1736869767)|USER_DEBUG|[45]|ERROR|CALK4A_OBS T-008={"after_deleteAccessOnProject":true,"after_deleteAccessOnContract":true,"after_seesAllUsers":8,"after_seesContracts":1,"after_updateUnrelatedProject":"saved","after_updateUnrelatedContract":"saved","after_updateInvoice":"saved","madPermissionSetSaved":true,"before_seesContracts":0,"before_updateInvoice":"DML operation UPDATE not allowed on CalK4A_DemoInvoice__c"}
+22:42:35.6 (1736944848)|SYSTEM_MODE_EXIT|false
+22:42:35.6 (1736981578)|CODE_UNIT_FINISHED|CalK4A_T008_Test.modifyAllDataOnIntegrationPermissionSet()
+22:42:35.6 (1736986238)|EXECUTION_FINISHED

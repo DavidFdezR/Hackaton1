@@ -1,0 +1,186 @@
+{
+  "Id": "01pO800000lx1sIIAQ",
+  "Name": "DemoJobs",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "DemoJobs",
+    "innerClasses": [
+      {
+        "constructors": [],
+        "externalReferences": [],
+        "id": "RenewalBatch",
+        "innerClasses": [],
+        "interfaces": [],
+        "key": "RenewalBatch",
+        "methods": [
+          {
+            "annotations": [],
+            "location": {
+              "column": 30,
+              "line": 4
+            },
+            "modifiers": [
+              "public",
+              "override"
+            ],
+            "name": "execute",
+            "parameters": [
+              {
+                "name": "bc",
+                "type": "BatchableContext"
+              },
+              {
+                "name": "scope",
+                "type": "List"
+              }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+          }
+        ],
+        "name": "RenewalBatch",
+        "namespace": null,
+        "parentClass": "DemoGenericBatch",
+        "properties": [],
+        "tableDeclaration": {
+          "annotations": [],
+          "location": {
+            "column": 18,
+            "line": 3
+          },
+          "modifiers": [
+            "public"
+          ],
+          "name": "RenewalBatch",
+          "references": [],
+          "type": "RenewalBatch"
+        },
+        "variables": [
+          {
+            "annotations": [],
+            "location": {
+              "column": 64,
+              "line": 4
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "Database.BatchableContext"
+          },
+          {
+            "annotations": [],
+            "location": {
+              "column": 82,
+              "line": 4
+            },
+            "modifiers": [],
+            "name": "scope",
+            "references": [],
+            "type": "List<SObject>"
+          }
+        ]
+      },
+      {
+        "constructors": [],
+        "externalReferences": [],
+        "id": "CleanupBatch",
+        "innerClasses": [],
+        "interfaces": [],
+        "key": "CleanupBatch",
+        "methods": [
+          {
+            "annotations": [],
+            "location": {
+              "column": 30,
+              "line": 7
+            },
+            "modifiers": [
+              "public",
+              "override"
+            ],
+            "name": "execute",
+            "parameters": [
+              {
+                "name": "bc",
+                "type": "BatchableContext"
+              },
+              {
+                "name": "scope",
+                "type": "List"
+              }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+          }
+        ],
+        "name": "CleanupBatch",
+        "namespace": null,
+        "parentClass": "DemoGenericBatch",
+        "properties": [],
+        "tableDeclaration": {
+          "annotations": [],
+          "location": {
+            "column": 18,
+            "line": 6
+          },
+          "modifiers": [
+            "public"
+          ],
+          "name": "CleanupBatch",
+          "references": [],
+          "type": "CleanupBatch"
+        },
+        "variables": [
+          {
+            "annotations": [],
+            "location": {
+              "column": 64,
+              "line": 7
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "Database.BatchableContext"
+          },
+          {
+            "annotations": [],
+            "location": {
+              "column": 82,
+              "line": 7
+            },
+            "modifiers": [],
+            "name": "scope",
+            "references": [],
+            "type": "List<SObject>"
+          }
+        ]
+      }
+    ],
+    "interfaces": [],
+    "key": "DemoJobs",
+    "methods": [],
+    "name": "DemoJobs",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [],
+      "location": {
+        "column": 27,
+        "line": 2
+      },
+      "modifiers": [
+        "public",
+        "with sharing"
+      ],
+      "name": "DemoJobs",
+      "references": [],
+      "type": "DemoJobs"
+    },
+    "variables": []
+  }
+}

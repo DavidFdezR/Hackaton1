@@ -1,0 +1,58 @@
+{
+  "Id": "01pO800000lwidgIAA",
+  "Name": "CalK4A_DemoOrderApi",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalK4A_DemoOrderApi",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "CalK4A_DemoOrderApi",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "HttpPut"
+          }
+        ],
+        "location": {
+          "column": 26,
+          "line": 4
+        },
+        "modifiers": [
+          "static",
+          "global"
+        ],
+        "name": "upsertOrder",
+        "parameters": [],
+        "references": [],
+        "returnType": "String",
+        "type": null
+      }
+    ],
+    "name": "CalK4A_DemoOrderApi",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "RestResource"
+        }
+      ],
+      "location": {
+        "column": 27,
+        "line": 2
+      },
+      "modifiers": [
+        "global",
+        "with sharing"
+      ],
+      "name": "CalK4A_DemoOrderApi",
+      "references": [],
+      "type": "CalK4A_DemoOrderApi"
+    },
+    "variables": []
+  }
+}

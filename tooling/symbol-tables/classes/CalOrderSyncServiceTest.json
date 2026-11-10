@@ -1,0 +1,344 @@
+{
+  "Id": "01pO800000lw5QtIAI",
+  "Name": "CalOrderSyncServiceTest",
+  "NamespacePrefix": null,
+  "SymbolTable": {
+    "constructors": [],
+    "externalReferences": [],
+    "id": "CalOrderSyncServiceTest",
+    "innerClasses": [
+      {
+        "constructors": [
+          {
+            "annotations": [],
+            "location": {
+              "column": 16,
+              "line": 6
+            },
+            "modifiers": [
+              "public"
+            ],
+            "name": "ScriptedErp",
+            "parameters": [
+              {
+                "name": "script",
+                "type": "List"
+              }
+            ],
+            "references": [],
+            "type": null
+          }
+        ],
+        "externalReferences": [],
+        "id": "ScriptedErp",
+        "innerClasses": [],
+        "interfaces": [
+          "System.HttpCalloutMock"
+        ],
+        "key": "ScriptedErp",
+        "methods": [
+          {
+            "annotations": [],
+            "location": {
+              "column": 29,
+              "line": 7
+            },
+            "modifiers": [
+              "public"
+            ],
+            "name": "respond",
+            "parameters": [
+              {
+                "name": "request",
+                "type": "System.HttpRequest"
+              }
+            ],
+            "references": [],
+            "returnType": "System.HttpResponse",
+            "type": null
+          }
+        ],
+        "name": "ScriptedErp",
+        "namespace": null,
+        "parentClass": "",
+        "properties": [
+          {
+            "annotations": [],
+            "location": {
+              "column": 36,
+              "line": 4
+            },
+            "modifiers": [
+              "private",
+              "final"
+            ],
+            "name": "script",
+            "references": [],
+            "type": "List"
+          },
+          {
+            "annotations": [],
+            "location": {
+              "column": 24,
+              "line": 5
+            },
+            "modifiers": [
+              "public"
+            ],
+            "name": "calls",
+            "references": [],
+            "type": "Integer"
+          }
+        ],
+        "tableDeclaration": {
+          "annotations": [],
+          "location": {
+            "column": 19,
+            "line": 3
+          },
+          "modifiers": [
+            "private"
+          ],
+          "name": "ScriptedErp",
+          "references": [],
+          "type": "ScriptedErp"
+        },
+        "variables": [
+          {
+            "annotations": [],
+            "location": {
+              "column": 41,
+              "line": 6
+            },
+            "modifiers": [],
+            "name": "script",
+            "references": [],
+            "type": "List<Object>"
+          },
+          {
+            "annotations": [],
+            "location": {
+              "column": 49,
+              "line": 7
+            },
+            "modifiers": [],
+            "name": "request",
+            "references": [],
+            "type": "System.HttpRequest"
+          },
+          {
+            "annotations": [],
+            "location": {
+              "column": 20,
+              "line": 8
+            },
+            "modifiers": [],
+            "name": "step",
+            "references": [],
+            "type": "Object"
+          },
+          {
+            "annotations": [],
+            "location": {
+              "column": 26,
+              "line": 13
+            },
+            "modifiers": [],
+            "name": "response",
+            "references": [],
+            "type": "System.HttpResponse"
+          }
+        ]
+      }
+    ],
+    "interfaces": [],
+    "key": "CalOrderSyncServiceTest",
+    "methods": [
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 21
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "transientFailureIsRetried",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 30
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "nonRetryableErrorIsNotRetried",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 39
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "slowEndpointStopsAfterBoundedRetries",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      },
+      {
+        "annotations": [
+          {
+            "name": "IsTest"
+          }
+        ],
+        "location": {
+          "column": 17,
+          "line": 48
+        },
+        "modifiers": [
+          "private",
+          "static",
+          "testMethod"
+        ],
+        "name": "triggerContextGoesAsync",
+        "parameters": [],
+        "references": [],
+        "returnType": "void",
+        "type": null
+      }
+    ],
+    "name": "CalOrderSyncServiceTest",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+      "annotations": [
+        {
+          "name": "IsTest"
+        }
+      ],
+      "location": {
+        "column": 15,
+        "line": 2
+      },
+      "modifiers": [
+        "private",
+        "testMethod"
+      ],
+      "name": "CalOrderSyncServiceTest",
+      "references": [],
+      "type": "CalOrderSyncServiceTest"
+    },
+    "variables": [
+      {
+        "annotations": [],
+        "location": {
+          "column": 21,
+          "line": 22
+        },
+        "modifiers": [],
+        "name": "erp",
+        "references": [],
+        "type": "CalOrderSyncServiceTest.ScriptedErp"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 36,
+          "line": 24
+        },
+        "modifiers": [],
+        "name": "result",
+        "references": [],
+        "type": "CalOrderSyncService.Result"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 21,
+          "line": 31
+        },
+        "modifiers": [],
+        "name": "erp",
+        "references": [],
+        "type": "CalOrderSyncServiceTest.ScriptedErp"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 36,
+          "line": 33
+        },
+        "modifiers": [],
+        "name": "result",
+        "references": [],
+        "type": "CalOrderSyncService.Result"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 21,
+          "line": 40
+        },
+        "modifiers": [],
+        "name": "erp",
+        "references": [],
+        "type": "CalOrderSyncServiceTest.ScriptedErp"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 36,
+          "line": 42
+        },
+        "modifiers": [],
+        "name": "result",
+        "references": [],
+        "type": "CalOrderSyncService.Result"
+      },
+      {
+        "annotations": [],
+        "location": {
+          "column": 21,
+          "line": 49
+        },
+        "modifiers": [],
+        "name": "erp",
+        "references": [],
+        "type": "CalOrderSyncServiceTest.ScriptedErp"
+      }
+    ]
+  }
+}

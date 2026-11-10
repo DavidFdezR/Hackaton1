@@ -1,0 +1,22 @@
+64.0 APEX_CODE,DEBUG;APEX_PROFILING,NONE;CALLOUT,INFO;DATA_ACCESS,INFO;DB,INFO;NBA,INFO;SYSTEM,INFO;VALIDATION,INFO;VISUALFORCE,NONE;WAVE,INFO;WORKFLOW,INFO
+23:16:51.6 (6031843)|USER_INFO|[EXTERNAL]|005O800000mdnbV|test-zibvs7dk5pnk@example.com|(GMT-08:00) Pacific Standard Time (America/Los_Angeles)|GMT-08:00
+23:16:51.6 (6074463)|EXECUTION_STARTED
+23:16:51.6 (6098383)|CODE_UNIT_STARTED|[EXTERNAL]|01pO800000lwI9W|CalK4A_T042_Test.factoryInsertOfActiveAccountWithoutTier()
+23:16:51.6 (17308529)|DML_BEGIN|[7]|Op:Insert|Type:CalK4A_DemoAccount__c|Rows:1
+23:16:51.6 (68641550)|CODE_UNIT_STARTED|[EXTERNAL]|01qO800000CZfvp|CalK4A_DemoAccountTrigger on CalK4A_DemoAccount trigger event BeforeInsert|__sfdc_trigger/CalK4A_DemoAccountTrigger
+23:16:51.6 (76647541)|SYSTEM_MODE_ENTER|false
+23:16:51.6 (76781593)|SYSTEM_MODE_EXIT|false
+23:16:51.6 (76809334)|SYSTEM_MODE_ENTER|false
+23:16:51.6 (77031737)|SYSTEM_MODE_EXIT|false
+23:16:51.6 (77205229)|CODE_UNIT_FINISHED|CalK4A_DemoAccountTrigger on CalK4A_DemoAccount trigger event BeforeInsert|__sfdc_trigger/CalK4A_DemoAccountTrigger
+23:16:51.6 (86696741)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:CalK4A_DemoAccount:new
+23:16:51.6 (86717131)|VALIDATION_RULE|03dO8000004u2BJ|CalK4A_Demo_Tier_Required
+23:16:51.6 (86825053)|VALIDATION_FORMULA|AND(ISPICKVAL(Status__c, 'Active'), ISBLANK(Tier__c))|Tier__c=null , Status__c=Active
+23:16:51.6 (86854933)|VALIDATION_FAIL
+23:16:51.6 (86871143)|CODE_UNIT_FINISHED|Validation:CalK4A_DemoAccount:new
+23:16:51.6 (88728609)|DML_END|[7]
+23:16:51.6 (88824660)|VF_PAGE_MESSAGE|Tier is required for active accounts
+23:16:51.6 (88896951)|EXCEPTION_THROWN|[7]|System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Tier is required for active accounts: [Tier__c]
+23:16:51.6 (96891782)|USER_DEBUG|[45]|ERROR|CALK4A_OBS T-042={"activeWithoutTier":"FIELD_CUSTOM_VALIDATION_EXCEPTION: Tier is required for active accounts"}
+23:16:51.6 (96964033)|CODE_UNIT_FINISHED|CalK4A_T042_Test.factoryInsertOfActiveAccountWithoutTier()
+23:16:51.6 (96970724)|EXECUTION_FINISHED
