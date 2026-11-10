@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CalK4A_Demo_Triage_CalK4A_DemoCase</fullName>
+    <filterScope>Queue</filterScope>
+    <label>CalK4A Demo Triage</label>
+    <queue>CalK4A_Demo_Triage</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

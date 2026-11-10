@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalClientApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>calk4a@calk4a.example</contactEmail>
+    <description>CalK4A T-028/T-029 DemoMobile (External Client App; Connected App creation is disabled in this org)</description>
+    <distributionState>Local</distributionState>
+    <isProtected>false</isProtected>
+    <label>CalK4A DemoMobile</label>
+    <orgScopedExternalApp>00DO800000bLBxd:CalK4A_DemoMobile</orgScopedExternalApp>
+</ExternalClientApplication>

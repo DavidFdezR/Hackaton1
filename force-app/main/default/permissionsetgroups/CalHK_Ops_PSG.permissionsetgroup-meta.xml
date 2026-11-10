@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Browser B-213: contains CalHK_Invoice_Admin.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CalHK Ops PSG</label>
+    <permissionSets>CalHK_Invoice_Admin</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

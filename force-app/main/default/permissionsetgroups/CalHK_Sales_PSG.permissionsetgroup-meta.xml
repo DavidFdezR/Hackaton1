@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>T-117 before-state: contains CalHK_Sales_Rep only. B-321/F-353: muting set CalHK_Sales_Mute deployed via Metadata API.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CalHK Sales PSG</label>
+    <mutingPermissionSets>CalHK_Sales_Mute</mutingPermissionSets>
+    <permissionSets>CalHK_Sales_Rep</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

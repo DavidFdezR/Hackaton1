@@ -1,0 +1,7 @@
+<aura:component controller="CalK4A_DemoInvoiceAuraCtrl" implements="flexipage:availableForAllPageTypes" access="global">
+    <aura:attribute name="invoices" type="Object[]"/>
+    <aura:attribute name="status" type="String" default="loading"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <div id="calk4a-status">{!v.status}</div>
+    <aura:iteration items="{!v.invoices}" var="inv"><div>{!inv.Name}</div></aura:iteration>
+</aura:component>

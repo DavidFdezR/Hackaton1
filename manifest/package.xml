@@ -1,0 +1,1978 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>ARMX_HACK_GC03_OppStageHandler</members>
+        <members>ARMX_HACK_GC03_OppStageHandlerTest</members>
+        <members>CalAccessGranter</members>
+        <members>CalAccessGranterTest</members>
+        <members>CalAccountCitySync</members>
+        <members>CalAccountCitySyncTest</members>
+        <members>CalAccountContactsHandler</members>
+        <members>CalAccountContactsTest</members>
+        <members>CalCaseStatusStamp</members>
+        <members>CalCaseStatusStampTest</members>
+        <members>CalHK_AdminTools</members>
+        <members>CalHK_InvoiceSelector</members>
+        <members>CalHK_InvoiceService</members>
+        <members>CalHK_InvoiceServiceTest</members>
+        <members>CalHK_NightlyBatch</members>
+        <members>CalHK_OnceBatch</members>
+        <members>CalHK_OrderInvocable</members>
+        <members>CalHK_Plant2Test</members>
+        <members>CalHK_PlantTest</members>
+        <members>CalHK_PricingApi</members>
+        <members>CalHK_PricingUtil</members>
+        <members>CalHK_ProjectRecalc</members>
+        <members>CalHK_PublicController</members>
+        <members>CalHK_QuoteService</members>
+        <members>CalHK_QuoteServiceTest</members>
+        <members>CalK1_DemoAccountCaller1</members>
+        <members>CalK1_DemoAccountCaller1Test</members>
+        <members>CalK1_DemoAccountCaller2</members>
+        <members>CalK1_DemoAccountCaller2Test</members>
+        <members>CalK1_DemoAccountCaller3</members>
+        <members>CalK1_DemoAccountCaller3Test</members>
+        <members>CalK1_DemoAccountCaller4</members>
+        <members>CalK1_DemoAccountCaller4Test</members>
+        <members>CalK1_DemoAccountCaller5</members>
+        <members>CalK1_DemoAccountCaller5Test</members>
+        <members>CalK1_DemoAccountCaller6</members>
+        <members>CalK1_DemoAccountCaller6Test</members>
+        <members>CalK1_DemoAccountTriggerHandler</members>
+        <members>CalK1_DemoAccountTriggerHandlerTest</members>
+        <members>CalK1_DemoHandlerCaller1</members>
+        <members>CalK1_DemoHandlerCaller10</members>
+        <members>CalK1_DemoHandlerCaller11</members>
+        <members>CalK1_DemoHandlerCaller12</members>
+        <members>CalK1_DemoHandlerCaller13</members>
+        <members>CalK1_DemoHandlerCaller14</members>
+        <members>CalK1_DemoHandlerCaller15</members>
+        <members>CalK1_DemoHandlerCaller16</members>
+        <members>CalK1_DemoHandlerCaller17</members>
+        <members>CalK1_DemoHandlerCaller18</members>
+        <members>CalK1_DemoHandlerCaller19</members>
+        <members>CalK1_DemoHandlerCaller2</members>
+        <members>CalK1_DemoHandlerCaller20</members>
+        <members>CalK1_DemoHandlerCaller21</members>
+        <members>CalK1_DemoHandlerCaller22</members>
+        <members>CalK1_DemoHandlerCaller23</members>
+        <members>CalK1_DemoHandlerCaller24</members>
+        <members>CalK1_DemoHandlerCaller25</members>
+        <members>CalK1_DemoHandlerCaller26</members>
+        <members>CalK1_DemoHandlerCaller27</members>
+        <members>CalK1_DemoHandlerCaller28</members>
+        <members>CalK1_DemoHandlerCaller29</members>
+        <members>CalK1_DemoHandlerCaller3</members>
+        <members>CalK1_DemoHandlerCaller30</members>
+        <members>CalK1_DemoHandlerCaller4</members>
+        <members>CalK1_DemoHandlerCaller5</members>
+        <members>CalK1_DemoHandlerCaller6</members>
+        <members>CalK1_DemoHandlerCaller7</members>
+        <members>CalK1_DemoHandlerCaller8</members>
+        <members>CalK1_DemoHandlerCaller9</members>
+        <members>CalK1_DemoHandlerCallersTest</members>
+        <members>CalK1_DemoInvoiceController</members>
+        <members>CalK1_DemoInvoiceControllerTest</members>
+        <members>CalK1_DemoInvoiceService</members>
+        <members>CalK1_DemoInvoiceServiceTest</members>
+        <members>CalK1_DemoLeadRouter</members>
+        <members>CalK1_DemoLeadRouterTest</members>
+        <members>CalK1_DemoQuoteService</members>
+        <members>CalK1_DemoQuoteServiceTest</members>
+        <members>CalK1_DemoReturnCheck</members>
+        <members>CalK1_DemoReturnCheckTest</members>
+        <members>CalK2_DemoAccountImportTest</members>
+        <members>CalK2_DemoAccountService</members>
+        <members>CalK2_DemoAccountServiceTest</members>
+        <members>CalK2_DemoAccountTriggerHandler</members>
+        <members>CalK2_DemoAccountTriggerHandlerTest</members>
+        <members>CalK2_DemoCoverage</members>
+        <members>CalK2_DemoCoverageTest</members>
+        <members>CalK2_DemoInvoiceController</members>
+        <members>CalK2_DemoPricingCaller</members>
+        <members>CalK2_DemoPricingService</members>
+        <members>CalK2_DemoPricingService2</members>
+        <members>CalK2_DemoWeeklyChange</members>
+        <members>CalK2_FridayFactsTest</members>
+        <members>CalK2_NovReleaseService</members>
+        <members>CalK2_Seed</members>
+        <members>CalK2_SeedTest</members>
+        <members>CalK3_Present_DemoReturnCheck</members>
+        <members>CalK3_Present_DemoReturnCheckTest</members>
+        <members>CalK4A_DemoAccountTriggerHandler</members>
+        <members>CalK4A_DemoAccountTriggerHandlerTest</members>
+        <members>CalK4A_DemoErpClient</members>
+        <members>CalK4A_DemoErpClientNC</members>
+        <members>CalK4A_DemoInvoiceAuraCtrl</members>
+        <members>CalK4A_DemoInvoiceCaller_T033</members>
+        <members>CalK4A_DemoInvoiceCaller_T033Test</members>
+        <members>CalK4A_DemoInvoiceCaller_T039</members>
+        <members>CalK4A_DemoInvoiceController</members>
+        <members>CalK4A_DemoInvoiceService_T033</members>
+        <members>CalK4A_DemoInvoiceService_T033Test</members>
+        <members>CalK4A_DemoInvoiceService_T037</members>
+        <members>CalK4A_DemoInvoiceService_T037Test</members>
+        <members>CalK4A_DemoInvoiceService_T038</members>
+        <members>CalK4A_DemoInvoiceService_T039</members>
+        <members>CalK4A_DemoLeadRouter</members>
+        <members>CalK4A_DemoMoneyCallerWith</members>
+        <members>CalK4A_DemoMoneyCallerWithout</members>
+        <members>CalK4A_DemoMoneyUtil</members>
+        <members>CalK4A_DemoOrderApi</members>
+        <members>CalK4A_DemoTaxUtil</members>
+        <members>CalK4A_PrereqProbe_Test</members>
+        <members>CalK4A_Probe</members>
+        <members>CalK4A_RoundLine_T038Test</members>
+        <members>CalK4A_T001_Test</members>
+        <members>CalK4A_T002_Test</members>
+        <members>CalK4A_T003_Test</members>
+        <members>CalK4A_T004_Test</members>
+        <members>CalK4A_T005_Test</members>
+        <members>CalK4A_T006_Test</members>
+        <members>CalK4A_T007_Test</members>
+        <members>CalK4A_T008_Test</members>
+        <members>CalK4A_T009_Test</members>
+        <members>CalK4A_T010_Test</members>
+        <members>CalK4A_T013_T014_Test</members>
+        <members>CalK4A_T015_Test</members>
+        <members>CalK4A_T016_Test</members>
+        <members>CalK4A_T022_Test</members>
+        <members>CalK4A_T023_Test</members>
+        <members>CalK4A_T032_Test</members>
+        <members>CalK4A_T042_Test</members>
+        <members>CalK4A_T046_Test</members>
+        <members>CalK4A_TestUsers</members>
+        <members>CalK4B_CoverageTarget</members>
+        <members>CalK4B_CoverageTest</members>
+        <members>CalK4B_InvoiceAccessTest</members>
+        <members>CalK4B_InvoiceController</members>
+        <members>CalK4B_InvoiceControllerTest</members>
+        <members>CalK4B_InvoiceSeeAllTest</members>
+        <members>CalK4B_InvoiceService</members>
+        <members>CalK4B_Legacy</members>
+        <members>CalK4B_LegacyOrderRef</members>
+        <members>CalK4B_LegacyTest</members>
+        <members>CalK4B_NightlySync</members>
+        <members>CalK4B_NightlySyncTest</members>
+        <members>CalK4B_OrderTriggerTest</members>
+        <members>CalK4B_RegionReader</members>
+        <members>CalK4B_RegionReaderTest</members>
+        <members>CalK4B_ReturnCheck</members>
+        <members>CalK4B_ReturnCheckTest</members>
+        <members>CalK5_DemoInvoiceService</members>
+        <members>CalK5_DemoInvoiceServiceTest</members>
+        <members>CalK5_DemoLegacyTest</members>
+        <members>CalK5_DemoQuoteService</members>
+        <members>CalOpportunityStageService</members>
+        <members>CalOpportunityStageServiceTest</members>
+        <members>CalOrderSyncJob</members>
+        <members>CalOrderSyncService</members>
+        <members>CalOrderSyncServiceTest</members>
+        <members>CalPermSetTuner</members>
+        <members>CalPermSetTunerTest</members>
+        <members>CalPremiumAccounts</members>
+        <members>CalR_DealService</members>
+        <members>CalR_DealServiceTest</members>
+        <members>CalR_DemoAccountTriggerHandler</members>
+        <members>CalR_DemoAccountTriggerHandlerTest</members>
+        <members>CalR_ForecastService</members>
+        <members>CalR_ForecastServiceTest</members>
+        <members>CalR_RenewalService</members>
+        <members>CalR_RenewalServiceTest</members>
+        <members>CalR_SecurityProofsTest</members>
+        <members>CalSB_LeadContext</members>
+        <members>CalSB_SafeFollowUp</members>
+        <members>CalSB_SalesBleedTest</members>
+        <members>CalSB_SlackNotifier</members>
+        <members>TestAccountRecords</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>apexEmailNotifications</members>
+        <name>ApexEmailNotifications</name>
+    </types>
+    <types>
+        <members>CalK5_DemoPage</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>ARMX_HACK_GC03_OppTrigger</members>
+        <members>CalAccountCitySyncTrigger</members>
+        <members>CalAccountContactsTrigger</members>
+        <members>CalCaseStatusStampTrigger</members>
+        <members>CalK1_DemoAccountTrigger</members>
+        <members>CalK2_DemoAccountTrigger</members>
+        <members>CalK4A_DemoAccountAudit</members>
+        <members>CalK4A_DemoAccountTrigger</members>
+        <members>CalK4B_OrderTrigger</members>
+        <members>CalR_DemoAccountTrigger</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>AppSwitcher</members>
+        <members>Salesforce1</members>
+        <name>AppMenu</name>
+    </types>
+    <types>
+        <members>Case</members>
+        <members>Lead</members>
+        <name>AssignmentRules</name>
+    </types>
+    <types>
+        <members>CalK4A_DemoInvoiceApp</members>
+        <members>CalK4A_demoInvoiceCmp</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>Case</members>
+        <members>Lead</members>
+        <name>AutoResponseRules</name>
+    </types>
+    <types>
+        <members>DataCloudGeoLocation</members>
+        <name>CleanDataService</name>
+    </types>
+    <types>
+        <members>Internal Zone</members>
+        <name>Community</name>
+    </types>
+    <types>
+        <members>CalK4A_Demo_Analytics</members>
+        <name>CspTrustedSite</name>
+    </types>
+    <types>
+        <members>standard__AllTabSet</members>
+        <members>standard__AppLauncher</members>
+        <members>standard__Approvals</members>
+        <members>standard__Chatter</members>
+        <members>standard__Community</members>
+        <members>standard__Content</members>
+        <members>standard__LightningBolt</members>
+        <members>standard__LightningSales</members>
+        <members>standard__MSJApp</members>
+        <members>standard__Marketing</members>
+        <members>standard__Platform</members>
+        <members>standard__Sales</members>
+        <members>standard__SalesCloudMobile</members>
+        <members>standard__SalesforceCMS</members>
+        <members>standard__Service</members>
+        <members>standard__ServiceConsole</members>
+        <members>standard__Shield</members>
+        <members>standard__Sites</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>CalHK_Pricing_Error</members>
+        <members>CalK1_DemoWelcomeMsg</members>
+        <members>CalK4A_DemoWelcomeMsg</members>
+        <name>CustomLabel</name>
+    </types>
+    <types>
+        <members>CustomLabels</members>
+        <name>CustomLabels</name>
+    </types>
+    <types>
+        <members>CalHK_Load_Setting.Default</members>
+        <members>CalHK_Tax_Rate.EU_Standard</members>
+        <name>CustomMetadata</name>
+    </types>
+    <types>
+        <members>Account</members>
+        <members>AccountCleanInfo</members>
+        <members>AccountContactRole</members>
+        <members>Activity</members>
+        <members>Address</members>
+        <members>AiJobRun</members>
+        <members>AlternativePaymentMethod</members>
+        <members>AnalyticsUserAttrFuncTkn</members>
+        <members>AppointmentTopicTimeSlot</members>
+        <members>ApprovalSubmission</members>
+        <members>ApprovalSubmissionDetail</members>
+        <members>ApprovalWorkItem</members>
+        <members>ApptBundleAggrDurDnscale</members>
+        <members>ApptBundleAggrPolicy</members>
+        <members>ApptBundleConfig</members>
+        <members>ApptBundlePolicy</members>
+        <members>ApptBundlePolicySvcTerr</members>
+        <members>ApptBundlePropagatePolicy</members>
+        <members>ApptBundleRestrictPolicy</members>
+        <members>ApptBundleSortPolicy</members>
+        <members>Asset</members>
+        <members>AssetAccountParticipant</members>
+        <members>AssetAction</members>
+        <members>AssetActionSource</members>
+        <members>AssetContactParticipant</members>
+        <members>AssetDowntimePeriod</members>
+        <members>AssetRelationship</members>
+        <members>AssetStatePeriod</members>
+        <members>AssetWarranty</members>
+        <members>AssignedResource</members>
+        <members>AssistantProgress</members>
+        <members>AssociatedLocation</members>
+        <members>AttributeDefinition</members>
+        <members>AttributePicklist</members>
+        <members>AttributePicklistValue</members>
+        <members>AuthorizationForm</members>
+        <members>AuthorizationFormConsent</members>
+        <members>AuthorizationFormDataUse</members>
+        <members>AuthorizationFormText</members>
+        <members>BusinessBrand</members>
+        <members>CalHK_Article__c</members>
+        <members>CalHK_Asset__c</members>
+        <members>CalHK_Bonus__c</members>
+        <members>CalHK_Contract_Line__c</members>
+        <members>CalHK_Contract__c</members>
+        <members>CalHK_Customer_Master__c</members>
+        <members>CalHK_Invoice__c</members>
+        <members>CalHK_Load_Setting__mdt</members>
+        <members>CalHK_Opportunity_Split__c</members>
+        <members>CalHK_Order__c</members>
+        <members>CalHK_Project__c</members>
+        <members>CalHK_Provider__mdt</members>
+        <members>CalHK_Tax_Rate__mdt</members>
+        <members>CalHK_Warranty__c</members>
+        <members>CalK1_DemoAccount__c</members>
+        <members>CalK1_DemoAcctStory__c</members>
+        <members>CalK1_DemoContact__c</members>
+        <members>CalK1_DemoInvoice__c</members>
+        <members>CalK2_DemoAccount13__c</members>
+        <members>CalK2_DemoAccount__c</members>
+        <members>CalK2_DemoAcctTier__c</members>
+        <members>CalK2_DemoBulk__c</members>
+        <members>CalK2_DemoInvoiceLab__c</members>
+        <members>CalK2_DemoInvoicePRW__c</members>
+        <members>CalK2_DemoInvoice__c</members>
+        <members>CalK3_Absent_DemoAccount__c</members>
+        <members>CalK3_Absent_DemoInvoice__c</members>
+        <members>CalK3_Present_DemoAccount__c</members>
+        <members>CalK3_Present_DemoInvoice__c</members>
+        <members>CalK4A_DemoAccount__c</members>
+        <members>CalK4A_DemoCase__c</members>
+        <members>CalK4A_DemoContract__c</members>
+        <members>CalK4A_DemoInvoice__c</members>
+        <members>CalK4A_DemoKnowledgeTip__c</members>
+        <members>CalK4A_DemoLead__c</members>
+        <members>CalK4A_DemoProject__c</members>
+        <members>CalK4A_DemoTierLab__c</members>
+        <members>CalK4B_Account__c</members>
+        <members>CalK4B_Contact__c</members>
+        <members>CalK4B_Invoice__c</members>
+        <members>CalK4B_LegacyOrder__c</members>
+        <members>CalK4B_Opportunity__c</members>
+        <members>CalK4B_OrderChanged__e</members>
+        <members>CalK4B_Order__c</members>
+        <members>CalK5_DemoAccount__c</members>
+        <members>CalR_DemoAccount__c</members>
+        <members>CalR_DemoCase__c</members>
+        <members>CalR_DemoContact__c</members>
+        <members>CalR_DemoInvoice__c</members>
+        <members>Campaign</members>
+        <members>CampaignMember</members>
+        <members>CardPaymentMethod</members>
+        <members>Case</members>
+        <members>CaseContactRole</members>
+        <members>CaseMilestone</members>
+        <members>ChatterActivity</members>
+        <members>CollaborationGroup</members>
+        <members>CollaborationGroupMember</members>
+        <members>CommSubscription</members>
+        <members>CommSubscriptionChannelType</members>
+        <members>CommSubscriptionConsent</members>
+        <members>CommSubscriptionTiming</members>
+        <members>ConsumptionRate</members>
+        <members>ConsumptionSchedule</members>
+        <members>Contact</members>
+        <members>ContactCleanInfo</members>
+        <members>ContactPointAddress</members>
+        <members>ContactPointConsent</members>
+        <members>ContactPointEmail</members>
+        <members>ContactPointOttSvc</members>
+        <members>ContactPointPhone</members>
+        <members>ContactPointTypeConsent</members>
+        <members>ContactRequest</members>
+        <members>ContentDocument</members>
+        <members>ContentVersion</members>
+        <members>Contract</members>
+        <members>ContractContactRole</members>
+        <members>ContractLineItem</members>
+        <members>ContractLineOutcome</members>
+        <members>ContractLineOutcomeData</members>
+        <members>ConvEntryRelatedRecordCopy</members>
+        <members>ConversationApiLog</members>
+        <members>ConversationApiLogObjSum</members>
+        <members>ConversationEntryCopy</members>
+        <members>CreditMemo</members>
+        <members>CreditMemoInvApplication</members>
+        <members>CreditMemoLine</members>
+        <members>Customer</members>
+        <members>DandBCompany</members>
+        <members>DataMaskCustomValueLibrary</members>
+        <members>DataUseLegalBasis</members>
+        <members>DataUsePurpose</members>
+        <members>DevopsActivityLog</members>
+        <members>DevopsDeployComponent</members>
+        <members>DevopsEnvDeployment</members>
+        <members>DevopsEnvDeploymentMbr</members>
+        <members>DevopsEnvironment</members>
+        <members>DevopsRequestInfo</members>
+        <members>DigitalSignature</members>
+        <members>DigitalWallet</members>
+        <members>DuplicateRecordItem</members>
+        <members>DuplicateRecordSet</members>
+        <members>DynamicDataCapture</members>
+        <members>EmailMessage</members>
+        <members>EngagementChannelType</members>
+        <members>Entitlement</members>
+        <members>EntitlementContact</members>
+        <members>EntityMilestone</members>
+        <members>Event</members>
+        <members>ExchangeUserMapping</members>
+        <members>Expense</members>
+        <members>ExpenseReport</members>
+        <members>ExpenseReportEntry</members>
+        <members>ExpressionFilter</members>
+        <members>ExpressionFilterCriteria</members>
+        <members>ExternalEventMapping</members>
+        <members>ExtlRecShrStagedRecord</members>
+        <members>FeedItem</members>
+        <members>FinanceBalanceSnapshot</members>
+        <members>FinanceTransaction</members>
+        <members>FlowOrchestrationInstance</members>
+        <members>FlowOrchestrationInstanceLink</members>
+        <members>FlowOrchestrationLog</members>
+        <members>FlowOrchestrationStageInstance</members>
+        <members>FlowOrchestrationStepInstance</members>
+        <members>FlowOrchestrationVersion</members>
+        <members>FlowOrchestrationWorkItem</members>
+        <members>GeolocationBasedAction</members>
+        <members>GisPrvdCnctrJobObjRun</members>
+        <members>Idea</members>
+        <members>Image</members>
+        <members>Individual</members>
+        <members>Invoice</members>
+        <members>InvoiceLine</members>
+        <members>JobProfile</members>
+        <members>Lead</members>
+        <members>LeadCleanInfo</members>
+        <members>LegalEntity</members>
+        <members>LiveAgentSession</members>
+        <members>LiveChatTranscript</members>
+        <members>LiveChatTranscriptEvent</members>
+        <members>LiveChatVisitor</members>
+        <members>Location</members>
+        <members>LocationGroup</members>
+        <members>LocationGroupAssignment</members>
+        <members>MLModel</members>
+        <members>MLModelFactor</members>
+        <members>MLModelFactorComponent</members>
+        <members>Macro</members>
+        <members>MacroAction</members>
+        <members>MacroInstruction</members>
+        <members>MacroUsage</members>
+        <members>MaintenanceAsset</members>
+        <members>MaintenancePlan</members>
+        <members>MaintenanceWorkRule</members>
+        <members>MessagingEndUser</members>
+        <members>MessagingSession</members>
+        <members>MessagingSessionClient</members>
+        <members>OperatingHours</members>
+        <members>OperatingHoursHoliday</members>
+        <members>Opportunity</members>
+        <members>OpportunityCompetitor</members>
+        <members>OpportunityContactRole</members>
+        <members>OpportunityLineItem</members>
+        <members>OpportunityRelatedDeleteLog</members>
+        <members>Order</members>
+        <members>OrderItem</members>
+        <members>OrgMetricScanResult</members>
+        <members>OrgMetricScanSummary</members>
+        <members>OutboundEngagementTemplate</members>
+        <members>OutboundEngmtContentRsrc</members>
+        <members>PartnerRole</members>
+        <members>PartyConsent</members>
+        <members>PayGroup</members>
+        <members>PayPeriod</members>
+        <members>Payment</members>
+        <members>PaymentAuthAdjustment</members>
+        <members>PaymentAuthorization</members>
+        <members>PaymentGateway</members>
+        <members>PaymentGroup</members>
+        <members>PaymentLineInvoice</members>
+        <members>PaymentMethod</members>
+        <members>Pricebook2</members>
+        <members>PricebookEntry</members>
+        <members>PrivacyJobSession</members>
+        <members>PrivacyRTBFRequest</members>
+        <members>ProcessException</members>
+        <members>Product2</members>
+        <members>ProductConsumed</members>
+        <members>ProductConsumedState</members>
+        <members>ProductConsumptionSchedule</members>
+        <members>ProductItem</members>
+        <members>ProductItemTransaction</members>
+        <members>ProductRequest</members>
+        <members>ProductRequestLineItem</members>
+        <members>ProductRequired</members>
+        <members>ProductServiceCampaign</members>
+        <members>ProductServiceCampaignItem</members>
+        <members>ProductTransfer</members>
+        <members>ProductTransferState</members>
+        <members>ProductWarrantyTerm</members>
+        <members>PromptAction</members>
+        <members>PromptError</members>
+        <members>QuickText</members>
+        <members>QuickTextUsage</members>
+        <members>Recommendation</members>
+        <members>RecordAction</members>
+        <members>RecordMergeHistory</members>
+        <members>RecordsetFilterCriteria</members>
+        <members>RecordsetFilterCriteriaRule</members>
+        <members>RecordsetFltrCritMonitor</members>
+        <members>Refund</members>
+        <members>RefundLinePayment</members>
+        <members>ReportAnomalyEventStore</members>
+        <members>ReportHierarchyObjectField</members>
+        <members>ResourceAbsence</members>
+        <members>ResourcePreference</members>
+        <members>ReturnOrder</members>
+        <members>ReturnOrderLineItem</members>
+        <members>SchedulingConstraint</members>
+        <members>SchedulingWorkspace</members>
+        <members>SchedulingWorkspaceTerritory</members>
+        <members>Scorecard</members>
+        <members>ScorecardAssociation</members>
+        <members>ScorecardMetric</members>
+        <members>SearchRecentQuery</members>
+        <members>SecurityHealthCheckAlertRecipient</members>
+        <members>SecurityHealthCheckResult</members>
+        <members>Seller</members>
+        <members>SerializedProduct</members>
+        <members>SerializedProductTransaction</members>
+        <members>ServiceAppointment</members>
+        <members>ServiceAppointmentCapacityUsage</members>
+        <members>ServiceContract</members>
+        <members>ServiceCrew</members>
+        <members>ServiceCrewMember</members>
+        <members>ServiceReport</members>
+        <members>ServiceResource</members>
+        <members>ServiceResourceCapacity</members>
+        <members>ServiceResourcePreference</members>
+        <members>ServiceResourceSkill</members>
+        <members>ServiceTerritory</members>
+        <members>ServiceTerritoryLocation</members>
+        <members>ServiceTerritoryMember</members>
+        <members>SfdcPartnerSbscrOffer</members>
+        <members>SfdcPartnerSbscrOfferItem</members>
+        <members>Shift</members>
+        <members>ShiftAllocationRequest</members>
+        <members>ShiftPattern</members>
+        <members>ShiftPatternEntry</members>
+        <members>ShiftSchedulingOperation</members>
+        <members>ShiftTemplate</members>
+        <members>Shipment</members>
+        <members>ShipmentItem</members>
+        <members>Site</members>
+        <members>SkillRequirement</members>
+        <members>SlackChannelRelatedRecord</members>
+        <members>SocialPersona</members>
+        <members>Solution</members>
+        <members>StreamingChannel</members>
+        <members>Swarm</members>
+        <members>SwarmMember</members>
+        <members>TableauHostMapping</members>
+        <members>Task</members>
+        <members>TimeSheet</members>
+        <members>TimeSheetEntry</members>
+        <members>TimeSlot</members>
+        <members>Topic</members>
+        <members>TopicAssignment</members>
+        <members>TravelMode</members>
+        <members>UiPageAuthoringConv</members>
+        <members>UiPageAuthoringConvTurn</members>
+        <members>UnitOfMeasure</members>
+        <members>UnstructuredStorageSpace</members>
+        <members>UnstructuredStorageSpaceLayer</members>
+        <members>User</members>
+        <members>UserCapabilityPreference</members>
+        <members>UserDevopsPreference</members>
+        <members>UserExternalCredential</members>
+        <members>UserLocalWebServerIdentity</members>
+        <members>UserProvisioningRequest</members>
+        <members>WarrantyTerm</members>
+        <members>WorkBadge</members>
+        <members>WorkBadgeDefinition</members>
+        <members>WorkCapacityAvailability</members>
+        <members>WorkCapacityLimit</members>
+        <members>WorkCapacityUsage</members>
+        <members>WorkOrder</members>
+        <members>WorkOrderLineItem</members>
+        <members>WorkPlan</members>
+        <members>WorkPlanSelectionRule</members>
+        <members>WorkPlanTemplate</members>
+        <members>WorkPlanTemplateEntry</members>
+        <members>WorkStep</members>
+        <members>WorkStepTemplate</members>
+        <members>WorkThanks</members>
+        <members>WorkType</members>
+        <members>WorkTypeGroup</members>
+        <members>WorkTypeGroupMember</members>
+        <members>WorkflowSLAAction</members>
+        <members>Workload</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>CalHK_Article__c-en_US</members>
+        <members>CalHK_Asset__c-en_US</members>
+        <members>CalHK_Bonus__c-en_US</members>
+        <members>CalHK_Contract_Line__c-en_US</members>
+        <members>CalHK_Contract__c-en_US</members>
+        <members>CalHK_Customer_Master__c-en_US</members>
+        <members>CalHK_Invoice__c-en_US</members>
+        <members>CalHK_Load_Setting__mdt-en_US</members>
+        <members>CalHK_Opportunity_Split__c-en_US</members>
+        <members>CalHK_Order__c-en_US</members>
+        <members>CalHK_Project__c-en_US</members>
+        <members>CalHK_Provider__mdt-en_US</members>
+        <members>CalHK_Tax_Rate__mdt-en_US</members>
+        <members>CalHK_Warranty__c-en_US</members>
+        <members>CalK1_DemoAccount__c-en_US</members>
+        <members>CalK1_DemoAcctStory__c-en_US</members>
+        <members>CalK1_DemoContact__c-en_US</members>
+        <members>CalK1_DemoInvoice__c-en_US</members>
+        <members>CalK2_DemoAccount13__c-en_US</members>
+        <members>CalK2_DemoAccount__c-en_US</members>
+        <members>CalK2_DemoAcctTier__c-en_US</members>
+        <members>CalK2_DemoBulk__c-en_US</members>
+        <members>CalK2_DemoInvoiceLab__c-en_US</members>
+        <members>CalK2_DemoInvoicePRW__c-en_US</members>
+        <members>CalK2_DemoInvoice__c-en_US</members>
+        <members>CalK3_Absent_DemoAccount__c-en_US</members>
+        <members>CalK3_Absent_DemoInvoice__c-en_US</members>
+        <members>CalK3_Present_DemoAccount__c-en_US</members>
+        <members>CalK3_Present_DemoInvoice__c-en_US</members>
+        <members>CalK4A_DemoAccount__c-en_US</members>
+        <members>CalK4A_DemoCase__c-en_US</members>
+        <members>CalK4A_DemoContract__c-en_US</members>
+        <members>CalK4A_DemoInvoice__c-en_US</members>
+        <members>CalK4A_DemoKnowledgeTip__c-en_US</members>
+        <members>CalK4A_DemoLead__c-en_US</members>
+        <members>CalK4A_DemoProject__c-en_US</members>
+        <members>CalK4A_DemoTierLab__c-en_US</members>
+        <members>CalK4B_Account__c-en_US</members>
+        <members>CalK4B_Contact__c-en_US</members>
+        <members>CalK4B_Invoice__c-en_US</members>
+        <members>CalK4B_LegacyOrder__c-en_US</members>
+        <members>CalK4B_Opportunity__c-en_US</members>
+        <members>CalK4B_OrderChanged__e-en_US</members>
+        <members>CalK4B_Order__c-en_US</members>
+        <members>CalK5_DemoAccount__c-en_US</members>
+        <members>CalR_DemoAccount__c-en_US</members>
+        <members>CalR_DemoCase__c-en_US</members>
+        <members>CalR_DemoContact__c-en_US</members>
+        <members>CalR_DemoInvoice__c-en_US</members>
+        <name>CustomObjectTranslation</name>
+    </types>
+    <types>
+        <members>CalHK_Bypass_Validation</members>
+        <name>CustomPermission</name>
+    </types>
+    <types>
+        <members>CalHK_Invoice__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>CalK4B_Dashboards/</members>
+        <members>CalK4B_Dashboards/CalK4B_Pipeline</members>
+        <name>Dashboard</name>
+    </types>
+    <types>
+        <members>CalK2_Debug</members>
+        <members>CalK4A_DL</members>
+        <members>SFDC_DevConsole</members>
+        <name>DebugLevel</name>
+    </types>
+    <types>
+        <members>Account.Standard_Account_Duplicate_Rule</members>
+        <members>Contact.Standard_Contact_Duplicate_Rule</members>
+        <members>Contact.Standard_Rule_for_Contacts_with_Duplicate_Leads</members>
+        <members>Lead.Standard_Lead_Duplicate_Rule</members>
+        <members>Lead.Standard_Rule_for_Leads_with_Duplicate_Contacts</members>
+        <name>DuplicateRule</name>
+    </types>
+    <types>
+        <members>unfiled$public</members>
+        <members>unfiled$public/CommerceReorderPortalInvitation</members>
+        <name>EmailTemplate</name>
+    </types>
+    <types>
+        <members>standard case</members>
+        <name>EntitlementProcess</name>
+    </types>
+    <types>
+        <members>Case</members>
+        <name>EscalationRules</name>
+    </types>
+    <types>
+        <members>CalK4A_DemoMobile</members>
+        <members>eca</members>
+        <name>ExternalClientApplication</name>
+    </types>
+    <types>
+        <members>CalHK_Billing_EC</members>
+        <members>CalHK_ERP_EC</members>
+        <members>CalK4A_DemoERP_EC</members>
+        <name>ExternalCredential</name>
+    </types>
+    <types>
+        <members>CalK4A_DemoMobile_defaultPolicy</members>
+        <members>eca_plcy</members>
+        <name>ExtlClntAppConfigurablePolicies</name>
+    </types>
+    <types>
+        <members>CalK4A_DemoMobile_glbloauth</members>
+        <members>eca_glbloauth</members>
+        <name>ExtlClntAppGlobalOauthSettings</name>
+    </types>
+    <types>
+        <members>CalK4A_DemoMobile_oauthPlcy</members>
+        <members>eca_oauthPlcy</members>
+        <name>ExtlClntAppOauthConfigurablePolicies</name>
+    </types>
+    <types>
+        <members>eca_oauthSecurity</members>
+        <name>ExtlClntAppOauthSecuritySettings</name>
+    </types>
+    <types>
+        <members>CalK4A_DemoMobile_oauth</members>
+        <members>eca_oauth</members>
+        <name>ExtlClntAppOauthSettings</name>
+    </types>
+    <types>
+        <members>Rule1bb692f0e95bbb0fcbfa487f1eb58e785e5a12fabed4832122e919b7d220af70</members>
+        <members>Ruleeceed79d48cbd49d279d55f8dbcc3bdf3b94354a2fe7b5b93f7654cbc9df03aa</members>
+        <name>FieldRestrictionRule</name>
+    </types>
+    <types>
+        <members>Field_Service_Mobile_Settings</members>
+        <name>FieldServiceMobileConfig</name>
+    </types>
+    <types>
+        <members>AdvertisingInventoryCalendar_UtilityBar</members>
+        <members>CalK3_Absent_Demo_Account_Record_Page</members>
+        <members>CalK3_Present_Demo_Account_Record_Page</members>
+        <members>CalK4B_Invoice_Record_Page</members>
+        <members>CommandCenterApp_UtilityBar</members>
+        <members>DataGovernanceConsole_UtilityBar</members>
+        <members>LightningSales_UtilityBar</members>
+        <members>MediaAdSalesManagement_UtilityBar</members>
+        <members>SalesCloudMobile_UtilityBar</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>ARMX_HACK_GC03_Set_Proposal</members>
+        <members>CalHK_Asset_Daily</members>
+        <members>CalHK_Contract_Table</members>
+        <members>CalHK_Invoice_Tax_Absent</members>
+        <members>CalHK_Invoice_Tax_Present</members>
+        <members>CalHK_Order_AfterSave</members>
+        <members>CalHK_User_Formula_Check</members>
+        <members>CalK1_DemoAcctStory_Default</members>
+        <members>CalK1_DemoInvoice_BulkLookup</members>
+        <members>CalK1_DemoInvoice_SetOpen</members>
+        <members>CalK1_DemoInvoice_SetRegion</members>
+        <members>CalK3_Absent_Demo_Opp_Close</members>
+        <members>CalK3_Present_Demo_Opp_Close</members>
+        <members>CalK4A_Demo_Lead_Assign</members>
+        <members>CalK4B_Opp_Close</members>
+        <members>CalK4B_Opp_Flow</members>
+        <members>CalK4B_Opp_Process</members>
+        <members>sfdc_default_ReportExport_Protection_Flow</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>ARMX_HACK_GC03_Set_Proposal</members>
+        <members>CalHK_Asset_Daily</members>
+        <members>CalHK_Contract_Table</members>
+        <members>CalHK_Invoice_Tax_Absent</members>
+        <members>CalHK_Invoice_Tax_Present</members>
+        <members>CalHK_Order_AfterSave</members>
+        <members>CalHK_User_Formula_Check</members>
+        <members>CalK1_DemoAcctStory_Default</members>
+        <members>CalK1_DemoInvoice_BulkLookup</members>
+        <members>CalK1_DemoInvoice_SetOpen</members>
+        <members>CalK1_DemoInvoice_SetRegion</members>
+        <members>CalK3_Absent_Demo_Opp_Close</members>
+        <members>CalK3_Present_Demo_Opp_Close</members>
+        <members>CalK4A_Demo_Lead_Assign</members>
+        <members>CalK4B_Opp_Close</members>
+        <members>CalK4B_Opp_Flow</members>
+        <members>CalK4B_Opp_Process</members>
+        <members>sfdc_default_ReportExport_Protection_Flow</members>
+        <name>FlowDefinition</name>
+    </types>
+    <types>
+        <members>CalHK_Contract_Ops_Group</members>
+        <members>CalHK_Escalation_Team</members>
+        <members>CalK2_Demo_Finance_Team</members>
+        <members>CalK2_Demo_Support_Team</members>
+        <members>CalK3_Absent_Demo_Escalation</members>
+        <members>CalK3_Absent_Demo_Escalations</members>
+        <members>CalK3_Present_Demo_Escalations</members>
+        <members>CalK4B_Finance</members>
+        <name>Group</name>
+    </types>
+    <types>
+        <members>DE Default</members>
+        <name>HomePageLayout</name>
+    </types>
+    <types>
+        <members>IframeWhiteListUrlSettings</members>
+        <name>IframeWhiteListUrlSettings</name>
+    </types>
+    <types>
+        <members>Account-Account %28Marketing%29 Layout</members>
+        <members>Account-Account %28Sales%29 Layout</members>
+        <members>Account-Account %28Support%29 Layout</members>
+        <members>Account-Account Layout</members>
+        <members>Address-Address Layout</members>
+        <members>AlternativePaymentMethod-Alternative Payment Method Layout</members>
+        <members>ApiAnomalyEventStore-API Anomaly Event Store Layout</members>
+        <members>ApptBundleConfig-Appointment Bundle Config Layout</members>
+        <members>ApptBundlePolicy-Appointment Bundle Policy Layout</members>
+        <members>Asset-Asset Layout</members>
+        <members>AssetAction-Asset Action Layout</members>
+        <members>AssetActionSource-Asset Action Source Layout</members>
+        <members>AssetRelationship-Asset Relationship Layout</members>
+        <members>AssetStatePeriod-Asset State Period Layout</members>
+        <members>AssignedResource-Assigned Resource Layout</members>
+        <members>AssociatedLocation-Associated Location Layout</members>
+        <members>AuthorizationForm-Authorization Form Layout</members>
+        <members>AuthorizationFormConsent-Authorization Form Consent Layout</members>
+        <members>AuthorizationFormDataUse-Authorization Form Data Use Layout</members>
+        <members>AuthorizationFormText-Authorization Form Text Layout</members>
+        <members>BusinessBrand-Business Brand Layout</members>
+        <members>CalHK_Article__c-CalHK Article Layout</members>
+        <members>CalHK_Asset__c-CalHK Asset Layout</members>
+        <members>CalHK_Bonus__c-CalHK Bonus Layout</members>
+        <members>CalHK_Contract_Line__c-CalHK Contract Line Layout</members>
+        <members>CalHK_Contract__c-CalHK Contract Layout</members>
+        <members>CalHK_Customer_Master__c-CalHK Customer Master Layout</members>
+        <members>CalHK_Invoice__c-CalHK Invoice Layout</members>
+        <members>CalHK_Load_Setting__mdt-CalHK Load Setting Layout</members>
+        <members>CalHK_Opportunity_Split__c-CalHK Opportunity Split Layout</members>
+        <members>CalHK_Order__c-CalHK Order Layout</members>
+        <members>CalHK_Project__c-CalHK Project Layout</members>
+        <members>CalHK_Provider__mdt-CalHK Provider Layout</members>
+        <members>CalHK_Tax_Rate__mdt-CalHK Tax Rate Layout</members>
+        <members>CalHK_Warranty__c-CalHK Warranty Layout</members>
+        <members>CalK1_DemoAccount__c-CalK1 Demo Account Layout</members>
+        <members>CalK1_DemoAcctStory__c-CalK1 Demo Account Story Layout</members>
+        <members>CalK1_DemoContact__c-CalK1 Demo Contact Layout</members>
+        <members>CalK1_DemoInvoice__c-CalK1 Demo Invoice Layout</members>
+        <members>CalK2_DemoAccount13__c-CalK2 Demo Account F13 Layout</members>
+        <members>CalK2_DemoAccount__c-CalK2 Demo Account Layout</members>
+        <members>CalK2_DemoAcctTier__c-CalK2 Demo Account Tier Lab Layout</members>
+        <members>CalK2_DemoBulk__c-CalK2 Demo Bulk Layout</members>
+        <members>CalK2_DemoInvoiceLab__c-CalK2 Demo Invoice Lab Layout</members>
+        <members>CalK2_DemoInvoicePRW__c-CalK2 Demo Invoice PRW Layout</members>
+        <members>CalK2_DemoInvoice__c-CalK2 Demo Invoice Layout</members>
+        <members>CalK3_Absent_DemoAccount__c-Demo Account Layout</members>
+        <members>CalK3_Absent_DemoAccount__c-Demo Account Layout - Partner</members>
+        <members>CalK3_Absent_DemoInvoice__c-Demo Invoice Layout</members>
+        <members>CalK3_Present_DemoAccount__c-Demo Account Layout</members>
+        <members>CalK3_Present_DemoInvoice__c-Demo Invoice Layout</members>
+        <members>CalK4A_DemoAccount__c-CalK4A Demo Account Layout</members>
+        <members>CalK4A_DemoCase__c-CalK4A Demo Case Layout</members>
+        <members>CalK4A_DemoContract__c-CalK4A Demo Contract Layout</members>
+        <members>CalK4A_DemoInvoice__c-CalK4A Demo Invoice Layout</members>
+        <members>CalK4A_DemoKnowledgeTip__c-CalK4A Demo Knowledge Tip Layout</members>
+        <members>CalK4A_DemoLead__c-CalK4A Demo Lead Layout</members>
+        <members>CalK4A_DemoProject__c-CalK4A Demo Project Layout</members>
+        <members>CalK4A_DemoTierLab__c-CalK4A Demo Tier Lab Layout</members>
+        <members>CalK4B_Account__c-CalK4B Account Layout</members>
+        <members>CalK4B_Contact__c-CalK4B Contact Layout</members>
+        <members>CalK4B_Invoice__c-CalK4B Invoice Layout</members>
+        <members>CalK4B_LegacyOrder__c-CalK4B Legacy Order Layout</members>
+        <members>CalK4B_Opportunity__c-CalK4B Opportunity Layout</members>
+        <members>CalK4B_Order__c-CalK4B Order Layout</members>
+        <members>CalK5_DemoAccount__c-CalK5 DemoAccount Layout</members>
+        <members>CalR_DemoAccount__c-CalR Demo Account Layout</members>
+        <members>CalR_DemoCase__c-CalR Demo Case Layout</members>
+        <members>CalR_DemoContact__c-CalR Demo Contact Layout</members>
+        <members>CalR_DemoInvoice__c-CalR Demo Invoice Layout</members>
+        <members>Campaign-Campaign Layout</members>
+        <members>CampaignMember-Campaign Member Page Layout</members>
+        <members>CardPaymentMethod-Card Payment Method Layout</members>
+        <members>Case-Case %28Marketing%29 Layout</members>
+        <members>Case-Case %28Sales%29 Layout</members>
+        <members>Case-Case %28Support%29 Layout</members>
+        <members>Case-Case Layout</members>
+        <members>CaseClose-Close Case Layout</members>
+        <members>CaseMilestone-Case Milestone Layout</members>
+        <members>CommunityMemberLayout-Community Member Layout</members>
+        <members>ConsumptionRate-Consumption Rate Layout</members>
+        <members>ConsumptionSchedule-Consumption Schedule Layout</members>
+        <members>Contact-Contact %28Marketing%29 Layout</members>
+        <members>Contact-Contact %28Sales%29 Layout</members>
+        <members>Contact-Contact %28Support%29 Layout</members>
+        <members>Contact-Contact Layout</members>
+        <members>ContactPointAddress-Contact Point Address Layout</members>
+        <members>ContactPointEmail-Contact Point Email Layout</members>
+        <members>ContactPointOttSvc-Contact Point OTT Service Layout</members>
+        <members>ContactPointPhone-Contact Point Phone Layout</members>
+        <members>ContactPointTypeConsent-Contact Point Type Consent Layout</members>
+        <members>ContentVersion-Content Version Layout</members>
+        <members>Contract-Contract Layout</members>
+        <members>ContractLineItem-Contract Line Item Layout</members>
+        <members>ContractLineOutcome-Contract Line Outcome Layout</members>
+        <members>ContractLineOutcomeData-Contract Line Outcome Data Layout</members>
+        <members>CredentialStuffingEventStore-Credential Stuffing Event Store Layout</members>
+        <members>CreditMemo-Credit Memo Layout</members>
+        <members>CreditMemoLine-Credit Memo Line Layout</members>
+        <members>Customer-Customer Layout</members>
+        <members>DandBCompany-D%26B Company Layout</members>
+        <members>DataUseLegalBasis-Data Use Legal Basis Layout</members>
+        <members>DataUsePurpose-Data Use Purpose Layout</members>
+        <members>DigitalWallet-Digital Wallet Layout</members>
+        <members>DuplicateRecordSet-Duplicate Record Set Layout</members>
+        <members>DynamicDataCapture-Dynamic Data Capture Layout</members>
+        <members>EmailMessage-Email Message Layout</members>
+        <members>Entitlement-Entitlement Layout</members>
+        <members>EntityMilestone-Object Milestone Layout</members>
+        <members>Event-Event Layout</members>
+        <members>Expense-Expense Layout</members>
+        <members>ExpenseReport-Expense Report Layout</members>
+        <members>ExpenseReportEntry-Expense Report Entry Layout</members>
+        <members>FeedItem-Feed Item Layout</members>
+        <members>FinanceBalanceSnapshot-Finance Balance Snapshot Layout</members>
+        <members>FinanceTransaction-Finance Transaction Layout</members>
+        <members>FldSvcObjChg-Field Service Object Change Layout</members>
+        <members>FldSvcObjChgDtl-Field Service Object Change Detail Layout</members>
+        <members>Global-Global Layout</members>
+        <members>GuestUserAnomalyEventStore-Guest User Anomaly Event Store Layout</members>
+        <members>Idea-Idea Layout</members>
+        <members>Individual-Individual Layout</members>
+        <members>Invoice-Invoice Layout</members>
+        <members>InvoiceLine-Invoice Line Layout</members>
+        <members>JobProfile-Job Profile Layout</members>
+        <members>Lead-Lead %28Marketing%29 Layout</members>
+        <members>Lead-Lead %28Sales%29 Layout</members>
+        <members>Lead-Lead %28Support%29 Layout</members>
+        <members>Lead-Lead Layout</members>
+        <members>LegalEntity-Legal Entity Layout</members>
+        <members>Location-Location Layout</members>
+        <members>LoginAnomalyEventStore-Login Anomaly Event Store Layout</members>
+        <members>Macro-Macro Layout</members>
+        <members>MaintenanceAsset-Maintenance Asset Layout</members>
+        <members>MaintenancePlan-Maintenance Plan Layout</members>
+        <members>MaintenanceWorkRule-Maintenance Work Rule Layout</members>
+        <members>OperatingHours-Operating Hours Layout</members>
+        <members>OperatingHoursHoliday-Operating Hours Holiday Layout</members>
+        <members>Opportunity-Opportunity %28Marketing%29 Layout</members>
+        <members>Opportunity-Opportunity %28Sales%29 Layout</members>
+        <members>Opportunity-Opportunity %28Support%29 Layout</members>
+        <members>Opportunity-Opportunity Layout</members>
+        <members>OpportunityLineItem-Opportunity Product Layout</members>
+        <members>Order-Order Layout</members>
+        <members>OrderItem-Order Product Layout</members>
+        <members>Payment-Payment Layout</members>
+        <members>PaymentAuthAdjustment-Payment Authorization Adjustment Layout</members>
+        <members>PaymentAuthorization-Payment Authorization Layout</members>
+        <members>PaymentGateway-Payment Gateway Layout</members>
+        <members>PaymentGatewayLog-Payment Gateway Log Layout</members>
+        <members>PaymentGroup-Payment Group Layout</members>
+        <members>PaymentLineInvoice-Payment Line Invoice Layout</members>
+        <members>Pricebook2-Price Book Layout</members>
+        <members>PricebookEntry-Price Book Entry Layout</members>
+        <members>ProcessException-Process Exception Layout</members>
+        <members>Product2-Product Layout</members>
+        <members>ProductConsumed-Product Consumed Layout</members>
+        <members>ProductConsumedState-Product Consumed State Layout</members>
+        <members>ProductConsumptionSchedule-Product Consumption Schedule Layout</members>
+        <members>ProductItem-Product Item Layout</members>
+        <members>ProductItemTransaction-Product Item Transaction Layout</members>
+        <members>ProductRequest-Product Request Layout</members>
+        <members>ProductRequestLineItem-Product Request Line Item Layout</members>
+        <members>ProductRequired-Product Required Layout</members>
+        <members>ProductServiceCampaign-Product Service Campaign Layout</members>
+        <members>ProductServiceCampaignItem-Product Service Campaign Item Layout</members>
+        <members>ProductTransfer-Product Transfer Layout</members>
+        <members>ProductTransferState-Product Transfer State Layout</members>
+        <members>QuickText-Quick Text Layout</members>
+        <members>RecordsetFilterCriteria-Recordset Filter Criteria Layout</members>
+        <members>RecordsetFilterCriteriaRule-Recordset Filter Criteria Rule Layout</members>
+        <members>Refund-Refund Layout</members>
+        <members>RefundLinePayment-Refund Line Payment Layout</members>
+        <members>ReportAnomalyEventStore-Report Anomaly Event Store Layout</members>
+        <members>ResourceAbsence-Resource Absence Layout</members>
+        <members>ResourcePreference-Resource Preference Layout</members>
+        <members>ReturnOrder-Return Order Layout</members>
+        <members>ReturnOrderLineItem-Return Order Line Item Layout</members>
+        <members>SchedulingConstraint-Scheduling Constraint Layout</members>
+        <members>SchedulingObjective-Scheduling Objective Layout</members>
+        <members>SchedulingRule-Scheduling Rule Layout</members>
+        <members>SchedulingWorkspace-Scheduling Workspace Layout</members>
+        <members>SchedulingWorkspaceTerritory-Scheduling Workspace Territory Layout</members>
+        <members>Scorecard-Scorecard Layout</members>
+        <members>ScorecardAssociation-Scorecard Association Layout</members>
+        <members>ScorecardMetric-Scorecard Metric Layout</members>
+        <members>SecurityDefenseActionEventStore-Security Defense Action Event Store Layout</members>
+        <members>Seller-Seller Layout</members>
+        <members>ServiceAppointment-Service Appointment Layout</members>
+        <members>ServiceAppointmentCapacityUsage-Service Appointment Capacity Usage Layout</members>
+        <members>ServiceContract-Service Contract Layout</members>
+        <members>ServiceCrew-Service Crew Layout</members>
+        <members>ServiceCrewMember-Service Crew Member Layout</members>
+        <members>ServiceResource-Service Resource Layout</members>
+        <members>ServiceResourceCapacity-Resource Capacity Layout</members>
+        <members>ServiceResourcePreference-Service Resource Preference Layout</members>
+        <members>ServiceResourceSkill-Service Resource Skill Layout</members>
+        <members>ServiceTerritory-Service Territory Layout</members>
+        <members>ServiceTerritoryMember-Service Territory Member Layout</members>
+        <members>SessionHijackingEventStore-Session Hijacking Event Store Layout</members>
+        <members>Shift-Shift Layout</members>
+        <members>ShiftPattern-Shift Pattern Layout</members>
+        <members>ShiftPatternEntry-Shift Pattern Entry Layout</members>
+        <members>ShiftSchedulingOperation-Shift Scheduling Operation Layout</members>
+        <members>ShiftTemplate-Shift Template Layout</members>
+        <members>Shipment-Shipment Layout</members>
+        <members>SkillRequirement-Skill Requirement Layout</members>
+        <members>SocialPersona-Social Persona Layout</members>
+        <members>Solution-Solution Layout</members>
+        <members>Swarm-Swarm Layout</members>
+        <members>SwarmMember-Swarm Member Layout</members>
+        <members>Task-Task Layout</members>
+        <members>ThreatDetectionFeedback-Threat Detection Feedback Layout</members>
+        <members>TimeSheet-Time Sheet Layout</members>
+        <members>TimeSheetEntry-Time Sheet Entry Layout</members>
+        <members>TimeSlot-Time Slot Layout</members>
+        <members>TravelMode-Travel Mode Layout</members>
+        <members>UniversalAnomalyEventStore-Universal Anomaly Event Store Layout</members>
+        <members>User-User Layout</members>
+        <members>UserProvAccount-User Provisioning Account Layout</members>
+        <members>UserProvisioningLog-User Provisioning Log Layout</members>
+        <members>UserProvisioningRequest-User Provisioning Request Layout</members>
+        <members>WarrantyTerm-Warranty Term Layout</members>
+        <members>WorkAccess-Access Layout</members>
+        <members>WorkBadge-Badge Received Layout</members>
+        <members>WorkBadgeDefinition-Badge Layout</members>
+        <members>WorkCapacityAvailability-Work Capacity Availability Layout</members>
+        <members>WorkCapacityLimit-Work Capacity Limit Layout</members>
+        <members>WorkCapacityUsage-Work Capacity Usage Layout</members>
+        <members>WorkOrder-Work Order Layout</members>
+        <members>WorkOrderLineItem-Work Order Line Item Layout</members>
+        <members>WorkPlan-Work Plan Layout</members>
+        <members>WorkPlanSelectionRule-Work Plan Selection Rule Layout</members>
+        <members>WorkPlanTemplate-Work Plan Template Layout</members>
+        <members>WorkPlanTemplateEntry-Work Plan Template Entry Layout</members>
+        <members>WorkStep-Work Step Layout</members>
+        <members>WorkStepTemplate-Work Step Template Layout</members>
+        <members>WorkThanks-Thanks Layout</members>
+        <members>WorkType-Work Type Layout</members>
+        <members>WorkTypeGroup-Work Type Group Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>calK1DemoInvoiceTable</members>
+        <members>calK3DemoInvoiceTable</members>
+        <members>calK4BInvoiceHtml</members>
+        <members>calK4BInvoiceTable</members>
+        <members>calhkInvoiceTable</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>cms_document</members>
+        <members>cms_image</members>
+        <members>news</members>
+        <name>ManagedContentType</name>
+    </types>
+    <types>
+        <members>Account.Standard_Account_Match_Rule_v1_0</members>
+        <members>Contact.Standard_Contact_Match_Rule_v1_1</members>
+        <members>Lead.Standard_Lead_Match_Rule_v1_0</members>
+        <name>MatchingRule</name>
+    </types>
+    <types>
+        <members>Account</members>
+        <members>Address</members>
+        <members>Contact</members>
+        <members>ContactPointEmail</members>
+        <members>ContactPointPhone</members>
+        <members>Individual</members>
+        <members>Lead</members>
+        <name>MatchingRules</name>
+    </types>
+    <types>
+        <members>Close Case</members>
+        <members>Escalate Case</members>
+        <members>First Response to Customer</members>
+        <name>MilestoneType</name>
+    </types>
+    <types>
+        <members>CalHK_Mute_Absent_Mute</members>
+        <members>CalHK_Mute_Present_Mute</members>
+        <members>CalHK_Sales_Mute</members>
+        <members>CalK4A_DemoSales_Mute</members>
+        <name>MutingPermissionSet</name>
+    </types>
+    <types>
+        <members>CalHK_Billing_API</members>
+        <members>CalHK_ERP_Header_Absent</members>
+        <members>CalHK_ERP_Header_Present</members>
+        <members>CalHK_ERP_NC</members>
+        <members>CalK4A_DemoERP_NC</members>
+        <name>NamedCredential</name>
+    </types>
+    <types>
+        <members>NotificationTypeConfig</members>
+        <name>NotificationTypeConfig</name>
+    </types>
+    <types>
+        <members>ARMX_HACK_GC04_AI_Notes_Access</members>
+        <members>CalHK_Admin_Access</members>
+        <members>CalHK_Contract_Ops</members>
+        <members>CalHK_Demo_Sales</members>
+        <members>CalHK_ERP_Access_Absent</members>
+        <members>CalHK_ERP_Access_Present</members>
+        <members>CalHK_Field_Sales</members>
+        <members>CalHK_Helpdesk</members>
+        <members>CalHK_Integration_Case</members>
+        <members>CalHK_Integration_ETL</members>
+        <members>CalHK_Invoice_Admin</members>
+        <members>CalHK_Invoice_Viewer</members>
+        <members>CalHK_Release_Manager</members>
+        <members>CalHK_Sales_Rep</members>
+        <members>CalHK_Support</members>
+        <members>CalK1_DemoSales_Rep</members>
+        <members>CalK2_Demo_Sales_Access</members>
+        <members>CalK2_Demo_Weekly_Access</members>
+        <members>CalK3_Absent_DemoSales_Rep</members>
+        <members>CalK3_Absent_DemoSupport_Read</members>
+        <members>CalK3_Present_DemoSales_Rep</members>
+        <members>CalK4A_Admin_FieldAccess</members>
+        <members>CalK4A_DemoFinance_Auditor</members>
+        <members>CalK4A_DemoHelpdesk</members>
+        <members>CalK4A_DemoIntegration_PS</members>
+        <members>CalK4A_DemoRep_Base</members>
+        <members>CalK4A_DemoReports_PS</members>
+        <members>CalK4A_DemoSales_Rep</members>
+        <members>CalK4A_DemoSupport_Lead</members>
+        <members>CalK4A_DemoSupport_Read</members>
+        <members>CalK4A_ERP_Access</members>
+        <members>CalK4A_TierLab_Admin</members>
+        <members>CalK4B_Admin_Access</members>
+        <members>CalK4B_Analyst</members>
+        <members>CalK4B_Sales_Rep</members>
+        <members>CalK4B_Support</members>
+        <members>CalK5_DemoIntegration_PS</members>
+        <members>CalK5_Demo_Maint_PS</members>
+        <members>CalK5_FieldAccess_PS</members>
+        <members>CalR_DemoAccount_Reader</members>
+        <members>CalR_DemoAccount_Writer</members>
+        <members>CalR_DemoAdmin_LightningLogin</members>
+        <members>CalR_DemoAgent_Triage</members>
+        <members>CalR_DemoCalendar_Users</members>
+        <members>CalR_DemoSales_Field</members>
+        <members>CalR_DemoSales_FieldUpd</members>
+        <members>CalR_DemoSales_Rep</members>
+        <members>CalR_RelPS_1</members>
+        <members>CalR_RelPS_2</members>
+        <members>CalR_RelPS_3</members>
+        <members>CalR_RelPS_4</members>
+        <members>CalR_RelPS_5</members>
+        <members>Cal_Ops_Helper</members>
+        <members>sfdcInternalInt__sfdc_nc_constraints_engine_deploy</members>
+        <members>sfdcInternalInt__sfdc_scrt2</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>CalHK_Mute_Absent_PSG</members>
+        <members>CalHK_Mute_Present_PSG</members>
+        <members>CalHK_Ops_PSG</members>
+        <members>CalHK_Sales_PSG</members>
+        <members>CalK4A_DemoSales_PSG</members>
+        <name>PermissionSetGroup</name>
+    </types>
+    <types>
+        <members>Admin</members>
+        <members>Analytics Cloud Integration User</members>
+        <members>Analytics Cloud Security User</members>
+        <members>Authenticated Website</members>
+        <members>B2B Reordering Portal Buyer Profile</members>
+        <members>CPQ Integration User</members>
+        <members>CalHK Contract Ops Absent</members>
+        <members>CalHK Contract Ops Present</members>
+        <members>CalHK Support Absent</members>
+        <members>CalHK Support Present</members>
+        <members>CalK4A_DemoIntegration_Profile</members>
+        <members>CalK4A_DemoSales_Profile</members>
+        <members>Chatter External User</members>
+        <members>Chatter Free User</members>
+        <members>Chatter Moderator User</members>
+        <members>Company Communities User</members>
+        <members>ContractManager</members>
+        <members>Cross Org Data Proxy User</members>
+        <members>Customer Community Login User</members>
+        <members>Customer Community Plus Login User</members>
+        <members>Customer Community Plus User</members>
+        <members>Customer Community User</members>
+        <members>Customer Portal Manager Custom</members>
+        <members>Customer Portal Manager Standard</members>
+        <members>External Apps Login User</members>
+        <members>External Identity User</members>
+        <members>Force%2Ecom - App Subscription User</members>
+        <members>Force%2Ecom - Free User</members>
+        <members>Gold Partner User</members>
+        <members>High Volume Customer Portal User</members>
+        <members>HighVolumePortal</members>
+        <members>Identity User</members>
+        <members>MarketingProfile</members>
+        <members>Minimum Access - API Only Integrations</members>
+        <members>Minimum Access - Salesforce</members>
+        <members>Partner App Subscription User</members>
+        <members>Partner Community Login User</members>
+        <members>Partner Community User</members>
+        <members>PlatformPortal</members>
+        <members>Silver Partner User</members>
+        <members>SolutionManager</members>
+        <members>Standard</members>
+        <members>StandardAul</members>
+        <members>Work%2Ecom Only User</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>Read_Only_profilePasswordPolicy1637020333583</members>
+        <name>ProfilePasswordPolicy</name>
+    </types>
+    <types>
+        <members>Read_Only_profileSessionSetting1637020333761</members>
+        <name>ProfileSessionSetting</name>
+    </types>
+    <types>
+        <members>CalHK_Escalations</members>
+        <members>CalK2_Demo_Case_Queue_NoMembers</members>
+        <members>CalK2_Demo_Support_Queue</members>
+        <members>CalK3_Absent_Demo_EMEA_Support</members>
+        <members>CalK3_Present_Demo_EMEA_Support</members>
+        <members>CalK4A_Demo_Triage</members>
+        <name>Queue</name>
+    </types>
+    <types>
+        <members>Case.CloseCaseLightning</members>
+        <members>Case.LogACall</members>
+        <members>Case.NewChildCase</members>
+        <members>CollaborationGroup.NewGroupMember</members>
+        <members>CollaborationGroup.NewGroupRecord</members>
+        <members>FeedItem.NewTaskFromFeedItem</members>
+        <members>LogACall</members>
+        <members>NewAccount</members>
+        <members>NewCase</members>
+        <members>NewContact</members>
+        <members>NewEvent</members>
+        <members>NewGroup</members>
+        <members>NewLead</members>
+        <members>NewNote</members>
+        <members>NewOpportunity</members>
+        <members>NewTask</members>
+        <members>SendEmail</members>
+        <members>ServiceAppointment.SendEmail</members>
+        <members>Task.Defer</members>
+        <members>Task.Defer_0</members>
+        <members>Task.Defer_1</members>
+        <members>Task.Defer_2</members>
+        <members>Task.Defer_3</members>
+        <members>Task.EditDescription</members>
+        <members>Task.EditDescription_0</members>
+        <members>Task.EditDescription_1</members>
+        <members>Task.EditDescription_2</members>
+        <members>Task.EditDescription_3</members>
+        <members>Task.UpdatePriority</members>
+        <members>Task.UpdatePriority_0</members>
+        <members>Task.UpdatePriority_1</members>
+        <members>Task.UpdatePriority_2</members>
+        <members>Task.UpdatePriority_3</members>
+        <members>Task.UpdateStatus</members>
+        <members>Task.UpdateStatus_0</members>
+        <members>Task.UpdateStatus_1</members>
+        <members>Task.UpdateStatus_2</members>
+        <members>Task.UpdateStatus_3</members>
+        <members>WorkOrder.SendEmail</members>
+        <members>WorkOrderLineItem.SendEmail</members>
+        <name>QuickAction</name>
+    </types>
+    <types>
+        <members>ApexDevNet</members>
+        <members>CalAPX03_DemoERP</members>
+        <members>CalK4A_Demo_ErpSandbox</members>
+        <members>CalK4A_Demo_Legacy</members>
+        <members>CalK4A_Demo_Legacy_NoBox</members>
+        <members>CalSB_SlackDemo</members>
+        <name>RemoteSiteSetting</name>
+    </types>
+    <types>
+        <members>CalK1_DemoReports/</members>
+        <members>CalK1_DemoReports/CalK1_Demo_Open_Invoices_by_Region</members>
+        <members>CalK4B_Finance_Reports/</members>
+        <members>CalK4B_Finance_Reports/CalK4B_Invoice_Report</members>
+        <members>CalK4B_Pipeline_Reports/</members>
+        <members>CalK4B_Pipeline_Reports/CalK4B_Pipeline_Report</members>
+        <members>CalR_Demo_Reports/</members>
+        <members>CalR_Demo_Reports/CalR_Demo_Unused_Report_1</members>
+        <members>CalR_Demo_Reports/CalR_Demo_Unused_Report_2</members>
+        <members>EBotR_v3/</members>
+        <members>EBotR_v5/</members>
+        <members>EinsteinBotReports/</members>
+        <members>EinsteinBotReports_v2/</members>
+        <members>unfiled$public/</members>
+        <members>unfiled$public/flow_orchestration_log_ootb_report_two_four_eight</members>
+        <members>unfiled$public/flow_orchestration_run_ootb_report_two_four_eight</members>
+        <members>unfiled$public/flow_orchestration_stage_run_ootb_report_two_four_eight</members>
+        <members>unfiled$public/flow_orchestration_step_run_ootb_report_two_four_eight</members>
+        <members>unfiled$public/flow_orchestration_work_item_ootb_report_two_four_eight</members>
+        <members>unfiled$public/flow_screen_prebuilt_report</members>
+        <name>Report</name>
+    </types>
+    <types>
+        <members>flow_orchestration_log_ootb_crt_two_four_eight</members>
+        <members>flow_orchestration_run_crt</members>
+        <members>flow_orchestration_run_ootb_crt_two_four_eight</members>
+        <members>flow_orchestration_stage_run_ootb_crt_two_four_eight</members>
+        <members>flow_orchestration_step_run_ootb_crt_two_four_eight</members>
+        <members>flow_orchestration_work_item_ootb_crt_two_four_eight</members>
+        <members>screen_flows_prebuilt_crt</members>
+        <name>ReportType</name>
+    </types>
+    <types>
+        <members>CalHK_My_Region</members>
+        <members>CalHK_Region_Only</members>
+        <name>RestrictionRule</name>
+    </types>
+    <types>
+        <members>CEO</members>
+        <members>CFO</members>
+        <members>COO</members>
+        <members>CalK3_EMEA_Support</members>
+        <members>CalK4A_EMEA_Support</members>
+        <members>CalK4A_Sales_Manager_APAC</members>
+        <members>CalK4A_Sales_Manager_EMEA</members>
+        <members>CalK4A_Sales_Rep_EMEA</members>
+        <members>ChannelSalesTeam</members>
+        <members>CustomerSupportInternational</members>
+        <members>CustomerSupportNorthAmerica</members>
+        <members>DirectorChannelSales</members>
+        <members>DirectorDirectSales</members>
+        <members>EasternSalesTeam</members>
+        <members>InstallationRepairServices</members>
+        <members>MarketingTeam</members>
+        <members>SVPCustomerServiceSupport</members>
+        <members>SVPHumanResources</members>
+        <members>SVPSalesMarketing</members>
+        <members>VPInternationalSales</members>
+        <members>VPMarketing</members>
+        <members>VPNorthAmericanSales</members>
+        <members>WesternSalesTeam</members>
+        <name>Role</name>
+    </types>
+    <types>
+        <members>Account</members>
+        <members>AccountIntelligence</members>
+        <members>Actions</members>
+        <members>Activities</members>
+        <members>Address</members>
+        <members>AdminSuccess</members>
+        <members>AgentforceForDevelopers</members>
+        <members>AgentforcePlatformTracing</members>
+        <members>AgentforceProspecting</members>
+        <members>AgentforceSessionTracing</members>
+        <members>Ai4m</members>
+        <members>Analytics</members>
+        <members>Apex</members>
+        <members>AppAnalytics</members>
+        <members>AppExperience</members>
+        <members>AppStudio</members>
+        <members>Blockchain</members>
+        <members>Bot</members>
+        <members>BusinessHours</members>
+        <members>BusinessValueMetrics</members>
+        <members>Campaign</members>
+        <members>Case</members>
+        <members>Chatter</members>
+        <members>ChatterEmailsMD</members>
+        <members>CodeBuilder</members>
+        <members>Commerce</members>
+        <members>Communities</members>
+        <members>Company</members>
+        <members>ConnectedApp</members>
+        <members>Content</members>
+        <members>Contract</members>
+        <members>ConversationalIntelligence</members>
+        <members>Currency</members>
+        <members>CustomAddressField</members>
+        <members>CustomPreferencePage</members>
+        <members>CustomerDataPlatform</members>
+        <members>CustomerIntelligence</members>
+        <members>CustomizablePropensityScoring</members>
+        <members>DataDotCom</members>
+        <members>DataMask</members>
+        <members>Deployment</members>
+        <members>DevHub</members>
+        <members>DigitalWallet</members>
+        <members>Disco</members>
+        <members>Discovery</members>
+        <members>DocumentChecklist</members>
+        <members>DxGlobalTerms</members>
+        <members>DynamicForms</members>
+        <members>EAC</members>
+        <members>EasyFreemium</members>
+        <members>EasySuitesInvoicing</members>
+        <members>EinsteinDocumentCapture</members>
+        <members>EinsteinGPTSalesEmails</members>
+        <members>EmailAdministration</members>
+        <members>EmailAuthorization</members>
+        <members>EmailIntegration</members>
+        <members>EmailTemplate</members>
+        <members>EmployeeFieldAccess</members>
+        <members>EmployeeUser</members>
+        <members>EncryptionKey</members>
+        <members>EnhancedNotes</members>
+        <members>EnterpriseApi</members>
+        <members>Entitlement</members>
+        <members>Essentials</members>
+        <members>Event</members>
+        <members>EvidenceMgmt</members>
+        <members>ExperienceBundle</members>
+        <members>ExternalClientApp</members>
+        <members>FieldService</members>
+        <members>FileUploadAndDownloadSecurity</members>
+        <members>FilesConnect</members>
+        <members>Flow</members>
+        <members>Forecasting</members>
+        <members>Formula</members>
+        <members>GRCIntelligenceUdd</members>
+        <members>GenerativeCampaigns</members>
+        <members>GoogleApps</members>
+        <members>Help</members>
+        <members>HerokuAppLink</members>
+        <members>Ideas</members>
+        <members>IdentityProvider</members>
+        <members>IncidentMgmt</members>
+        <members>Industries</members>
+        <members>IndustriesCommunicationsSales</members>
+        <members>IndustriesEinsteinFeature</members>
+        <members>IndustriesEnergyUtilitiesMultiSite</members>
+        <members>IndustriesInsurance</members>
+        <members>IndustriesMaczPricing</members>
+        <members>IndustriesMfgAdvnOrder</members>
+        <members>IndustriesUnifiedInventory</members>
+        <members>InsuranceBrokerage</members>
+        <members>InvocableAction</members>
+        <members>IoT</members>
+        <members>Knowledge</members>
+        <members>KnowledgeGeneration</members>
+        <members>Language</members>
+        <members>LeadConfig</members>
+        <members>LeadScore</members>
+        <members>LightningExperience</members>
+        <members>LiveAgent</members>
+        <members>MCETransformations</members>
+        <members>Macro</members>
+        <members>MailMerge</members>
+        <members>Meetings</members>
+        <members>MissionforceLogistics</members>
+        <members>Mobile</members>
+        <members>MsTeamsApp</members>
+        <members>MyDomain</members>
+        <members>Name</members>
+        <members>Notifications</members>
+        <members>OauthOidc</members>
+        <members>ObjectLinking</members>
+        <members>OmniChannel</members>
+        <members>OmniChannelPricing</members>
+        <members>OmniStudio</members>
+        <members>Opportunity</members>
+        <members>Order</members>
+        <members>OrderManagement</members>
+        <members>Org</members>
+        <members>Pardot</members>
+        <members>PardotEinstein</members>
+        <members>PartyDataModel</members>
+        <members>PathAssistant</members>
+        <members>Payments</members>
+        <members>PaymentsManagementEnabled</members>
+        <members>Picklist</members>
+        <members>PlatformEncryption</members>
+        <members>PlatformEvent</members>
+        <members>PlatformWebIde</members>
+        <members>Portals</members>
+        <members>PredictionBuilder</members>
+        <members>Privacy</members>
+        <members>PrivacyAgent</members>
+        <members>PrmCore</members>
+        <members>Product</members>
+        <members>ProductDiscovery</members>
+        <members>PurchaseOrderMgmt</members>
+        <members>QualityManagement</members>
+        <members>QuickText</members>
+        <members>Quote</members>
+        <members>RealTimeEvent</members>
+        <members>RecommendationBuilder</members>
+        <members>RecordPage</members>
+        <members>ReleaseMgmt</members>
+        <members>RetailExecution</members>
+        <members>RiskMgmt</members>
+        <members>SalesBots</members>
+        <members>SalesCloudSurfaces</members>
+        <members>SalesEmailAssistant</members>
+        <members>Sandbox</members>
+        <members>SceGlobalModelOptOut</members>
+        <members>Schema</members>
+        <members>Search</members>
+        <members>Security</members>
+        <members>SecurityAgent</members>
+        <members>SecurityHub</members>
+        <members>SelfService</members>
+        <members>ServiceAIRecommendations</members>
+        <members>ServiceCatalog</members>
+        <members>ServiceCloudVoice</members>
+        <members>ServiceHam</members>
+        <members>ServiceHelios</members>
+        <members>ServiceIssueManagement</members>
+        <members>ServiceItam</members>
+        <members>ServiceItom</members>
+        <members>ServiceItsmChangeManagement</members>
+        <members>ServiceItsmIntelligenceUdd</members>
+        <members>ServiceSetupAssistant</members>
+        <members>Sharing</members>
+        <members>Site</members>
+        <members>SourceTracking</members>
+        <members>SubscriptionManagement</members>
+        <members>Survey</members>
+        <members>SystemNotification</members>
+        <members>Territory2</members>
+        <members>Trailhead</members>
+        <members>TransactableMarketplacePrivateOffer</members>
+        <members>TrialOrg</members>
+        <members>UIBundle</members>
+        <members>UiWidget</members>
+        <members>UserEngagement</members>
+        <members>UserInterface</members>
+        <members>UserManagement</members>
+        <members>Voice</members>
+        <members>WebToX</members>
+        <members>WorkDotCom</members>
+        <name>Settings</name>
+    </types>
+    <types>
+        <members>CalK2_DemoInvoiceLab__c.CalK2_Finance_Read</members>
+        <members>CalK4A_DemoCase__c.CalK4A_EMEA_Read</members>
+        <name>SharingCriteriaRule</name>
+    </types>
+    <types>
+        <members>CalK4A_DemoContract__c.CalK4A_AllInternal_RW</members>
+        <name>SharingOwnerRule</name>
+    </types>
+    <types>
+        <members>Account</members>
+        <members>ActivityRecurrence2</members>
+        <members>ActivityRecurrence2Exception</members>
+        <members>AiJobRun</members>
+        <members>AlternativePaymentMethod</members>
+        <members>AnalyticsUserAttrFuncTkn</members>
+        <members>ApprovalSubmission</members>
+        <members>ApptBundleConfig</members>
+        <members>ApptBundlePolicy</members>
+        <members>Asset</members>
+        <members>AssistantInteraction</members>
+        <members>AssistantProgress</members>
+        <members>AssistantRecommendation</members>
+        <members>AttributeDefinition</members>
+        <members>AttributePicklist</members>
+        <members>AuthorizationForm</members>
+        <members>AuthorizationFormConsent</members>
+        <members>AuthorizationFormDataUse</members>
+        <members>BusinessBrand</members>
+        <members>CalHK_Article__c</members>
+        <members>CalHK_Asset__c</members>
+        <members>CalHK_Bonus__c</members>
+        <members>CalHK_Contract__c</members>
+        <members>CalHK_Customer_Master__c</members>
+        <members>CalHK_Invoice__c</members>
+        <members>CalHK_Opportunity_Split__c</members>
+        <members>CalHK_Order__c</members>
+        <members>CalHK_Project__c</members>
+        <members>CalHK_Warranty__c</members>
+        <members>CalK1_DemoInvoice__c</members>
+        <members>CalK2_DemoInvoiceLab__c</members>
+        <members>CalK2_DemoInvoice__c</members>
+        <members>CalK3_Absent_DemoAccount__c</members>
+        <members>CalK3_Absent_DemoInvoice__c</members>
+        <members>CalK3_Present_DemoAccount__c</members>
+        <members>CalK3_Present_DemoInvoice__c</members>
+        <members>CalK4A_DemoAccount__c</members>
+        <members>CalK4A_DemoCase__c</members>
+        <members>CalK4A_DemoContract__c</members>
+        <members>CalK4A_DemoInvoice__c</members>
+        <members>CalK4A_DemoKnowledgeTip__c</members>
+        <members>CalK4A_DemoLead__c</members>
+        <members>CalK4A_DemoProject__c</members>
+        <members>CalK4A_DemoTierLab__c</members>
+        <members>CalK4B_Account__c</members>
+        <members>CalK4B_Contact__c</members>
+        <members>CalK4B_Invoice__c</members>
+        <members>CalK4B_LegacyOrder__c</members>
+        <members>CalK4B_Opportunity__c</members>
+        <members>CalK4B_Order__c</members>
+        <members>CalK5_DemoAccount__c</members>
+        <members>CalR_DemoAccount__c</members>
+        <members>CalR_DemoCase__c</members>
+        <members>CalR_DemoContact__c</members>
+        <members>CalR_DemoInvoice__c</members>
+        <members>CalendarModel</members>
+        <members>CalendarView</members>
+        <members>Campaign</members>
+        <members>Case</members>
+        <members>CleanLeadBackup</members>
+        <members>CommSubscription</members>
+        <members>CommSubscriptionChannelType</members>
+        <members>CommSubscriptionConsent</members>
+        <members>ComponentResponseCache</members>
+        <members>ConsumptionSchedule</members>
+        <members>Contact</members>
+        <members>ContactPointConsent</members>
+        <members>ContactPointOttSvc</members>
+        <members>ContactPointTypeConsent</members>
+        <members>ContactRequest</members>
+        <members>ContractLineOutcome</members>
+        <members>ConvCoachingRecommendation</members>
+        <members>ConvEntryRelatedRecordCopy</members>
+        <members>ConversationApiLog</members>
+        <members>ConversationEntryCopy</members>
+        <members>CreditMemo</members>
+        <members>Customer</members>
+        <members>DataMaskCustomValueLibrary</members>
+        <members>DataUseLegalBasis</members>
+        <members>DataUsePurpose</members>
+        <members>DevopsActivityLog</members>
+        <members>DevopsEnvironment</members>
+        <members>DevopsRequestInfo</members>
+        <members>DynamicDataCapture</members>
+        <members>EngagementChannelType</members>
+        <members>ExchangeUserMapping</members>
+        <members>Expense</members>
+        <members>ExpenseReport</members>
+        <members>ExternalEventMapping</members>
+        <members>FinanceBalanceSnapshot</members>
+        <members>FinanceTransaction</members>
+        <members>FlowInterview</members>
+        <members>FlowInterviewLog</members>
+        <members>FlowOrchestrationInstance</members>
+        <members>FlowOrchestrationInstanceLink</members>
+        <members>FlowOrchestrationStageInstance</members>
+        <members>FlowOrchestrationStepInstance</members>
+        <members>FlowOrchestrationWorkItem</members>
+        <members>FlowRecord</members>
+        <members>FlowTestResult</members>
+        <members>FlowVersionMilestone</members>
+        <members>GeolocationBasedAction</members>
+        <members>Image</members>
+        <members>Individual</members>
+        <members>Invoice</members>
+        <members>JobProfile</members>
+        <members>Lead</members>
+        <members>LegalEntity</members>
+        <members>ListEmail</members>
+        <members>LiveAgentSession</members>
+        <members>LiveChatTranscript</members>
+        <members>Location</members>
+        <members>LocationGroup</members>
+        <members>Macro</members>
+        <members>MacroUsage</members>
+        <members>MaintenancePlan</members>
+        <members>MaintenanceWorkRule</members>
+        <members>MessagingEndUser</members>
+        <members>MessagingSession</members>
+        <members>NotifDeliveryUserPref</members>
+        <members>OperatingHours</members>
+        <members>Opportunity</members>
+        <members>Order</members>
+        <members>OutboundEngagementTemplate</members>
+        <members>OutboundEngmtContentRsrc</members>
+        <members>PartyConsent</members>
+        <members>PayGroup</members>
+        <members>PayPeriod</members>
+        <members>PrivacyJobSession</members>
+        <members>PrivacyObjectSession</members>
+        <members>PrivacyRTBFRequest</members>
+        <members>PrivacySessionRecordFailure</members>
+        <members>ProcessException</members>
+        <members>Product2</members>
+        <members>ProductItem</members>
+        <members>ProductRequest</members>
+        <members>ProductServiceCampaign</members>
+        <members>ProductTransfer</members>
+        <members>PromptAction</members>
+        <members>PromptError</members>
+        <members>QuickText</members>
+        <members>QuickTextUsage</members>
+        <members>RecordMergeHistory</members>
+        <members>RecordsetFilterCriteria</members>
+        <members>ReportResultBlob</members>
+        <members>RetentionStoreUsage</members>
+        <members>ReturnOrder</members>
+        <members>SchedulingConstraint</members>
+        <members>SchedulingWorkspace</members>
+        <members>Scorecard</members>
+        <members>SearchRecentQuery</members>
+        <members>Seller</members>
+        <members>SerializedProduct</members>
+        <members>ServiceAppointment</members>
+        <members>ServiceContract</members>
+        <members>ServiceCrew</members>
+        <members>ServiceResource</members>
+        <members>ServiceResourcePreference</members>
+        <members>ServiceTerritory</members>
+        <members>SfdcPartnerSbscrOffer</members>
+        <members>Shift</members>
+        <members>ShiftPattern</members>
+        <members>ShiftSchedulingOperation</members>
+        <members>ShiftTemplate</members>
+        <members>Shipment</members>
+        <members>StreamingChannel</members>
+        <members>Swarm</members>
+        <members>SwarmMember</members>
+        <members>TableauHostMapping</members>
+        <members>TimeSheet</members>
+        <members>TodayGoal</members>
+        <members>TravelMode</members>
+        <members>UiPageAuthoringConv</members>
+        <members>UnitOfMeasure</members>
+        <members>UnstructuredStorageSpace</members>
+        <members>User</members>
+        <members>UserAppMenuCustomization</members>
+        <members>UserCapabilityPreference</members>
+        <members>UserDefinedLabel</members>
+        <members>UserDefinedLabelAssignment</members>
+        <members>UserDevopsPreference</members>
+        <members>UserEmailPreferredPerson</members>
+        <members>UserExternalCredential</members>
+        <members>UserLocalWebServerIdentity</members>
+        <members>UserProvisioningRequest</members>
+        <members>WarrantyTerm</members>
+        <members>WorkAccess</members>
+        <members>WorkAggregation</members>
+        <members>WorkBadgeDefinition</members>
+        <members>WorkCapacityAvailability</members>
+        <members>WorkCapacityLimit</members>
+        <members>WorkCapacityUsage</members>
+        <members>WorkForecastRun</members>
+        <members>WorkOrder</members>
+        <members>WorkPlan</members>
+        <members>WorkPlanSelectionRule</members>
+        <members>WorkPlanTemplate</members>
+        <members>WorkStepTemplate</members>
+        <members>WorkThanks</members>
+        <members>WorkType</members>
+        <members>WorkTypeGroup</members>
+        <members>WorkflowSLAAction</members>
+        <members>WorkforceCapacity</members>
+        <members>WorkforceCapacityPlan</members>
+        <members>Workload</members>
+        <name>SharingRules</name>
+    </types>
+    <types>
+        <members>AccountContactRole</members>
+        <members>AccountOwnership</members>
+        <members>AccountRating</members>
+        <members>AccountType</members>
+        <members>AssetStatus</members>
+        <members>CampaignMemberStatus</members>
+        <members>CampaignStatus</members>
+        <members>CampaignType</members>
+        <members>CaseContactRole</members>
+        <members>CaseOrigin</members>
+        <members>CasePriority</members>
+        <members>CaseReason</members>
+        <members>CaseStatus</members>
+        <members>CaseType</members>
+        <members>ContactRole</members>
+        <members>ContractContactRole</members>
+        <members>ContractStatus</members>
+        <members>EntitlementType</members>
+        <members>EventSubject</members>
+        <members>EventType</members>
+        <members>FiscalYearPeriodPrefix</members>
+        <members>FiscalYearQuarterName</members>
+        <members>FiscalYearQuarterPrefix</members>
+        <members>Industry</members>
+        <members>LeadSource</members>
+        <members>LeadStatus</members>
+        <members>OpportunityStage</members>
+        <members>OpportunityType</members>
+        <members>OrderStatus</members>
+        <members>PartnerRole</members>
+        <members>ProcessExceptionCategory</members>
+        <members>ProcessExceptionPriority</members>
+        <members>ProcessExceptionSeverity</members>
+        <members>ProcessExceptionStatus</members>
+        <members>Product2Family</members>
+        <members>QuantityUnitOfMeasure</members>
+        <members>QuickTextCategory</members>
+        <members>QuickTextChannel</members>
+        <members>ResourceAbsenceType</members>
+        <members>ReturnOrderLineItemProcessPlan</members>
+        <members>ReturnOrderLineItemReasonForReturn</members>
+        <members>ReturnOrderLineItemRepaymentMethod</members>
+        <members>ReturnOrderShipmentType</members>
+        <members>ReturnOrderStatus</members>
+        <members>Salutation</members>
+        <members>ServiceAppointmentStatus</members>
+        <members>ServiceContractApprovalStatus</members>
+        <members>SolutionStatus</members>
+        <members>TaskPriority</members>
+        <members>TaskStatus</members>
+        <members>TaskSubject</members>
+        <members>TaskType</members>
+        <members>WorkOrderLineItemStatus</members>
+        <members>WorkOrderPriority</members>
+        <members>WorkOrderStatus</members>
+        <name>StandardValueSet</name>
+    </types>
+    <types>
+        <members>jquery_lib</members>
+        <name>StaticResource</name>
+    </types>
+    <types>
+        <members>Account</members>
+        <members>ApptBundleAggrDurDnscale</members>
+        <members>ApptBundleAggrPolicy</members>
+        <members>ApptBundleConfig</members>
+        <members>ApptBundlePolicy</members>
+        <members>ApptBundlePolicySvcTerr</members>
+        <members>ApptBundlePropagatePolicy</members>
+        <members>ApptBundleRestrictPolicy</members>
+        <members>ApptBundleSortPolicy</members>
+        <members>Asset</members>
+        <members>AssetAccountParticipant</members>
+        <members>AssetContactParticipant</members>
+        <members>AssetDowntimePeriod</members>
+        <members>AssetWarranty</members>
+        <members>AssociatedLocation</members>
+        <members>CalHK_Article__c</members>
+        <members>CalHK_Asset__c</members>
+        <members>CalHK_Bonus__c</members>
+        <members>CalHK_Contract_Line__c</members>
+        <members>CalHK_Contract__c</members>
+        <members>CalHK_Customer_Master__c</members>
+        <members>CalHK_Invoice__c</members>
+        <members>CalHK_Opportunity_Split__c</members>
+        <members>CalHK_Order__c</members>
+        <members>CalHK_Project__c</members>
+        <members>CalHK_Warranty__c</members>
+        <members>CalK1_DemoAccount__c</members>
+        <members>CalK1_DemoAcctStory__c</members>
+        <members>CalK1_DemoContact__c</members>
+        <members>CalK1_DemoInvoice__c</members>
+        <members>CalK2_DemoAccount13__c</members>
+        <members>CalK2_DemoAccount__c</members>
+        <members>CalK2_DemoAcctTier__c</members>
+        <members>CalK2_DemoBulk__c</members>
+        <members>CalK2_DemoInvoiceLab__c</members>
+        <members>CalK2_DemoInvoicePRW__c</members>
+        <members>CalK2_DemoInvoice__c</members>
+        <members>CalK3_Absent_DemoAccount__c</members>
+        <members>CalK3_Absent_DemoInvoice__c</members>
+        <members>CalK3_Present_DemoAccount__c</members>
+        <members>CalK3_Present_DemoInvoice__c</members>
+        <members>CalK4A_DemoAccount__c</members>
+        <members>CalK4A_DemoCase__c</members>
+        <members>CalK4A_DemoContract__c</members>
+        <members>CalK4A_DemoInvoice__c</members>
+        <members>CalK4A_DemoKnowledgeTip__c</members>
+        <members>CalK4A_DemoLead__c</members>
+        <members>CalK4A_DemoProject__c</members>
+        <members>CalK4A_DemoTierLab__c</members>
+        <members>CalK4B_Account__c</members>
+        <members>CalK4B_Contact__c</members>
+        <members>CalK4B_Invoice__c</members>
+        <members>CalK4B_LegacyOrder__c</members>
+        <members>CalK4B_Opportunity__c</members>
+        <members>CalK4B_Order__c</members>
+        <members>CalK5_DemoAccount__c</members>
+        <members>CalR_DemoAccount__c</members>
+        <members>CalR_DemoCase__c</members>
+        <members>CalR_DemoContact__c</members>
+        <members>CalR_DemoInvoice__c</members>
+        <members>Campaign</members>
+        <members>Case</members>
+        <members>Contact</members>
+        <members>ContentDocument</members>
+        <members>Contract</members>
+        <members>ContractLineOutcomeData</members>
+        <members>DynamicDataCapture</members>
+        <members>Event</members>
+        <members>Expense</members>
+        <members>ExpenseReport</members>
+        <members>ExpenseReportEntry</members>
+        <members>JobProfile</members>
+        <members>Lead</members>
+        <members>MaintenanceAsset</members>
+        <members>MaintenancePlan</members>
+        <members>Opportunity</members>
+        <members>Order</members>
+        <members>PayGroup</members>
+        <members>PayPeriod</members>
+        <members>ProductConsumed</members>
+        <members>ProductItem</members>
+        <members>ProductItemTransaction</members>
+        <members>ProductRequest</members>
+        <members>ProductRequestLineItem</members>
+        <members>ProductRequired</members>
+        <members>ProductServiceCampaign</members>
+        <members>ProductServiceCampaignItem</members>
+        <members>ProductTransfer</members>
+        <members>ResourceAbsence</members>
+        <members>ResourcePreference</members>
+        <members>ReturnOrder</members>
+        <members>ReturnOrderLineItem</members>
+        <members>SchedulingWorkspace</members>
+        <members>SchedulingWorkspaceTerritory</members>
+        <members>ServiceAppointment</members>
+        <members>ServiceCrew</members>
+        <members>ServiceCrewMember</members>
+        <members>ServiceResource</members>
+        <members>ServiceResourceCapacity</members>
+        <members>ServiceResourceSkill</members>
+        <members>ServiceTerritory</members>
+        <members>ServiceTerritoryMember</members>
+        <members>Shift</members>
+        <members>ShiftAllocationRequest</members>
+        <members>Shipment</members>
+        <members>Solution</members>
+        <members>Task</members>
+        <members>TimeSheet</members>
+        <members>TimeSheetEntry</members>
+        <members>TravelMode</members>
+        <members>WarrantyTerm</members>
+        <members>WorkCapacityAvailability</members>
+        <members>WorkCapacityLimit</members>
+        <members>WorkCapacityUsage</members>
+        <members>WorkOrder</members>
+        <members>WorkOrderLineItem</members>
+        <members>WorkPlan</members>
+        <members>WorkPlanSelectionRule</members>
+        <members>WorkPlanTemplate</members>
+        <members>WorkPlanTemplateEntry</members>
+        <members>WorkStep</members>
+        <members>WorkStepTemplate</members>
+        <name>TopicsForObjects</name>
+    </types>
+    <types>
+        <members>Case</members>
+        <name>Workflow</name>
+    </types>
+    <types>
+        <members>Case.ChangePriorityToHigh</members>
+        <name>WorkflowFieldUpdate</name>
+    </types>
+    <version>68.0</version>
+</Package>

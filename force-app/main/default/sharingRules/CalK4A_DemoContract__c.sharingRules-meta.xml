@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>CalK4A_AllInternal_RW</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>CalK4A T-003 applied choice: owner-based rule, All Internal Users to All Internal Users, Read/Write.</description>
+        <label>CalK4A AllInternal RW</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

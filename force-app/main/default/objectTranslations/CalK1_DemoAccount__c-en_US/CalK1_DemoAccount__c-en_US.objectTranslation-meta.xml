@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CalK1 Demo Account</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CalK1 Demo Accounts</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Pick a Tier before saving. --></errorMessage>
+        <name>CalK1_DemoTierRequired</name>
+    </validationRules>
+</CustomObjectTranslation>

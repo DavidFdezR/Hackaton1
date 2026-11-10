@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MutingPermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CalHK_Contract__c.Demo_Discount_Band__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <label>CalHK Sales Mute</label>
+</MutingPermissionSet>

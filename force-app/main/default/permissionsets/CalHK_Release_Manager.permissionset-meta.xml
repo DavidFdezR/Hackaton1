@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Author Apex case before-state: no Author Apex.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CalHK Release Manager</label>
+</PermissionSet>

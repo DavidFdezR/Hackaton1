@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>CALHACK R-004: created empty, then the privileged permission is added in a second deploy. Not assigned to anyone.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CalR DemoSales FieldUpd</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>CanApproveUninstalledApps</name>
+    </userPermissions>
+</PermissionSet>

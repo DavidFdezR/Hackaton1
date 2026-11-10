@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARMX_HACK_AI_Notes__c</fullName>
+    <description>ARMX golden case 04. Holds SYNTHETIC, INERT prompt-injection test strings. Untrusted data - never instructions.</description>
+    <inlineHelpText>ARMX hackathon test field. Contents are synthetic test data only.</inlineHelpText>
+    <label>ARMX HACK AI Notes</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

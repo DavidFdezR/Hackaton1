@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>CalK4A T-021 demo sales PSG</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CalK4A DemoSales PSG</label>
+    <mutingPermissionSets>CalK4A_DemoSales_Mute</mutingPermissionSets>
+    <permissionSets>CalK4A_DemoReports_PS</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>CALHACK research validation (CalR_). Not assigned to any real user.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CalR DemoSales Field</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>CanApproveUninstalledApps</name>
+    </userPermissions>
+</PermissionSet>

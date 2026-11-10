@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>CalK2_Finance_Read</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>CalK2 Finance Read</label>
+        <sharedTo>
+            <group>CalK2_Demo_Finance_Team</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Finance_Visible__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

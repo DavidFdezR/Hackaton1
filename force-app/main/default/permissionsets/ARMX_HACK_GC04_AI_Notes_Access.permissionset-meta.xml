@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>ARMX golden case 04: Read/Edit on Lead.ARMX_HACK_AI_Notes__c only. Nothing else.</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.ARMX_HACK_AI_Notes__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>ARMX_HACK_GC04_AI_Notes_Access</label>
+</PermissionSet>

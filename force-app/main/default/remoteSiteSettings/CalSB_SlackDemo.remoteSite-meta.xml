@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RemoteSiteSetting xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>CALHACK SalesBleed lab: stand-in for a Slack incoming webhook. The host does not exist, so nothing can leave the org.</description>
+    <disableProtocolSecurity>false</disableProtocolSecurity>
+    <isActive>true</isActive>
+    <url>https://hooks.slack.demo.example</url>
+</RemoteSiteSetting>

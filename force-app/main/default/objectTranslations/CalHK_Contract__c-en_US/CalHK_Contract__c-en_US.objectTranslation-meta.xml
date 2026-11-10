@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CalHK Contract</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CalHK Contracts</value>
+    </caseValues>
+    <recordTypes>
+        <label><!-- CalHK Renewal --></label>
+        <name>CalHK_Renewal</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CalHK Standard --></label>
+        <name>CalHK_Standard</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- End Date must be on or after Start Date. --></errorMessage>
+        <name>CalHK_Contract_Dates</name>
+    </validationRules>
+</CustomObjectTranslation>

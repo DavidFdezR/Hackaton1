@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CalK3 Absent Demo Account</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CalK3 Absent Demo Accounts</value>
+    </caseValues>
+    <layouts>
+        <layout>Demo Account Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Demo Account Layout - Partner</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Customer Tier is required --></errorMessage>
+        <name>DemoTierRequired</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>CalK4A_EMEA_Read</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>CalK4A T-004 applied choice: Region__c = EMEA, Read Only, role CalK4A_EMEA_Support and subordinates.</description>
+        <label>CalK4A EMEA Read</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>CalK4A_EMEA_Support</roleAndSubordinatesInternal>
+        </sharedTo>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>EMEA</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

@@ -1,0 +1,7 @@
+<template>
+    <div class="invoice-table">
+        <template for:each={invoices} for:item="inv">
+            <p key={inv.Id}>{inv.Name}</p>
+        </template>
+    </div>
+</template>

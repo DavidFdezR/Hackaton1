@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CalK4A Demo Account</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CalK4A Demo Accounts</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Tier is required for active accounts --></errorMessage>
+        <name>CalK4A_Demo_Tier_Required</name>
+    </validationRules>
+</CustomObjectTranslation>
